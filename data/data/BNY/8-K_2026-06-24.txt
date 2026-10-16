@@ -1,0 +1,141 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 8-K
+
+CURRENT REPORT
+
+Pursuant to Section 13 or 15(d)
+
+of the Securities Exchange Act of 1934
+
+Date of Report (Date of earliest event reported): June 24, 2026
+
+THE BANK OF NEW YORK MELLON CORPORATION
+
+(Exact name of registrant as specified in its charter)
+
+Delaware
+
+001-35651
+
+13-2614959
+
+(State or other Jurisdiction
+
+of Incorporation)
+
+(Commission
+
+File Number)
+
+(IRS Employer
+
+Identification No.)
+
+240 Greenwich Street
+
+New York, New York
+
+10286
+
+(Address of Principal Executive Offices)
+
+(Zip Code)
+
+Registrant’s telephone number, including area code: (212) 495-1784
+
+Not Applicable
+
+(Former name or former address if changed since last report.)
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+
+☐
+
+Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐
+
+Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐
+
+Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐
+
+Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of each class
+
+Trading
+
+Symbol(s)
+
+Name of each exchange
+
+on which registered
+
+Common Stock, $0.01 par value
+
+BNY
+
+New York Stock Exchange
+
+6.244% Fixed-to-Floating Rate Normal Preferred Capital Securities of Mellon Capital IV (fully and unconditionally guaranteed by The Bank of New York Mellon Corporation)
+
+BNY/P
+
+New York Stock Exchange
+
+Depositary Shares, each representing a 1/4,000th interest in a share of Series K Noncumulative Perpetual Preferred Stock
+
+BNY PRK
+
+New York Stock Exchange
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+ITEM 8.01.
+
+OTHER EVENTS.
+
+On June 24, 2026, The Bank of New York Mellon Corporation (the “Company”) announced its intention to increase its quarterly cash dividend on its common shares by 19% from $0.53 to $0.63 per share, commencing as early as the third quarter of 2026, subject to approval by the Company’s Board of Directors (the “Board”).
+
+On June 24, 2026, the Federal Reserve released the results of its 2026 bank stress test. The Company’s Stress Capital Buffer (“SCB”) requirement has consistently remained at the 2.5% floor since the introduction of the SCB requirement in 2020. As the Federal Reserve announced on February 4, 2026, the current SCBs will continue to apply until 2027, when new requirements can be calculated based on models that take public feedback into consideration.
+
+The Company continues to be authorized to repurchase common shares under its existing share repurchase program approved by the Board, as announced in April 2026. The repurchases of common stock may be executed through open market purchases, in privately negotiated transactions or by other means, including through repurchase plans designed to comply with Rule 10b5-1 and through derivative, accelerated share repurchase and other structured transactions. The timing, manner and amount of repurchases are subject to various factors, including the Company’s capital position and prevailing market conditions.
+
+The information presented in this Current Report on Form 8-K contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. These statements, which may be expressed in a variety of ways, including the use of future or present tense language, relate to, among other things, the Company’s repurchases of common stock, common stock dividends, capital base, performance, ability to meet regulatory requirements and expectations regarding the impact of the Federal Reserve’s notices of proposed rulemaking on the Company’s SCB. These statements are not guarantees of future results or occurrences, are inherently uncertain and are based upon current beliefs and expectations of future events, many of which are, by their nature, difficult to predict, outside of the Company’s control and subject to change. Actual results may differ, possibly materially, from the anticipated results expressed or implied in these forward-looking statements as a result of a number of important factors, including, but not limited to, the factors identified above and the risk factors and other uncertainties set forth in the Company’s Annual Report on Form 10-K for the year ended December 31, 2025, the Quarterly Report on Form 10-Q for the quarter ended March 31, 2026 and the Company’s other filings with the Securities and Exchange Commission. All statements in this Current Report on Form 8-K speak only as of the date of this filing, and the Company undertakes no obligation to update the information to reflect events or circumstances that arise after that date or to reflect the occurrence of unanticipated events.
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+
+The Bank of New York Mellon Corporation
+
+(Registrant)
+
+Date: June 24, 2026
+
+By:
+
+/s/ Jean Weng
+
+Name:
+
+Jean Weng
+
+Title:
+
+Secretary

@@ -1,0 +1,70 @@
+{
+  "n": 50,
+  "correct": 50,
+  "accuracy": 1.0,
+  "per_qtype": {
+    "aggregation": {
+      "n": 15,
+      "correct": 15,
+      "accuracy": 1.0,
+      "expected": "aggregation",
+      "produced": {
+        "aggregation": 15
+      }
+    },
+    "lookup": {
+      "n": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "expected": "lookup",
+      "produced": {
+        "lookup": 7
+      }
+    },
+    "multi_hop": {
+      "n": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "expected": "multi_hop",
+      "produced": {
+        "multi_hop": 10
+      }
+    },
+    "superlative": {
+      "n": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "expected": "superlative",
+      "produced": {
+        "superlative": 10
+      }
+    },
+    "temporal": {
+      "n": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "expected": "temporal",
+      "produced": {
+        "temporal": 8
+      }
+    }
+  },
+  "confusion": {
+    "multi_hop->multi_hop": 10,
+    "lookup->lookup": 7,
+    "aggregation->aggregation": 15,
+    "superlative->superlative": 10,
+    "temporal->temporal": 8
+  },
+  "routes_produced": {
+    "multi_hop": 10,
+    "lookup": 7,
+    "aggregation": 15,
+    "superlative": 10,
+    "temporal": 8
+  },
+  "misses": [],
+  "split": "hidden",
+  "lexicon": "olympics",
+  "source": "data/new_dataset/questions/eval_hidden.jsonl"
+}

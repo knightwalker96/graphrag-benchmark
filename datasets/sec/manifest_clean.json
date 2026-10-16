@@ -1,0 +1,402 @@
+{
+  "AAPL": {
+    "company": "Apple Inc.",
+    "sector": "Information Technology"
+  },
+  "ABBV": {
+    "company": "AbbVie",
+    "sector": "Health Care"
+  },
+  "ABT": {
+    "company": "Abbott Laboratories",
+    "sector": "Health Care"
+  },
+  "ACN": {
+    "company": "Accenture",
+    "sector": "Information Technology"
+  },
+  "ADBE": {
+    "company": "Adobe Inc.",
+    "sector": "Information Technology"
+  },
+  "AIG": {
+    "company": "American International Group",
+    "sector": "Financials"
+  },
+  "AMD": {
+    "company": "Advanced Micro Devices",
+    "sector": "Information Technology"
+  },
+  "AMGN": {
+    "company": "Amgen",
+    "sector": "Health Care"
+  },
+  "AMT": {
+    "company": "American Tower",
+    "sector": "Real Estate"
+  },
+  "AMZN": {
+    "company": "Amazon",
+    "sector": "Consumer Discretionary"
+  },
+  "AVGO": {
+    "company": "Broadcom",
+    "sector": "Information Technology"
+  },
+  "AXP": {
+    "company": "American Express",
+    "sector": "Financials"
+  },
+  "BA": {
+    "company": "Boeing",
+    "sector": "Industrials"
+  },
+  "BAC": {
+    "company": "Bank of America",
+    "sector": "Financials"
+  },
+  "BNY": {
+    "company": "Bank of New York Mellon",
+    "sector": "Financials"
+  },
+  "BKNG": {
+    "company": "Booking Holdings",
+    "sector": "Consumer Discretionary"
+  },
+  "BLK": {
+    "company": "BlackRock",
+    "sector": "Financials"
+  },
+  "BMY": {
+    "company": "Bristol Myers Squibb",
+    "sector": "Health Care"
+  },
+  "BRK.B": {
+    "company": "Berkshire Hathaway (Class B)",
+    "sector": "Financials"
+  },
+  "C": {
+    "company": "Citigroup",
+    "sector": "Financials"
+  },
+  "CAT": {
+    "company": "Caterpillar Inc.",
+    "sector": "Industrials"
+  },
+  "CL": {
+    "company": "Colgate-Palmolive",
+    "sector": "Consumer Staples"
+  },
+  "CMCSA": {
+    "company": "Comcast",
+    "sector": "Communication Services"
+  },
+  "COF": {
+    "company": "Capital One",
+    "sector": "Financials"
+  },
+  "COP": {
+    "company": "ConocoPhillips",
+    "sector": "Energy"
+  },
+  "COST": {
+    "company": "Costco",
+    "sector": "Consumer Staples"
+  },
+  "CRM": {
+    "company": "Salesforce",
+    "sector": "Information Technology"
+  },
+  "CSCO": {
+    "company": "Cisco",
+    "sector": "Information Technology"
+  },
+  "CVS": {
+    "company": "CVS Health",
+    "sector": "Health Care"
+  },
+  "CVX": {
+    "company": "Chevron Corporation",
+    "sector": "Energy"
+  },
+  "DE": {
+    "company": "Deere & Company",
+    "sector": "Industrials"
+  },
+  "DHR": {
+    "company": "Danaher Corporation",
+    "sector": "Health Care"
+  },
+  "DIS": {
+    "company": "Walt Disney Company (The)",
+    "sector": "Communication Services"
+  },
+  "DUK": {
+    "company": "Duke Energy",
+    "sector": "Utilities"
+  },
+  "EMR": {
+    "company": "Emerson Electric",
+    "sector": "Industrials"
+  },
+  "FDX": {
+    "company": "FedEx",
+    "sector": "Industrials"
+  },
+  "GD": {
+    "company": "General Dynamics",
+    "sector": "Industrials"
+  },
+  "GE": {
+    "company": "GE Aerospace",
+    "sector": "Industrials"
+  },
+  "GILD": {
+    "company": "Gilead Sciences",
+    "sector": "Health Care"
+  },
+  "GM": {
+    "company": "General Motors",
+    "sector": "Consumer Discretionary"
+  },
+  "GOOGL": {
+    "company": "Alphabet Inc. (Class A)",
+    "sector": "Communication Services"
+  },
+  "GS": {
+    "company": "Goldman Sachs",
+    "sector": "Financials"
+  },
+  "HD": {
+    "company": "Home Depot",
+    "sector": "Consumer Discretionary"
+  },
+  "HON": {
+    "company": "Honeywell",
+    "sector": "Industrials"
+  },
+  "IBM": {
+    "company": "IBM",
+    "sector": "Information Technology"
+  },
+  "INTC": {
+    "company": "Intel",
+    "sector": "Information Technology"
+  },
+  "INTU": {
+    "company": "Intuit",
+    "sector": "Information Technology"
+  },
+  "ISRG": {
+    "company": "Intuitive Surgical",
+    "sector": "Health Care"
+  },
+  "JNJ": {
+    "company": "Johnson & Johnson",
+    "sector": "Health Care"
+  },
+  "JPM": {
+    "company": "JPMorgan Chase",
+    "sector": "Financials"
+  },
+  "KO": {
+    "company": "Coca-Cola Company (The)",
+    "sector": "Consumer Staples"
+  },
+  "LIN": {
+    "company": "Linde plc",
+    "sector": "Materials"
+  },
+  "LLY": {
+    "company": "Eli Lilly and Company",
+    "sector": "Health Care"
+  },
+  "LMT": {
+    "company": "Lockheed Martin",
+    "sector": "Industrials"
+  },
+  "LOW": {
+    "company": "Lowe's",
+    "sector": "Consumer Discretionary"
+  },
+  "MA": {
+    "company": "Mastercard",
+    "sector": "Financials"
+  },
+  "MCD": {
+    "company": "McDonald's",
+    "sector": "Consumer Discretionary"
+  },
+  "MDLZ": {
+    "company": "Mondelez International",
+    "sector": "Consumer Staples"
+  },
+  "MDT": {
+    "company": "Medtronic",
+    "sector": "Health Care"
+  },
+  "MET": {
+    "company": "MetLife",
+    "sector": "Financials"
+  },
+  "META": {
+    "company": "Meta Platforms",
+    "sector": "Communication Services"
+  },
+  "MMM": {
+    "company": "3M",
+    "sector": "Industrials"
+  },
+  "MO": {
+    "company": "Altria",
+    "sector": "Consumer Staples"
+  },
+  "MRK": {
+    "company": "Merck & Co.",
+    "sector": "Health Care"
+  },
+  "MS": {
+    "company": "Morgan Stanley",
+    "sector": "Financials"
+  },
+  "MSFT": {
+    "company": "Microsoft",
+    "sector": "Information Technology"
+  },
+  "NEE": {
+    "company": "NextEra Energy",
+    "sector": "Utilities"
+  },
+  "NFLX": {
+    "company": "Netflix, Inc.",
+    "sector": "Communication Services"
+  },
+  "NKE": {
+    "company": "Nike, Inc.",
+    "sector": "Consumer Discretionary"
+  },
+  "NOW": {
+    "company": "ServiceNow",
+    "sector": "Information Technology"
+  },
+  "NVDA": {
+    "company": "Nvidia",
+    "sector": "Information Technology"
+  },
+  "ORCL": {
+    "company": "Oracle Corporation",
+    "sector": "Information Technology"
+  },
+  "PEP": {
+    "company": "PepsiCo",
+    "sector": "Consumer Staples"
+  },
+  "PFE": {
+    "company": "Pfizer",
+    "sector": "Health Care"
+  },
+  "PG": {
+    "company": "Procter & Gamble",
+    "sector": "Consumer Staples"
+  },
+  "PLTR": {
+    "company": "Palantir Technologies",
+    "sector": "Information Technology"
+  },
+  "PM": {
+    "company": "Philip Morris International",
+    "sector": "Consumer Staples"
+  },
+  "PYPL": {
+    "company": "PayPal",
+    "sector": "Financials"
+  },
+  "QCOM": {
+    "company": "Qualcomm",
+    "sector": "Information Technology"
+  },
+  "RTX": {
+    "company": "RTX Corporation",
+    "sector": "Industrials"
+  },
+  "SBUX": {
+    "company": "Starbucks",
+    "sector": "Consumer Discretionary"
+  },
+  "SCHW": {
+    "company": "Charles Schwab Corporation",
+    "sector": "Financials"
+  },
+  "SO": {
+    "company": "Southern Company",
+    "sector": "Utilities"
+  },
+  "SPG": {
+    "company": "Simon Property Group",
+    "sector": "Real Estate"
+  },
+  "T": {
+    "company": "AT&T",
+    "sector": "Communication Services"
+  },
+  "TGT": {
+    "company": "Target Corporation",
+    "sector": "Consumer Discretionary"
+  },
+  "TMO": {
+    "company": "Thermo Fisher Scientific",
+    "sector": "Health Care"
+  },
+  "TMUS": {
+    "company": "T-Mobile US",
+    "sector": "Communication Services"
+  },
+  "TSLA": {
+    "company": "Tesla, Inc.",
+    "sector": "Consumer Discretionary"
+  },
+  "TXN": {
+    "company": "Texas Instruments",
+    "sector": "Information Technology"
+  },
+  "UBER": {
+    "company": "Uber",
+    "sector": "Industrials"
+  },
+  "UNH": {
+    "company": "UnitedHealth Group",
+    "sector": "Health Care"
+  },
+  "UNP": {
+    "company": "Union Pacific Corporation",
+    "sector": "Industrials"
+  },
+  "UPS": {
+    "company": "United Parcel Service",
+    "sector": "Industrials"
+  },
+  "USB": {
+    "company": "U.S. Bancorp",
+    "sector": "Financials"
+  },
+  "V": {
+    "company": "Visa Inc.",
+    "sector": "Financials"
+  },
+  "VZ": {
+    "company": "Verizon",
+    "sector": "Communication Services"
+  },
+  "WFC": {
+    "company": "Wells Fargo",
+    "sector": "Financials"
+  },
+  "WMT": {
+    "company": "Walmart",
+    "sector": "Consumer Staples"
+  },
+  "XOM": {
+    "company": "ExxonMobil",
+    "sector": "Energy"
+  }
+}

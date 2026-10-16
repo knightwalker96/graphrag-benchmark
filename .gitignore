@@ -1,0 +1,31 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+
+# Vector store (rebuilt from the corpus by build/data_prep/build_sec_corpus.py)
+chroma_db_*/
+
+# Built corpora — regenerated at zero API cost from data/ :
+#   build/data_prep/build_sec_corpus.py        -> datasets/sec/corpus.jsonl
+#   build/olympics/build_olympics_corpus.py    -> datasets/olympics/corpus.jsonl
+# Excluded because they exceed GitHub's 100MB per-file limit.
+datasets/sec/corpus.jsonl
+datasets/sec/documents.jsonl
+datasets/olympics/corpus.jsonl
+datasets/olympics/manifest.json
+
+# Knowledge-graph bulk. The committed index/ files are everything needed to RUN the
+# pipeline; these two are byte-for-byte derivable from the corpus and are oversized.
+pipeline3_sec/index/corpus.json
+pipeline3_sec/index/doc_content.json
+
+# OS
+.DS_Store

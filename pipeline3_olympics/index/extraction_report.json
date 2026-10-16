@@ -1,0 +1,209 @@
+{
+  "source": "data/new_dataset/corpus/corpus.jsonl",
+  "n_documents": 2951,
+  "n_event_vertices": 2187,
+  "n_distractor_docs": 764,
+  "n_games": 20,
+  "n_sports": 42,
+  "n_venues": 324,
+  "n_nations": 136,
+  "n_athlete_strings": 5335,
+  "n_edges": 26993,
+  "edges_by_relation": {
+    "event_at_games": 2187,
+    "event_in_sport": 2187,
+    "event_at_venue": 2125,
+    "won_medal": 6846,
+    "represents": 6815,
+    "medal_for_nation": 6815,
+    "games_precedes": 18
+  },
+  "n_medal_triples": 6846,
+  "group_keys_sport_games": 265,
+  "venue_date_keys": 1574,
+  "multi_hop_key_collisions": 357,
+  "multi_hop_collision_examples": [
+    [
+      "eton dorney||6-8 august",
+      [
+        "Q303623",
+        "Q2648878",
+        "Q1042705",
+        "Q526367"
+      ]
+    ],
+    [
+      "london and surrey||1 august",
+      [
+        "Q939000",
+        "Q916174"
+      ]
+    ],
+    [
+      "busan부산釜山||20-27 september",
+      [
+        "Q7400295",
+        "Q7400301",
+        "Q7400296",
+        "Q7400300",
+        "Q7400298",
+        "Q7400299",
+        "Q7400302",
+        "Q7400297"
+      ]
+    ],
+    [
+      "alexander memorial coliseum||20 july-3 august 1996",
+      [
+        "Q4951829",
+        "Q4951834",
+        "Q10719575"
+      ]
+    ],
+    [
+      "beijing national aquatics center||august 12 2008 heats august 13 2008 semifinals august 14 2008 final",
+      [
+        "Q250187",
+        "Q603505"
+      ]
+    ]
+  ],
+  "hazards": {
+    "H10_prev_next_not_a_bare_year": 69,
+    "H11_stacked_infobox_docs": 212,
+    "H12_lowercase_infobox_header": 7,
+    "H13_event_field_differs_from_title": 416,
+    "H14_win_value_is_free_text": 1044,
+    "H15_placeholder_in_medal_field": 6,
+    "H16_medal_edge_rows_that_collapse_on_upsert": 577,
+    "H1_games_field_malformed": 0,
+    "H2_games_field_disagrees_with_title": 4,
+    "H3_gold_name_concatenated": 268,
+    "H4_venue_concatenated": 143,
+    "H5_competitors_not_an_integer": 24,
+    "H6_competitors_missing": 33,
+    "H7_nations_not_an_integer": 0,
+    "H8a_both_date_and_dates": 0,
+    "H8b_no_date_at_all": 23,
+    "H9a_both_venue_and_venues": 0,
+    "H9b_no_venue_at_all": 62,
+    "H_title_unparseable": 0,
+    "distractor_docs_no_event_vertex": 764,
+    "event_infobox_not_first": 25,
+    "multi_hop_key_collisions": 357
+  },
+  "hazard_detail": {
+    "H2_games_field_disagrees_with_title": [
+      [
+        "Q7400295",
+        "Sailing at the 1988 Summer Olympics – Women's 470",
+        "1984 Summer",
+        "1988 Summer"
+      ],
+      [
+        "Q7400301",
+        "Sailing at the 1988 Summer Olympics – Star",
+        "1984 Summer",
+        "1988 Summer"
+      ],
+      [
+        "Q1133965",
+        "Badminton at the 1992 Summer Olympics – Women's singles",
+        "1996 Summer",
+        "1992 Summer"
+      ],
+      [
+        "Q3628710",
+        "Athletics at the 1988 Summer Olympics – Men's javelin throw",
+        "1992 Summer",
+        "1988 Summer"
+      ]
+    ],
+    "H5_competitors_not_an_integer": [
+      [
+        "Q110316274",
+        "23 teams"
+      ],
+      [
+        "Q110316264",
+        "19 teams"
+      ],
+      [
+        "Q47296003",
+        "24 teams"
+      ],
+      [
+        "Q47263008",
+        "22 teams"
+      ],
+      [
+        "Q586832",
+        "23 teams"
+      ],
+      [
+        "Q57083855",
+        "32 (16 pairs)"
+      ],
+      [
+        "Q942500",
+        "21 teams"
+      ],
+      [
+        "Q658077",
+        "20 teams"
+      ],
+      [
+        "Q15620701",
+        "24 teams"
+      ],
+      [
+        "Q15620726",
+        "20 teams"
+      ]
+    ],
+    "H15_placeholder_in_medal_field": [
+      [
+        "Q26212147",
+        "gold",
+        "vacant"
+      ],
+      [
+        "Q7979977",
+        "bronze",
+        "not awarded"
+      ],
+      [
+        "Q1005272",
+        "bronze",
+        "not awarded"
+      ],
+      [
+        "Q613746",
+        "bronze",
+        "not awarded"
+      ],
+      [
+        "Q2311975",
+        "silver",
+        "not awarded"
+      ],
+      [
+        "Q2311975",
+        "bronze",
+        "not awarded"
+      ]
+    ]
+  },
+  "llm_tokens": 0,
+  "artifact_bytes": {
+    "events.json": 2100675,
+    "edges_prov.json": 5455315,
+    "games.json": 3003,
+    "sports.json": 34172,
+    "venues.json": 146545,
+    "event_index.json": 301594,
+    "nations.json": 90235,
+    "doc_content.json": 9090670,
+    "ingestion_tokens.json": 341
+  }
+}

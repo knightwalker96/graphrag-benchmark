@@ -1,0 +1,263 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+​
+
+​
+
+​
+
+​
+
+FORM 8-K
+
+​
+
+CURRENT REPORT
+
+Pursuant to Section 13 OR 15(d) of The Securities Exchange Act of 1934
+
+Date of Report: July 10, 2026
+
+(Date of earliest event reported)
+
+DEERE & COMPANY
+
+(Exact name of registrant as specified in its charter)
+
+​
+
+​
+
+​
+
+​
+
+​
+
+Delaware
+
+​
+
+1-4121
+
+​
+
+36-2382580
+
+(State or other jurisdiction of incorporation)
+
+​
+
+(Commission File Number)
+
+​
+
+(IRS Employer Identification No.)
+
+One John Deere Place
+
+Moline, Illinois 61265
+
+(Address of principal executive offices and zip code)
+
+(309) 765-8000
+
+(Registrant’s telephone number, including area code)
+
+___________________________________________________
+
+(Former name or former address, if changed since last report.)
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+
+☐ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+SECURITIES REGISTERED PURSUANT TO SECTION 12(b) OF THE ACT:
+
+​
+
+​
+
+​
+
+​
+
+​
+
+Title of each class
+
+​
+
+Trading symbol
+
+​
+
+Name of each exchange on which registered
+
+Common stock, $1 par value
+
+​
+
+DE
+
+​
+
+New York Stock Exchange
+
+6.55% Debentures Due 2028
+
+​
+
+DE28
+
+​
+
+New York Stock Exchange
+
+​
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+​
+
+​
+
+​
+
+​
+
+Item 8.01Other Events.
+
+On July 10, 2026, Deere Funding Canada Corporation (the “Issuer”) agreed to sell $300,000,000 aggregate principal amount of 4.850% Notes due July 15, 2031 (the “Notes”). The Issuer is an indirect, wholly owned subsidiary of Deere & Company (the “Guarantor”). The Notes will be fully and unconditionally guaranteed (the “Guarantee” and, together with the Notes, the “Securities”) on a senior unsecured basis by the Guarantor. The Guarantee will be the Guarantor’s senior unsecured obligation and will rank equally in right of payment with all of the Guarantor’s other senior unsecured indebtedness from time to time outstanding. In connection with the issuance and the sale of the Securities, on July 10, 2026, the Issuer and the Guarantor entered into a terms agreement (the “Terms Agreement”) with Barclays Capital Inc., Credit Agricole Securities (USA) Inc., Deutsche Bank Securities Inc., RBC Capital Markets, LLC and TD Securities (USA) LLC, as representatives of the underwriters named therein. Interest on the Notes is payable on January 15 and July 15 of each year, beginning on January 15, 2027. The Notes are unsecured and have the same rank as the Issuer’s other unsecured and unsubordinated debt. The foregoing description of the Terms Agreement is qualified in its entirety by reference to the text of the Terms Agreement, a copy of which is filed herewith as Exhibit 1.1.
+
+The Securities were issued pursuant to an Indenture, dated as of June 15, 2020, among the Issuer, the Guarantor and The Bank of New York Mellon. The Issuer may redeem the Notes in whole or in part, upon at least 15 days’ notice but not more than 45 days’ notice, at any time prior to maturity at the applicable redemption price described in the Final Prospectus Supplement dated July 10, 2026 (the “Final Prospectus Supplement”), as filed with the Securities and Exchange Commission (the “SEC”) on July 13, 2026. In addition, the Issuer or the Guarantor may redeem the Notes in whole, but not in part, at each one’s option, at a redemption price equal to 100% of the principal amount thereof plus unpaid interest accrued to, but excluding, the redemption date, in the event of certain developments affecting Canada or other applicable taxing jurisdictions.
+
+The Securities were registered under the Securities Act of 1933, as amended, pursuant to the Issuer’s and Guarantor’s Registration Statement on Form S-3 (Registration Nos. 333-296865 and 333-296865-01), as filed with the SEC on June 17, 2026. The Issuer and the Guarantor have filed with the SEC a Preliminary Prospectus Supplement dated July 10, 2026, a Free Writing Prospectus dated July 10, 2026, and the Final Prospectus Supplement in connection with the public offering of the Securities.
+
+The form of the Notes is filed as Exhibit 4.1 to this Current Report on Form 8-K. A copy of the opinion of Kirkland & Ellis LLP, counsel to the Issuer and the Guarantor, relating to the legality of the Notes, is filed as Exhibit 5.1 to this Current Report on Form 8-K. A copy of the opinion of Borden Ladner Gervais LLP, Canadian counsel to the Issuer, relating to the legality of the Notes, is filed as Exhibit 5.2 to this Current Report on Form 8-K. The Issuer and the Guarantor incorporate by reference the exhibits filed herewith into the Registration Statement pursuant to which the Securities are registered.
+
+Item 9.01Financial Statements and Exhibits
+
+​
+
+(d) Exhibits
+
+Number
+
+Description of Exhibit
+
+1.1
+
+Terms Agreement, dated July 10, 2026, among the Issuer, the Guarantor, and Barclays Capital Inc., Credit Agricole Securities (USA) Inc., Deutsche Bank Securities Inc., RBC Capital Markets, LLC and TD Securities (USA) LLC, as representatives of the underwriters named therein
+
+4.1
+
+Form of 4.850% Note due 2031
+
+5.1
+
+Opinion of Kirkland & Ellis LLP
+
+5.2
+
+Opinion of Borden Ladner Gervais LLP
+
+23.1
+
+Consent of Kirkland & Ellis LLP (contained in Exhibit 5.1)
+
+23.2
+
+Consent of Borden Ladner Gervais LLP (contained in Exhibit 5.2)
+
+104
+
+Cover Page Interactive Data File (the cover page XBRL tags are imbedded in the Inline XBRL document)
+
+​
+
+​
+
+2
+
+Signatures
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+
+​
+
+​
+
+​
+
+​
+
+DEERE & COMPANY
+
+​
+
+​
+
+​
+
+​
+
+​
+
+Dated: July 15, 2026
+
+By:
+
+/s/ Julie M. O. Rosales
+
+​
+
+​
+
+Julie M. O. Rosales
+
+​
+
+​
+
+Corporate Secretary
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+3

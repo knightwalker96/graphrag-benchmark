@@ -1,0 +1,90 @@
+{
+  "what": "the SEC corpus SEC regression after the Olympics corpus shared-code changes",
+  "input": "results/sec/bench_test_initial_run1.json (unmodified initial batch, 50 Q)",
+  "reference": "results/sec/eval_initial_run1.json",
+  "shared_code_changed": [
+    "config.py (added an `olympics` SYSTEM_PROMPT/MAX_TOKENS branch)",
+    "data/datasets.py (added load_olympics)",
+    "pipeline{1,2}_llm_only/basic_rag + pipeline3_sec/pipeline.py (preserve_answer now ('sec','olympics'); sec still True)",
+    "build/run_benchmark.py (SPLITS += olympics_*, p3_module param defaulting to the SEC path, gold_doc_ids/qtype on each row)",
+    "build/evaluate.py (judge prompt parameterized by --domain, default 'sec'; retrieval P/R@k added)"
+  ],
+  "deterministic_checks": {
+    "sec_system_prompt_tokens": {
+      "recorded_in_initial_rows": 222,
+      "recomputed_now": 222,
+      "identical": true
+    },
+    "sec_judge_prompt": "STRICT_TEMPLATE.format(**DOMAINS['sec']) is byte-identical to the pre-change literal (asserted)",
+    "per_item_bertscore_differing": 0,
+    "per_item_bertscore_total": 150
+  },
+  "pipelines": {
+    "llm_only": {
+      "strict_pass_rate": {
+        "initial": 0.12,
+        "rerun": 0.12
+      },
+      "graded_quality_mean": {
+        "initial": 0.2586,
+        "rerun": 0.2454
+      },
+      "bertscore_f1_mean": {
+        "initial": 0.2227,
+        "rerun": 0.2227
+      },
+      "avg_total_inference_tokens": {
+        "initial": 287.7,
+        "rerun": 287.7
+      }
+    },
+    "basic_rag": {
+      "strict_pass_rate": {
+        "initial": 0.3,
+        "rerun": 0.32
+      },
+      "graded_quality_mean": {
+        "initial": 0.4252,
+        "rerun": 0.4252
+      },
+      "bertscore_f1_mean": {
+        "initial": 0.1834,
+        "rerun": 0.1834
+      },
+      "avg_total_inference_tokens": {
+        "initial": 4104.8,
+        "rerun": 4104.8
+      }
+    },
+    "graphrag": {
+      "strict_pass_rate": {
+        "initial": 0.52,
+        "rerun": 0.52
+      },
+      "graded_quality_mean": {
+        "initial": 0.6056,
+        "rerun": 0.6124
+      },
+      "bertscore_f1_mean": {
+        "initial": 0.3312,
+        "rerun": 0.3312
+      },
+      "avg_total_inference_tokens": {
+        "initial": 2707.6,
+        "rerun": 2707.6
+      }
+    }
+  },
+  "strict_pass_flips": [
+    {
+      "id": "EQ24",
+      "pipeline": "basic_rag",
+      "initial": false,
+      "rerun": true,
+      "reference": "+$0.12, from $1.51 to $1.63/share",
+      "answer": "$0.12, to $1.63",
+      "cause": "judge nondeterminism on a borderline numeric-format item; the SEC judge prompt is byte-identical, so this is not a code effect"
+    }
+  ],
+  "verdict": "BERTScore and every token count reproduce EXACTLY (0/150 per-item differences). Strict pass reproduces exactly for P1 (0.12) and P3 (0.52); P2 reads 0.32 against 0.30, a one-question judge flip on EQ24 shown above, inside the +-0.019-0.025 run spread documented in RESULTS_SEC.md. No shared-code change moved a SEC result."
+}

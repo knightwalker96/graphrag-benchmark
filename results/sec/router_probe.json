@@ -1,0 +1,599 @@
+{
+ "tag": "final",
+ "compare_fix": false,
+ "route_force": "",
+ "routing_accuracy": {
+  "n_labelled": 100,
+  "overall": 1.0,
+  "by_gold_route": {
+   "aggregation": {
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "produced": {
+     "aggregation": 20
+    }
+   },
+   "bridge": {
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "produced": {
+     "bridge": 20
+    }
+   },
+   "compare": {
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "produced": {
+     "compare": 20
+    }
+   },
+   "lookup": {
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "produced": {
+     "lookup": 20
+    }
+   },
+   "temporal": {
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "produced": {
+     "temporal": 20
+    }
+   }
+  }
+ },
+ "heldout50_route_distribution": {
+  "lookup": 16,
+  "bridge": 4,
+  "aggregation": 24,
+  "compare": 3,
+  "temporal": 3
+ },
+ "paraphrase_stability": {
+  "n_paraphrases": 408,
+  "n_originals": 150,
+  "stable": 408,
+  "rate": 1.0,
+  "by_rule": {
+   "agg_auditor.imperative": {
+    "stable": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "agg_auditor.name_the": {
+    "stable": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "agg_auditor.passive2active": {
+    "stable": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "agg_sector.belong": {
+    "stable": 5,
+    "n": 5,
+    "rate": 1.0
+   },
+   "agg_sector.classified": {
+    "stable": 5,
+    "n": 5,
+    "rate": 1.0
+   },
+   "agg_sector.imperative": {
+    "stable": 5,
+    "n": 5,
+    "rate": 1.0
+   },
+   "agg_sector_auditor.among": {
+    "stable": 8,
+    "n": 8,
+    "rate": 1.0
+   },
+   "agg_sector_auditor.expand": {
+    "stable": 8,
+    "n": 8,
+    "rate": 1.0
+   },
+   "agg_supplier.imperative": {
+    "stable": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "agg_supplier.listform": {
+    "stable": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "agg_supplier.reorder": {
+    "stable": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "bridge_auditor.clause_reorder": {
+    "stable": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "bridge_auditor.possessive": {
+    "stable": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "bridge_auditor.share": {
+    "stable": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "bridge_director.besides": {
+    "stable": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "bridge_director.person_first": {
+    "stable": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "bridge_supplier.possessive": {
+    "stable": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "bridge_supplier.reorder": {
+    "stable": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "compare.between": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "compare.had2reported": {
+    "stable": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "compare.posted": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "compare.reported2had": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "compare.whose": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "generic.besides_reorder": {
+    "stable": 1,
+    "n": 1,
+    "rate": 1.0
+   },
+   "generic.dash_clause_period": {
+    "stable": 1,
+    "n": 1,
+    "rate": 1.0
+   },
+   "generic.dash_clause_swap": {
+    "stable": 15,
+    "n": 15,
+    "rate": 1.0
+   },
+   "generic.fy_expand": {
+    "stable": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "generic.listall2give": {
+    "stable": 1,
+    "n": 1,
+    "rate": 1.0
+   },
+   "generic.possessive2of": {
+    "stable": 5,
+    "n": 5,
+    "rate": 1.0
+   },
+   "generic.serves_reorder": {
+    "stable": 1,
+    "n": 1,
+    "rate": 1.0
+   },
+   "generic.tell_me": {
+    "stable": 30,
+    "n": 30,
+    "rate": 1.0
+   },
+   "generic.which2list": {
+    "stable": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "generic.whichtwo_reorder": {
+    "stable": 1,
+    "n": 1,
+    "rate": 1.0
+   },
+   "lookup_auditor.firm": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "lookup_auditor.independent": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "lookup_auditor.passive": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "lookup_auditor.possessive": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "lookup_revenue.howmuch": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "lookup_revenue.imperative": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "lookup_revenue.terse": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "temporal.generic_order": {
+    "stable": 21,
+    "n": 21,
+    "rate": 1.0
+   },
+   "temporal.imperative": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "temporal.sequence": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "temporal.whichfirst": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   }
+  },
+  "by_shape": {
+   "agg_auditor": {
+    "stable": 16,
+    "n": 16,
+    "rate": 1.0
+   },
+   "agg_sector": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "agg_sector_auditor": {
+    "stable": 16,
+    "n": 16,
+    "rate": 1.0
+   },
+   "agg_supplier": {
+    "stable": 9,
+    "n": 9,
+    "rate": 1.0
+   },
+   "bridge_shared_auditor": {
+    "stable": 48,
+    "n": 48,
+    "rate": 1.0
+   },
+   "bridge_shared_director": {
+    "stable": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "bridge_shared_supplier": {
+    "stable": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "compare_net_income": {
+    "stable": 52,
+    "n": 52,
+    "rate": 1.0
+   },
+   "compare_revenue": {
+    "stable": 28,
+    "n": 28,
+    "rate": 1.0
+   },
+   "lookup_auditor": {
+    "stable": 40,
+    "n": 40,
+    "rate": 1.0
+   },
+   "lookup_revenue": {
+    "stable": 30,
+    "n": 30,
+    "rate": 1.0
+   },
+   "temporal_order": {
+    "stable": 80,
+    "n": 80,
+    "rate": 1.0
+   },
+   "tierA": {
+    "stable": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "tierB": {
+    "stable": 17,
+    "n": 17,
+    "rate": 1.0
+   },
+   "tierC": {
+    "stable": 20,
+    "n": 20,
+    "rate": 1.0
+   },
+   "tierD": {
+    "stable": 6,
+    "n": 6,
+    "rate": 1.0
+   }
+  },
+  "failures": [],
+  "rate_tune120": 1.0,
+  "rate_holdout30": 1.0
+ },
+ "cv": {
+  "folds": 5,
+  "mean_acc": 1.0,
+  "per_fold": [
+   {
+    "fold": 0,
+    "n": 24,
+    "correct": 24,
+    "acc": 1.0,
+    "patterns_disabled": []
+   },
+   {
+    "fold": 1,
+    "n": 23,
+    "correct": 23,
+    "acc": 1.0,
+    "patterns_disabled": []
+   },
+   {
+    "fold": 2,
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "patterns_disabled": []
+   },
+   {
+    "fold": 3,
+    "n": 17,
+    "correct": 17,
+    "acc": 1.0,
+    "patterns_disabled": []
+   },
+   {
+    "fold": 4,
+    "n": 16,
+    "correct": 16,
+    "acc": 1.0,
+    "patterns_disabled": []
+   }
+  ],
+  "pattern_provenance": {
+   "AGG_RE": [
+    "pre150"
+   ],
+   "BRIDGE_RE": [
+    "pre150"
+   ],
+   "COMPARE_RE": [
+    "pre150"
+   ],
+   "BINARY_COMPARE_RE": [
+    "SQ041",
+    "SQ042",
+    "SQ043",
+    "SQ044",
+    "SQ045",
+    "SQ046",
+    "SQ047",
+    "SQ048",
+    "SQ049",
+    "SQ050",
+    "SQ051",
+    "SQ052",
+    "SQ053",
+    "SQ054",
+    "SQ055",
+    "SQ056",
+    "SQ057",
+    "SQ058",
+    "SQ059",
+    "SQ060"
+   ],
+   "COMPARE_METRIC_RE": [
+    "SQ041",
+    "SQ042",
+    "SQ043",
+    "SQ044",
+    "SQ045",
+    "SQ046",
+    "SQ047",
+    "SQ048",
+    "SQ049",
+    "SQ050",
+    "SQ051",
+    "SQ052",
+    "SQ053",
+    "SQ054",
+    "SQ055",
+    "SQ056",
+    "SQ057",
+    "SQ058",
+    "SQ059",
+    "SQ060"
+   ],
+   "BRIDGE_SHARED_RE": [
+    "SQ021",
+    "SQ022",
+    "SQ023",
+    "SQ024",
+    "SQ025",
+    "SQ026",
+    "SQ027",
+    "SQ028",
+    "SQ029",
+    "SQ030",
+    "SQ031",
+    "SQ032",
+    "SQ033",
+    "SQ034",
+    "SQ035",
+    "SQ036",
+    "SQ037",
+    "SQ038",
+    "SQ039",
+    "SQ040"
+   ],
+   "BRIDGE_REL_RE": [
+    "SQ021",
+    "SQ022",
+    "SQ023",
+    "SQ024",
+    "SQ025",
+    "SQ026",
+    "SQ027",
+    "SQ028",
+    "SQ029",
+    "SQ030",
+    "SQ031",
+    "SQ032",
+    "SQ033",
+    "SQ034",
+    "SQ035",
+    "SQ036",
+    "SQ037",
+    "SQ038",
+    "SQ039",
+    "SQ040"
+   ],
+   "TEMPORAL_RE": [
+    "pre150"
+   ],
+   "TEMPORAL_EXT_RE": [
+    "SQ081",
+    "SQ082",
+    "SQ083",
+    "SQ084",
+    "SQ085",
+    "SQ086",
+    "SQ087",
+    "SQ088",
+    "SQ089",
+    "SQ090",
+    "SQ091",
+    "SQ092",
+    "SQ093",
+    "SQ094",
+    "SQ095",
+    "SQ096",
+    "SQ097",
+    "SQ098",
+    "SQ099",
+    "SQ100"
+   ]
+  }
+ },
+ "cv_leave_one_route_out": {
+  "mean_acc": 0.8,
+  "per_route": [
+   {
+    "held_out_route": "aggregation",
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "patterns_disabled": [],
+    "n_para": 61,
+    "para_stable": 61,
+    "para_rate": 1.0
+   },
+   {
+    "held_out_route": "bridge",
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "patterns_disabled": [
+     "BRIDGE_SHARED_RE",
+     "BRIDGE_REL_RE"
+    ],
+    "n_para": 64,
+    "para_stable": 0,
+    "para_rate": 0.0
+   },
+   {
+    "held_out_route": "compare",
+    "n": 20,
+    "correct": 0,
+    "acc": 0.0,
+    "patterns_disabled": [
+     "BINARY_COMPARE_RE",
+     "COMPARE_METRIC_RE"
+    ],
+    "n_para": 80,
+    "para_stable": 59,
+    "para_rate": 0.7375
+   },
+   {
+    "held_out_route": "lookup",
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "patterns_disabled": [],
+    "n_para": 70,
+    "para_stable": 70,
+    "para_rate": 1.0
+   },
+   {
+    "held_out_route": "temporal",
+    "n": 20,
+    "correct": 20,
+    "acc": 1.0,
+    "patterns_disabled": [
+     "TEMPORAL_EXT_RE"
+    ],
+    "n_para": 80,
+    "para_stable": 20,
+    "para_rate": 0.25
+   }
+  ]
+ }
+}

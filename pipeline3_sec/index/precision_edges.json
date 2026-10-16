@@ -1,0 +1,1340 @@
+[
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "abbvie (abbv)",
+    "relation": "competitor_of",
+    "target": "botox competitors",
+    "evidence": ""
+  },
+  {
+    "source": "broadcom (avgo)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "broadcom (avgo)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "boeing (ba)",
+    "relation": "competitor_of",
+    "target": "airbus and entrants from china",
+    "evidence": ""
+  },
+  {
+    "source": "boeing (ba)",
+    "relation": "competitor_of",
+    "target": "bae systems and airbus",
+    "evidence": ""
+  },
+  {
+    "source": "bank of america (bac)",
+    "relation": "competitor_of",
+    "target": "intel, nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "bank of america (bac)",
+    "relation": "competitor_of",
+    "target": "tsmc, globalfoundries",
+    "evidence": ""
+  },
+  {
+    "source": "amazon (amzn)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "amazon (amzn)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "booking holdings (bkng)",
+    "relation": "competitor_of",
+    "target": "alphabet",
+    "evidence": ""
+  },
+  {
+    "source": "booking holdings (bkng)",
+    "relation": "competitor_of",
+    "target": "kayak",
+    "evidence": ""
+  },
+  {
+    "source": "booking holdings (bkng)",
+    "relation": "competitor_of",
+    "target": "opentable",
+    "evidence": ""
+  },
+  {
+    "source": "blackrock (blk)",
+    "relation": "competitor_of",
+    "target": "intel, nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "blackrock (blk)",
+    "relation": "competitor_of",
+    "target": "tsmc, globalfoundries",
+    "evidence": ""
+  },
+  {
+    "source": "berkshire hathaway (class b) (brk.b)",
+    "relation": "competitor_of",
+    "target": "boeing and airbus",
+    "evidence": ""
+  },
+  {
+    "source": "cvs health (cvs)",
+    "relation": "competitor_of",
+    "target": "pbms",
+    "evidence": ""
+  },
+  {
+    "source": "walt disney company (the) (dis)",
+    "relation": "competitor_of",
+    "target": "other licensors and creators of ip",
+    "evidence": ""
+  },
+  {
+    "source": "walt disney company (the) (dis)",
+    "relation": "competitor_of",
+    "target": "other dtc streaming services",
+    "evidence": ""
+  },
+  {
+    "source": "walt disney company (the) (dis)",
+    "relation": "competitor_of",
+    "target": "mvpds",
+    "evidence": ""
+  },
+  {
+    "source": "fedex (fdx)",
+    "relation": "competitor_of",
+    "target": "united parcel service (\u201cups\u201d)",
+    "evidence": ""
+  },
+  {
+    "source": "fedex (fdx)",
+    "relation": "competitor_of",
+    "target": "dhl",
+    "evidence": ""
+  },
+  {
+    "source": "fedex (fdx)",
+    "relation": "competitor_of",
+    "target": "amazon.com",
+    "evidence": ""
+  },
+  {
+    "source": "general dynamics (gd)",
+    "relation": "competitor_of",
+    "target": "gulfstream aerospace",
+    "evidence": ""
+  },
+  {
+    "source": "general dynamics (gd)",
+    "relation": "competitor_of",
+    "target": "jet aviation",
+    "evidence": ""
+  },
+  {
+    "source": "goldman sachs (gs)",
+    "relation": "competitor_of",
+    "target": "intel, nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "goldman sachs (gs)",
+    "relation": "competitor_of",
+    "target": "tsmc, globalfoundries",
+    "evidence": ""
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "competitor_of",
+    "target": "broadcom",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "garmin",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "l3 harris",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "rolls royce",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "rtx",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "safran",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "thales",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "johnson controls",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "schneider electric",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "siemens",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "clariant",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "flowserve",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "topsoe",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "dematic",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "emerson electric",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "itron",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "msa safety",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "rockwell automation",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "te connectivity",
+    "evidence": ""
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "competitor_of",
+    "target": "zebra",
+    "evidence": ""
+  },
+  {
+    "source": "intuit (intu)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "intuit (intu)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "johnson & johnson and medtronic",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "beijing surgerii robotics",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "cmr surgical",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "distalmotion sa",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "johnson & johnson",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "karl storz se & kg",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "medicaroid",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "medtronic",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "meerecompany",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "noah medical",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "shandong weigao medical polymer",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "shanghai microport medbot (group)",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "shenzhen edge medical",
+    "evidence": ""
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "competitor_of",
+    "target": "ss innovations international",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "pepsico",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "nestl\u00e9 s.a",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "keurig dr pepper",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "danone s.a",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "suntory beverage & food",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "anheuser-busch inbev",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "kirin",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "heineken n.v",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "diageo",
+    "evidence": ""
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "competitor_of",
+    "target": "red bull gmbh",
+    "evidence": ""
+  },
+  {
+    "source": "medtronic (mdt)",
+    "relation": "competitor_of",
+    "target": "intel, nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "metlife (met)",
+    "relation": "competitor_of",
+    "target": "foreign insurance operations of large u.s. insurers",
+    "evidence": ""
+  },
+  {
+    "source": "meta platforms (meta)",
+    "relation": "competitor_of",
+    "target": "apple",
+    "evidence": ""
+  },
+  {
+    "source": "meta platforms (meta)",
+    "relation": "competitor_of",
+    "target": "alphabet",
+    "evidence": ""
+  },
+  {
+    "source": "microsoft (msft)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "microsoft (msft)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "the coca-cola",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "the campbell\u2019s",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "conagra brands",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "hormel foods",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "keurig dr pepper",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "the kraft heinz",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "link snacks",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "mars",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "mondel\u0113z international",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "monster beverage",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "nestl\u00e9 s.a",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "primo brands",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "red bull gmbh",
+    "evidence": ""
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "competitor_of",
+    "target": "utz brands",
+    "evidence": ""
+  },
+  {
+    "source": "pfizer (pfe)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "pfizer (pfe)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "rtx corporation (rtx)",
+    "relation": "competitor_of",
+    "target": "intel, nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "at&t (t)",
+    "relation": "competitor_of",
+    "target": "am\u00e9rica m\u00f3vil",
+    "evidence": ""
+  },
+  {
+    "source": "at&t (t)",
+    "relation": "competitor_of",
+    "target": "voip providers",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "at&t (\u201cat&t\u201d)",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "verizon communications (\u201cverizon\u201d)",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "charter communications",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "comcast",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "echostar (\u201cechostar\u201d)",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "cox communications",
+    "evidence": ""
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "competitor_of",
+    "target": "altice usa",
+    "evidence": ""
+  },
+  {
+    "source": "tesla, inc. (tsla)",
+    "relation": "competitor_of",
+    "target": "intel, nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "texas instruments (txn)",
+    "relation": "competitor_of",
+    "target": "intel",
+    "evidence": ""
+  },
+  {
+    "source": "texas instruments (txn)",
+    "relation": "competitor_of",
+    "target": "nvidia",
+    "evidence": ""
+  },
+  {
+    "source": "united parcel service (ups)",
+    "relation": "competitor_of",
+    "target": "amazon.com and its affiliates",
+    "evidence": ""
+  },
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "uses_supplier",
+    "target": "tsmc",
+    "evidence": ""
+  },
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "uses_supplier",
+    "target": "umc",
+    "evidence": ""
+  },
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "uses_supplier",
+    "target": "samsung electronics",
+    "evidence": ""
+  },
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "uses_supplier",
+    "target": "globalfoundries",
+    "evidence": ""
+  },
+  {
+    "source": "broadcom (avgo)",
+    "relation": "uses_supplier",
+    "target": "tsmc",
+    "evidence": ""
+  },
+  {
+    "source": "broadcom (avgo)",
+    "relation": "uses_supplier",
+    "target": "tsmc",
+    "evidence": ""
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "uses_supplier",
+    "target": "tsmc",
+    "evidence": ""
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "uses_supplier",
+    "target": "globalfoundries",
+    "evidence": ""
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "uses_supplier",
+    "target": "samsung",
+    "evidence": ""
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "uses_supplier",
+    "target": "umc",
+    "evidence": ""
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "uses_supplier",
+    "target": "smic",
+    "evidence": ""
+  },
+  {
+    "source": "netflix, inc. (nflx)",
+    "relation": "uses_supplier",
+    "target": "amazon web services",
+    "evidence": ""
+  },
+  {
+    "source": "nvidia (nvda)",
+    "relation": "uses_supplier",
+    "target": "taiwan semiconductor manufacturing, or tsmc",
+    "evidence": ""
+  },
+  {
+    "source": "abbott laboratories (abt)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "In October 2025, the Audit Committee appointed Ernst & Young LLP to act as auditors for 2026."
+  },
+  {
+    "source": "advanced micro devices (amd)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit and Finance Committee has selected Ernst & Young LLP as our independent registered public accounting firm for fiscal year 2026 and has further directed that management submit the selection of the independent registered public accounting firm for ratification by our stockholders at the annual meeting."
+  },
+  {
+    "source": "american international group (aig)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "PwC, the Audit Committee-appointed independent registered public accounting firm for the year ended December 31, 2025, is responsible for expressing opinions on our consolidated financial statements and on our internal control over financial reporting based on its audits."
+  },
+  {
+    "source": "amgen (amgn)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has selected Ernst & Young LLP, or EY, as our independent registered public accountants for the fiscal year ending December 31, 2026, and the Board has directed that management submit this selection for ratification by the stockholders at our 2026 Annual Meeting of Stockholders, or Annual Meeting."
+  },
+  {
+    "source": "apple inc. (aapl)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has re-appointed Ernst & Young LLP as Apple\u2019s independent registered public accounting firm and as auditors of Apple\u2019s consolidated financial statements for 2026."
+  },
+  {
+    "source": "abbvie (abbv)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "RATIFICATION OF ERNST & YOUNG LLP AS ABBVIE\u2019S INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM"
+  },
+  {
+    "source": "adobe inc. (adbe)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit Committee appointed KPMG LLP as our independent registered public accounting firm for the fiscal year ending on November 27, 2026 and urges you to vote for ratification of KPMG\u2019s appointment."
+  },
+  {
+    "source": "accenture (acn)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "Shareholders are being asked to vote to ratify, in a non-binding vote, the appointment of our independent registered public accounting firm, KPMG, and also to vote to authorize, in a binding vote, the Board, acting through the Audit Committee, to determine KPMG\u2019s remuneration."
+  },
+  {
+    "source": "broadcom (avgo)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "Our Board recommends a vote FOR the ratification of appointment of PricewaterhouseCoopers LLP as the independent registered public accounting firm of Broadcom for fiscal 2026."
+  },
+  {
+    "source": "boeing (ba)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "Shareholders are being asked to ratify the selection of Deloitte & Touche LLP (Deloitte), an independent registered public accounting firm, to serve as our independent auditor for 2026."
+  },
+  {
+    "source": "american express (axp)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit and Compliance Committee has sole authority to appoint and replace the Company\u2019s independent registered public accounting firm, which reports directly to the Audit and Compliance Committee, and is directly responsible for such firm\u2019s compensation and oversight of its work. The Audit and Compliance Committee conducted its annual evaluation of PricewaterhouseCoopers LLP (PwC) and, after assessing the performance and independence of PwC, the Audit and Compliance Committee believes that retaining PwC is in the best interests of the Company. Accordingly, the Audit and Compliance Committee reappointed PwC as our independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "bank of america (bac)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Committee has appointed PwC as our independent registered public accounting firm to audit the 2026 consolidated financial statements of Bank of America Corporation and its subsidiaries."
+  },
+  {
+    "source": "american tower (amt)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee has selected, and the Audit Committee and the Board of Directors recommend stockholder ratification of, Deloitte & Touche LLP as our independent registered public accounting firm for the year ending December 31, 2026."
+  },
+  {
+    "source": "amazon (amzn)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has appointed, and, as a matter of good corporate governance, is requesting ratification by the shareholders of the appointment of, the registered public accounting firm of Ernst & Young LLP (\u201cEY\u201d) to serve as independent auditors for the fiscal year ending December 31, 2026."
+  },
+  {
+    "source": "booking holdings (bkng)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "Deloitte has audited our consolidated financial statements since 1997."
+  },
+  {
+    "source": "blackrock (blk)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "At its meeting on March 18, 2026, the Audit Committee appointed Deloitte to serve as BlackRock\u2019s independent registered public accounting firm for the 2026 fiscal year."
+  },
+  {
+    "source": "bank of new york mellon (bny)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "We are asking stockholders to ratify the Audit Committee\u2019s appointment of KPMG LLP (\u201cKPMG\u201d) as our independent registered public accountants for the year ending December 31, 2026."
+  },
+  {
+    "source": "berkshire hathaway (class b) (brk.b)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "Deloitte & Touche LLP (\u201cDeloitte\u201d) served as the Corporation\u2019s principal independent public accountants for 2025."
+  },
+  {
+    "source": "citigroup (c)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit Committee has selected KPMG LLP (KPMG) as the independent registered public accounting firm of Citi for 2026."
+  },
+  {
+    "source": "bristol myers squibb (bmy)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "Our Board of Directors, upon the recommendation of its Audit Committee, has ratified the Audit Committee\u2019s appointment of Deloitte & Touche LLP (\u201cD&T\u201d) as our independent registered public accounting firm for the year 2026."
+  },
+  {
+    "source": "caterpillar inc. (cat)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "Shareholders are being asked to approve the ratification of the Audit Committee\u2019s appointment of PricewaterhouseCoopers LLP (PwC) as the company\u2019s independent auditor for 2026."
+  },
+  {
+    "source": "colgate-palmolive (cl)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "We ask that you ratify the Audit Committee\u2019s selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "comcast (cmcsa)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "Our Board unanimously recommends that shareholders vote \u201cFOR\u201d ratifying the appointment of Deloitte & Touche LLP as our independent auditors."
+  },
+  {
+    "source": "capital one (cof)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "For 2026, the Audit Committee has appointed Ernst & Young LLP (\u201cErnst & Young\u201d) as Capital One\u2019s independent registered public accounting firm."
+  },
+  {
+    "source": "conocophillips (cop)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has appointed EY to serve as ConocoPhillips\u2019 independent registered public accounting firm for fiscal year 2026."
+  },
+  {
+    "source": "costco (cost)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "Subject to ratification by the shareholders at the Annual Meeting, the Board, upon recommendation of the Audit Committee, has selected KPMG to audit the consolidated financial statements of the Company and its subsidiaries for the fiscal year ending August 30, 2026."
+  },
+  {
+    "source": "salesforce (crm)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has appointed Ernst & Young LLP (\u201cEY\u201d) as our independent registered public accounting firm for the fiscal year ending January 31, 2027."
+  },
+  {
+    "source": "cisco (csco)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "Cisco is asking the stockholders to ratify the Audit Committee\u2019s appointment of PricewaterhouseCoopers LLP (\u201cPwC\u201d) as Cisco\u2019s independent registered public accounting firm for the fiscal year ending July 25, 2026."
+  },
+  {
+    "source": "chevron corporation (cvx)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has selected PricewaterhouseCoopers LLP (\u201cPwC\u201d) as Chevron\u2019s independent registered public accounting firm for 2026, and your Board has endorsed this appointment."
+  },
+  {
+    "source": "deere & company (de)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Review Committee has approved the selection of Deloitte & Touche LLP to serve as the independent registered public accounting firm for fiscal 2026 and the current lead auditor, Claudine Hollack, was appointed in 2021."
+  },
+  {
+    "source": "danaher corporation (dhr)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee on behalf of Danaher has selected Ernst & Young LLP, an international accounting firm of independent certified public accountants, to act as the independent registered public accounting firm for Danaher and its consolidated subsidiaries for the year ending December 31, 2026."
+  },
+  {
+    "source": "cvs health (cvs)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has reviewed and discussed the audited financial statements with management; The Audit Committee has discussed with Ernst & Young, CVS Health\u2019s independent registered public accounting firm, the matters required to be discussed under the applicable requirements of the Public Company Accounting Oversight Board (the \u201cPCAOB\u201d) and the SEC; The Audit Committee has received the written disclosures and the letter from Ernst & Young pursuant to applicable requirements of the PCAOB regarding Ernst & Young\u2019s communications with the Audit Committee concerning independence, and has discussed with Ernst & Young its independence from the Company; and aluation of Ernst & Young, the members of the Audit Committee believe that the continued retention of Ernst & Young to serve as the Company\u2019s independent registered public accounting firm is in the best interests of the Company and its stockholders. Among the factors considered by the Audit Committee in reaching this recommendation are the following: the quality of Ernst & Young\u2019s staff, work and quality control; its capability and technical expertise, given the complexity of the Company\u2019s business; its independence from the Company; the quality and candor of its communications with the Company and the Audit Committee; and the benefits of its tenure as auditors, including enhanced audit quality and competitive fees. 2026 Proxy Statement 39 Back to Contents All audit services, audit-related services, tax services and other services provided to the Company by Ernst & Young were pre-approved by the Audit Committee, and the Audit Committee is ultimately responsible for audit fee negotiations associated with the retention of Ernst & Young. The Audit Committee has considered whether Ernst & Young\u2019s provision of services is compatible with maintaining Ernst & Young\u2019s independence. The Audit Committee\u2019s charter requires pre-approval of the audit and non-audit services to be provided by the Company\u2019s independent registered public accounting firm. The Audit Committee reviews and approves Ernst & Young\u2019s services on an annual basis. During the year, Ernst & Young also may request pre-approval of additional services, and the Audit Committee considers such requests for approval and approves them as circumstances warrant. and the letter from Ernst & Young pursuant to applicable requirements of the PCAOB regarding Ernst & Young\u2019s communications with the Audit Committee concerning independence, and has discussed with Ernst & Young its independence from the Company; and Based on the review and discussions referred to above and relying thereon, the Audit Committee recommended to the Board of Directors that the audited financial statements be included in CVS Health\u2019s Annual Report on Form 10-K for the fiscal year ended December 31, 2025, for filing with the SEC. Fernando Aguirre (Chair) Jeffrey R. Balser, M.D. Anne M. Finucane Larry M. Robbins Guy P. Sansone Independent Registered Public Accounting Firm Independence and Fee Approval Policy The Audit Committee is directly responsible for the appointment, compensation, retention and oversight of the independent registered public accounting firm. The Audit Committee has retained Ernst & Young as CVS Health\u2019s external audit firm since September 2007. In order to assure continuing external auditor independence, the Audit Committee periodically considers whether there should be a rotation of the audit firm. Further, in conjunction with the mandated rotation of the external audit firm\u2019s lead engagement partner, the Audit Committee and its Chair were directly involved in the selection of Ernst & Young\u2019s lead engagement partner, who assumed her role in February 2022. Based on its most recent evaluation of Ernst & Young, the members of the Audit Committee believe that the continued retention of Ernst & Young to serve as the Company\u2019s independent registered public accounting firm is in the best interests of the Company and its stockholders. s and approves Ernst & Young\u2019s services on an annual basis. During the year, Ernst & Young also may request pre-approval of additional services, and the Audit Committee considers such requests for approval and approves them as circumstances warrant. The Audit Committee charter authorizes the Audit Committee to delegate to one or more of its members authority to pre-approve permitted services, as long as such pre-approvals are reported to the full Audit Committee at its next meeting. Representatives of Ernst & Young will be at the Annual Meeting to answer your questions and will have the opportunity to make a statement if they so desire. If you do not ratify the appointment of Ernst & Young, the Audit Committee will reconsider the appointment of Ernst & Young, although in the event of reconsideration, the Audit Committee may determine that Ernst & Young should continue in its role. Even if you ratify the appointment of Ernst & Young, the Audit Committee retains its discretion to reconsider Ernst & Young\u2019s appointment if it believes that reconsideration is necessary and in the best interest of the Company and its stockholders. Fees of Independent Accounting Firm The following table summarizes the fees paid to Ernst & Young for services rendered during fiscal 2025 and 2024. Fiscal Year Ended 12/31/25 ($) Fiscal Year Ended 12/31/24 ($) Audit Fees(1) 24,295,087 25,907,468 Audit-Related Fees(2) 5,973,875 4,895,015 Tax Fees(3) 999,203 1,301,915 All Other Fees(4) 110,000 70,000 rules and the Corporate Governance Standards of the NYSE Listed Company Manual. The Board designated each of Messrs. Aguirre, Gallina, Robbins and Sansone, and Dr. Balser as an Audit Committee Financial Expert, as defined under applicable SEC rules. The Board has approved a charter for the Audit Committee, which can be viewed on our website at https://investors.cvshealth.com/governance/governance-documents/default.aspx and also is available to stockholders without charge upon request to our Corporate Secretary. Audit Committee Activities in 2025 The Audit Committee met eight times in 2025. Except for one absence by one member of the Audit Committee due to an unavoidable conflict, each member of the Audit Committee attended all of its meetings while he or she was a member. Several of the Audit Committee\u2019s meetings were focused primarily on our annual or quarterly financial reports, including our Form 10-K, Forms 10-Q and our related earnings releases. At each of these meetings, the Audit Committee reviewed the documents in depth with our CFO and our Chief Accounting Officer, as well as our CCO, Chief Audit Executive, General Counsel and other key members of management. The Audit Committee also received reports from our internal audit department and our independent registered public accounting firm, Ernst & Young LLP (\u201cErnst & Young\u201d). The Audit Committee regularly met with Ernst & Young outside the presence of management, and also met individually with members of management, including the CCO and the Chief Audit Executive. In addition to its responsibilities related to our financial statements, the Audit Committee played a primary role in risk oversight, including multiple reviews of our enterprise risk management program. luding the CCO and the Chief Audit Executive. In addition to its responsibilities related to our financial statements, the Audit Committee played a primary role in risk oversight, including multiple reviews of our enterprise risk management program. The Audit Committee also had responsibility for oversight of cybersecurity and information governance, including privacy and information security and received regular updates from the CETO and CISO. The Audit Committee also reviewed our legal and regulatory compliance program and received updates on a quarterly basis. In addition, the Audit Committee received updates on the Company\u2019s investment and capital deployment. The Audit Committee also provided the report found on page 39 of this pr"
+  },
+  {
+    "source": "walt disney company (the) (dis)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee of the Board has concluded that the continued retention of PricewaterhouseCoopers LLP is in the best interests of the Company and its shareholders and appointed PricewaterhouseCoopers LLP as the Company\u2019s independent registered public accountants for the fiscal year ending September 26, 2026."
+  },
+  {
+    "source": "duke energy (duk)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee has selected Deloitte as Duke Energy\u2019s independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "emerson electric (emr)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "KPMG LLP served as the Company\u2019s independent registered public accounting firm for 2025 and has been retained continuously as the Company\u2019s external auditor since 1938."
+  },
+  {
+    "source": "fedex (fdx)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit and Finance Committee has appointed Ernst & Young LLP (\u201cErnst & Young\u201d) to serve as FedEx\u2019s independent registered public accounting firm for fiscal 2026."
+  },
+  {
+    "source": "general dynamics (gd)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit Committee has selected KPMG LLP (KPMG), an independent registered public accounting firm, as our independent auditors for 2026."
+  },
+  {
+    "source": "ge aerospace (ge)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "In accordance with its charter, the Audit Committee has selected the firm of Deloitte & Touche LLP (Deloitte), an independent registered public accounting firm, to be our auditor for the year 2026."
+  },
+  {
+    "source": "gilead sciences (gild)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "Our Audit Committee has selected Ernst & Young LLP as our independent registered public accounting firm for the fiscal year ending December 31, 2026 and has further directed that we submit the selection of our independent registered public accounting firm for ratification by the stockholders at the Annual Meeting."
+  },
+  {
+    "source": "general motors (gm)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Board recommends a vote FOR the proposal to ratify the selection of Ernst & Young LLP as the Company\u2019s independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "alphabet inc. (class a) (googl)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has appointed Ernst & Young LLP as the independent registered public accounting firm to audit our consolidated financial statements for the fiscal year ending December 31, 2026."
+  },
+  {
+    "source": "home depot (hd)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit Committee has appointed KPMG to serve as the Company\u2019s independent registered public accounting firm for Fiscal 2026."
+  },
+  {
+    "source": "goldman sachs (gs)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "Our Audit Committee has appointed PwC as our independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "honeywell (hon)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "THE BOARD OF DIRECTORS UNANIMOUSLY RECOMMENDS A VOTE FOR THE APPROVAL OF THE APPOINTMENT OF DELOITTE & TOUCHE LLP AS HONEYWELL'S INDEPENDENT ACCOUNTANTS."
+  },
+  {
+    "source": "intel (intc)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Board recommends that you vote \u201cFOR\u201d the ratification of the selection of Ernst & Young LLP as our independent registered public accounting firm for fiscal year 2026."
+  },
+  {
+    "source": "ibm (ibm)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has received the written disclosures and the letter from PricewaterhouseCoopers LLP (PwC) required by applicable requirements of the PCAOB regarding PwC\u2019s communications with the Audit Committee concerning independence, and has discussed with PwC its independence."
+  },
+  {
+    "source": "intuitive surgical (isrg)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Company\u2019s independent registered public accounting firm and auditor for the year ended December 31, 2025, was PricewaterhouseCoopers LLP (\u201cPwC\u201d)."
+  },
+  {
+    "source": "intuit (intu)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Board recommends that you vote FOR the ratification of the selection of Ernst & Young LLP as our independent registered public accounting firm for the fiscal year ending July 31, 2026."
+  },
+  {
+    "source": "johnson & johnson (jnj)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers LLP as the independent registered public accounting firm for the Company and its subsidiaries for the fiscal year 2026."
+  },
+  {
+    "source": "jpmorgan chase (jpm)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers LLP (\u201cPwC\u201d) as the Firm\u2019s independent registered public accounting firm to audit the Consolidated Financial Statements of JPMorganChase and its subsidiaries for the year ending December 31, 2026."
+  },
+  {
+    "source": "coca-cola company (the) (ko)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Board of Directors recommends a vote FOR the ratification of the appointment of Ernst & Young LLP as independent auditors."
+  },
+  {
+    "source": "linde plc (lin)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee believes the selection of PwC as the Company\u2019s independent auditor for 2026 is in the best interest of the Company and its shareholders."
+  },
+  {
+    "source": "eli lilly and company (lly)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "Based on the Audit Committee\u2019s assessment of Ernst & Young LLP\u2019s (EY) performance during 2025, the Audit Committee believes that the continued retention of EY to serve as the company's independent auditor is in the best interests of the company and its shareholders and has therefore reappointed EY as the company\u2019s independent auditor for 2026."
+  },
+  {
+    "source": "lockheed martin (lmt)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee is directly responsible for the appointment, compensation, retention and oversight of the Company\u2019s independent auditors, currently Ernst & Young LLP (EY)."
+  },
+  {
+    "source": "lowe's (low)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee has appointed Deloitte & Touche LLP to serve as the Company\u2019s independent registered public accounting firm for fiscal 2026."
+  },
+  {
+    "source": "mastercard (ma)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers LLP (PwC) as our independent registered public accounting firm to audit the financial statements of Mastercard Incorporated and its subsidiaries for the year ending December 31, 2026."
+  },
+  {
+    "source": "mcdonald's (mcd)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "Our Audit & Finance Committee has appointed Ernst & Young LLP (\u201cEY\u201d) as our independent external audit firm for 2026."
+  },
+  {
+    "source": "mondelez international (mdlz)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee selected PricewaterhouseCoopers LLP as the Company\u2019s independent registered public accountants for 2026."
+  },
+  {
+    "source": "medtronic (mdt)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers as Medtronic\u2019s independent registered public accounting firm for fiscal year 2026 and recommended that the Board of Directors submit this appointment to the Company\u2019s shareholders for ratification at the Annual General Meeting."
+  },
+  {
+    "source": "metlife (met)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee appointed Deloitte & Touche LLP (Deloitte) as the Company\u2019s independent registered public accounting firm and independent auditor for the fiscal year ending December 31, 2026."
+  },
+  {
+    "source": "meta platforms (meta)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The audit & privacy committee of the board of directors has selected Ernst & Young LLP to be our independent registered public accounting firm for the fiscal year ending December 31, 2026, and recommends that the shareholders vote for ratification of such appointment."
+  },
+  {
+    "source": "3m (mmm)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "We are asking our shareholders to ratify the selection of PwC as our Independent Accounting Firm for 2026."
+  },
+  {
+    "source": "altria (mo)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "PricewaterhouseCoopers LLP (\u201cPricewaterhouseCoopers\u201d) has been our independent registered public accounting firm since 1998."
+  },
+  {
+    "source": "merck & co. (mrk)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers LLP (\u201cPwC\u201d) to serve as our independent registered public accounting firm (the independent auditors) with respect to our operations for the year ending December 31, 2026, subject to ratification by the holders of common stock of the Company."
+  },
+  {
+    "source": "morgan stanley (ms)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "Based on this review, the Audit Committee has appointed Deloitte & Touche as independent auditor for the year ending December 31, 2026, and, although not legally required to do so, presents this selection to the shareholders for ratification as a matter of governance best practices."
+  },
+  {
+    "source": "microsoft (msft)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee has selected Deloitte & Touche LLP as Microsoft\u2019s independent auditor for fiscal year 2026."
+  },
+  {
+    "source": "nextera energy (nee)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee appoints the Company\u2019s independent registered public accounting firm. It has appointed Deloitte & Touche LLP (\u201cDeloitte & Touche\u201d) as the independent registered public accounting firm for the fiscal year ending December 31, 2026 to audit the accounts of the Company and its subsidiaries, as well as to provide its opinion on the effectiveness of the Company\u2019s internal controls over financial reporting."
+  },
+  {
+    "source": "netflix, inc. (nflx)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee of the Board has selected Ernst & Young LLP (\u201cEY\u201d), an independent registered public accounting firm, to audit the financial statements of the Company for the year ending December 31, 2026."
+  },
+  {
+    "source": "nike, inc. (nke)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit & Finance Committee has appointed PricewaterhouseCoopers LLP (\"PwC\") to audit the Company's consolidated financial statements and internal control over financial reporting for the fiscal year ending May 31, 2027 and to render other professional services as required."
+  },
+  {
+    "source": "servicenow (now)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "Our Audit Committee has selected PricewaterhouseCoopers LLP (\u201cPwC\u201d) as our independent registered public accounting firm (the \u201cIndependent Auditor\u201d) to perform the audit of our consolidated financial statements for the year ending December 31, 2026."
+  },
+  {
+    "source": "nvidia (nvda)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "PricewaterhouseCoopers LLP, or PwC, our independent registered public accounting firm for Fiscal 2026, was responsible for performing an independent audit of the consolidated financial statements and issuing a report on the consolidated financial statements and of the effectiveness of our internal control over financial reporting as of January 25, 2026."
+  },
+  {
+    "source": "oracle corporation (orcl)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The F&A Committee has selected Ernst & Young LLP (EY) as our independent registered public accounting firm to perform the audit of our consolidated financial statements for fiscal 2026."
+  },
+  {
+    "source": "pepsico (pep)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit Committee has appointed KPMG LLP (\u201cKPMG\u201d) as PepsiCo\u2019s independent registered public accounting firm for fiscal year 2026."
+  },
+  {
+    "source": "pfizer (pfe)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "Your Board of Directors unanimously recommends a vote \u201cFOR\u201d the ratification of KPMG LLP as independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "procter & gamble (pg)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "We are asking our shareholders to ratify the selection of Deloitte & Touche LLP as our independent registered public accounting firm."
+  },
+  {
+    "source": "palantir technologies (pltr)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "Our Audit Committee has appointed Ernst & Young LLP as our independent registered public accounting firm to audit our consolidated financial statements for our fiscal year ending December 31, 2026."
+  },
+  {
+    "source": "philip morris international (pm)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers sa",
+    "evidence": "The Audit and Risk Committee has selected PricewaterhouseCoopers SA (\u201cPwC\u201d) as the Company\u2019s independent auditors for the fiscal year ending December 31, 2026, and has directed that management submit the selection of independent auditors to shareholders for ratification at the Annual Meeting."
+  },
+  {
+    "source": "paypal (pypl)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers LLP (\u201cPwC\u201d) as our independent auditor for fiscal year 2026."
+  },
+  {
+    "source": "qualcomm (qcom)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "In connection with these reviews, the Audit Committee meets with management and the independent public accountants, PricewaterhouseCoopers LLP (PwC), at least once each quarter."
+  },
+  {
+    "source": "rtx corporation (rtx)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Committee has nominated PwC for appointment by the shareowners at the 2026 Annual Meeting to serve as RTX\u2019s independent auditor for 2026."
+  },
+  {
+    "source": "starbucks (sbux)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "As a matter of good corporate governance, the Audit Committee requests that shareholders ratify its selection of Deloitte & Touche LLP (\u201cDeloitte\u201d) to serve as our independent registered public accounting firm for fiscal year 2026."
+  },
+  {
+    "source": "charles schwab corporation (schw)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "We ask that you ratify the appointment of Deloitte & Touche LLP (Deloitte) as the company\u2019s independent registered public accounting firm for the 2026 fiscal year."
+  },
+  {
+    "source": "southern company (so)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee has appointed Deloitte & Touche as our independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "simon property group (spg)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has selected Ernst & Young LLP (\u201cEY\u201d) as our independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "at&t (t)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "Ernst & Young LLP acts as AT&T\u2019s principal auditor and provides certain audit-related, tax and other services."
+  },
+  {
+    "source": "target corporation (tgt)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "As a good corporate governance practice, the Board is\nseeking shareholder ratification of the appointment of Ernst &\nYoung LLP even though ratification is not legally required."
+  },
+  {
+    "source": "thermo fisher scientific (tmo)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has selected PricewaterhouseCoopers LLP (\u201cPwC\u201d) as the Company\u2019s independent auditors for the fiscal year ending December 31, 2026."
+  },
+  {
+    "source": "t-mobile us (tmus)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "OUR BOARD OF DIRECTORS RECOMMENDS A VOTE FOR THE RATIFICATION OF DELOITTE & TOUCHE LLP AS THE COMPANY\u2019S INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM FOR FISCAL YEAR 2026"
+  },
+  {
+    "source": "tesla, inc. (tsla)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has: \u2022 Reviewed and discussed the audited financial statements with Tesla management and with PricewaterhouseCoopers LLP, Tesla\u2019s independent registered public accounting firm;"
+  },
+  {
+    "source": "texas instruments (txn)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The audit committee has appointed Ernst & Young LLP to be TI\u2019s independent registered public accounting firm for 2026."
+  },
+  {
+    "source": "uber (uber)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has selected PricewaterhouseCoopers LLP as the Company\u2019s independent registered public accounting firm for fiscal year 2026."
+  },
+  {
+    "source": "unitedhealth group (unh)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit and Finance Committee has appointed Deloitte & Touche LLP as our independent registered public accounting firm for the year ending December 31, 2026."
+  },
+  {
+    "source": "union pacific corporation (unp)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee has appointed Deloitte & Touche LLP as the independent registered public accounting firm to audit the books and accounts of the Company and its consolidated subsidiaries for the year ending December 31, 2026, and submits this selection for ratification by a vote of shareholders as a matter of good corporate governance."
+  },
+  {
+    "source": "united parcel service (ups)",
+    "relation": "audited_by",
+    "target": "deloitte & touche llp",
+    "evidence": "The Audit Committee of the Board of Directors has appointed Deloitte & Touche LLP as our independent registered public accounting firm for the year ending December 31, 2026."
+  },
+  {
+    "source": "u.s. bancorp (usb)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has selected EY as our independent registered public accounting firm (independent auditor) for the 2026 fiscal year. EY began serving as our independent auditor for the fiscal year ended December 31, 2003. Our Audit Committee has carefully considered the selection of EY as our independent auditor and has also considered whether there should be regular rotation of the independent external audit firm.\nThe consolidated financial statements of U.S. Bancorp for the year ended December 31, 2025, were audited by Ernst & Young LLP (EY), independent registered public accounting firm (independent auditor) for U.S. Bancorp.\nThe Board of Directors recommends that you vote \u201cFOR\u201d ratification of the selection of Ernst & Young LLP as the independent registered public accounting firm of U.S. Bancorp for the 2026 fiscal year."
+  },
+  {
+    "source": "visa inc. (v)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit and Risk Committee has appointed KPMG LLP as our independent registered public accounting firm to audit the financial statements of Visa and its subsidiaries for the fiscal year ending September 30, 2026."
+  },
+  {
+    "source": "verizon (vz)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee considered, in consultation with management and the independent registered public accounting firm, whether Ernst & Young could provide these services while maintaining independence."
+  },
+  {
+    "source": "wells fargo (wfc)",
+    "relation": "audited_by",
+    "target": "kpmg llp",
+    "evidence": "The Audit Committee has appointed KPMG LLP as the Company\u2019s independent auditor for the year ending December 31, 2026."
+  },
+  {
+    "source": "walmart (wmt)",
+    "relation": "audited_by",
+    "target": "ernst & young llp",
+    "evidence": "The Audit Committee has appointed EY as the company\u2019s independent accountants to audit the consolidated financial statements of the company for fiscal 2027."
+  },
+  {
+    "source": "exxonmobil (xom)",
+    "relation": "audited_by",
+    "target": "pricewaterhousecoopers llp",
+    "evidence": "The Audit Committee has appointed PricewaterhouseCoopers LLP to audit ExxonMobil\u2019s financial statements for 2026."
+  }
+]

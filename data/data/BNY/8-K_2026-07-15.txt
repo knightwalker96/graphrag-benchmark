@@ -1,0 +1,126 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 8-K
+
+CURRENT REPORT
+
+Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934
+
+Date of Report (Date of earliest event reported) – July 15, 2026
+
+THE BANK OF NEW YORK MELLON CORPORATION
+
+(Exact name of registrant as specified in its charter)
+
+Delaware 001-35651 13-2614959
+
+(State or other jurisdiction
+
+of incorporation) (Commission
+
+File Number) (I.R.S. Employer
+
+Identification No.)
+
+240 Greenwich Street
+
+New York, New York 10286
+
+(Address of principal executive offices) (Zip Code)
+
+Registrant’s telephone number, including area code – (212) 495-1784
+
+Not Applicable
+
+(Former name or former address, if changed since last report)
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+
+☐ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of each class Trading
+
+symbol(s) Name of each exchange
+
+on which registered
+
+Common Stock, $0.01 par value BNY New York Stock Exchange
+
+6.244% Fixed-to-Floating Rate Normal Preferred Capital Securities of Mellon Capital IV BNY/P New York Stock Exchange
+
+(fully and unconditionally guaranteed by The Bank of New York Mellon Corporation)
+
+Depositary Shares, each representing a 1/4,000th interest in a share of Series K Noncumulative BNY PRK New York Stock Exchange
+
+Perpetual Preferred Stock
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 under the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+ITEM 2.02. RESULTS OF OPERATIONS AND FINANCIAL CONDITION.
+
+On July 15, 2026, The Bank of New York Mellon Corporation (“BNY”) released information on its financial results for the second quarter ended June 30, 2026. Copies of the Earnings Release and the Financial Supplement are attached hereto as Exhibit 99.1 and Exhibit 99.2, respectively, and are incorporated herein by reference.
+
+ITEM 7.01. REGULATION FD DISCLOSURE.
+
+On July 15, 2026, BNY will hold a conference call and webcast to discuss its financial results for the second quarter ended June 30, 2026 and outlook. A copy of the Quarterly Update Presentation for the conference call and webcast is attached hereto as Exhibit 99.3.
+
+ITEM 9.01. FINANCIAL STATEMENTS AND EXHIBITS.
+
+(d) EXHIBITS.
+
+Exhibit
+
+Number Description
+
+99.1
+The Bank of New York Mellon Corporation Earnings Release dated July 15, 2026, announcing financial results for the second quarter of 2026.
+
+The quotation in Exhibit 99.1 (the “Excluded Section”) shall not be deemed “filed” for purposes of Section 18 of the Securities Exchange Act of 1934 (“Exchange Act”) or otherwise subject to the liabilities under that Section and shall not be deemed to be incorporated by reference into any filing of BNY under the Securities Act of 1933 or the Exchange Act. The information included in Exhibit 99.1, other than in the Excluded Section, shall be deemed “filed” for purposes of the Exchange Act.
+
+99.2
+The Bank of New York Mellon Corporation Financial Supplement dated July 15, 2026, for the second quarter of 2026.
+
+The information included in Exhibit 99.2 shall be deemed “filed” for purposes of the Exchange Act.
+
+99.3
+Second Quarter 2026 Quarterly Update Presentation dated July 15, 2026.
+
+The information included in Exhibit 99.3 shall not be deemed “filed” for purposes of Section 18 of the Exchange Act or otherwise subject to the liabilities under that Section and shall not be deemed to be incorporated by reference into any filing of BNY under the Securities Act of 1933 or the Exchange Act.
+
+104 Cover Page Interactive Data File - the cover page XBRL tags are embedded within the Inline XBRL document.
+
+2
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+
+The Bank of New York Mellon Corporation
+
+(Registrant)
+
+Date: July 15, 2026 By: /s/ Jean Weng
+
+Name:
+
+Title: Jean Weng
+
+Secretary
+
+3

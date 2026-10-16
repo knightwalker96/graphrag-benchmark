@@ -1,0 +1,1774 @@
+<title>Pipeline 3 Low-Level Design</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+:root{
+  --ground:#f2f4f7; --panel:#ffffff; --panel-2:#f8fafc; --panel-3:#eef2f7;
+  --ink:#14171c; --ink-2:#4e5767; --ink-3:#79828f;
+  --rule:#d5dbe3; --rule-2:#e6eaf0;
+  --blue:#2f5fa8; --blue-fill:#e8effa; --blue-soft:#dde8f7;
+  --copper:#b04a0c; --copper-fill:#fbeee2; --copper-soft:#f6e0cd;
+  --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#10131a; --panel:#171b22; --panel-2:#1b2029; --panel-3:#212834;
+    --ink:#e7eaef; --ink-2:#a5aebc; --ink-3:#7d8694;
+    --rule:#2c333e; --rule-2:#242b35;
+    --blue:#5f91de; --blue-fill:#1a2740; --blue-soft:#223253;
+    --copper:#d1762e; --copper-fill:#2f1f10; --copper-soft:#412a14;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#10131a; --panel:#171b22; --panel-2:#1b2029; --panel-3:#212834;
+  --ink:#e7eaef; --ink-2:#a5aebc; --ink-3:#7d8694;
+  --rule:#2c333e; --rule-2:#242b35;
+  --blue:#5f91de; --blue-fill:#1a2740; --blue-soft:#223253;
+  --copper:#d1762e; --copper-fill:#2f1f10; --copper-soft:#412a14;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--serif);
+  font-size:15.5px;line-height:1.62;margin:0;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1288px;margin:0 auto;padding:0 24px 96px}
+.measure{max-width:70ch}
+
+/* ---------- masthead ---------- */
+header.mast{border-bottom:1px solid var(--rule);margin-bottom:38px;padding:44px 0 26px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 14px}
+h1{font-family:var(--sans);font-weight:700;font-size:clamp(30px,4.4vw,46px);line-height:1.04;
+  letter-spacing:-.022em;margin:0 0 16px;text-wrap:balance;max-width:24ch}
+.standfirst{font-size:17px;color:var(--ink-2);margin:0 0 22px;max-width:62ch}
+.mast-meta{display:flex;flex-wrap:wrap;gap:8px 10px;font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+.mast-meta span{border:1px solid var(--rule);background:var(--panel);border-radius:2px;padding:4px 8px}
+
+/* ---------- nav ---------- */
+nav.jump{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-bottom:34px}
+nav.jump ol{display:flex;flex-wrap:wrap;gap:0;list-style:none;margin:0;padding:0;
+  max-width:1288px;margin:0 auto}
+nav.jump a{display:block;font-family:var(--sans);font-size:12.5px;font-weight:500;color:var(--ink-2);
+  text-decoration:none;padding:11px 14px;border-bottom:2px solid transparent}
+nav.jump li:first-child a{padding-left:24px}
+nav.jump a:hover,nav.jump a:focus-visible{color:var(--ink);border-bottom-color:var(--blue);outline:none}
+nav.jump .n{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-right:6px}
+
+/* ---------- sections ---------- */
+section{margin:0 0 70px;scroll-margin-top:60px}
+h2{font-family:var(--sans);font-weight:650;font-size:25px;letter-spacing:-.016em;
+  margin:0 0 6px;text-wrap:balance}
+h2 .sn{font-family:var(--mono);font-weight:500;font-size:14px;color:var(--blue);
+  display:block;margin-bottom:7px;letter-spacing:.06em}
+h3{font-family:var(--sans);font-weight:600;font-size:16.5px;letter-spacing:-.008em;margin:34px 0 8px}
+.lede{color:var(--ink-2);margin:0 0 24px;max-width:70ch}
+p{margin:0 0 14px}
+a{color:var(--blue)}
+code,.m{font-family:var(--mono);font-size:.885em;background:var(--panel-3);
+  border-radius:2px;padding:1px 4px;color:var(--ink)}
+.measure code{word-break:break-word}
+
+/* ---------- figures ---------- */
+figure{margin:0 0 10px;background:var(--panel);border:1px solid var(--rule);border-radius:3px}
+.figscroll{overflow-x:auto;padding:18px 18px 4px}
+figure svg{display:block;max-width:100%;height:auto;min-width:860px}
+figcaption{border-top:1px solid var(--rule-2);padding:12px 18px 14px;font-size:13.5px;
+  color:var(--ink-2);background:var(--panel-2)}
+figcaption b{color:var(--ink);font-weight:600;font-family:var(--sans);font-size:13px}
+.fignote{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin:0 0 26px;max-width:76ch}
+
+/* svg text roles */
+svg text{font-family:var(--sans)}
+.t{fill:var(--ink);font-size:12.5px;font-weight:600}
+.t2{fill:var(--ink);font-size:11.5px;font-weight:600}
+.ts{fill:var(--ink-2);font-size:10.5px}
+.tm{fill:var(--ink-2);font-size:10.5px;font-family:var(--mono)}
+.tm-i{fill:var(--ink);font-size:11px;font-family:var(--mono);font-weight:500}
+.tl{fill:var(--ink-3);font-size:9.5px;font-family:var(--mono);letter-spacing:.09em}
+.tb{fill:var(--blue);font-size:10.5px;font-family:var(--mono);font-weight:500}
+.tc{fill:var(--copper);font-size:10.5px;font-family:var(--mono);font-weight:500}
+.hd{fill:var(--ink);font-size:13px;font-weight:650;font-family:var(--sans)}
+/* svg shapes */
+.bx{fill:var(--panel-2);stroke:var(--rule);stroke-width:1.1}
+.bxb{fill:var(--blue-fill);stroke:var(--blue);stroke-width:1.3}
+.bxc{fill:var(--copper-fill);stroke:var(--copper);stroke-width:1.3}
+.bxp{fill:var(--panel-3);stroke:var(--rule);stroke-width:1.1}
+.bxn{fill:none;stroke:var(--rule);stroke-width:1.1}
+.abl{fill:none;stroke:var(--ink-3);stroke-width:1.15;stroke-dasharray:4.5 3.5}
+.ln{stroke:var(--ink-3);stroke-width:1.2;fill:none}
+.lnb{stroke:var(--blue);stroke-width:1.4;fill:none}
+.lnc{stroke:var(--copper);stroke-width:1.4;fill:none}
+.lnd{stroke:var(--ink-3);stroke-width:1.1;fill:none;stroke-dasharray:4.5 3.5}
+.rule{stroke:var(--rule);stroke-width:1}
+.mk{fill:var(--ink-3)}.mkb{fill:var(--blue)}.mkc{fill:var(--copper)}
+.dim{fill:var(--panel-3);stroke:var(--rule);stroke-width:1.1}
+
+/* ---------- legend ---------- */
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(252px,1fr));gap:0;
+  border:1px solid var(--rule);border-radius:3px;background:var(--panel);margin:0 0 14px;overflow:hidden}
+.legend > div{padding:14px 16px;border-right:1px solid var(--rule-2);border-bottom:1px solid var(--rule-2)}
+.legend h4{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 10px;font-weight:500}
+.lrow{display:flex;align-items:center;gap:9px;margin:0 0 7px;font-family:var(--sans);
+  font-size:12.5px;color:var(--ink-2)}
+.lrow:last-child{margin-bottom:0}
+.lrow b{color:var(--ink);font-weight:600}
+.sw{flex:0 0 32px;height:18px;border-radius:2px}
+.sw-b{background:var(--blue-fill);border:1.3px solid var(--blue)}
+.sw-c{background:var(--copper-fill);border:1.3px solid var(--copper)}
+.sw-g{background:var(--blue-fill);border:1.3px solid var(--blue);box-shadow:inset 0 0 0 2px var(--panel),inset 0 0 0 3.3px var(--blue)}
+.sw-a{border:1.15px dashed var(--ink-3);background:none}
+.sw-s{background:var(--panel-2);border:1.1px solid var(--rule)}
+.sw-d{background:var(--panel-3);border:1.1px solid var(--rule);border-radius:9px}
+.sw-dia{background:var(--panel-2);border:1.1px solid var(--rule);
+  flex:0 0 32px;height:18px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+
+/* ---------- tables ---------- */
+.tblwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--panel);margin:0 0 12px}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:12.5px;min-width:600px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule-2);vertical-align:top}
+thead th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:500;background:var(--panel-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.mono{font-family:var(--mono);font-size:11.5px}
+.hi{color:var(--blue);font-weight:600}
+.lo{color:var(--copper);font-weight:600}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--blue)}
+.dot.o{background:none;border:1.3px solid var(--ink-3)}
+.dot.c{background:var(--copper)}
+caption{caption-side:bottom;text-align:left;padding:10px 12px;font-family:var(--sans);
+  font-size:12px;color:var(--ink-3);border-top:1px solid var(--rule-2)}
+
+/* ---------- chart ---------- */
+.chart{border:1px solid var(--rule);border-radius:3px;background:var(--panel);padding:18px 20px 14px;margin:0 0 12px}
+.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:4px}
+.chart-title{font-family:var(--sans);font-size:14.5px;font-weight:650}
+.chart-sub{font-family:var(--sans);font-size:12px;color:var(--ink-3)}
+.clegend{display:flex;gap:16px;font-family:var(--sans);font-size:12px;color:var(--ink-2);margin:10px 0 18px}
+.clegend i{display:inline-block;width:14px;height:10px;border-radius:2px;margin-right:6px;vertical-align:1px}
+.ci-a{background:var(--copper)}.ci-b{background:var(--blue)}
+.rows{display:grid;gap:14px}
+.crow{display:grid;grid-template-columns:minmax(132px,170px) 1fr;gap:14px;align-items:center}
+.crow .lab{font-family:var(--sans);font-size:12px;color:var(--ink);line-height:1.3}
+.crow .lab i{display:block;font-family:var(--mono);font-size:10px;color:var(--ink-3);font-style:normal}
+.track{position:relative;display:grid;gap:2px;border-left:1px solid var(--rule)}
+.bar{height:13px;border-radius:0 4px 4px 0;display:flex;align-items:center;position:relative;
+  min-width:2px;transition:filter .12s}
+.bar:hover,.bar:focus-visible{filter:brightness(1.12);outline:none}
+.bar.a{background:var(--copper)}.bar.b{background:var(--blue)}
+.bar .v{position:absolute;left:calc(100% + 7px);font-family:var(--mono);font-size:10.5px;
+  font-variant-numeric:tabular-nums;color:var(--ink-2);white-space:nowrap}
+.axis{position:relative;height:18px;margin-top:10px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:10px;color:var(--ink-3)}
+.axis span{position:absolute;top:3px;transform:translateX(-50%);font-variant-numeric:tabular-nums}
+.gridline{position:absolute;top:0;bottom:0;width:1px;background:var(--rule-2)}
+.refline{position:absolute;top:-4px;bottom:0;width:1px;background:var(--ink-3)}
+.reflab{position:absolute;top:-16px;transform:translateX(-50%);font-family:var(--mono);
+  font-size:9.5px;color:var(--ink-3);white-space:nowrap}
+.chartbody{position:relative;padding-left:0}
+#tip{position:fixed;z-index:60;pointer-events:none;background:var(--ink);color:var(--ground);
+  font-family:var(--mono);font-size:11px;padding:6px 9px;border-radius:3px;opacity:0;
+  transition:opacity .1s;max-width:260px;line-height:1.45}
+
+/* ---------- callouts ---------- */
+.note{border:1px solid var(--rule);border-left:3px solid var(--blue);background:var(--panel);
+  border-radius:0 3px 3px 0;padding:14px 16px;margin:0 0 22px;font-size:14px;color:var(--ink-2)}
+.note b{color:var(--ink);font-family:var(--sans);font-weight:600;font-size:13.5px}
+.note.warn{border-left-color:var(--copper)}
+.srcs{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin:6px 0 0}
+.cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px}
+.swap{border:1px solid var(--rule);border-radius:3px;background:var(--panel);overflow:hidden}
+.swap h4{font-family:var(--sans);font-size:13.5px;font-weight:650;margin:0;padding:12px 16px;
+  border-bottom:1px solid var(--rule-2);background:var(--panel-2)}
+.swap h4 em{font-family:var(--mono);font-size:10.5px;font-style:normal;color:var(--ink-3);
+  display:block;margin-top:3px;letter-spacing:.06em;text-transform:uppercase}
+.swap ul{margin:0;padding:12px 16px 14px 32px;font-size:13.5px;color:var(--ink-2)}
+.swap li{margin-bottom:7px}
+.swap li:last-child{margin-bottom:0}
+.swap li b{color:var(--ink);font-weight:600}
+footer{border-top:1px solid var(--rule);padding-top:22px;font-family:var(--sans);
+  font-size:12.5px;color:var(--ink-3)}
+footer p{margin:0 0 7px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:640px){
+  .wrap{padding:0 16px 64px} nav.jump li:first-child a{padding-left:16px}
+  .crow{grid-template-columns:1fr;gap:5px}
+}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="kicker">GraphRAG benchmark · Low-level design</p>
+    <h1>Pipeline 3 Low-Level Design</h1>
+    <p class="standfirst">How one question string becomes an answer with citations: every router gate,
+      every branch, every fall-through, and the exact place each token is either spent or saved.
+      Companion to the high-level wireframe, at function-and-artifact resolution.</p>
+    <div class="mast-meta">
+      <span>pipeline3_sec/pipeline.py · 1,800 lines</span>
+      <span>pipeline3_olympics/ · pipeline + lexicon + schema</span>
+      <span>measurements: results/sec/summary.json</span>
+      <span>1 generator call per question</span>
+    </div>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Figures">
+  <ol>
+    <li><a href="#s1"><span class="n">1</span>Request flow</a></li>
+    <li><a href="#s2"><span class="n">2</span>The router</a></li>
+    <li><a href="#s3"><span class="n">3</span>Context assembly</a></li>
+    <li><a href="#s4"><span class="n">4</span>Data &amp; index layer</a></li>
+    <li><a href="#s5"><span class="n">5</span>Olympics equivalent</a></li>
+    <li><a href="#legend"><span class="n">·</span>Legend</a></li>
+  </ol>
+</nav>
+
+<div class="wrap">
+
+<section id="legend">
+  <h2><span class="sn">Notation</span>One encoding, used in every figure</h2>
+  <p class="lede measure">Colour carries exactly one meaning: whether a step spends generator tokens.
+    Everything blue is deterministic string, set and index work — no model call, no embedding
+    cost charged to inference. Exactly one copper block exists per question.</p>
+  <div class="legend">
+    <div>
+      <h4>Token cost</h4>
+      <div class="lrow"><span class="sw sw-b"></span><span><b>Deterministic</b> — zero LLM tokens</span></div>
+      <div class="lrow"><span class="sw sw-c"></span><span><b>Billed to inference</b> — generator call</span></div>
+      <div class="lrow"><span class="sw sw-g"></span><span><b>Live GSQL query</b> on TigerGraph (still zero LLM tokens)</span></div>
+    </div>
+    <div>
+      <h4>Shape</h4>
+      <div class="lrow"><span class="sw sw-s"></span><span>Processing step — a named function</span></div>
+      <div class="lrow"><span class="sw sw-dia"></span><span>Decision / guard</span></div>
+      <div class="lrow"><span class="sw sw-d"></span><span>Stored artifact — file, index or vertex set</span></div>
+    </div>
+    <div>
+      <h4>Controls</h4>
+      <div class="lrow"><span class="sw sw-a"></span><span>Ablation switch — environment variable that gates flow</span></div>
+      <div class="lrow"><span><b>Solid arrow</b></span><span>the taken path</span></div>
+      <div class="lrow"><span><b>Dashed arrow</b></span><span>fall-through, fallback or read-once load</span></div>
+    </div>
+  </div>
+  <p class="fignote">Every token figure annotated anywhere on this page is read from
+    <code>results/sec/summary.json</code> (tag <code>the intermediate build</code>, 3 runs, 150 questions),
+    except the one-time graph-build cost in section 4, which is labelled with its own source file.
+    Nothing is estimated.</p>
+</section>
+
+<section id="s1">
+  <h2><span class="sn">Section 1</span>Request flow — question string in, answer and citations out</h2>
+  <p class="lede measure">The spine is short and fixed: load once, reset the live-query counter, route,
+    run exactly one branch, assemble context, make one generator call, record metrics. Everything that
+    varies between questions happens inside the branch, and every branch converges on the same prompt
+    builder — which is what keeps the token comparison with Basic RAG a comparison of
+    <em>context</em>, not of plumbing.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 800" role="img" aria-label="The fixed spine of a Pipeline 3 request: cold-start load, per-question counter reset, route, one of four branches, prompt build, a single generator call, metrics record.">
+        <defs>
+          <marker id="f1-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f1-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+          <marker id="f1-arc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkc"/></marker>
+        </defs>
+
+        <!-- entry -->
+        <rect x="470" y="24" width="300" height="42" rx="2" class="bxb"/>
+        <text x="620" y="43" text-anchor="middle" class="t">question: str</text>
+        <text x="620" y="58" text-anchor="middle" class="tm">one benchmark row — no preprocessing</text>
+        <line x1="620" y1="66" x2="620" y2="84" class="lnb" marker-end="url(#f1-arb)"/>
+
+        <!-- cold start -->
+        <rect x="430" y="88" width="380" height="54" rx="2" class="bxb"/>
+        <text x="448" y="110" class="t">_load()</text>
+        <text x="518" y="110" class="ts">— process-wide, guarded by `if _chunk_text is not None`</text>
+        <text x="448" y="129" class="tm">corpus + 5 index files + get_embedder() → globals</text>
+        <line x1="620" y1="142" x2="620" y2="160" class="lnb" marker-end="url(#f1-arb)"/>
+
+        <!-- left rail: artifacts -->
+        <rect x="24" y="76" width="384" height="162" rx="2" class="bxp"/>
+        <text x="40" y="95" class="tl">READ ONCE INTO MEMORY</text>
+        <text x="40" y="114" class="tm-i">_chunk_text / _chunk_meta</text><text x="252" y="114" class="tm">61,172 chunks</text>
+        <text x="40" y="132" class="tm-i">_rel_index (edges_prov)</text><text x="252" y="132" class="tm">126,504 edges</text>
+        <text x="40" y="150" class="tm-i">_entity_names_lower</text><text x="252" y="150" class="tm">73,261 names</text>
+        <text x="40" y="168" class="tm-i">_events (events.json)</text><text x="252" y="168" class="tm">10,643 events</text>
+        <text x="40" y="186" class="tm-i">_company_facts</text><text x="252" y="186" class="tm">100 companies</text>
+        <text x="40" y="204" class="tm-i">_embedder</text><text x="252" y="204" class="tm">bge-small-en-v1.5</text>
+        <text x="40" y="226" class="ts">Amortised across the run — not charged per question.</text>
+        <path d="M408,157 L430,115" class="lnd" marker-end="url(#f1-ar)"/>
+
+        <!-- right rail: invariant -->
+        <rect x="856" y="76" width="360" height="162" rx="2" class="bxp"/>
+        <text x="872" y="95" class="tl">MEASURED TOKEN INVARIANT</text>
+        <text x="872" y="116" class="tm-i">optimizer_tokens == 0</text>
+        <text x="872" y="134" class="ts">on all 150 questions, all 3 runs</text>
+        <text x="872" y="156" class="tm">v8_summary.invariants</text>
+        <text x="872" y="174" class="tm">.optimizer_tokens_all_zero = true</text>
+        <text x="872" y="198" class="ts">No routing call, no rerank call, no</text>
+        <text x="872" y="213" class="ts">compression call. The router and every</text>
+        <text x="872" y="228" class="ts">extractor are pure Python + regex.</text>
+
+        <!-- counter -->
+        <rect x="430" y="160" width="380" height="44" rx="2" class="bxb"/>
+        <text x="448" y="180" class="t">_tg_query_count = 0</text>
+        <text x="448" y="196" class="tm">m.tg_live = (count &gt; 0) and not GRAPH_OFF</text>
+        <line x1="620" y1="204" x2="620" y2="232" class="lnb" marker-end="url(#f1-arb)"/>
+
+        <!-- route -->
+        <rect x="430" y="232" width="380" height="58" rx="2" class="bxb"/>
+        <text x="448" y="254" class="t">route(question) → str</text>
+        <text x="448" y="271" class="tm">7 regex gates, fixed order · pure function · Figure 2</text>
+        <text x="448" y="285" class="tm">→ aggregation | bridge | compare | temporal | lookup</text>
+
+        <!-- ablation chips L -->
+        <rect x="24" y="246" width="384" height="36" rx="2" class="abl"/>
+        <text x="40" y="261" class="tm-i">P3_ROUTER_OFF=1</text>
+        <text x="40" y="275" class="ts">returns "default" — kills routing, graph and compression at once</text>
+        <rect x="24" y="290" width="384" height="36" rx="2" class="abl"/>
+        <text x="40" y="305" class="tm-i">P3_ROUTE_FORCE=&lt;label&gt; | random</text>
+        <text x="40" y="319" class="ts">md5-seeded; only the route LABEL degrades — the un-confounded arm</text>
+        <path d="M408,264 L430,256" class="lnd" marker-end="url(#f1-ar)"/>
+        <path d="M408,308 L430,282" class="lnd" marker-end="url(#f1-ar)"/>
+
+        <!-- ablation chips R -->
+        <rect x="856" y="246" width="360" height="36" rx="2" class="abl"/>
+        <text x="872" y="261" class="tm-i">P3_GRAPH_OFF=1</text>
+        <text x="872" y="275" class="ts">every branch guard is "and not GRAPH_OFF" → vector-only P3</text>
+        <rect x="856" y="290" width="360" height="36" rx="2" class="abl"/>
+        <text x="872" y="305" class="tm-i">P3_REQUIRE_TG=1 &nbsp;(default on)</text>
+        <text x="872" y="319" class="ts">unreachable Savanna raises — never a silent local fallback</text>
+        <path d="M1036,326 L1036,340" class="lnd" marker-end="url(#f1-ar)"/>
+
+        <!-- dispatch -->
+        <line x1="620" y1="290" x2="620" y2="340" class="lnb"/>
+        <line x1="170" y1="340" x2="1070" y2="340" class="lnb"/>
+        <line x1="170" y1="340" x2="170" y2="352" class="lnb" marker-end="url(#f1-arb)"/>
+        <line x1="470" y1="340" x2="470" y2="352" class="lnb" marker-end="url(#f1-arb)"/>
+        <line x1="770" y1="340" x2="770" y2="352" class="lnb" marker-end="url(#f1-arb)"/>
+        <line x1="1070" y1="340" x2="1070" y2="352" class="lnb" marker-end="url(#f1-arb)"/>
+        <text x="636" y="334" class="tl">EXACTLY ONE BRANCH RUNS</text>
+
+        <!-- branch headers -->
+        <rect x="60" y="356" width="220" height="76" rx="2" class="bxb"/>
+        <text x="76" y="376" class="t2">aggregation</text><text x="264" y="376" text-anchor="end" class="tl">FIG 1.2</text>
+        <text x="76" y="393" class="ts">graph-first enumeration</text>
+        <text x="76" y="412" class="tb">860.3 tok · −78.1%</text>
+        <text x="76" y="426" class="tm">n=20 · strict 0.85</text>
+
+        <rect x="360" y="356" width="220" height="76" rx="2" class="bxb"/>
+        <text x="376" y="376" class="t2">bridge</text><text x="564" y="376" text-anchor="end" class="tl">FIG 1.3</text>
+        <text x="376" y="393" class="ts">2-hop entity resolution</text>
+        <text x="376" y="412" class="tb">1,787.0 tok · −58.7%</text>
+        <text x="376" y="426" class="tm">n=20 · strict 0.05</text>
+
+        <rect x="660" y="356" width="220" height="76" rx="2" class="bxb"/>
+        <text x="676" y="376" class="t2">compare</text><text x="864" y="376" text-anchor="end" class="tl">FIG 1.3</text>
+        <text x="676" y="393" class="ts">two statement rows</text>
+        <text x="676" y="412" class="tb">484.4 tok · −90.4%</text>
+        <text x="676" y="426" class="tm">n=20 · strict 0.37</text>
+
+        <rect x="960" y="356" width="220" height="76" rx="2" class="bxb"/>
+        <text x="976" y="376" class="t2">lookup · temporal</text><text x="1164" y="376" text-anchor="end" class="tl">FIG 1.4</text>
+        <text x="976" y="393" class="ts">4-stage resolve cascade</text>
+        <text x="976" y="412" class="tb">511.6 / 619.8 tok</text>
+        <text x="976" y="426" class="tm">n=20+20 · 0.95 / 0.00</text>
+
+        <!-- converge -->
+        <path d="M170,432 L170,456 L620,456" class="lnb"/>
+        <path d="M470,432 L470,456" class="lnb"/>
+        <path d="M770,432 L770,456" class="lnb"/>
+        <path d="M1070,432 L1070,456 L620,456" class="lnb"/>
+        <line x1="620" y1="456" x2="620" y2="476" class="lnb" marker-end="url(#f1-arb)"/>
+        <text x="636" y="470" class="tl">context : str &nbsp;+&nbsp; ids : list &nbsp;+&nbsp; graph_facts : str</text>
+
+        <!-- prompt -->
+        <rect x="430" y="476" width="380" height="54" rx="2" class="bxb"/>
+        <text x="448" y="497" class="t">_build_prompt(question, context, graph_facts)</text>
+        <text x="448" y="514" class="tm">config.SYSTEM_PROMPT — byte-identical across P1, P2, P3</text>
+        <line x1="620" y1="530" x2="620" y2="552" class="lnc" marker-end="url(#f1-arc)"/>
+
+        <!-- llm -->
+        <rect x="430" y="552" width="380" height="60" rx="2" class="bxc"/>
+        <text x="448" y="574" class="t">get_llm_response(prompt)</text>
+        <text x="448" y="591" class="tm">gemini-2.5-flash · temperature 0 · MAX_TOKENS 512</text>
+        <text x="448" y="606" class="tc">THE ONLY BILLED CALL · num_llm_calls = 1</text>
+
+        <rect x="856" y="540" width="360" height="124" rx="2" class="bxp"/>
+        <text x="872" y="559" class="tl">COMBINED 150 Q · MEAN OF 3 RUNS</text>
+        <text x="872" y="580" class="tm">P1 llm-only</text><text x="1082" y="580" class="tm">282.0 tok · 0.098</text>
+        <text x="872" y="599" class="tm">P2 basic RAG</text><text x="1082" y="599" class="tm">4,186.3 tok · 0.251</text>
+        <text x="872" y="618" class="tm-i">P3 this pipeline</text><text x="1082" y="618" class="tb">980.7 tok · 0.456</text>
+        <text x="872" y="640" class="ts">−76.6% tokens, +0.205 strict vs P2.</text>
+        <text x="872" y="655" class="ts">Quality per 1k tokens: 0.06 → 0.46.</text>
+        <line x1="856" y1="582" x2="814" y2="582" class="lnd" marker-end="url(#f1-ar)"/>
+
+        <line x1="620" y1="612" x2="620" y2="636" class="lnc" marker-end="url(#f1-arc)"/>
+
+        <!-- record -->
+        <rect x="430" y="636" width="380" height="58" rx="2" class="bxb"/>
+        <text x="448" y="657" class="t">timer.record(answer, raw["usage"], …)</text>
+        <text x="448" y="674" class="tm">actual API usage → prompt/context/output split</text>
+        <text x="448" y="688" class="tm">m.route · m.tg_queries · m.tg_live · m.graph_doc_ids</text>
+
+        <rect x="24" y="624" width="384" height="140" rx="2" class="bxp"/>
+        <text x="40" y="643" class="tl">WHAT EACH ROW CARRIES (metrics.CallMetrics)</text>
+        <text x="40" y="663" class="tm">context_tokens</text><text x="200" y="663" class="ts">tiktoken over graph_facts + context</text>
+        <text x="40" y="681" class="tm">optimizer_tokens</text><text x="200" y="681" class="ts">0 — nothing to charge</text>
+        <text x="40" y="699" class="tm">tg_queries / tg_live</text><text x="200" y="699" class="ts">per-question, not per-session</text>
+        <text x="40" y="717" class="tm">retrieved_ids</text><text x="200" y="717" class="ts">the [chunk_id] labels fed in</text>
+        <text x="40" y="735" class="tm">thinking_tokens</text><text x="200" y="735" class="ts">Gemini reasoning, billed as output</text>
+        <text x="40" y="756" class="ts">Live-graph rate measured 0.947 over 537 GSQL queries.</text>
+        <line x1="408" y1="665" x2="430" y2="665" class="lnd" marker-end="url(#f1-ar)"/>
+
+        <line x1="620" y1="694" x2="620" y2="716" class="lnb" marker-end="url(#f1-arb)"/>
+        <rect x="470" y="716" width="300" height="54" rx="2" class="bxb"/>
+        <text x="620" y="737" text-anchor="middle" class="t">answer + "Citations: …"</text>
+        <text x="620" y="754" text-anchor="middle" class="tm">CallMetrics row → results/sec/bench_*.json</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 1.1 — the fixed spine.</b> Four of the five route labels have a dedicated
+      branch; <code>lookup</code>, <code>temporal</code> and <code>default</code> share the fourth.
+      The two router ablations differ in kind: <code>P3_ROUTER_OFF</code> disables route selection
+      <em>and</em> every graph branch at once, which is why <code>P3_ROUTE_FORCE</code> exists — it
+      corrupts only the label and leaves the machinery running.</figcaption>
+  </figure>
+  <p class="fignote">Per-route token and strict-pass figures are the <code>by_gold_route</code> block of
+    <code>summary.json</code> (20 questions per route, route-balanced). <code>temporal</code> at
+    strict 0.00 is reported as measured, not rounded away — it is the one route whose token win did
+    not buy accuracy.</p>
+
+  <h3>1.2 · The aggregation branch — seven resolvers, one intersection</h3>
+  <p class="lede measure">This is the branch where graph structure does work vector retrieval cannot:
+    enumerating every company that satisfies a typed constraint. The constraint detector deliberately
+    does <em>not</em> break early, so a question carrying two constraints produces two company sets
+    that are intersected on normalised tickers.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 626" role="img" aria-label="The aggregation branch: constraint detection fans out to seven resolvers, three of which issue GSQL queries and four of which answer from the local index, then the company sets are intersected and compressed to one evidence sentence per edge.">
+        <defs>
+          <marker id="f2-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f2-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+        </defs>
+
+        <rect x="24" y="258" width="190" height="74" rx="2" class="bxb"/>
+        <text x="40" y="280" class="t2">route == "aggregation"</text>
+        <text x="40" y="298" class="tm">and not GRAPH_OFF</text>
+        <text x="40" y="318" class="ts">Tier-C "which / list / how many</text>
+        <text x="40" y="330" class="ts">companies …" questions</text>
+        <line x1="214" y1="295" x2="240" y2="295" class="lnb" marker-end="url(#f2-arb)"/>
+
+        <rect x="244" y="236" width="240" height="118" rx="2" class="bxb"/>
+        <text x="260" y="257" class="t2">_detect_aggregation_constraints</text>
+        <text x="260" y="276" class="ts">Returns EVERY matching</text>
+        <text x="260" y="290" class="ts">(rel_type, target) pair — no early</text>
+        <text x="260" y="304" class="ts">break, so constraints intersect.</text>
+        <text x="260" y="325" class="tm">AUDITORS · SUPPLIER_LEX</text>
+        <text x="260" y="340" class="tm">RISK_LEX · SECTOR_LEX</text>
+
+        <!-- bus -->
+        <path d="M484,295 L500,295" class="lnb"/>
+        <line x1="500" y1="88" x2="500" y2="406" class="lnb"/>
+        <text x="508" y="76" class="tl">ONE RESOLVER PER CONSTRAINT</text>
+
+        <!-- fan rows -->
+        <g>
+          <rect x="516" y="66" width="340" height="44" rx="2" class="bxb"/><rect x="519" y="69" width="334" height="38" rx="1" class="bxn"/>
+          <text x="532" y="84" class="tm-i">__groupby_auditor__</text><text x="846" y="84" text-anchor="end" class="tb">GSQL ×4</text>
+          <text x="532" y="99" class="ts">short-circuits: agg_audited_by per Big Four firm → counts</text>
+          <line x1="500" y1="88" x2="512" y2="88" class="lnb" marker-end="url(#f2-arb)"/>
+
+          <rect x="516" y="119" width="340" height="44" rx="2" class="bxb"/><rect x="519" y="122" width="334" height="38" rx="1" class="bxn"/>
+          <text x="532" y="137" class="tm-i">rel ∈ CURATED_AGG → agg_&lt;rel&gt;(target_name)</text><text x="846" y="137" text-anchor="end" class="tb">GSQL</text>
+          <text x="532" y="152" class="ts">traverses that first-class edge type directly (9 types)</text>
+          <line x1="500" y1="141" x2="512" y2="141" class="lnb" marker-end="url(#f2-arb)"/>
+
+          <rect x="516" y="172" width="340" height="44" rx="2" class="bxb"/><rect x="519" y="175" width="334" height="38" rx="1" class="bxn"/>
+          <text x="532" y="190" class="tm-i">open long tail → aggregate_by_relation</text><text x="846" y="190" text-anchor="end" class="tb">GSQL</text>
+          <text x="532" y="205" class="ts">related_to edges filtered by the rel_type attribute</text>
+          <line x1="500" y1="194" x2="512" y2="194" class="lnb" marker-end="url(#f2-arb)"/>
+
+          <rect x="516" y="225" width="340" height="44" rx="2" class="bxb"/>
+          <text x="532" y="243" class="tm-i">has_director · has_ceo → surname match</text><text x="846" y="243" text-anchor="end" class="tm">local</text>
+          <text x="532" y="258" class="ts">one person, many variants: "indra k. nooyi" ≡ "mrs. nooyi"</text>
+          <line x1="500" y1="247" x2="512" y2="247" class="lnb" marker-end="url(#f2-arb)"/>
+
+          <rect x="516" y="278" width="340" height="44" rx="2" class="bxb"/>
+          <text x="532" y="296" class="tm-i">competitor_of → corpus corroboration</text><text x="846" y="296" text-anchor="end" class="tm">local</text>
+          <text x="532" y="311" class="ts">item1/item1a competition passages; graph edges as backstop</text>
+          <line x1="500" y1="300" x2="512" y2="300" class="lnb" marker-end="url(#f2-arb)"/>
+
+          <rect x="516" y="331" width="340" height="44" rx="2" class="bxb"/>
+          <text x="532" y="349" class="tm-i">__section__ → chunk-id scan "#item5.02"</text><text x="846" y="349" text-anchor="end" class="tm">local</text>
+          <text x="532" y="364" class="ts">SEC filer-assigned item code, not an extracted label</text>
+          <line x1="500" y1="353" x2="512" y2="353" class="lnb" marker-end="url(#f2-arb)"/>
+
+          <rect x="516" y="384" width="340" height="44" rx="2" class="bxb"/>
+          <text x="532" y="402" class="tm-i">__eventf__ → _events type+amount+form</text><text x="846" y="402" text-anchor="end" class="tm">local</text>
+          <text x="532" y="417" class="ts">matched at company level, tolerating provenance drift</text>
+          <line x1="500" y1="406" x2="512" y2="406" class="lnb" marker-end="url(#f2-arb)"/>
+        </g>
+
+        <!-- collect -->
+        <line x1="872" y1="88" x2="872" y2="406" class="lnb"/>
+        <path d="M856,88 L872,88" class="lnb"/><path d="M856,141 L872,141" class="lnb"/>
+        <path d="M856,194 L872,194" class="lnb"/><path d="M856,247 L872,247" class="lnb"/>
+        <path d="M856,300 L872,300" class="lnb"/><path d="M856,353 L872,353" class="lnb"/>
+        <path d="M856,406 L872,406" class="lnb"/>
+        <path d="M872,295 L886,295" class="lnb" marker-end="url(#f2-arb)"/>
+
+        <rect x="890" y="236" width="150" height="118" rx="2" class="bxb"/>
+        <text x="904" y="257" class="t2">INTERSECT</text>
+        <text x="904" y="275" class="tm">set.intersection(</text>
+        <text x="904" y="289" class="tm">&nbsp;_ticker_of(c) …)</text>
+        <text x="904" y="310" class="ts">"cisco (csco)" and</text>
+        <text x="904" y="324" class="ts">"CSCO" both become</text>
+        <text x="904" y="338" class="ts">CSCO, so sets meet.</text>
+        <line x1="1040" y1="295" x2="1058" y2="295" class="lnb" marker-end="url(#f2-arb)"/>
+
+        <rect x="1062" y="232" width="154" height="126" rx="2" class="bxb"/>
+        <text x="1076" y="252" class="t2">_context_from_prov</text>
+        <text x="1076" y="270" class="ts">one evidence SENTENCE</text>
+        <text x="1076" y="284" class="ts">per kept edge, + the</text>
+        <text x="1076" y="298" class="ts">company list itself as a</text>
+        <text x="1076" y="312" class="ts">citable passage:</text>
+        <text x="1076" y="330" class="tm">[graph_aggregation:…]</text>
+        <text x="1076" y="346" class="tb">ctx 72.0 – 1,422.0</text>
+
+        <rect x="1040" y="376" width="176" height="52" rx="2" class="abl"/>
+        <text x="1054" y="394" class="tm-i">P3_COMPRESS_OFF=1</text>
+        <text x="1054" y="409" class="ts">feeds whole chunks via</text>
+        <text x="1054" y="422" class="ts">_context_from_chunks instead</text>
+        <path d="M1128,376 L1128,362" class="lnd" marker-end="url(#f2-ar)"/>
+
+        <!-- fall-through -->
+        <rect x="244" y="500" width="972" height="76" rx="2" class="bx"/>
+        <text x="262" y="522" class="t2">FALL-THROUGH — ordinary retrieval, whole chunks</text>
+        <text x="262" y="541" class="tm">ids = _tg_vector_search(question) &nbsp;→&nbsp; context, ids = _context_from_chunks(ids)</text>
+        <text x="262" y="561" class="ts">Capped at CONTEXT_NUM_CHUNKS = 10 items × CONTEXT_CHUNK_CHARS = 2,000 chars — the same ceiling Basic RAG gets.</text>
+        <path d="M364,354 L364,496" class="lnd" marker-end="url(#f2-ar)"/>
+        <text x="372" y="420" class="tm">no constraint</text>
+        <text x="372" y="434" class="tm">mapped to a</text>
+        <text x="372" y="448" class="tm">typed edge</text>
+        <path d="M965,354 L965,460 L700,460 L700,496" class="lnd" marker-end="url(#f2-ar)"/>
+        <text x="708" y="478" class="tm">intersection empty AND no ids</text>
+        <text x="24" y="600" class="ts">Four of the seven resolvers answer locally and report tg_queries = 0 for that question — a design property the per-question counter makes visible rather than hiding.</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 1.2 — aggregation.</b> Context cost varies with how many companies match:
+      <code>agg_sector</code> 72.0 context tokens (n=5), <code>agg_sector_auditor</code> 274.4 (n=8),
+      <code>agg_auditor</code> 720.2 (n=4), <code>agg_supplier</code> 1,422.0 (n=3) — all from
+      <code>v8_summary.by_shape</code>. This branch was already compressed in the initial implementation, so its numbers are
+      unchanged by the optimization pass; the three expensive routes are the ones figure 3 is about.</figcaption>
+  </figure>
+
+  <h3>1.3 · Bridge and compare — the same hop, two different payloads</h3>
+  <p class="lede measure">Both branches resolve something from the graph and then need a second fact.
+    Bridge resolves an entity and reads curated edges off it; compare resolves two companies and mines
+    one statement row from each. Both keep a chunk-retrieval fall-back so a half-resolved question is
+    never answered from half the evidence.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 700" role="img" aria-label="Side by side interiors of the bridge and compare branches, each showing its hop resolution, its context-assembly decision and its whole-chunk fall-back.">
+        <defs>
+          <marker id="f3-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f3-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+        </defs>
+        <line x1="620" y1="22" x2="620" y2="678" class="rule"/>
+
+        <text x="44" y="34" class="hd">bridge</text>
+        <text x="112" y="34" class="tm">— r == "bridge" and not GRAPH_OFF</text>
+        <text x="656" y="34" class="hd">compare</text>
+        <text x="730" y="34" class="tm">— r == "compare" and not GRAPH_OFF</text>
+
+        <!-- BRIDGE -->
+        <rect x="44" y="52" width="540" height="48" rx="2" class="bxb"/>
+        <text x="60" y="71" class="t2">split the question at its first clause boundary</text>
+        <text x="60" y="89" class="tm">bridge_clause = re.split(r"[—–-]|,\s*(?:who|what|which|and)\b", q)[0]</text>
+        <line x1="314" y1="100" x2="314" y2="118" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="44" y="118" width="540" height="44" rx="2" class="bxb"/><rect x="47" y="121" width="534" height="38" rx="1" class="bxn"/>
+        <text x="60" y="137" class="tm-i">_tg_vector_search(bridge_clause, k=6)</text><text x="570" y="137" text-anchor="end" class="tb">GSQL</text>
+        <text x="60" y="152" class="ts">retrieves the LINKING document, not the answer document</text>
+        <line x1="314" y1="162" x2="314" y2="180" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="44" y="180" width="540" height="52" rx="2" class="bxb"/>
+        <text x="60" y="199" class="tm-i">_bridge_seeds(question)</text>
+        <text x="60" y="214" class="ts">multi-word capitalised spans that exist as KG entities; _BRIDGE_STOP and</text>
+        <text x="60" y="227" class="ts">_is_generic_role() reject job titles ("chief executive officer" is not a name)</text>
+        <line x1="314" y1="232" x2="314" y2="250" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="44" y="250" width="540" height="94" rx="2" class="bxb"/><rect x="47" y="253" width="534" height="88" rx="1" class="bxn"/>
+        <text x="60" y="269" class="t2">_bridge_graph_facts(seeds, bridge_chunk_ids)</text><text x="570" y="269" text-anchor="end" class="tb">GSQL</text>
+        <text x="60" y="288" class="tm">hop 1 · typed_neighbors(seed_names)</text><text x="400" y="288" class="ts">→ neighbours + ≤8 chunks</text>
+        <text x="60" y="305" class="tm">hop 1b · _companies_in_chunks(…)</text><text x="400" y="305" class="ts">recovers the hop when the</text>
+        <text x="400" y="318" class="ts">entity was not extracted as a node</text>
+        <text x="60" y="335" class="tm">hop 2 · _company_curated_facts(c)</text><text x="400" y="335" class="ts">≤3 companies → prov edges</text>
+        <line x1="314" y1="344" x2="314" y2="362" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="204" y="362" width="220" height="40" rx="2" class="bxp"/>
+        <text x="314" y="380" text-anchor="middle" class="t2">bridge_prov non-empty?</text>
+        <text x="314" y="395" text-anchor="middle" class="tm">and not COMPRESS_OFF</text>
+        <path d="M204,382 L130,382 L130,424" class="lnb" marker-end="url(#f3-arb)"/>
+        <text x="138" y="418" class="tm">yes</text>
+        <path d="M424,382 L500,382 L500,540" class="lnd" marker-end="url(#f3-ar)"/>
+        <text x="508" y="418" class="tm">no</text>
+
+        <rect x="44" y="424" width="400" height="76" rx="2" class="bxb"/>
+        <text x="60" y="444" class="tm-i">_context_from_prov(prov, extra_chunks=bridge_ids[:2])</text>
+        <text x="60" y="461" class="ts">one evidence sentence per resolved curated edge, plus two whole</text>
+        <text x="60" y="474" class="ts">chunks as a reduced backstop for the clause the edge misses</text>
+        <text x="60" y="493" class="tb">ctx 4,067.0 → 1,173.8 &nbsp;(bridge_shared_auditor, n=12)</text>
+
+        <rect x="44" y="540" width="540" height="62" rx="2" class="bx"/>
+        <text x="60" y="560" class="t2">FALL-THROUGH — whole chunks</text>
+        <text x="60" y="578" class="tm">vec_ids = _tg_vector_search(q, k=12)</text>
+        <text x="60" y="594" class="tm">_context_from_chunks(fact_chunks + bridge_ids + vec_ids)</text>
+
+        <rect x="44" y="618" width="540" height="56" rx="2" class="bxp"/>
+        <text x="60" y="637" class="tl">DOCUMENTED LIMIT</text>
+        <text x="60" y="654" class="ts">The optimization pass changed context assembly only. Hop resolution is untouched, so bridge</text>
+        <text x="60" y="668" class="ts">strict pass stays at 0.05 — tokens fell 58.7%, accuracy did not move. Reported, not fixed.</text>
+
+        <!-- COMPARE -->
+        <rect x="656" y="52" width="540" height="48" rx="2" class="bxb"/>
+        <text x="672" y="71" class="tm-i">_compare_companies(q) → _company_key_for() variant ladder</text>
+        <text x="672" y="89" class="ts">possessive stripped AFTER the raw name, so "Lowe's" and "McDonald's" still resolve</text>
+        <line x1="926" y1="100" x2="926" y2="118" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="656" y="118" width="540" height="56" rx="2" class="bxb"/>
+        <text x="672" y="137" class="tm-i">_metric_labels_for(q)</text>
+        <text x="672" y="153" class="ts">1. _question_metric_phrase(q) — the metric as the QUESTION words it, highest specificity</text>
+        <text x="672" y="167" class="ts">2. _METRIC_LEX family rows — 11 closed-lexicon metric families, most specific first</text>
+        <line x1="926" y1="174" x2="926" y2="192" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="656" y="192" width="540" height="40" rx="2" class="bxb"/><rect x="659" y="195" width="534" height="34" rx="1" class="bxn"/>
+        <text x="672" y="208" class="tm-i">cmp_vec = _tg_vector_search(q, k=VEC_K=12)</text><text x="1182" y="208" text-anchor="end" class="tb">GSQL</text>
+        <text x="672" y="223" class="ts">the graph still performs retrieval; only what we keep from it changed</text>
+        <line x1="926" y1="232" x2="926" y2="250" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="656" y="250" width="540" height="94" rx="2" class="bxb"/>
+        <text x="672" y="269" class="t2">_metric_block(comp, labels, vec_ids) &nbsp;per company</text>
+        <text x="672" y="288" class="tm">_extract_metric_rows → _row_score</text>
+        <text x="672" y="303" class="ts">label must PREFIX the row head and the line must carry ≥2 numeric tokens, which</text>
+        <text x="672" y="316" class="ts">is what rejects prose that merely mentions the metric; long labels outrank short</text>
+        <text x="672" y="331" class="ts">ones; ≥4-digit magnitudes beat percentage-of-sales rows; header line adds the years</text>
+        <line x1="926" y1="344" x2="926" y2="362" class="lnb" marker-end="url(#f3-arb)"/>
+
+        <rect x="816" y="362" width="220" height="40" rx="2" class="bxp"/>
+        <text x="926" y="380" text-anchor="middle" class="t2">len(blocks) &gt;= 2 ?</text>
+        <text x="926" y="395" text-anchor="middle" class="ts">both sides of the comparison resolved</text>
+        <path d="M816,382 L742,382 L742,424" class="lnb" marker-end="url(#f3-arb)"/>
+        <text x="750" y="418" class="tm">yes</text>
+        <path d="M1036,382 L1112,382 L1112,540" class="lnd" marker-end="url(#f3-ar)"/>
+        <text x="1120" y="418" class="tm">no</text>
+
+        <rect x="656" y="424" width="430" height="76" rx="2" class="bxb"/>
+        <text x="672" y="444" class="t2">two statement rows — nothing else</text>
+        <text x="672" y="462" class="tm">[cid] XOM — 2025 2024 2023 | (in millions) | Total revenues …</text>
+        <text x="672" y="478" class="ts">ticker-scoped, so one company's figures can never be read as the other's</text>
+        <text x="672" y="494" class="tb">ctx 4,129.9 → 129.9 &nbsp;(compare_net_income, n=13)</text>
+
+        <rect x="656" y="540" width="540" height="62" rx="2" class="bx"/>
+        <text x="672" y="560" class="t2">FALL-THROUGH — the initial implementation chunk retrieval</text>
+        <text x="672" y="578" class="tm">_company_financial_chunks(tick, metric, k=4) + cmp_vec[:4]</text>
+        <text x="672" y="594" class="ts">a comparison is never answered with only one side's figures present</text>
+
+        <rect x="656" y="618" width="540" height="56" rx="2" class="bxp"/>
+        <text x="672" y="637" class="tl">WHERE THE ACCURACY CAME FROM</text>
+        <text x="672" y="654" class="ts">Strict pass 0.15 → 0.37 on the 20 compare questions. The model no longer has to find</text>
+        <text x="672" y="668" class="ts">the right row inside several pages of tables — the extractor has already found it.</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 1.3 — bridge and compare.</b> The structural difference: bridge's second hop
+      returns <em>edges</em> (compressible to one sentence each), compare's returns <em>numbers</em>
+      (compressible to one table row each). Both decisions are two-sided, and both fall back to whole
+      chunks rather than answering on partial evidence.</figcaption>
+  </figure>
+
+  <h3>1.4 · The lookup / temporal / default cascade — replace, don't append</h3>
+  <p class="lede measure">One branch serves three route labels through four ordered attempts. The
+    governing rule is the optimization change: when a deterministic artifact answers the question, it
+    <em>replaces</em> the retrieved context instead of being appended to it. A <code>resolved</code>
+    flag carries that decision forward, and a compound question — one asking for two distinct facts —
+    is the single case where appending is still correct.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 800" role="img" aria-label="Four ordered resolution attempts for lookup, temporal and default questions: curated edge, metric row, dated 8-K timeline, then ordinary chunk retrieval, each falling through to the next when it cannot resolve.">
+        <defs>
+          <marker id="f4-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f4-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+        </defs>
+
+        <rect x="24" y="20" width="540" height="52" rx="2" class="bxb"/>
+        <text x="40" y="40" class="tm-i">else: &nbsp;# lookup | temporal | default</text>
+        <text x="40" y="58" class="ts">the three labels that share one branch — no `and not GRAPH_OFF` guard, because stage 4 is vector-only anyway</text>
+
+        <rect x="24" y="86" width="540" height="112" rx="2" class="bxb"/>
+        <text x="40" y="105" class="tl">PRECOMPUTE — ALL DETERMINISTIC</text>
+        <text x="40" y="124" class="tm">rels = _wanted_relations(q)</text><text x="300" y="124" class="ts">6 relation patterns, verb forms incl.</text>
+        <text x="40" y="141" class="tm">labels = _metric_labels_for(q)</text><text x="300" y="141" class="ts">lookup and default only</text>
+        <text x="40" y="158" class="tm">seed = _lookup_company_seed(q)</text><text x="300" y="158" class="ts">only when rels or labels is non-empty</text>
+        <text x="40" y="175" class="tm">vec_ids = _tg_vector_search(q, k)</text><text x="300" y="175" class="tb">GSQL — SKIPPED when (seed and rels)</text>
+        <text x="40" y="191" class="ts">k = LOOKUP_K (8) for lookup, VEC_K (12) otherwise — the most expensive knob in the pipeline.</text>
+
+        <rect x="596" y="20" width="620" height="112" rx="2" class="abl"/>
+        <text x="612" y="39" class="tm-i">P3_COMPOUND_K=4 &nbsp;· _asks_multiple(q) via _COMPOUND_RE</text>
+        <text x="612" y="57" class="ts">Fires on the coordination itself: ", and" · "and &lt;who|what|which|when|whose|how&gt;" · two question marks.</text>
+        <text x="612" y="74" class="ts">When it fires, the resolved artifact is AUGMENTED with 4 retrieved chunks instead of replacing them.</text>
+        <text x="612" y="95" class="tl">WHY IT EXISTS</text>
+        <text x="612" y="112" class="ts">A held-out question asked for a restructuring's target areas AND the company's auditor. Stage 1 resolved</text>
+        <text x="612" y="126" class="ts">the auditor edge, fed 90 context tokens, and refused the other half. Tier D fell 0.67 → 0.33 on that shape.</text>
+
+        <rect x="596" y="140" width="620" height="58" rx="2" class="bxp"/>
+        <text x="612" y="159" class="tl">THE The optimization RULE, IN ONE LINE</text>
+        <text x="612" y="177" class="ts">the initial implementation wrote `_context_from_chunks(fact_chunks + ids)` — a question answered by a single audited_by edge</text>
+        <text x="612" y="191" class="ts">still carried all 8 retrieved chunks. the optimization replaces instead of appending, unless the question is compound.</text>
+
+        <!-- STAGE 1 -->
+        <rect x="24" y="222" width="1192" height="108" rx="2" class="bxb"/>
+        <circle cx="50" cy="248" r="13" class="bxp"/><text x="50" y="252" text-anchor="middle" class="t2">1</text>
+        <text x="74" y="244" class="t">curated-edge path</text>
+        <text x="74" y="262" class="tm">if seed and rels and not COMPRESS_OFF</text>
+        <text x="74" y="283" class="ts">The question asks about a relation</text>
+        <text x="74" y="297" class="ts">the graph already holds — auditor,</text>
+        <text x="74" y="311" class="ts">sector, CEO, director, competitor,</text>
+        <text x="74" y="325" class="ts">supplier.</text>
+        <line x1="452" y1="234" x2="452" y2="318" class="rule"/>
+        <text x="468" y="244" class="tm-i">_graph_curated_targets(seed, rels)</text><text x="840" y="244" text-anchor="end" class="tb">GSQL</text>
+        <text x="468" y="261" class="ts">typed_neighbors supplies the relation and target …</text>
+        <text x="468" y="280" class="tm-i">_prov_for_targets(seed, rel, targets)</text>
+        <text x="468" y="297" class="ts">… and the local index supplies the evidence sentence to cite.</text>
+        <text x="468" y="311" class="ts">A graph-confirmed fact with no local sentence is emitted as a</text>
+        <text x="468" y="325" class="ts">bare edge rather than silently dropped.</text>
+        <line x1="858" y1="234" x2="858" y2="318" class="rule"/>
+        <text x="874" y="244" class="tm-i">_context_from_prov(prov[:10], extra)</text>
+        <text x="874" y="262" class="ts">one sentence per edge; if nothing survives,</text>
+        <text x="874" y="276" class="tm">[graph_edge:&lt;rel&gt;]</text><text x="1010" y="276" class="ts">carries the fact</text>
+        <text x="874" y="297" class="tb">ctx 2,704.6 → 320.7</text>
+        <text x="874" y="312" class="tm">lookup_auditor, n=10 · strict 0.90 → 0.95</text>
+        <text x="1176" y="324" text-anchor="end" class="tm">resolved = True</text>
+
+        <!-- STAGE 2 -->
+        <rect x="24" y="346" width="1192" height="108" rx="2" class="bxb"/>
+        <circle cx="50" cy="372" r="13" class="bxp"/><text x="50" y="376" text-anchor="middle" class="t2">2</text>
+        <text x="74" y="368" class="t">metric-row path</text>
+        <text x="74" y="386" class="tm">if not resolved and seed and labels</text>
+        <text x="74" y="407" class="ts">One financial-statement row answers</text>
+        <text x="74" y="421" class="ts">the question, so one row is what gets</text>
+        <text x="74" y="435" class="ts">fed — label-anchored, ticker-scoped.</text>
+        <line x1="452" y1="358" x2="452" y2="442" class="rule"/>
+        <text x="468" y="368" class="tm-i">_metric_block(seed, labels, vec_ids)</text>
+        <text x="468" y="386" class="ts">Candidate pool, in order: the TigerGraph vector hits for</text>
+        <text x="468" y="400" class="ts">THIS ticker, then _fin_pool(tick) — every 10-K chunk the</text>
+        <text x="468" y="414" class="ts">ticker has, any section. the initial implementation filtered to item7/item8, which</text>
+        <text x="468" y="428" class="ts">for several filers (Citigroup) contains zero chunks at all.</text>
+        <text x="468" y="444" class="tm">_ROW_SOURCE_STATS records which half won</text>
+        <line x1="858" y1="358" x2="858" y2="442" class="rule"/>
+        <text x="874" y="368" class="ts">one row + its year/units header, one citation</text>
+        <text x="874" y="386" class="tm">[cid] AAPL (AAPL) — 2025 2024 …</text>
+        <text x="874" y="400" class="tm">| Total net sales 416,161 …</text>
+        <text x="874" y="421" class="tb">ctx 3,631.6 → 69.3</text>
+        <text x="874" y="436" class="tm">lookup_revenue, n=10 · strict 0.60 → 0.95</text>
+        <text x="1176" y="448" text-anchor="end" class="tm">resolved = True</text>
+
+        <!-- STAGE 3 -->
+        <rect x="24" y="470" width="1192" height="108" rx="2" class="bxb"/>
+        <circle cx="50" cy="496" r="13" class="bxp"/><text x="50" y="500" text-anchor="middle" class="t2">3</text>
+        <text x="74" y="492" class="t">8-K item-code timeline</text>
+        <text x="74" y="510" class="tm">if not resolved and r == "temporal"</text>
+        <text x="74" y="531" class="ts">An ordering question needs dates in</text>
+        <text x="74" y="545" class="ts">order, not ten filings in full.</text>
+        <text x="74" y="562" class="tm">tseed = _lookup_company_seed(q)</text>
+        <text x="74" y="574" class="ts">else first of _companies_in_chunks(vec_ids)</text>
+        <line x1="452" y1="482" x2="452" y2="566" class="rule"/>
+        <text x="468" y="492" class="tm-i">_company_8k_timeline(tseed, max_filings=6)</text>
+        <text x="468" y="510" class="ts">_DOCID_RE parses the filing DATE and the SEC item code</text>
+        <text x="468" y="524" class="ts">straight out of the chunk id — both filer-assigned, neither</text>
+        <text x="468" y="538" class="ts">extracted. _SEC_ITEM_TITLES names the item; _ITEM_NOISE</text>
+        <text x="468" y="552" class="ts">drops exhibit lists and cover pages; 220-char snippet each.</text>
+        <text x="468" y="570" class="ts">events.json's `type` field is deliberately NOT used here.</text>
+        <line x1="858" y1="482" x2="858" y2="566" class="rule"/>
+        <text x="874" y="492" class="ts">six dated lines, chronological</text>
+        <text x="874" y="508" class="tm">[cid] CSCO 8-K filed 2026-05-13 —</text>
+        <text x="874" y="521" class="tm">Item 5.02 (Departure/Election …): …</text>
+        <text x="874" y="542" class="tb">ctx 3,769.0 → 288.2</text>
+        <text x="874" y="557" class="tm">temporal_order, n=20</text>
+        <text x="874" y="572" class="tc">strict 0.05 → 0.00 — cheap, not sufficient</text>
+        <text x="1176" y="572" text-anchor="end" class="tm">resolved = True</text>
+
+        <!-- STAGE 4 -->
+        <rect x="24" y="594" width="1192" height="108" rx="2" class="bx"/>
+        <circle cx="50" cy="620" r="13" class="bxp"/><text x="50" y="624" text-anchor="middle" class="t2">4</text>
+        <text x="74" y="616" class="t">unresolved — ordinary retrieval</text>
+        <text x="74" y="634" class="tm">if not resolved</text>
+        <text x="74" y="655" class="ts">Unchanged from the initial implementation. This is the path</text>
+        <text x="74" y="669" class="ts">every question took before the three</text>
+        <text x="74" y="683" class="ts">stages above existed.</text>
+        <line x1="452" y1="606" x2="452" y2="690" class="rule"/>
+        <text x="468" y="616" class="tm-i">ids = vec_ids or _tg_vector_search(q, k)</text><text x="840" y="616" text-anchor="end" class="tb">GSQL</text>
+        <text x="468" y="634" class="ts">then, for lookup questions only:</text>
+        <text x="468" y="652" class="tm-i">_wants_curated_facts(q) → _company_curated_facts(comp)</text>
+        <text x="468" y="669" class="ts">a keyword gate over a noun list — it famously misses the verb</text>
+        <text x="468" y="683" class="ts">form ("audits"), which is precisely why stage 1 exists above it.</text>
+        <line x1="858" y1="606" x2="858" y2="690" class="rule"/>
+        <text x="874" y="616" class="tm-i">_context_from_chunks(fact_chunks + ids)</text>
+        <text x="874" y="634" class="ts">whole chunks, ≤10 items × 2,000 chars</text>
+        <text x="874" y="655" class="tc">this is the expensive shape</text>
+        <text x="874" y="672" class="ts">P2 spends 3,229.8 context tokens on</text>
+        <text x="874" y="686" class="ts">average over the same 150 questions.</text>
+
+        <!-- fall-through rail -->
+        <path d="M36,330 L36,342" class="lnd" marker-end="url(#f4-ar)"/>
+        <path d="M36,454 L36,466" class="lnd" marker-end="url(#f4-ar)"/>
+        <path d="M36,578 L36,590" class="lnd" marker-end="url(#f4-ar)"/>
+        <text x="20" y="340" class="tl" transform="rotate(-90 20 340)">NOT RESOLVED</text>
+
+        <!-- converge -->
+        <path d="M1216,276 L1228,276 L1228,744" class="lnb"/>
+        <path d="M1216,400 L1228,400" class="lnb"/>
+        <path d="M1216,524 L1228,524" class="lnb"/>
+        <path d="M1216,648 L1228,648" class="lnb"/>
+        <path d="M1228,744 L640,744" class="lnb" marker-end="url(#f4-arb)"/>
+        <rect x="24" y="722" width="600" height="46" rx="2" class="bxb"/>
+        <text x="40" y="742" class="t2">context, ids &nbsp;→&nbsp; _build_prompt(question, context, graph_facts)</text>
+        <text x="40" y="759" class="ts">whichever stage resolved, the prompt builder and the single generator call are identical</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 1.4 — the four-stage cascade.</b> Stages are tried in order and the first
+      that produces an artifact wins. Note which numbers moved and which did not: the curated-edge and
+      metric-row stages bought accuracy as well as tokens (0.90 → 0.95 and 0.60 → 0.95 strict on their
+      shapes), while the timeline stage bought tokens only. All figures from
+      <code>v8_summary.by_shape</code> and <code>by_gold_route</code>.</figcaption>
+  </figure>
+</section>
+
+<section id="s2">
+  <h2><span class="sn">Section 2</span>The router — seven gates, first match wins</h2>
+  <p class="lede measure">The router is a pure function of the question string: no corpus read, no
+    embedding, no model call, which is why <code>optimizer_tokens</code> is zero. It is also the one
+    component whose correctness depends on <em>order</em>, because several routes share a sentence
+    opening. Two gates are guarded by conjunctions so that a broader pattern below them stays
+    untouched.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 800" role="img" aria-label="The seven router gates in evaluation order, with the structural cue each keys on and the route it yields, alongside two traced examples showing why the order matters.">
+        <defs>
+          <marker id="f5-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f5-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+          <marker id="f5-arc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkc"/></marker>
+        </defs>
+
+        <text x="24" y="30" class="tl">EVALUATION ORDER — route(question) in pipeline3_sec/pipeline.py</text>
+        <line x1="38" y1="44" x2="38" y2="672" class="lnd"/>
+
+        <!-- GATE 1 -->
+        <rect x="24" y="44" width="700" height="112" rx="2" class="bxb"/>
+        <circle cx="50" cy="70" r="13" class="bxp"/><text x="50" y="74" text-anchor="middle" class="t2">1</text>
+        <text x="74" y="66" class="tm-i">BINARY_COMPARE_RE &nbsp;∧&nbsp; BINARY_OR_RE &nbsp;∧&nbsp; COMPARE_METRIC_RE</text>
+        <text x="74" y="84" class="ts">A comparative adjective governing a metric, plus a two-way disjunction. All three required.</text>
+        <rect x="560" y="52" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="71" text-anchor="middle" class="tm-i">→ compare</text>
+        <rect x="74" y="96" width="182" height="48" rx="2" class="bxp"/>
+        <text x="86" y="113" class="tm">BINARY_COMPARE_RE</text>
+        <text x="86" y="127" class="ts">higher | lower | greater |</text>
+        <text x="86" y="139" class="ts">larger | more · any clause order</text>
+        <text x="263" y="126" class="t">∧</text>
+        <rect x="278" y="96" width="176" height="48" rx="2" class="bxp"/>
+        <text x="290" y="113" class="tm">BINARY_OR_RE</text>
+        <text x="290" y="127" class="ts">a two-way \b or \b —</text>
+        <text x="290" y="139" class="ts">exactly two candidates</text>
+        <text x="461" y="126" class="t">∧</text>
+        <rect x="476" y="96" width="234" height="48" rx="2" class="bxp"/>
+        <text x="488" y="113" class="tm">COMPARE_METRIC_RE</text>
+        <text x="488" y="127" class="ts">revenue | income | r&amp;d | margin | assets |</text>
+        <text x="488" y="139" class="ts">cash | eps — a figure the branch can resolve</text>
+        <line x1="38" y1="156" x2="38" y2="170" class="lnd" marker-end="url(#f5-ar)"/>
+
+        <!-- GATE 2 -->
+        <rect x="24" y="172" width="700" height="96" rx="2" class="bxb"/>
+        <circle cx="50" cy="198" r="13" class="bxp"/><text x="50" y="202" text-anchor="middle" class="t2">2</text>
+        <text x="74" y="194" class="tm-i">BRIDGE_SHARED_RE &nbsp;∧&nbsp; BRIDGE_REL_RE</text>
+        <text x="74" y="212" class="ts">A shared-attribute marker tied to a curated relation. Both required.</text>
+        <rect x="560" y="180" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="199" text-anchor="middle" class="tm-i">→ bridge</text>
+        <rect x="74" y="224" width="236" height="34" rx="2" class="bxp"/>
+        <text x="86" y="239" class="tm">BRIDGE_SHARED_RE</text>
+        <text x="86" y="252" class="ts">other | others | another | same</text>
+        <text x="317" y="246" class="t">∧</text>
+        <rect x="332" y="224" width="378" height="34" rx="2" class="bxp"/>
+        <text x="344" y="239" class="tm">BRIDGE_REL_RE</text>
+        <text x="344" y="252" class="ts">audit(s|ed|or) | accounting firm | board | director | supplier | foundry | partner</text>
+        <line x1="38" y1="268" x2="38" y2="282" class="lnd" marker-end="url(#f5-ar)"/>
+
+        <!-- GATE 3 -->
+        <rect x="24" y="284" width="700" height="88" rx="2" class="bxb"/>
+        <circle cx="50" cy="310" r="13" class="bxp"/><text x="50" y="314" text-anchor="middle" class="t2">3</text>
+        <text x="74" y="306" class="tm-i">AGG_RE</text>
+        <text x="130" y="306" class="ts">— the company-scan pattern. The broadest in the chain, which is why it sits third.</text>
+        <text x="74" y="327" class="ts">· enumeration determiner (which | list | name | how many | all | every) within 40 chars of compan(y|ies)</text>
+        <text x="74" y="342" class="ts">· among the companies · which &lt;sector&gt; · which … audited by | use tsmc | mention | discuss | declared</text>
+        <text x="74" y="357" class="ts">· serves on the boards of · is a director at · members of its board · which two companies</text>
+        <rect x="560" y="292" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="311" text-anchor="middle" class="tm-i">→ aggregation</text>
+        <line x1="38" y1="372" x2="38" y2="386" class="lnd" marker-end="url(#f5-ar)"/>
+
+        <!-- GATE 4 -->
+        <rect x="24" y="388" width="700" height="82" rx="2" class="bxb"/>
+        <circle cx="50" cy="414" r="13" class="bxp"/><text x="50" y="418" text-anchor="middle" class="t2">4</text>
+        <text x="74" y="410" class="tm-i">TEMPORAL_RE &nbsp;∨&nbsp; TEMPORAL_EXT_RE</text>
+        <text x="74" y="430" class="ts">· the initial implementation core, kept verbatim: chronological | order | two 8-ks | each report | retire | start date | transition</text>
+        <text x="74" y="445" class="ts">· the optimization extension, kept SEPARATE so an ablation can remove it alone: \bchronolog stem · came first |</text>
+        <text x="74" y="460" class="ts">&nbsp;&nbsp;before | after · in what sequence · precede(s|d) · occurred first</text>
+        <rect x="560" y="396" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="415" text-anchor="middle" class="tm-i">→ temporal</text>
+        <line x1="38" y1="470" x2="38" y2="484" class="lnd" marker-end="url(#f5-ar)"/>
+
+        <!-- GATE 5 -->
+        <rect x="24" y="486" width="700" height="66" rx="2" class="bxb"/>
+        <circle cx="50" cy="512" r="13" class="bxp"/><text x="50" y="516" text-anchor="middle" class="t2">5</text>
+        <text x="74" y="508" class="tm-i">COMPARE_RE</text>
+        <text x="74" y="528" class="ts">which (had | has | spent | paid | reported) … higher | more | larger | greater | highest</text>
+        <text x="74" y="543" class="ts">The narrow the initial implementation form: `which` immediately followed by a verb from a fixed list. Gate 1 exists because this misses most paraphrases.</text>
+        <rect x="560" y="494" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="513" text-anchor="middle" class="tm-i">→ compare</text>
+        <line x1="38" y1="552" x2="38" y2="566" class="lnd" marker-end="url(#f5-ar)"/>
+
+        <!-- GATE 6 -->
+        <rect x="24" y="568" width="700" height="66" rx="2" class="bxb"/>
+        <circle cx="50" cy="594" r="13" class="bxp"/><text x="50" y="598" text-anchor="middle" class="t2">6</text>
+        <text x="74" y="590" class="tm-i">BRIDGE_RE</text>
+        <text x="74" y="610" class="ts">the (company | firm | entity | one) (that | whose | which)</text>
+        <text x="74" y="625" class="ts">The only gate matched against the ORIGINAL question rather than its lowercased form.</text>
+        <rect x="560" y="576" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="595" text-anchor="middle" class="tm-i">→ bridge</text>
+        <line x1="38" y1="634" x2="38" y2="648" class="lnd" marker-end="url(#f5-ar)"/>
+
+        <!-- GATE 7 -->
+        <rect x="24" y="650" width="700" height="58" rx="2" class="bx"/>
+        <circle cx="50" cy="676" r="13" class="bxp"/><text x="50" y="680" text-anchor="middle" class="t2">7</text>
+        <text x="74" y="672" class="tm-i">return "lookup"</text>
+        <text x="74" y="692" class="ts">The fallback — nothing matched. Tested last on principle: a fallback evaluated early is not a fallback.</text>
+        <rect x="560" y="658" width="150" height="28" rx="2" class="bxb"/>
+        <text x="635" y="677" text-anchor="middle" class="tm-i">→ lookup</text>
+
+        <!-- TRACE A -->
+        <rect x="756" y="44" width="460" height="300" rx="2" class="bxp"/>
+        <text x="772" y="64" class="tl">WHY GATE 2 PRECEDES GATE 3</text>
+        <rect x="772" y="76" width="428" height="42" rx="2" class="bx"/>
+        <text x="784" y="93" class="tm-i">"Accenture's auditor also audits which</text>
+        <text x="784" y="109" class="tm-i">&nbsp;other companies?"</text>
+
+        <path d="M986,118 L986,136" class="lnb" marker-end="url(#f5-arb)"/>
+        <rect x="772" y="136" width="428" height="52" rx="2" class="bxb"/>
+        <text x="784" y="154" class="t2">as ordered &nbsp;·&nbsp; gate 2 claims it</text>
+        <text x="784" y="171" class="tm">"other" ∧ "audits" &nbsp;→&nbsp; bridge</text>
+        <text x="784" y="184" class="ts">the two halves of a shared-attribute question</text>
+
+        <path d="M986,188 L986,206" class="lnc" marker-end="url(#f5-arc)"/>
+        <rect x="772" y="206" width="428" height="52" rx="2" class="bxc"/>
+        <text x="784" y="224" class="t2">if AGG_RE ran first &nbsp;·&nbsp; misroute</text>
+        <text x="784" y="241" class="tm">"which … companies" &nbsp;→&nbsp; aggregation</text>
+        <text x="784" y="254" class="ts">the company-scan alternative matches the same string</text>
+
+        <text x="772" y="280" class="ts">Every bridge paraphrase that fronts the interrogative</text>
+        <text x="772" y="294" class="ts">would be swallowed by the enumeration scan.</text>
+        <text x="772" y="316" class="tl">AND WHY THE CONJUNCTION IS NEEDED</text>
+        <text x="772" y="331" class="ts">"Which companies are audited by Ernst &amp; Young LLP?" has the relation</text>
+        <text x="772" y="343" class="ts">word but no shared-attribute marker, so gate 2 declines it and it stays</text>
+        <text x="772" y="355" class="ts">an aggregation scan. That is exactly the point of the conjunction.</text>
+
+        <!-- TRACE B -->
+        <rect x="756" y="360" width="460" height="300" rx="2" class="bxp"/>
+        <text x="772" y="380" class="tl">WHY GATE 1 PRECEDES GATE 3</text>
+        <rect x="772" y="392" width="428" height="42" rx="2" class="bx"/>
+        <text x="784" y="409" class="tm-i">"Which company reported higher net</text>
+        <text x="784" y="425" class="tm-i">&nbsp;income, Intel or AMD?"</text>
+
+        <path d="M986,434 L986,452" class="lnb" marker-end="url(#f5-arb)"/>
+        <rect x="772" y="452" width="428" height="52" rx="2" class="bxb"/>
+        <text x="784" y="470" class="t2">as ordered &nbsp;·&nbsp; gate 1 claims it</text>
+        <text x="784" y="487" class="tm">"higher" ∧ "or" ∧ "income" &nbsp;→&nbsp; compare</text>
+        <text x="784" y="500" class="ts">routing accuracy on the tune split: 0.800 → 1.000</text>
+
+        <path d="M986,504 L986,522" class="lnc" marker-end="url(#f5-arc)"/>
+        <rect x="772" y="522" width="428" height="66" rx="2" class="bxc"/>
+        <text x="784" y="540" class="t2">if AGG_RE ran first &nbsp;·&nbsp; misroute</text>
+        <text x="784" y="557" class="tm">"which company" &nbsp;→&nbsp; aggregation</text>
+        <text x="784" y="570" class="ts">and gate 5 could not rescue it afterwards: COMPARE_RE</text>
+        <text x="784" y="583" class="ts">needs `which` directly followed by a verb — "company" intervenes.</text>
+
+        <text x="772" y="610" class="tl">AND WHY THE THIRD CONDITION IS NEEDED</text>
+        <text x="772" y="627" class="ts">"Which company has more employees, A or B?" carries a comparative and an</text>
+        <text x="772" y="639" class="ts">`or`, but no metric the compare branch can resolve — it mines statement</text>
+        <text x="772" y="651" class="ts">rows. COMPARE_METRIC_RE keeps it out of a branch that would fail it.</text>
+
+        <!-- measured panel -->
+        <rect x="756" y="676" width="460" height="100" rx="2" class="bx"/>
+        <text x="772" y="696" class="tl">MEASURED — ROUTE LABEL ACCURACY</text>
+        <text x="772" y="716" class="tm">in domain, SEC</text><text x="1032" y="716" class="tb">80 / 100 = 0.800</text>
+        <text x="772" y="734" class="tm">out of domain, Olympics</text><text x="1032" y="734" class="tc">26 / 150 = 0.173</text>
+        <text x="772" y="755" class="ts">Out of domain it labels 100% of questions `lookup` — scoring 1.00 on the one</text>
+        <text x="772" y="768" class="ts">category that is also the fallback, and 0.00 on everything else. See section 5.</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 2 — the gate chain.</b> Order is load-bearing here in a way it is not in the
+      Olympics lexicon: gates 1 and 2 exist <em>specifically</em> to run ahead of gate 3, whose
+      company-scan alternative would otherwise claim every comparison and every shared-attribute
+      bridge paraphrase. Both are conjunctions precisely so they cannot over-claim in the other
+      direction. Accuracy figures from <code>results/sec/router_indomain_extra100.json</code> and
+      <code>router_generalization.json</code>.</figcaption>
+  </figure>
+  <p class="fignote">Two ablation hooks sit above gate 1 and are shown in figure 1.1:
+    <code>P3_ROUTE_FORCE</code> replaces the whole chain with a fixed or <code>md5</code>-seeded random
+    label while leaving every branch live, and <code>P3_ROUTER_OFF</code> returns <code>"default"</code>,
+    which no branch matches — disabling routing, graph traversal and compression together.</p>
+</section>
+
+<section id="s3">
+  <h2><span class="sn">Section 3</span>Context assembly — four ways to fill the same prompt slot</h2>
+  <p class="lede measure">Every branch ends at the same place: a <code>context</code> string and a list
+    of citation ids. What differs is how much of the corpus survives into that string. All four
+    assemblers below are deterministic string work — no model call, no embedding call — so moving
+    between them changes what the generator reads without changing what the pipeline is charged for
+    producing it.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 596" role="img" aria-label="Four context-assembly strategies side by side: whole-chunk assembly, evidence-sentence substitution, metric-row extraction and the 8-K item-code timeline, each with what it reads, its mechanism, the literal string it emits, and its measured context-token cost.">
+        <defs>
+          <marker id="f6-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+        </defs>
+
+        <!-- col 1 -->
+        <rect x="24" y="20" width="286" height="50" rx="2" class="bxc"/>
+        <text x="38" y="40" class="t2">whole-chunk assembly</text>
+        <text x="38" y="58" class="tm">_context_from_chunks(ids)</text>
+        <rect x="24" y="84" width="286" height="62" rx="2" class="bxp"/>
+        <text x="38" y="102" class="tl">READS</text>
+        <text x="38" y="119" class="ts">chunk ids from TG vector search,</text>
+        <text x="38" y="132" class="ts">then _chunk_text[cid] in full</text>
+        <rect x="24" y="160" width="286" height="150" rx="2" class="bx"/>
+        <text x="38" y="178" class="tl">MECHANISM</text>
+        <text x="38" y="196" class="tm">_dedup(ids)[:MAX_CTX_CHUNKS]</text>
+        <text x="38" y="212" class="tm">txt[:MAX_CTX_CHARS]</text>
+        <text x="38" y="230" class="ts">join on "\n\n---\n\n", label each</text>
+        <text x="38" y="243" class="ts">passage with its [chunk_id]</text>
+        <text x="38" y="264" class="ts">No selection WITHIN a chunk. The</text>
+        <text x="38" y="277" class="ts">model is handed up to 20,000</text>
+        <text x="38" y="290" class="ts">characters and must locate the</text>
+        <text x="38" y="303" class="ts">answer inside them itself.</text>
+        <rect x="24" y="324" width="286" height="112" rx="2" class="bxp"/>
+        <text x="38" y="342" class="tl">EMITS</text>
+        <text x="38" y="360" class="tm">[AAPL/10-K_2025-10-31#item8-c2]</text>
+        <text x="38" y="374" class="tm">UNITED STATES SECURITIES AND …</text>
+        <text x="38" y="388" class="tm">… 2,000 chars of statement text …</text>
+        <text x="38" y="404" class="tm">---</text>
+        <text x="38" y="420" class="ts">× up to 10 passages</text>
+        <rect x="24" y="450" width="286" height="76" rx="2" class="bxc"/>
+        <text x="38" y="468" class="tl">MEASURED CONTEXT COST</text>
+        <text x="38" y="489" class="tc">3,229.8 ctx tokens</text>
+        <text x="38" y="505" class="ts">Basic RAG mean, 150 questions.</text>
+        <text x="38" y="518" class="ts">P3's fall-throughs use this builder too.</text>
+
+        <!-- col 2 -->
+        <rect x="326" y="20" width="286" height="50" rx="2" class="bxb"/>
+        <text x="340" y="40" class="t2">evidence-sentence substitution</text>
+        <text x="340" y="58" class="tm">_context_from_prov(prov, extra)</text>
+        <rect x="326" y="84" width="286" height="62" rx="2" class="bxp"/>
+        <text x="340" y="102" class="tl">READS</text>
+        <text x="340" y="119" class="ts">resolved provenance edges from</text>
+        <text x="340" y="132" class="ts">_rel_index — evidence + chunk_id</text>
+        <rect x="326" y="160" width="286" height="150" rx="2" class="bx"/>
+        <text x="340" y="178" class="tl">MECHANISM</text>
+        <text x="340" y="196" class="ts">one "[cid] &lt;evidence sentence&gt;" per</text>
+        <text x="340" y="209" class="ts">edge, capped at MAX_CTX_CHUNKS</text>
+        <text x="340" y="230" class="ts">An edge that lost its chunk_id gets a</text>
+        <text x="340" y="243" class="ts">citation synthesised from its source</text>
+        <text x="340" y="256" class="ts">ticker, so evidence stays attributable</text>
+        <text x="340" y="277" class="ts">Whole chunks are appended ONLY via</text>
+        <text x="340" y="290" class="tm">extra_chunks=</text><text x="432" y="290" class="ts">— the compound-</text>
+        <text x="340" y="303" class="ts">question and bridge-backstop cases.</text>
+        <rect x="326" y="324" width="286" height="112" rx="2" class="bxp"/>
+        <text x="340" y="342" class="tl">EMITS</text>
+        <text x="340" y="360" class="tm">[ACN/10-K_2025-10-16#item8-c0]</text>
+        <text x="340" y="374" class="tm">Our independent registered public</text>
+        <text x="340" y="388" class="tm">accounting firm is KPMG LLP.</text>
+        <text x="340" y="408" class="ts">one sentence, one citation, per fact</text>
+        <rect x="326" y="450" width="286" height="76" rx="2" class="bxb"/>
+        <text x="340" y="468" class="tl">MEASURED CONTEXT COST</text>
+        <text x="340" y="489" class="tb">320.7 ctx tokens</text>
+        <text x="340" y="505" class="ts">lookup_auditor, n=10, from 2,704.6.</text>
+        <text x="340" y="518" class="ts">Aggregation: 72.0 – 1,422.0 by shape.</text>
+
+        <!-- col 3 -->
+        <rect x="628" y="20" width="286" height="50" rx="2" class="bxb"/>
+        <text x="642" y="40" class="t2">metric-row extraction</text>
+        <text x="642" y="58" class="tm">_metric_block / _extract_metric_rows</text>
+        <rect x="628" y="84" width="286" height="62" rx="2" class="bxp"/>
+        <text x="642" y="102" class="tl">READS</text>
+        <text x="642" y="119" class="ts">_chunk_lines(cid) over the TG vector</text>
+        <text x="642" y="132" class="ts">hits for this ticker, then _fin_pool</text>
+        <rect x="628" y="160" width="286" height="150" rx="2" class="bx"/>
+        <text x="642" y="178" class="tl">MECHANISM — _row_score</text>
+        <text x="642" y="196" class="ts">· label must PREFIX the text before the</text>
+        <text x="642" y="209" class="ts">&nbsp;&nbsp;first figure (rejects prose mentions)</text>
+        <text x="642" y="224" class="ts">· ≥2 numeric tokens, head ≤10 words</text>
+        <text x="642" y="239" class="ts">· + 2 × len(label): specificity beats a</text>
+        <text x="642" y="252" class="ts">&nbsp;&nbsp;short exact match on a segment row</text>
+        <text x="642" y="267" class="ts">· + 3 per ≥4-digit figure, −15 if none:</text>
+        <text x="642" y="280" class="ts">&nbsp;&nbsp;dollars beat percentage-of-sales rows</text>
+        <text x="642" y="295" class="ts">· header scan ≤14 lines back for a year</text>
+        <text x="642" y="305" class="ts">&nbsp;&nbsp;column + units note, crossing chunks</text>
+        <rect x="628" y="324" width="286" height="112" rx="2" class="bxp"/>
+        <text x="642" y="342" class="tl">EMITS</text>
+        <text x="642" y="360" class="tm">[XOM/10-K_2026-02-25#item16-c3]</text>
+        <text x="642" y="374" class="tm">Exxon Mobil (XOM) — 2025 2024 2023</text>
+        <text x="642" y="388" class="tm">| (in millions) | Total revenues and</text>
+        <text x="642" y="402" class="tm">other income 332,238 …</text>
+        <text x="642" y="422" class="ts">ticker-scoped: no cross-contamination</text>
+        <rect x="628" y="450" width="286" height="76" rx="2" class="bxb"/>
+        <text x="642" y="468" class="tl">MEASURED CONTEXT COST</text>
+        <text x="642" y="489" class="tb">129.9 ctx tokens</text>
+        <text x="642" y="505" class="ts">compare_net_income, n=13, from 4,129.9.</text>
+        <text x="642" y="518" class="ts">lookup_revenue: 69.3, from 3,631.6.</text>
+
+        <!-- col 4 -->
+        <rect x="930" y="20" width="286" height="50" rx="2" class="bxb"/>
+        <text x="944" y="40" class="t2">8-K item-code timeline</text>
+        <text x="944" y="58" class="tm">_company_8k_timeline(company_key)</text>
+        <rect x="930" y="84" width="286" height="62" rx="2" class="bxp"/>
+        <text x="944" y="102" class="tl">READS</text>
+        <text x="944" y="119" class="ts">the chunk IDS themselves — _DOCID_RE</text>
+        <text x="944" y="132" class="ts">over _chunk_text keys; no text parsing</text>
+        <rect x="930" y="160" width="286" height="150" rx="2" class="bx"/>
+        <text x="944" y="178" class="tl">MECHANISM</text>
+        <text x="944" y="196" class="ts">· group by (filing date, item code),</text>
+        <text x="944" y="209" class="ts">&nbsp;&nbsp;keep the FIRST chunk of each pair</text>
+        <text x="944" y="224" class="ts">· drop _ITEM_NOISE — exhibit lists and</text>
+        <text x="944" y="237" class="ts">&nbsp;&nbsp;cover pages appear on every filing</text>
+        <text x="944" y="252" class="ts">· sort by date, take ≤6 filings</text>
+        <text x="944" y="267" class="ts">· _SEC_ITEM_TITLES names the item;</text>
+        <text x="944" y="280" class="ts">&nbsp;&nbsp;the restated heading is stripped</text>
+        <text x="944" y="295" class="ts">Date and item code are filer-assigned,</text>
+        <text x="944" y="305" class="ts">so the ordering evidence is exact.</text>
+        <rect x="930" y="324" width="286" height="112" rx="2" class="bxp"/>
+        <text x="944" y="342" class="tl">EMITS</text>
+        <text x="944" y="360" class="tm">[CSCO/8-K_2026-05-13#item5.02-c0]</text>
+        <text x="944" y="374" class="tm">CSCO 8-K filed 2026-05-13 — Item 5.02</text>
+        <text x="944" y="388" class="tm">(Departure/Election of Directors or</text>
+        <text x="944" y="402" class="tm">Certain Officers): …</text>
+        <text x="944" y="422" class="ts">× 6 dated lines, chronological</text>
+        <rect x="930" y="450" width="286" height="76" rx="2" class="bxb"/>
+        <text x="944" y="468" class="tl">MEASURED CONTEXT COST</text>
+        <text x="944" y="489" class="tb">288.2 ctx tokens</text>
+        <text x="944" y="505" class="ts">temporal_order, n=20, from 3,769.0.</text>
+        <text x="944" y="518" class="ts">Tokens fell; strict pass did not rise.</text>
+
+        <rect x="24" y="544" width="1192" height="40" rx="2" class="bxp"/>
+        <text x="40" y="569" class="ts">All four assemblers are pure Python string, set and regex work over structures already in memory. None issues a model call, so </text>
+        <text x="860" y="569" class="tm-i">optimizer_tokens = 0</text>
+        <text x="1000" y="569" class="ts">on every question measured.</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 3 — the four assemblers.</b> The first column is what both pipelines do when
+      nothing resolves; the other three are what Pipeline 3 substitutes when a deterministic artifact
+      answers the question. The substitution is not summarisation — the emitted string is a verbatim
+      span of the filing, with its chunk id attached, so a citation judge can still check it.</figcaption>
+  </figure>
+
+  <div class="chart">
+    <div class="chart-head">
+      <div>
+        <div class="chart-title">Context tokens per question, by question shape</div>
+        <div class="chart-sub">Same 150 questions, same retrieval, same generator — only the assembler changed.</div>
+      </div>
+      <div class="chart-sub">v8_summary.by_shape · mean of 3 runs</div>
+    </div>
+    <div class="clegend">
+      <span><i class="ci-a"></i>whole chunks (the initial implementation)</span>
+      <span><i class="ci-b"></i>substituted artifact (the optimization)</span>
+    </div>
+    <div class="chartbody">
+      <div class="gridline" style="left:22.73%"></div>
+      <div class="gridline" style="left:45.45%"></div>
+      <div class="gridline" style="left:68.18%"></div>
+      <div class="gridline" style="left:90.91%"></div>
+      <div class="refline" style="left:73.40%"></div>
+      <div class="reflab" style="left:73.40%">Basic RAG mean 3,229.8</div>
+      <div class="rows" style="margin-top:22px">
+        <div class="crow"><div class="lab">compare, revenue<i>n=7 · metric row</i></div>
+          <div class="track">
+            <div class="bar a" style="width:94.44%" tabindex="0" data-tip="compare_revenue · whole chunks (the initial implementation): 4,155.2 context tokens"><span class="v">4,155.2</span></div>
+            <div class="bar b" style="width:3.16%" tabindex="0" data-tip="compare_revenue · metric row (the optimization): 138.9 context tokens — 96.7% less"><span class="v">138.9</span></div>
+          </div></div>
+        <div class="crow"><div class="lab">compare, net income<i>n=13 · metric row</i></div>
+          <div class="track">
+            <div class="bar a" style="width:93.86%" tabindex="0" data-tip="compare_net_income · whole chunks (the initial implementation): 4,129.9 context tokens"><span class="v">4,129.9</span></div>
+            <div class="bar b" style="width:2.95%" tabindex="0" data-tip="compare_net_income · metric row (the optimization): 129.9 context tokens — 96.9% less"><span class="v">129.9</span></div>
+          </div></div>
+        <div class="crow"><div class="lab">lookup, revenue<i>n=10 · metric row</i></div>
+          <div class="track">
+            <div class="bar a" style="width:82.54%" tabindex="0" data-tip="lookup_revenue · whole chunks (the initial implementation): 3,631.6 context tokens"><span class="v">3,631.6</span></div>
+            <div class="bar b" style="width:1.58%" tabindex="0" data-tip="lookup_revenue · metric row (the optimization): 69.3 context tokens — 98.1% less"><span class="v">69.3</span></div>
+          </div></div>
+        <div class="crow"><div class="lab">lookup, auditor<i>n=10 · evidence sentence</i></div>
+          <div class="track">
+            <div class="bar a" style="width:61.47%" tabindex="0" data-tip="lookup_auditor · whole chunks (the initial implementation): 2,704.6 context tokens"><span class="v">2,704.6</span></div>
+            <div class="bar b" style="width:7.29%" tabindex="0" data-tip="lookup_auditor · evidence sentence (the optimization): 320.7 context tokens — 88.1% less"><span class="v">320.7</span></div>
+          </div></div>
+        <div class="crow"><div class="lab">temporal, ordering<i>n=20 · 8-K timeline</i></div>
+          <div class="track">
+            <div class="bar a" style="width:85.66%" tabindex="0" data-tip="temporal_order · whole chunks (the initial implementation): 3,769.0 context tokens"><span class="v">3,769.0</span></div>
+            <div class="bar b" style="width:6.55%" tabindex="0" data-tip="temporal_order · 8-K timeline (the optimization): 288.2 context tokens — 92.4% less"><span class="v">288.2</span></div>
+          </div></div>
+        <div class="crow"><div class="lab">bridge, shared auditor<i>n=12 · evidence sentence + 2 chunks</i></div>
+          <div class="track">
+            <div class="bar a" style="width:92.43%" tabindex="0" data-tip="bridge_shared_auditor · whole chunks (the initial implementation): 4,067.0 context tokens"><span class="v">4,067.0</span></div>
+            <div class="bar b" style="width:26.68%" tabindex="0" data-tip="bridge_shared_auditor · evidence sentence + 2 whole chunks (the optimization): 1,173.8 context tokens — 71.1% less"><span class="v">1,173.8</span></div>
+          </div></div>
+      </div>
+      <div class="axis">
+        <span style="left:0">0</span><span style="left:22.73%">1,000</span><span style="left:45.45%">2,000</span>
+        <span style="left:68.18%">3,000</span><span style="left:90.91%">4,000</span>
+        <span style="left:100%;transform:translateX(-100%)">context tokens</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tblwrap">
+    <table>
+      <caption>Context tokens only — the retrieved evidence placed in the prompt, excluding the system
+        prompt, the question and the output. Absolute values are from
+        <code>v8_summary.by_shape</code> (<code>P3_baseline_ctx</code>, <code>P3_final_ctx</code>); the
+        reduction column is their ratio.</caption>
+      <thead><tr>
+        <th>Question shape</th><th class="num">n</th><th>Assembler</th>
+        <th class="num">initial ctx</th><th class="num">the optimization ctx</th><th class="num">Context reduction</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="mono">compare_revenue</td><td class="num">7</td><td>metric row</td><td class="num">4,155.2</td><td class="num hi">138.9</td><td class="num">96.7%</td></tr>
+        <tr><td class="mono">compare_net_income</td><td class="num">13</td><td>metric row</td><td class="num">4,129.9</td><td class="num hi">129.9</td><td class="num">96.9%</td></tr>
+        <tr><td class="mono">lookup_revenue</td><td class="num">10</td><td>metric row</td><td class="num">3,631.6</td><td class="num hi">69.3</td><td class="num">98.1%</td></tr>
+        <tr><td class="mono">lookup_auditor</td><td class="num">10</td><td>evidence sentence</td><td class="num">2,704.6</td><td class="num hi">320.7</td><td class="num">88.1%</td></tr>
+        <tr><td class="mono">temporal_order</td><td class="num">20</td><td>8-K timeline</td><td class="num">3,769.0</td><td class="num hi">288.2</td><td class="num">92.4%</td></tr>
+        <tr><td class="mono">bridge_shared_auditor</td><td class="num">12</td><td>evidence sentence + 2 chunks</td><td class="num">4,067.0</td><td class="num hi">1,173.8</td><td class="num">71.1%</td></tr>
+        <tr><td class="mono">bridge_shared_director</td><td class="num">6</td><td>evidence sentence + 2 chunks</td><td class="num">4,562.6</td><td class="num hi">1,598.4</td><td class="num">65.0%</td></tr>
+        <tr><td class="mono">agg_sector</td><td class="num">5</td><td>evidence sentence (since the initial implementation)</td><td class="num">72.0</td><td class="num hi">72.0</td><td class="num">—</td></tr>
+        <tr><td class="mono">agg_auditor</td><td class="num">4</td><td>evidence sentence (since the initial implementation)</td><td class="num">720.2</td><td class="num hi">720.2</td><td class="num">—</td></tr>
+        <tr><td class="mono">agg_supplier</td><td class="num">3</td><td>evidence sentence (since the initial implementation)</td><td class="num">1,421.9</td><td class="num hi">1,422.0</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="fignote">The aggregation shapes are the control: they already used evidence-sentence
+    substitution in the initial implementation and their context cost is unchanged, which is what shows the optimization pass extended
+    an existing mechanism's <em>coverage</em> rather than inventing a new compression.</p>
+</section>
+
+<section id="s4">
+  <h2><span class="sn">Section 4</span>Data and index layer — what exists, and who reads it</h2>
+  <p class="lede measure">Three stores sit behind the branches, and they are not interchangeable. The
+    local provenance index holds the <em>evidence sentences</em> that make compression citable; the
+    graph holds the <em>typed structure</em> that makes enumeration possible and supplies the vector
+    search; Chroma serves the Basic RAG baseline and is never read by Pipeline 3. Building the graph
+    cost tokens once; answering a question costs none of them.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 548" role="img" aria-label="The data layer: the pre-chunked corpus feeds a one-time Gemini extraction and a TigerGraph ingest, producing a local provenance index, a Chroma vector store used only by the baseline, and the TigerGraph graph with its installed GSQL queries.">
+        <defs>
+          <marker id="f7-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f7-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+          <marker id="f7-arc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkc"/></marker>
+        </defs>
+
+        <rect x="24" y="20" width="1192" height="56" rx="9" class="dim"/>
+        <text x="44" y="42" class="t">datasets/sec/corpus.jsonl</text>
+        <text x="300" y="42" class="ts">61,172 pre-chunked passages · 10-K, 8-K and DEF 14A filings for 100 S&amp;P-100 companies</text>
+        <text x="44" y="62" class="tm">title == chunk_id == citation: &nbsp;AAPL/10-K_2025-10-31#item8-c2 &nbsp;→&nbsp; ticker / form_date # section - chunk index</text>
+        <text x="1196" y="62" text-anchor="end" class="tl">SOURCE OF TRUTH</text>
+
+        <path d="M314,76 L314,92" class="lnc" marker-end="url(#f7-arc)"/>
+        <path d="M926,76 L926,92" class="lnb" marker-end="url(#f7-arb)"/>
+
+        <rect x="24" y="96" width="580" height="86" rx="2" class="bxc"/>
+        <text x="40" y="117" class="t2">one-time knowledge-graph extraction &nbsp;·&nbsp; Gemini</text>
+        <text x="40" y="136" class="ts">The only place in the whole system where LLM tokens are spent on anything but answering.</text>
+        <text x="40" y="156" class="tm">34,410,391 prompt + 110,206,465 output over 7,403 calls</text>
+        <text x="40" y="172" class="ts">source: pipeline3_sec/index/ingestion_tokens.json — amortised, never charged to a question</text>
+
+        <rect x="636" y="96" width="580" height="86" rx="2" class="bxb"/><rect x="639" y="99" width="574" height="80" rx="1" class="bxn"/>
+        <text x="652" y="117" class="t2">build/kg/tg_ingest.py</text>
+        <text x="652" y="136" class="ts">Creates the schema, installs every query, bulk-loads vertices and edges by raw REST to</text>
+        <text x="652" y="150" class="tm">/restpp/graph/finance</text><text x="796" y="150" class="ts">— pyTigerGraph's dict-form upsert silently no-ops on this instance.</text>
+        <text x="652" y="172" class="ts">Verification is by live query, not by getVertexCount, whose stats go stale here.</text>
+
+        <path d="M314,182 L314,200" class="lnd" marker-end="url(#f7-ar)"/>
+        <path d="M926,182 L926,200" class="lnb" marker-end="url(#f7-arb)"/>
+        <path d="M604,139 L624,139" class="lnd" marker-end="url(#f7-ar)"/>
+
+        <!-- A: local index -->
+        <rect x="24" y="204" width="420" height="266" rx="2" class="bxb"/>
+        <text x="40" y="224" class="tl">LOCAL PROVENANCE INDEX — pipeline3_sec/index/</text>
+        <text x="40" y="243" class="tm-i">edges_prov.json</text><text x="236" y="243" class="tm">126,504</text>
+        <text x="40" y="256" class="ts">→ _rel_index: the evidence sentence per edge. Read by every branch.</text>
+        <text x="40" y="276" class="tm-i">entity_to_docs.json</text><text x="236" y="276" class="tm">73,261</text>
+        <text x="40" y="289" class="ts">→ _entity_names_lower: bridge seeds and director-name matching.</text>
+        <text x="40" y="309" class="tm-i">events.json</text><text x="236" y="309" class="tm">10,643</text>
+        <text x="40" y="322" class="ts">→ the __eventf__ resolver only. Its `type` field is known unreliable.</text>
+        <text x="40" y="342" class="tm-i">relationships.json</text><text x="236" y="342" class="tm">71,197</text>
+        <text x="40" y="355" class="ts">→ build-time only: partitions curated vs open edges for the loader.</text>
+        <text x="40" y="375" class="tm-i">company_facts.json</text><text x="236" y="375" class="tm">100</text>
+        <text x="40" y="388" class="ts">→ loaded and deliberately NEVER fed to the model: extracted figures</text>
+        <text x="40" y="401" class="ts">&nbsp;&nbsp;&nbsp;are wrong often enough that statement text is used instead.</text>
+        <text x="40" y="421" class="tm-i">entity_types.json · precision_edges.json</text>
+        <text x="40" y="434" class="ts">→ vertex attributes and the precision pass, build-time.</text>
+        <text x="40" y="456" class="ts">All read once at process start. No network, no per-question cost.</text>
+
+        <!-- B: chroma -->
+        <rect x="460" y="204" width="320" height="266" rx="2" class="bxb"/>
+        <text x="476" y="224" class="tl">CHROMA VECTOR STORE — baseline only</text>
+        <text x="476" y="244" class="tm-i">chroma_db_sec/main</text>
+        <text x="476" y="258" class="tm">collection: sec_docs</text>
+        <text x="476" y="280" class="ts">Built by chroma_store.build_vectorstore()</text>
+        <text x="476" y="293" class="ts">with SEC_PRECHUNKED=1, which</text>
+        <text x="476" y="306" class="ts">BYPASSES the text splitter — re-splitting</text>
+        <text x="476" y="319" class="ts">would destroy the chunk ids the citation</text>
+        <text x="476" y="332" class="ts">metric depends on.</text>
+        <text x="476" y="353" class="tm">bge-small-en-v1.5, L2-normalised</text>
+        <text x="476" y="367" class="ts">the same embedder the graph's vectors use,</text>
+        <text x="476" y="380" class="ts">so the two retrieval halves are comparable.</text>
+        <text x="476" y="402" class="tl">READ BY</text>
+        <text x="476" y="419" class="tm">pipeline2_basic_rag.run_single</text>
+        <text x="476" y="433" class="ts">similarity top-k, optional ticker metadata</text>
+        <text x="476" y="446" class="ts">pre-filter, optional adaptive-k and</text>
+        <text x="476" y="459" class="ts">sentence compression (both zero-token).</text>
+
+        <!-- C: tigergraph -->
+        <rect x="796" y="204" width="420" height="266" rx="2" class="bxb"/><rect x="799" y="207" width="414" height="260" rx="1" class="bxn"/>
+        <text x="812" y="226" class="tl">TIGERGRAPH SAVANNA — graph `finance`</text>
+        <text x="812" y="245" class="tm-i">Entity_finance</text><text x="912" y="245" class="tm">(entity_id, name, entity_type, mention_count)</text>
+        <text x="812" y="262" class="tm-i">Chunk_finance</text><text x="906" y="262" class="tm">(chunk_id, doc_id, ticker,</text>
+        <text x="906" y="275" class="tm">company, sector, form, section, text,</text>
+        <text x="906" y="288" class="tm">emb VECTOR 384 COSINE)</text>
+        <text x="812" y="306" class="ts">10 curated DIRECTED edge types, each carrying rel_count and a</text>
+        <text x="812" y="318" class="ts">provenance chunk_id — the schema is self-documenting:</text>
+        <text x="812" y="333" class="tm">audited_by · competitor_of · uses_supplier · discusses_risk</text>
+        <text x="812" y="345" class="tm">reports_event · has_director · has_ceo · in_sector · filed</text>
+        <text x="812" y="357" class="tm">involves_person</text>
+        <text x="812" y="369" class="tm">related_to_finance</text><text x="938" y="369" class="ts">UNDIRECTED (rel_type) — open long tail</text>
+        <text x="812" y="383" class="tm">mentions_finance</text><text x="930" y="383" class="ts">UNDIRECTED Entity → Chunk</text>
+        <text x="812" y="404" class="tl">INSTALLED QUERIES — SYNTAX v3</text>
+        <text x="812" y="421" class="tm">vector_search(query_vec, k)</text><text x="1028" y="421" class="ts">vectorSearch on Chunk.emb</text>
+        <text x="812" y="435" class="tm">agg_&lt;rel&gt;(target_name) × 10</text><text x="1028" y="435" class="ts">one per curated edge</text>
+        <text x="812" y="449" class="tm">aggregate_by_relation(rel, tgt)</text><text x="1028" y="449" class="ts">the open long tail</text>
+        <text x="812" y="463" class="tm">typed_neighbors(seed_names, k)</text><text x="1028" y="463" class="ts">all edges off a seed</text>
+
+        <rect x="24" y="490" width="1192" height="44" rx="2" class="bxp"/>
+        <text x="40" y="508" class="tl">MEASURED LIVE-GRAPH USE</text>
+        <text x="40" y="526" class="ts">Over the 150-question set: &nbsp;</text>
+        <text x="210" y="526" class="tm-i">tg_live = 0.947</text>
+        <text x="320" y="526" class="ts">across 537 successful GSQL queries. The 5.3% that report zero are the resolvers that</text>
+        <text x="320" y="539" class="ts">legitimately answer from the local index — counted honestly as not-live rather than inheriting the session's status.</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 4 — the stores.</b> TigerGraph is both the graph database and the vector
+      database for Pipeline 3; Chroma exists so the baseline has an ordinary vector store of its own.
+      The split between graph and local index is deliberate and documented: the live query supplies
+      the relation and the target, the local provenance index supplies the sentence that makes it
+      citable.</figcaption>
+  </figure>
+
+  <h3>Which component each path touches</h3>
+  <div class="tblwrap">
+    <table>
+      <caption><span class="dot"></span> reads it &nbsp;·&nbsp; <span class="dot o"></span> conditional
+        or backstop only. The three right-hand columns are live GSQL calls and are what
+        <code>tg_queries</code> counts.</caption>
+      <thead><tr>
+        <th>Path</th>
+        <th>corpus chunks<br>text / ids</th>
+        <th>edges_prov<br>_rel_index</th>
+        <th>entity_to<br>_docs</th>
+        <th>events<br>.json</th>
+        <th>TG<br>vector_search</th>
+        <th>TG<br>agg_&lt;rel&gt;</th>
+        <th>TG typed<br>_neighbors</th>
+        <th>Chroma</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="mono">route()</td><td colspan="8" style="color:var(--ink-3)">nothing — a pure function of the question string</td></tr>
+        <tr><td class="mono">aggregation · curated target</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td></td><td></td><td></td><td><span class="dot"></span></td><td></td><td></td></tr>
+        <tr><td class="mono">aggregation · open long tail</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td></td><td></td><td></td><td><span class="dot o"></span></td><td></td><td></td></tr>
+        <tr><td class="mono">aggregation · __section__</td><td><span class="dot"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">aggregation · __eventf__</td><td><span class="dot"></span></td><td></td><td></td><td><span class="dot"></span></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">aggregation · has_director / has_ceo</td><td></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">aggregation · competitor_of</td><td><span class="dot"></span></td><td><span class="dot o"></span></td><td></td><td></td><td></td><td><span class="dot o"></span></td><td></td><td></td></tr>
+        <tr><td class="mono">bridge</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td></td><td><span class="dot"></span></td><td></td><td><span class="dot"></span></td><td></td></tr>
+        <tr><td class="mono">compare</td><td><span class="dot"></span></td><td></td><td></td><td></td><td><span class="dot"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">lookup · stage 1 curated edge</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td></td><td></td><td><span class="dot o"></span></td><td></td><td><span class="dot"></span></td><td></td></tr>
+        <tr><td class="mono">lookup · stage 2 metric row</td><td><span class="dot"></span></td><td></td><td></td><td></td><td><span class="dot"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">temporal · stage 3 timeline</td><td><span class="dot"></span></td><td></td><td></td><td></td><td><span class="dot"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">any route · stage 4 fall-through</td><td><span class="dot"></span></td><td><span class="dot o"></span></td><td></td><td></td><td><span class="dot"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="mono">Pipeline 2 — the baseline</td><td><span class="dot"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="dot"></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="fignote">Read down the <code>vector_search</code> column: TigerGraph performs the retrieval
+    on the compare, metric-row and timeline paths even though a purely local scan could have produced
+    the same rows. That is a deliberate provenance choice — a local-only path would report
+    <code>tg_queries == 0</code> on nearly every question while still being presented as GraphRAG.</p>
+</section>
+
+<section id="s5">
+  <h2><span class="sn">Section 5</span>The Olympics pipeline — same machine, different lexicon</h2>
+  <p class="lede measure">The second dataset re-uses the architecture deliberately and keeps every
+    dataset-specific decision in two files. The question shapes are different — six routes, not five,
+    with a superlative route the SEC set has no analogue for — but the spine is the same: route, run
+    one branch, compress to evidence rows, make one generator call, record the hop log.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 660" role="img" aria-label="The Olympics Pipeline 3 flow: the lexicon router dispatches to five branches, two of which issue two graph hops each, with a vector-search fall-through and the same single generator call.">
+        <defs>
+          <marker id="f8-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mk"/></marker>
+          <marker id="f8-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+          <marker id="f8-arc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkc"/></marker>
+        </defs>
+
+        <rect x="470" y="20" width="300" height="42" rx="2" class="bxb"/>
+        <text x="620" y="39" text-anchor="middle" class="t">question: str</text>
+        <text x="620" y="54" text-anchor="middle" class="tm">one of 150 template-generated questions</text>
+
+        <rect x="24" y="76" width="380" height="106" rx="2" class="bxp"/>
+        <text x="40" y="95" class="tl">_load() — READ ONCE</text>
+        <text x="40" y="114" class="tm-i">_chunk_text</text><text x="200" y="114" class="tm">15,884 chunks</text>
+        <text x="40" y="132" class="tm-i">_events (events.json)</text><text x="200" y="132" class="tm">2,187 events</text>
+        <text x="40" y="150" class="tm-i">_games (games.json)</text><text x="200" y="150" class="tm">20 games</text>
+        <text x="40" y="168" class="tm-i">_sports_by_len</text><text x="200" y="168" class="ts">longest name first, so "short-</text>
+        <text x="200" y="179" class="ts">track speed skating" wins</text>
+
+        <rect x="856" y="76" width="360" height="106" rx="2" class="bxb"/>
+        <text x="872" y="95" class="tl">GRAPH BUILD COST — index/ingestion_tokens.json</text>
+        <text x="872" y="117" class="tb">llm_tokens: 0 &nbsp;· calls: 0 &nbsp;· cost_usd: 0.0</text>
+        <text x="872" y="136" class="tm">"deterministic regex over corpus infoboxes"</text>
+        <text x="872" y="156" class="ts">The whole knowledge graph is reproducible bit-for-bit</text>
+        <text x="872" y="169" class="ts">from corpus.jsonl. No extraction model was involved,</text>
+        <text x="872" y="179" class="ts">unlike the SEC round's Gemini pass.</text>
+
+        <rect x="430" y="96" width="380" height="68" rx="2" class="bxb"/>
+        <text x="448" y="117" class="t">route(question) → L.route_of(question)</text>
+        <text x="448" y="133" class="tm">5 mutually exclusive patterns · P3_ROUTE_FORCE hook retained</text>
+        <text x="448" y="147" class="ts">measured: exactly one pattern matches each question, and all 120</text>
+
+        <text x="448" y="159" class="ts">chain orderings score 30/30 on the dev set</text>
+        <line x1="620" y1="164" x2="620" y2="176" class="lnb"/>
+        <line x1="138" y1="176" x2="1108" y2="176" class="lnb"/>
+        <line x1="138" y1="176" x2="138" y2="194" class="lnb" marker-end="url(#f8-arb)"/>
+        <line x1="382" y1="176" x2="382" y2="194" class="lnb" marker-end="url(#f8-arb)"/>
+        <line x1="626" y1="176" x2="626" y2="194" class="lnb" marker-end="url(#f8-arb)"/>
+        <line x1="870" y1="176" x2="870" y2="194" class="lnb" marker-end="url(#f8-arb)"/>
+        <line x1="1108" y1="176" x2="1108" y2="194" class="lnb" marker-end="url(#f8-arb)"/>
+
+        <!-- 1 lookup -->
+        <rect x="24" y="196" width="228" height="176" rx="2" class="bxb"/><rect x="27" y="199" width="222" height="170" rx="1" class="bxn"/>
+        <text x="40" y="216" class="t2">lookup</text><text x="238" y="216" text-anchor="end" class="tb">1 HOP</text>
+        <text x="40" y="234" class="ts">"How many nations competed</text>
+        <text x="40" y="246" class="ts">in &lt;full event title&gt;?"</text>
+        <text x="40" y="267" class="tm">event_by_title(title_key)</text>
+        <text x="40" y="283" class="ts">title_key = S.norm_text(title) —</text>
+        <text x="40" y="295" class="ts">the extractor wrote the key with</text>
+        <text x="40" y="307" class="ts">the same function</text>
+        <text x="40" y="328" class="tl">EMITS</text>
+        <text x="40" y="344" class="ts">one _event_sentence(): nations,</text>
+        <text x="40" y="356" class="ts">competitors, venue, medallists</text>
+
+        <!-- 2 superlative -->
+        <rect x="268" y="196" width="228" height="176" rx="2" class="bxb"/><rect x="271" y="199" width="222" height="170" rx="1" class="bxn"/>
+        <text x="284" y="216" class="t2">superlative</text><text x="482" y="216" text-anchor="end" class="tb">1 HOP</text>
+        <text x="284" y="234" class="ts">"which &lt;sport&gt; event had the</text>
+        <text x="284" y="246" class="ts">highest number of competitors?"</text>
+        <text x="284" y="267" class="tm">events_in_group(sport, games)</text>
+        <text x="284" y="283" class="ts">traverses event_in_sport, so the</text>
+        <text x="284" y="295" class="ts">grouping is done by the graph and</text>
+        <text x="284" y="307" class="ts">not by an attribute scan</text>
+        <text x="284" y="328" class="tl">EMITS — THE CHEAPEST ROUTE</text>
+        <text x="284" y="344" class="ts">(title, count) pairs only. The model</text>
+        <text x="284" y="356" class="ts">takes the argmax, so it stays auditable.</text>
+
+        <!-- 3 aggregation -->
+        <rect x="512" y="196" width="228" height="176" rx="2" class="bxb"/><rect x="515" y="199" width="222" height="170" rx="1" class="bxn"/>
+        <text x="528" y="216" class="t2">aggregation</text><text x="726" y="216" text-anchor="end" class="tb">1 HOP</text>
+        <text x="528" y="234" class="ts">"how many &lt;sport&gt; events had</text>
+        <text x="528" y="246" class="ts">more than &lt;N&gt; competitors?"</text>
+        <text x="528" y="267" class="tm">events_in_group(sport, games)</text>
+        <text x="528" y="283" class="ts">then filter competitors_int &gt; N</text>
+        <text x="528" y="299" class="tm">competitors_int == -1 EXCLUDED</text>
+        <text x="528" y="311" class="ts">"23 teams" is not a comparable count</text>
+        <text x="528" y="332" class="tl">EMITS</text>
+        <text x="528" y="348" class="ts">group size, hit count, one row per hit</text>
+        <text x="528" y="360" class="tm">cap P3_GROUP_ROW_CAP=60</text>
+
+        <!-- 4 temporal -->
+        <rect x="756" y="196" width="228" height="176" rx="2" class="bxb"/><rect x="759" y="199" width="222" height="170" rx="1" class="bxn"/>
+        <text x="772" y="216" class="t2">temporal</text><text x="970" y="216" text-anchor="end" class="tb">2 HOPS</text>
+        <text x="772" y="234" class="ts">"…at the Olympics held</text>
+        <text x="772" y="246" class="ts">immediately before &lt;year&gt;?"</text>
+        <text x="772" y="267" class="tm">hop 1 · games_before(season, yr)</text>
+        <text x="772" y="281" class="ts">one games_precedes edge — not a date</text>
+        <text x="772" y="293" class="ts">comparison; "immediately before" is a</text>
+        <text x="772" y="305" class="ts">property of the Games set</text>
+        <text x="772" y="326" class="tm">hop 2 · events_in_group(sport, …)</text>
+        <text x="772" y="342" class="ts">then exact, else all-token, title match</text>
+        <text x="772" y="358" class="ts">BOTH hops must issue their own query</text>
+
+        <!-- 5 multi_hop -->
+        <rect x="1000" y="196" width="216" height="176" rx="2" class="bxb"/><rect x="1003" y="199" width="210" height="170" rx="1" class="bxn"/>
+        <text x="1016" y="216" class="t2">multi_hop</text><text x="1202" y="216" text-anchor="end" class="tb">2 HOPS</text>
+        <text x="1016" y="234" class="ts">"…the event held at &lt;venue&gt;</text>
+        <text x="1016" y="246" class="ts">on &lt;date&gt;?"</text>
+        <text x="1016" y="267" class="tm">hop 1 · event_by_venue_date</text>
+        <text x="1016" y="281" class="ts">composite key via event_at_venue;</text>
+        <text x="1016" y="293" class="ts">S.norm_date folds "15 to 22 August"</text>
+        <text x="1016" y="305" class="ts">and "15–22 August" together</text>
+        <text x="1016" y="326" class="tm">hop 2 · medallists_of(doc_id)</text>
+        <text x="1016" y="342" class="ts">357 of 1,574 keys are ambiguous — ALL</text>
+        <text x="1016" y="358" class="ts">matches returned, never tie-broken</text>
+
+        <!-- fallthrough -->
+        <rect x="24" y="394" width="1192" height="62" rx="2" class="bx"/>
+        <text x="40" y="414" class="t2">FALL-THROUGH — any branch that returns None, plus the `default` route</text>
+        <text x="40" y="433" class="tm">vids = _tg_vector_search(conn, question, k=LOOKUP_K|VEC_K) &nbsp;→&nbsp; _context_from_chunks(vids)</text>
+        <text x="40" y="449" class="ts">Still a live-graph path: the fallback uses TigerGraph's own vector index, so even an unresolved question reports tg_queries ≥ 1.</text>
+        <path d="M138,372 L138,390" class="lnd" marker-end="url(#f8-ar)"/>
+        <path d="M382,372 L382,390" class="lnd" marker-end="url(#f8-ar)"/>
+        <path d="M626,372 L626,390" class="lnd" marker-end="url(#f8-ar)"/>
+        <path d="M870,372 L870,390" class="lnd" marker-end="url(#f8-ar)"/>
+        <path d="M1108,372 L1108,390" class="lnd" marker-end="url(#f8-ar)"/>
+
+        <path d="M12,300 L12,480 L430,480" class="lnb"/>
+        <text x="20" y="476" class="tl">RESOLVED — BRANCH OUTPUT</text>
+        <rect x="430" y="470" width="380" height="50" rx="2" class="bxb"/>
+        <text x="448" y="490" class="t2">_context_from_prov(prov)</text>
+        <text x="448" y="507" class="ts">one evidence sentence per graph row — the SEC pipeline's mechanism</text>
+        <rect x="856" y="470" width="360" height="50" rx="2" class="abl"/>
+        <text x="872" y="490" class="tm-i">P3_COMPRESS_OFF=1</text>
+        <text x="872" y="507" class="ts">feeds "{doc_id}#c0" whole chunks instead</text>
+        <path d="M856,495 L814,495" class="lnd" marker-end="url(#f8-ar)"/>
+
+        <line x1="620" y1="520" x2="620" y2="540" class="lnc" marker-end="url(#f8-arc)"/>
+        <rect x="430" y="540" width="380" height="52" rx="2" class="bxc"/>
+        <text x="448" y="561" class="t">_build_prompt → get_llm_response(prompt)</text>
+        <text x="448" y="578" class="tm">gemini-2.5-flash · MAX_TOKENS 2048 (thinking is billed against the cap)</text>
+
+        <rect x="24" y="612" width="1192" height="36" rx="2" class="bxp"/>
+        <text x="40" y="635" class="ts">Recorded per question: &nbsp;</text>
+        <text x="186" y="635" class="tm-i">m.hop_log</text>
+        <text x="262" y="635" class="ts">— which installed queries fired, in order — plus</text>
+        <text x="596" y="635" class="tm-i">m.branch_resolved</text>
+        <text x="720" y="635" class="ts">, so "the graph had no answer" is distinguishable from "no branch existed".</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 5.1 — the Olympics flow.</b> The two-hop branches record their hop count
+      because the SEC round shipped a two-hop bridge branch that resolved hop 1 and never issued
+      hop 2. Here <code>m.hop_log</code> makes that visible on the first dev run rather than after a
+      paid held-out batch.</figcaption>
+  </figure>
+
+  <h3>5.2 · Portable mechanism versus swapped lexicon</h3>
+  <p class="lede measure">The claim this split is designed to test: the <em>mechanism</em> transfers and
+    the <em>lexicon</em> does not. The evidence is in section 2's measured panel — the SEC router
+    scores 0.800 in domain and 0.173 on Olympics questions, labelling 100% of them
+    <code>lookup</code>. A third dataset therefore needs one new lexicon file, not a new pipeline.</p>
+
+  <figure>
+    <div class="figscroll">
+      <svg viewBox="0 0 1240 452" role="img" aria-label="The shared machinery runs down the centre; the SEC and Olympics datasets attach only at the router lexicon and the branch table, which are the two swap points.">
+        <defs>
+          <marker id="f9-arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" class="mkb"/></marker>
+        </defs>
+
+        <text x="24" y="28" class="tl">DATASET-SPECIFIC — SEC FILINGS</text>
+        <text x="620" y="28" text-anchor="middle" class="tl">SHARED MACHINERY — COPIED STRUCTURALLY, UNCHANGED</text>
+        <text x="1216" y="28" text-anchor="end" class="tl">DATASET-SPECIFIC — OLYMPICS</text>
+
+        <!-- centre stack -->
+        <rect x="460" y="44" width="320" height="56" rx="2" class="bxb"/>
+        <text x="476" y="64" class="t2">_run_query() + _tg_query_count</text>
+        <text x="476" y="81" class="ts">tg_live DERIVED per question, never a</text>
+        <text x="476" y="93" class="ts">session boolean; retry on transient 500s</text>
+
+        <rect x="460" y="108" width="320" height="56" rx="2" class="bxb"/>
+        <text x="476" y="128" class="t2">route() + P3_ROUTE_FORCE</text>
+        <text x="476" y="145" class="ts">fixed label or md5(question)-seeded random;</text>
+        <text x="476" y="157" class="ts">branches stay live, only the label degrades</text>
+
+        <rect x="460" y="172" width="320" height="56" rx="2" class="bxb"/>
+        <text x="476" y="192" class="t2">branch dispatch</text>
+        <text x="476" y="209" class="ts">one branch per route, each guarded by</text>
+        <text x="476" y="221" class="ts">`not GRAPH_OFF`, each with a fall-through</text>
+
+        <rect x="460" y="236" width="320" height="56" rx="2" class="bxb"/>
+        <text x="476" y="256" class="t2">_context_from_prov / _from_chunks</text>
+        <text x="476" y="273" class="ts">evidence-sentence substitution, the same</text>
+        <text x="476" y="285" class="ts">cap pair: MAX_CTX_CHUNKS × MAX_CTX_CHARS</text>
+
+        <rect x="460" y="300" width="320" height="56" rx="2" class="bxc"/>
+        <text x="476" y="320" class="t2">_build_prompt + one generator call</text>
+        <text x="476" y="337" class="ts">config.SYSTEM_PROMPT shared verbatim by</text>
+        <text x="476" y="349" class="ts">all three pipelines; temperature 0</text>
+
+        <rect x="460" y="364" width="320" height="56" rx="2" class="bxb"/>
+        <text x="476" y="384" class="t2">timer.record() → CallMetrics</text>
+        <text x="476" y="401" class="ts">token breakdown, graph_doc_ids,</text>
+        <text x="476" y="413" class="ts">optimizer_tokens, preserve_answer</text>
+
+        <!-- left plate -->
+        <rect x="24" y="44" width="400" height="376" rx="2" class="bxp"/>
+        <text x="40" y="64" class="tm-i">pipeline3_sec/pipeline.py — inline</text>
+        <text x="40" y="84" class="tl">ROUTER LEXICON</text>
+        <text x="40" y="100" class="tm">AGG_RE · BRIDGE_SHARED_RE · BRIDGE_REL_RE</text>
+        <text x="40" y="113" class="tm">BINARY_COMPARE_RE · COMPARE_METRIC_RE</text>
+        <text x="40" y="126" class="tm">TEMPORAL_RE · TEMPORAL_EXT_RE · BRIDGE_RE</text>
+        <text x="40" y="141" class="ts">Order is load-bearing — see figure 2.</text>
+        <text x="40" y="164" class="tl">DOMAIN VOCABULARIES</text>
+        <text x="40" y="180" class="tm">AUDITORS · RISK_LEX · SUPPLIER_LEX</text>
+        <text x="40" y="193" class="tm">SECTOR_LEX · BIG_FOUR · _METRIC_LEX</text>
+        <text x="40" y="206" class="tm">_SEC_ITEM_TITLES · _GENERIC_ROLE_WORDS</text>
+        <text x="40" y="229" class="tl">GRAPH SHAPE</text>
+        <text x="40" y="245" class="ts">Entity + Chunk vertices; 10 curated edge</text>
+        <text x="40" y="258" class="ts">types; related_to for the open long tail</text>
+        <text x="40" y="274" class="tm">agg_&lt;rel&gt; · aggregate_by_relation</text>
+        <text x="40" y="287" class="tm">typed_neighbors · vector_search</text>
+        <text x="40" y="310" class="tl">BRANCHES</text>
+        <text x="40" y="326" class="ts">aggregation · bridge · compare ·</text>
+        <text x="40" y="339" class="ts">lookup / temporal / default cascade</text>
+        <text x="40" y="362" class="tl">GRAPH BUILD</text>
+        <text x="40" y="378" class="ts">Gemini extraction over filing text —</text>
+        <text x="40" y="391" class="ts">open-domain entities and relations, with</text>
+        <text x="40" y="404" class="ts">the unreliability that implies.</text>
+
+        <!-- right plate -->
+        <rect x="816" y="44" width="400" height="376" rx="2" class="bxp"/>
+        <text x="832" y="64" class="tm-i">lexicon.py &nbsp;+&nbsp; schema.py — quarantined</text>
+        <text x="832" y="84" class="tl">ROUTER LEXICON — lexicon.py</text>
+        <text x="832" y="100" class="tm">TEMPORAL_RE · MULTIHOP_RE · SUPERLATIVE_RE</text>
+        <text x="832" y="113" class="tm">AGGREGATION_RE · LOOKUP_RE · ROUTE_CHAIN</text>
+        <text x="832" y="128" class="ts">Mutually exclusive by construction, so order</text>
+        <text x="832" y="140" class="ts">is defence in depth rather than correctness.</text>
+        <text x="832" y="163" class="tl">GRAPH SHAPE — schema.py</text>
+        <text x="832" y="179" class="ts">Games · Event · Venue · Nation · Athlete ·</text>
+        <text x="832" y="192" class="ts">Sport vertices; 7 edge types including</text>
+        <text x="832" y="205" class="tm">games_precedes · medal_for_nation</text>
+        <text x="832" y="221" class="tm">event_by_title · events_in_group</text>
+        <text x="832" y="234" class="tm">event_by_venue_date · games_before</text>
+        <text x="832" y="247" class="tm">medallists_of · vector_search</text>
+        <text x="832" y="270" class="tl">KEY NORMALISERS — schema.py</text>
+        <text x="832" y="286" class="tm">norm_text · norm_venue · norm_date</text>
+        <text x="832" y="299" class="tm">games_id · group_key · venue_date_key</text>
+        <text x="832" y="312" class="ts">Extractor and pipeline call the SAME function,</text>
+        <text x="832" y="325" class="ts">which is why this module exists at all.</text>
+        <text x="832" y="348" class="tl">BRANCHES</text>
+        <text x="832" y="364" class="ts">lookup · superlative · aggregation ·</text>
+        <text x="832" y="377" class="ts">temporal · multi_hop (+ default)</text>
+        <text x="832" y="393" class="ts">No bridge, no compare: this corpus has no</text>
+        <text x="832" y="406" class="ts">shared-attribute or two-metric questions.</text>
+
+        <!-- attachment points -->
+        <path d="M424,136 L456,136" class="lnb" marker-end="url(#f9-arb)"/>
+        <path d="M424,200 L456,200" class="lnb" marker-end="url(#f9-arb)"/>
+        <path d="M816,136 L784,136" class="lnb" marker-end="url(#f9-arb)"/>
+        <path d="M816,200 L784,200" class="lnb" marker-end="url(#f9-arb)"/>
+        <text x="620" y="440" text-anchor="middle" class="ts">A dataset attaches at exactly two points: the router's patterns and the branch table. Everything else is untouched.</text>
+      </svg>
+    </div>
+    <figcaption><b>Figure 5.2 — the two swap points.</b> On SEC the lexicon is inline in the pipeline
+      module; on Olympics it is quarantined into <code>lexicon.py</code> and <code>schema.py</code>,
+      which is the form a third dataset would take. The Olympics module contains no regex that knows
+      the word "Olympic".</figcaption>
+  </figure>
+
+  <div class="cols2">
+    <div class="swap">
+      <h4>Shared — carried over unchanged<em>the portable mechanism</em></h4>
+      <ul>
+        <li><b>Per-question live-graph counter.</b> <code>_tg_query_count</code> reset in
+          <code>run_single</code>, <code>tg_live</code> derived from it. The session-level version
+          overstated live-graph use and was removed.</li>
+        <li><b>The un-confounded ablation hook.</b> <code>P3_ROUTE_FORCE</code> degrades only the
+          label; <code>P3_ROUTER_OFF</code> is kept so the confounded arm stays comparable.</li>
+        <li><b>Fail-loud connection.</b> <code>P3_REQUIRE_TG</code> raises rather than letting a
+          suspended instance look like a degraded local run.</li>
+        <li><b>Evidence-sentence substitution</b> and the <code>MAX_CTX_CHUNKS</code> ×
+          <code>MAX_CTX_CHARS</code> budget both pipelines share with the baseline.</li>
+        <li><b>One generator call, shared prompt, shared token accounting</b> —
+          <code>graph_doc_ids</code>, <code>optimizer_tokens</code>, <code>preserve_answer</code>.</li>
+      </ul>
+    </div>
+    <div class="swap">
+      <h4>Swapped — one lexicon, one schema<em>what a third dataset would write</em></h4>
+      <ul>
+        <li><b>Question patterns.</b> Five Olympics regexes against eight SEC ones; a
+          <code>superlative</code> route with no SEC analogue, and no <code>bridge</code> or
+          <code>compare</code> route because this corpus asks neither shape.</li>
+        <li><b>Vertex and edge vocabulary.</b> Games / Event / Venue / Nation / Athlete / Sport
+          against Entity / Chunk, and <code>games_precedes</code> in place of the curated finance
+          relations.</li>
+        <li><b>Key normalisers.</b> <code>norm_date</code> and <code>norm_venue</code> exist because
+          the questions quote infobox strings verbatim, concatenations included.</li>
+        <li><b>How the graph is built.</b> Gemini extraction on SEC; deterministic infobox regex on
+          Olympics, at zero LLM tokens and reproducible from the corpus.</li>
+        <li><b>What the honest claim is.</b> All 150 Olympics questions come from five rigid
+          templates, so a near-perfect router here is a weak result and belongs in the table only as
+          the in-domain control for the 0.173 collapse.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>Sources.</b> Code: <code>pipeline3_sec/pipeline.py</code>,
+    <code>pipeline3_olympics/{pipeline,lexicon,schema}.py</code>,
+    <code>pipeline2_basic_rag.py</code>, <code>config.py</code>, <code>metrics.py</code>,
+    <code>chroma_store.py</code>, <code>build/kg/tg_ingest.py</code>,
+    <code>build/olympics/olympics_tg_ingest.py</code>.</p>
+  <p><b>Measurements.</b> Every token and accuracy figure is read from
+    <code>results/sec/summary.json</code> (tag <code>the intermediate build</code>, baseline
+    <code>baseline</code>, 3 runs, 150 questions), except route-label accuracy
+    (<code>router_indomain_extra100.json</code>, <code>router_generalization.json</code>) and the
+    one-time graph-build cost (<code>pipeline3_sec/index/ingestion_tokens.json</code>,
+    <code>pipeline3_olympics/index/ingestion_tokens.json</code>), each labelled at the point of use.
+    Context-reduction percentages are ratios of the two context-token columns in
+    <code>by_shape</code>.</p>
+  <p>Source for this page: <code>GraphRAG benchmark/LOW_LEVEL_DESIGN.html</code>.</p>
+</footer>
+</div>
+
+<div id="tip" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var tip=document.getElementById("tip");
+  function show(e){
+    var t=e.currentTarget.getAttribute("data-tip"); if(!t) return;
+    tip.textContent=t; tip.style.opacity="1";
+    var r=e.currentTarget.getBoundingClientRect();
+    var x=Math.min(window.innerWidth-16, (e.clientX||r.right))+12;
+    var y=(e.clientY||r.top+r.height/2)-10;
+    tip.style.left=Math.max(8,x-tip.offsetWidth>window.innerWidth-16?x-tip.offsetWidth-24:x)+"px";
+    tip.style.top=Math.max(8,y)+"px";
+  }
+  function hide(){tip.style.opacity="0";}
+  document.querySelectorAll(".bar[data-tip]").forEach(function(b){
+    b.addEventListener("mouseenter",show);
+    b.addEventListener("mousemove",show);
+    b.addEventListener("mouseleave",hide);
+    b.addEventListener("focus",show);
+    b.addEventListener("blur",hide);
+  });
+})();
+</script>

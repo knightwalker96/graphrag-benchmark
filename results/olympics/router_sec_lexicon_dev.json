@@ -1,0 +1,211 @@
+{
+  "n": 30,
+  "correct": 6,
+  "accuracy": 0.2,
+  "per_qtype": {
+    "aggregation": {
+      "n": 6,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "aggregation",
+      "produced": {
+        "lookup": 6
+      }
+    },
+    "lookup": {
+      "n": 6,
+      "correct": 6,
+      "accuracy": 1.0,
+      "expected": "lookup",
+      "produced": {
+        "lookup": 6
+      }
+    },
+    "multi_hop": {
+      "n": 8,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "bridge",
+      "produced": {
+        "lookup": 8
+      }
+    },
+    "superlative": {
+      "n": 3,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "aggregation",
+      "produced": {
+        "lookup": 3
+      }
+    },
+    "temporal": {
+      "n": 7,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "temporal",
+      "produced": {
+        "lookup": 7
+      }
+    }
+  },
+  "confusion": {
+    "temporal->lookup": 7,
+    "aggregation->lookup": 6,
+    "multi_hop->lookup": 8,
+    "lookup->lookup": 6,
+    "superlative->lookup": 3
+  },
+  "routes_produced": {
+    "lookup": 30
+  },
+  "misses": [
+    {
+      "id": "pub-006",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's 57 kg judo event at the Summer Olympics held immediately before 2020?"
+    },
+    {
+      "id": "pub-010",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many cycling events at the 2000 Summer Olympics had more than 30 competitors?"
+    },
+    {
+      "id": "pub-014",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Riocentro – Pavilion 4 on 11–19 August at the 2016 Summer Olympics?"
+    },
+    {
+      "id": "pub-015",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at London Velopark on 3 to 4 August at the 2012 Summer Olympics?"
+    },
+    {
+      "id": "pub-024",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many biathlon events at the 2002 Winter Olympics had more than 74 competitors?"
+    },
+    {
+      "id": "pub-026",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's cross-country cycling event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-027",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many fencing events at the 2008 Summer Olympics had more than 32 competitors?"
+    },
+    {
+      "id": "pub-037",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which shooting event at the 2008 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-044",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which fencing event at the 2008 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-048",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's 68 kg taekwondo event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-051",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many canoeing events at the 2012 Summer Olympics had more than 25 competitors?"
+    },
+    {
+      "id": "pub-055",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's 80 kg taekwondo event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-056",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's 30 kilometre pursuit cross-country skiing event at the Winter Olympics held immediately before 2010?"
+    },
+    {
+      "id": "pub-059",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's sprint biathlon event at the Winter Olympics held immediately before 2022?"
+    },
+    {
+      "id": "pub-062",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's 10,000 metres athletics event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-066",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which weightlifting event at the 1992 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-073",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Sydney International Shooting Centre on 21 September 2000 (slow)22 September 2000 (fast)?"
+    },
+    {
+      "id": "pub-078",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many athletics events at the 1996 Summer Olympics had more than 49 competitors?"
+    },
+    {
+      "id": "pub-079",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Centennial Parklands, Sydney on 26 September at the 2000 Summer Olympics?"
+    },
+    {
+      "id": "pub-081",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Beijing Shooting Range Hall on August 10, 2008?"
+    },
+    {
+      "id": "pub-092",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many shooting events at the 1992 Summer Olympics had more than 44 competitors?"
+    },
+    {
+      "id": "pub-096",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Riocentro – Pavilion 6 on 10–21 August 2016?"
+    },
+    {
+      "id": "pub-098",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 18 September to 1 October 2000?"
+    },
+    {
+      "id": "pub-099",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Laura Biathlon & Ski Complex on 22 February 2014?"
+    }
+  ],
+  "split": "dev",
+  "lexicon": "sec",
+  "source": "datasets/olympics/dev_set.jsonl"
+}

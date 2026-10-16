@@ -1,0 +1,83 @@
+{
+  "n": 30,
+  "correct": 30,
+  "accuracy": 1.0,
+  "per_qtype": {
+    "aggregation": {
+      "n": 6,
+      "correct": 6,
+      "accuracy": 1.0,
+      "expected": "aggregation",
+      "produced": {
+        "aggregation": 6
+      }
+    },
+    "lookup": {
+      "n": 6,
+      "correct": 6,
+      "accuracy": 1.0,
+      "expected": "lookup",
+      "produced": {
+        "lookup": 6
+      }
+    },
+    "multi_hop": {
+      "n": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "expected": "multi_hop",
+      "produced": {
+        "multi_hop": 8
+      }
+    },
+    "superlative": {
+      "n": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "expected": "superlative",
+      "produced": {
+        "superlative": 3
+      }
+    },
+    "temporal": {
+      "n": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "expected": "temporal",
+      "produced": {
+        "temporal": 7
+      }
+    }
+  },
+  "confusion": {
+    "temporal->temporal": 7,
+    "aggregation->aggregation": 6,
+    "multi_hop->multi_hop": 8,
+    "lookup->lookup": 6,
+    "superlative->superlative": 3
+  },
+  "routes_produced": {
+    "temporal": 7,
+    "aggregation": 6,
+    "multi_hop": 8,
+    "lookup": 6,
+    "superlative": 3
+  },
+  "misses": [],
+  "split": "dev",
+  "lexicon": "olympics",
+  "source": "datasets/olympics/dev_set.jsonl",
+  "widening_ablation": {
+    "n": 30,
+    "full_lexicon_correct": 30,
+    "dev_only_literals_correct": 30,
+    "identical": true,
+    "widened_alternatives": [
+      "SUPERLATIVE_RE: greatest|largest|most|lowest|fewest|smallest (dev shows only 'highest')",
+      "AGGREGATION_RE: fewer|less|greater|at least|at most|over|under (dev shows only 'more than')",
+      "LOOKUP_RE: countries|competitors|athletes, took part|participated (dev shows only 'nations competed')",
+      "TEMPORAL_RE: directly|after|preceding|following, 'previous Summer Olympics' (dev shows only 'immediately before')",
+      "MULTIHOP_RE: staged|contested (dev shows only 'held at')"
+    ]
+  }
+}

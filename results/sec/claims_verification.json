@@ -1,0 +1,197 @@
+{
+  "checks": [
+    {
+      "name": "RESULTS_SEC.md \u00a71 context-builder split (initial implementation)",
+      "measured": {
+        "fired": {
+          "n": 35,
+          "p2tok": 4060.7333333333336,
+          "p3tok": 651.7809523809524,
+          "p3ctx": 303.0571428571429,
+          "p3strict": 0.8285714285714286,
+          "p2strict": 0.14285714285714285,
+          "saving_pct": 83.9491811237473
+        },
+        "rest": {
+          "n": 115,
+          "p2tok": 4225.571014492753,
+          "p3tok": 4405.6,
+          "p3ctx": 3540.0782608695654,
+          "p3strict": 0.3101449275362319,
+          "p2strict": 0.2811594202898551,
+          "saving_pct": -4.260465269422481
+        },
+        "_proxy_drift": {
+          "ids": [
+            "EQ42"
+          ],
+          "n": 1,
+          "per_run_sizes": [
+            6,
+            6,
+            6
+          ]
+        },
+        "rest_under_v81": {
+          "p3tok": 1139.9159420289855
+        }
+      },
+      "asserted": {
+        "fired": {
+          "n": 35,
+          "p2tok": 4061,
+          "p3tok": 652,
+          "p3ctx": 303,
+          "p3strict": 0.829,
+          "p2strict": 0.143,
+          "saving_pct": 83.9
+        },
+        "rest": {
+          "n": 115,
+          "p2tok": 4226,
+          "p3tok": 4406,
+          "p3ctx": 3540,
+          "p3strict": 0.31,
+          "p2strict": 0.281,
+          "saving_pct": -4.3
+        }
+      },
+      "fails": []
+    },
+    {
+      "name": "RESULTS_SEC.md \u00a71 aggregation fall-throughs",
+      "measured": {
+        "aggregation_routed": 64,
+        "prov_fired": 35,
+        "fall_through": 29,
+        "misrouted_compare": 20,
+        "tier_B": 4,
+        "tier_C": 3,
+        "agg_supplier": 2
+      },
+      "asserted": {
+        "aggregation_routed": 64,
+        "prov_fired": 35,
+        "fall_through": 29,
+        "misrouted_compare": 20,
+        "tier_B": 4,
+        "tier_C": 3,
+        "agg_supplier": 2
+      },
+      "fails": []
+    },
+    {
+      "name": "RESULTS_SEC.md \u00a73.4 per-shape token sign",
+      "measured": {
+        "n_shapes": 16,
+        "negative_v7": 8,
+        "negative_v81": 0,
+        "which_negative_v7": [
+          "bridge_shared_auditor",
+          "bridge_shared_director",
+          "bridge_shared_supplier",
+          "compare_net_income",
+          "lookup_auditor",
+          "lookup_revenue",
+          "tierA",
+          "tierD"
+        ],
+        "savings_v7": {
+          "agg_auditor": 68.3,
+          "agg_sector": 91.4,
+          "agg_sector_auditor": 83.7,
+          "agg_supplier": 52.5,
+          "bridge_shared_auditor": -14.8,
+          "bridge_shared_director": -22.6,
+          "bridge_shared_supplier": -3.9,
+          "compare_net_income": -6.7,
+          "compare_revenue": 2.5,
+          "lookup_auditor": -30.2,
+          "lookup_revenue": -40.6,
+          "temporal_order": 6.1,
+          "tierA": -24.8,
+          "tierB": 11.8,
+          "tierC": 84.2,
+          "tierD": -7.7
+        },
+        "savings_v81": {
+          "agg_auditor": 68.3,
+          "agg_sector": 91.4,
+          "agg_sector_auditor": 83.7,
+          "agg_supplier": 53.0,
+          "bridge_shared_auditor": 62.2,
+          "bridge_shared_director": 54.3,
+          "bridge_shared_supplier": 56.5,
+          "compare_net_income": 90.0,
+          "compare_revenue": 91.0,
+          "lookup_auditor": 75.0,
+          "lookup_revenue": 88.5,
+          "temporal_order": 87.2,
+          "tierA": 58.0,
+          "tierB": 52.8,
+          "tierC": 84.2,
+          "tierD": 51.2
+        }
+      },
+      "asserted": {
+        "n_shapes": 16,
+        "negative_v7": 8,
+        "negative_v81": 0
+      },
+      "fails": []
+    },
+    {
+      "name": "thinking-token accounting",
+      "measured": {
+        "reported": {
+          "P1": 281.6,
+          "P2": 4186.9,
+          "P3": 1026.1
+        },
+        "thinking": {
+          "P1": 279.9,
+          "P2": 392.7,
+          "P3": 269.4
+        },
+        "true_billed": {
+          "P1": 561.5,
+          "P2": 4579.6,
+          "P3": 1295.5
+        },
+        "thinking_share_pct": {
+          "P1": 49.8,
+          "P2": 8.6,
+          "P3": 20.8
+        },
+        "reduction_reported_pct": 75.5,
+        "reduction_true_pct": 71.7,
+        "thinking_excluded_from_total": true
+      },
+      "asserted": {
+        "reduction_reported_pct": 75.5,
+        "reduction_true_pct": 71.7
+      },
+      "fails": []
+    },
+    {
+      "name": "RESULTS_SEC.md \u00a75 equal-budget comparison",
+      "measured": {
+        "compressed_baseline_reported": 1492.6,
+        "compressed_baseline_true": 1852.1,
+        "compressed_baseline_strict": 0.1933,
+        "p3_reported": 1026.1,
+        "p3_true": 1295.5,
+        "p3_strict": 0.4867,
+        "below_budget_reported_pct": 31.3,
+        "below_budget_true_pct": 30.1,
+        "accuracy_ratio": 2.52
+      },
+      "asserted": {
+        "below_budget_reported_pct": 31.3,
+        "accuracy_ratio": 2.5
+      },
+      "fails": []
+    }
+  ],
+  "n_failing_assertions": 0
+}

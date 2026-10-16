@@ -1,0 +1,70 @@
+{
+  "n": 70,
+  "correct": 70,
+  "accuracy": 1.0,
+  "per_qtype": {
+    "aggregation": {
+      "n": 15,
+      "correct": 15,
+      "accuracy": 1.0,
+      "expected": "aggregation",
+      "produced": {
+        "aggregation": 15
+      }
+    },
+    "lookup": {
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0,
+      "expected": "lookup",
+      "produced": {
+        "lookup": 13
+      }
+    },
+    "multi_hop": {
+      "n": 20,
+      "correct": 20,
+      "accuracy": 1.0,
+      "expected": "multi_hop",
+      "produced": {
+        "multi_hop": 20
+      }
+    },
+    "superlative": {
+      "n": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "expected": "superlative",
+      "produced": {
+        "superlative": 7
+      }
+    },
+    "temporal": {
+      "n": 15,
+      "correct": 15,
+      "accuracy": 1.0,
+      "expected": "temporal",
+      "produced": {
+        "temporal": 15
+      }
+    }
+  },
+  "confusion": {
+    "aggregation->aggregation": 15,
+    "temporal->temporal": 15,
+    "superlative->superlative": 7,
+    "multi_hop->multi_hop": 20,
+    "lookup->lookup": 13
+  },
+  "routes_produced": {
+    "aggregation": 15,
+    "temporal": 15,
+    "superlative": 7,
+    "multi_hop": 20,
+    "lookup": 13
+  },
+  "misses": [],
+  "split": "test",
+  "lexicon": "olympics",
+  "source": "datasets/olympics/test_set.jsonl"
+}

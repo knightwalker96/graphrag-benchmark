@@ -1,0 +1,409 @@
+{
+  "n": 70,
+  "correct": 13,
+  "accuracy": 0.1857,
+  "per_qtype": {
+    "aggregation": {
+      "n": 15,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "aggregation",
+      "produced": {
+        "lookup": 15
+      }
+    },
+    "lookup": {
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0,
+      "expected": "lookup",
+      "produced": {
+        "lookup": 13
+      }
+    },
+    "multi_hop": {
+      "n": 20,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "bridge",
+      "produced": {
+        "lookup": 20
+      }
+    },
+    "superlative": {
+      "n": 7,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "aggregation",
+      "produced": {
+        "lookup": 7
+      }
+    },
+    "temporal": {
+      "n": 15,
+      "correct": 0,
+      "accuracy": 0.0,
+      "expected": "temporal",
+      "produced": {
+        "lookup": 15
+      }
+    }
+  },
+  "confusion": {
+    "aggregation->lookup": 15,
+    "temporal->lookup": 15,
+    "superlative->lookup": 7,
+    "multi_hop->lookup": 20,
+    "lookup->lookup": 13
+  },
+  "routes_produced": {
+    "lookup": 70
+  },
+  "misses": [
+    {
+      "id": "pub-001",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many biathlon events at the 2018 Winter Olympics had more than 73 competitors?"
+    },
+    {
+      "id": "pub-002",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's 20 kilometres walk athletics event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-003",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many shooting events at the 2004 Summer Olympics had more than 37 competitors?"
+    },
+    {
+      "id": "pub-004",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which athletics event at the 2008 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-005",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Olympic Weightlifting Gymnasium on 20 September 1988?"
+    },
+    {
+      "id": "pub-007",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's pole vault athletics event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-008",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which sailing event at the 2000 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-011",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Richmond Olympic Oval on 14 February 2010?"
+    },
+    {
+      "id": "pub-012",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many rowing events at the 2020 Summer Olympics had more than 36 competitors?"
+    },
+    {
+      "id": "pub-013",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's 200 metre freestyle swimming event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-016",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's sprint biathlon event at the Winter Olympics held immediately before 2022?"
+    },
+    {
+      "id": "pub-017",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Royal Artillery Barracks on 28 July 2012?"
+    },
+    {
+      "id": "pub-018",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's freestyle 82 kg wrestling event at the Summer Olympics held immediately before 1996?"
+    },
+    {
+      "id": "pub-019",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many fencing events at the 1988 Summer Olympics had more than 68 competitors?"
+    },
+    {
+      "id": "pub-020",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many alpine skiing events at the 2014 Winter Olympics had more than 63 competitors?"
+    },
+    {
+      "id": "pub-021",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which alpine skiing event at the 1988 Winter Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-022",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Beijing Science and TechnologyUniversity Gymnasium on August 12, 2008?"
+    },
+    {
+      "id": "pub-023",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Estadi Olímpic Lluís Companys, Barcelona on August 9 at the 1992 Summer Olympics?"
+    },
+    {
+      "id": "pub-028",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Olympic Aquatic Centre on August 14, 2004 (heats & final)?"
+    },
+    {
+      "id": "pub-030",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Carioca Arena 3 on 6 August 2016?"
+    },
+    {
+      "id": "pub-031",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Nikaia Olympic Weightlifting Hall on 24 August 2004?"
+    },
+    {
+      "id": "pub-033",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many judo events at the 2004 Summer Olympics had more than 32 competitors?"
+    },
+    {
+      "id": "pub-036",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's light flyweight boxing event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-038",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 23 September 2000?"
+    },
+    {
+      "id": "pub-039",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's discus throw athletics event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-040",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the individual normal hill/10 km nordic combined event at the Winter Olympics held immediately before 2014?"
+    },
+    {
+      "id": "pub-041",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Mountain Bike Centre on 21 August at the 2016 Summer Olympics?"
+    },
+    {
+      "id": "pub-043",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Val-d'Isère on 16 February 1992?"
+    },
+    {
+      "id": "pub-045",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many athletics events at the 2004 Summer Olympics had more than 41 competitors?"
+    },
+    {
+      "id": "pub-049",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's pursuit biathlon event at the Winter Olympics held immediately before 2022?"
+    },
+    {
+      "id": "pub-050",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Adler Arena Skating Center on 11 February 2014?"
+    },
+    {
+      "id": "pub-053",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which shooting event at the 2016 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-057",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's 200 metres athletics event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-058",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many rowing events at the 1996 Summer Olympics had more than 39 competitors?"
+    },
+    {
+      "id": "pub-060",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at ExCeL Exhibition Centre on 30 July at the 2012 Summer Olympics?"
+    },
+    {
+      "id": "pub-064",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at ANZ Stadium on 22 September 2000 (heats)25 September 2000 (final)?"
+    },
+    {
+      "id": "pub-065",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many biathlon events at the 2014 Winter Olympics had more than 68 competitors?"
+    },
+    {
+      "id": "pub-067",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at North Greenwich Arena on 4 August at the 2012 Summer Olympics?"
+    },
+    {
+      "id": "pub-069",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many fencing events at the 2000 Summer Olympics had more than 39 competitors?"
+    },
+    {
+      "id": "pub-070",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many speed skating events at the 2010 Winter Olympics had more than 36 competitors?"
+    },
+    {
+      "id": "pub-072",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's 500 metres speed skating event at the Winter Olympics held immediately before 2014?"
+    },
+    {
+      "id": "pub-076",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Sestriere on February 24, 2006?"
+    },
+    {
+      "id": "pub-077",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Xiaohaituo Bobsleigh and Luge TrackBeijing on 13, 14 February 2022?"
+    },
+    {
+      "id": "pub-082",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many swimming events at the 1996 Summer Olympics had more than 42 competitors?"
+    },
+    {
+      "id": "pub-083",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Kvitfjell and Hafjell on February 20–21, 1994?"
+    },
+    {
+      "id": "pub-084",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which fencing event at the 1992 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-085",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which sailing event at the 2008 Summer Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-086",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Richmond Olympic Oval on 17 February 2010?"
+    },
+    {
+      "id": "pub-087",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many athletics events at the 1988 Summer Olympics had more than 41 competitors?"
+    },
+    {
+      "id": "pub-088",
+      "qtype": "superlative",
+      "route": "lookup",
+      "question": "According to the provided corpus, which alpine skiing event at the 1992 Winter Olympics had the highest number of competitors?"
+    },
+    {
+      "id": "pub-089",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many boxing events at the 1988 Summer Olympics had more than 39 competitors?"
+    },
+    {
+      "id": "pub-090",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's greco-roman 96 kg wrestling event at the Summer Olympics held immediately before 2012?"
+    },
+    {
+      "id": "pub-093",
+      "qtype": "aggregation",
+      "route": "lookup",
+      "question": "According to the provided corpus, how many biathlon events at the 2006 Winter Olympics had more than 72 competitors?"
+    },
+    {
+      "id": "pub-094",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the men's greco-roman 48 kg wrestling event at the Summer Olympics held immediately before 1996?"
+    },
+    {
+      "id": "pub-095",
+      "qtype": "multi_hop",
+      "route": "lookup",
+      "question": "Who won the gold medal in the event held at Beijing National Stadium on 16 August 2008?"
+    },
+    {
+      "id": "pub-097",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's épée fencing event at the Summer Olympics held immediately before 2016?"
+    },
+    {
+      "id": "pub-100",
+      "qtype": "temporal",
+      "route": "lookup",
+      "question": "Who won the gold medal in the women's 200 metre backstroke swimming event at the Summer Olympics held immediately before 2016?"
+    }
+  ],
+  "split": "test",
+  "lexicon": "sec",
+  "source": "datasets/olympics/test_set.jsonl"
+}

@@ -1,0 +1,28 @@
+# Core retrieval + embeddings
+langchain-core>=0.2.0
+langchain-chroma>=0.1.0
+langchain-text-splitters>=0.2.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+
+# Graph database
+pyTigerGraph>=1.6.0
+
+# Generators / judges
+google-generativeai>=0.7.0        # Gemini 2.5 Flash (answer generation)
+openai>=1.30.0                    # GPT-4o-mini (blind judge)
+
+# Evaluation
+bert-score>=0.3.13
+
+# Token counting
+tiktoken>=0.7.0
+
+# Corpus construction
+python-docx>=1.1.0                # parse the supplied eval-questions .docx
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.32.0
+tqdm>=4.66.0

@@ -1,0 +1,83 @@
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 8-K
+
+CURRENT REPORT
+
+PURSUANT TO SECTION 13 OR 15(d)
+
+OF THE SECURITIES EXCHANGE ACT OF 1934
+
+Date of Report (Date of earliest event reported) April 29, 2026 (April 29, 2026)
+
+Commission File Number 1-3671
+
+GENERAL DYNAMICS CORPORATION
+
+(Exact name of registrant as specified in its charter)
+
+Delaware
+13-1673581
+
+State or other jurisdiction of incorporation or organization I.R.S. Employer Identification No.
+
+11011 Sunset Hills Road Reston, Virginia 20190
+
+Address of principal executive offices Zip code
+
+(703) 876-3000
+
+Registrant’s telephone number, including area code
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+
+☐ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of each class Trading Symbol(s) Name of each exchange on which registered
+
+Common Stock GD New York Stock Exchange
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o
+
+Item 2.02 Results of Operations and Financial Condition
+
+On April 29, 2026, General Dynamics announced its financial results for the quarter ended April 5, 2026. A copy of the press release is being furnished as Exhibit 99.1 to this Form 8-K and is hereby incorporated by reference.
+
+Item 9.01 Financial Statements and Exhibits
+
+(d) Exhibits (furnished only)
+
+99.1
+General Dynamics press release dated April 29, 2026, with respect to the company’s financial results for the quarter ended April 5, 2026.
+
+104 Cover Page Interactive Data File (embedded within the Inline XBRL document)
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized.
+
+GENERAL DYNAMICS CORPORATION
+
+by /s/ Dana O. Maisano
+
+Dana O. Maisano
+
+Vice President and Controller
+
+(Authorized Officer and Chief Accounting Officer)
+
+Dated: April 29, 2026

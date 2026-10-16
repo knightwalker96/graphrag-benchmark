@@ -1,0 +1,147 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 8-K
+
+CURRENT REPORT
+
+Pursuant to Section 13 or 15(d) of
+
+The Securities Exchange Act of 1934
+
+Date of Report (Date of earliest event reported): May 14, 2026 (May 13, 2026)
+
+AMERICAN INTERNATIONAL GROUP, INC.
+
+(Exact name of registrant as specified in its charter)
+
+Delaware 1-8787 13-2592361
+
+(State or other jurisdiction
+
+of incorporation) (Commission File Number) (IRS Employer Identification No.)
+
+1271 Avenue of the Americas
+
+New York, New York 10020
+
+(Address of principal executive offices)
+
+Registrant’s telephone number, including area code: (212) 770-7000
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below):
+
+̈ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+̈ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+̈ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+̈ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of each class Trading Symbol(s) Name of each exchange on which registered
+
+Common Stock, Par Value $2.50 Per Share AIG New York Stock Exchange
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ̈
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ̈
+
+Section 5 - Corporate Governance and Management
+
+Item 5.02. Departure of Directors or Certain Officers; Election of Directors; Appointment
+
+of Certain Officers; Compensatory Arrangements of Certain Officers.
+
+On May 13, 2026, the Board of Directors (the “Board”) of American International Group, Inc. (“AIG” or the “Company”) appointed Thomas D. Stoddard a director of the Company, effective June 1, 2026. Mr. Stoddard will serve on the Audit Committee of the Board.
+
+The Board has determined that Mr. Stoddard is an independent director under the New York Stock Exchange listing standards.
+
+Mr. Stoddard will participate in the compensation program for independent directors as described under “Corporate Governance - Director Compensation” in AIG’s 2026 Notice of Annual Meeting and Proxy Statement filed with the Securities and Exchange Commission on March 31, 2026.
+
+There are no arrangements or understandings with any person pursuant to which Mr. Stoddard was appointed to serve as a director of the Company. Mr. Stoddard has no family relationship with any director or executive officer of the Company.
+
+AIG’s press release announcing this appointment is attached as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated herein by reference.
+
+Item 5.07. Submission of Matters to a Vote of Security Holders.
+
+On May 13, 2026, AIG held its Annual Meeting of Shareholders (the “Annual Meeting”). The results of the matters submitted to a shareholder vote at the Annual Meeting were as follows:
+
+Proposal 1 – Election of Directors: The following individuals were elected to serve as members of AIG’s Board of Directors until the 2027 Annual Meeting or until the election and qualification of their successors. The voting results for each of the nominees were as follows:
+
+For Against Abstain Broker Non-Votes
+
+James Cole, Jr. 461,745,104 3,346,458 286,990 27,587,076
+
+John (Chris) Inglis 464,807,207 288,027 283,318 27,587,076
+
+Courtney Leimkuhler 464,795,836 312,876 269,840 27,587,076
+
+Linda A. Mills 413,428,551 51,680,818 269,183 27,587,076
+
+Diana M. Murphy 423,706,844 41,123,373 548,335 27,587,076
+
+Juan R. Perez 427,447,276 37,657,485 273,791 27,587,076
+
+Peter R. Porrino 462,018,628 3,084,547 275,377 27,587,076
+
+John G. Rice 461,756,522 3,192,529 429,501 27,587,076
+
+Vanessa A. Wittman 464,601,110 509,736 267,706 27,587,076
+
+Peter Zaffino 453,589,684 11,532,819 256,049 27,587,076
+
+Proposal 2 – Advisory Vote to Approve Named Executive Officer Compensation: The voting results were as follows:
+
+For Against Abstain Broker Non-Votes
+
+359,800,583 104,658,356 919,613 27,587,076
+
+Proposal 3 – Ratify Appointment of PricewaterhouseCoopers LLP to Serve as AIG’s Independent Auditor for 2026: The voting results were as follows:
+
+For Against Abstain Broker Non-Votes
+
+463,063,134 29,719,774 182,720 —
+
+Section 9 - Financial Statements and Exhibits
+
+Item 9.01. Financial Statements and Exhibits.
+
+(d) Exhibits.
+
+99.1
+
+Press release of American International Group, Inc., dated May 14, 2026.
+
+104 Cover Page Interactive Data File (embedded within the Inline XBRL document).
+
+EXHIBIT INDEX
+
+Exhibit No. Description
+
+99.1
+
+Press release of American International Group, Inc., dated May 14, 2026.
+
+104 Cover Page Interactive Data File (embedded within the Inline XBRL document).
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+
+AMERICAN INTERNATIONAL GROUP, INC.
+
+(Registrant)
+
+Date: May 14, 2026 By: /s/ Christina Banthin
+
+Name: Christina Banthin
+
+Title: Senior Vice President and Corporate Secretary

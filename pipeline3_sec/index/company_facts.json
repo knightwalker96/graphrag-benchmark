@@ -1,0 +1,802 @@
+{
+  "AAPL": {
+    "company": "Apple Inc.",
+    "sector": "Information Technology",
+    "revenue": "$ 209,586",
+    "net_income": "$ 112,010",
+    "rnd": "$ 34,550",
+    "fy_end": "2025"
+  },
+  "ABBV": {
+    "company": "AbbVie",
+    "sector": "Health Care",
+    "revenue": "$325,061,294,916",
+    "net_income": "$ 42,956",
+    "rnd": "$ 9,096",
+    "fy_end": "December 31, 2025"
+  },
+  "ABT": {
+    "company": "Abbott Laboratories",
+    "sector": "Health Care",
+    "revenue": "$297 million",
+    "net_income": "$ 6,524",
+    "rnd": "$ 2,942",
+    "fy_end": "December 31, 2025"
+  },
+  "ACN": {
+    "company": "Accenture",
+    "sector": "Information Technology",
+    "revenue": "$14.8B",
+    "net_income": "$ 7,678,433",
+    "rnd": "$0.8 billion",
+    "fy_end": "August 31, 2025"
+  },
+  "ADBE": {
+    "company": "Adobe Inc.",
+    "sector": "Information Technology",
+    "revenue": "$17.65 billion",
+    "net_income": "$7.13 billion",
+    "rnd": "N/A",
+    "fy_end": "2025"
+  },
+  "AIG": {
+    "company": "American International Group",
+    "sector": "Financials",
+    "revenue": "$41 billion",
+    "net_income": "$5.43 per diluted share",
+    "rnd": "$9.3 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "AMD": {
+    "company": "Advanced Micro Devices",
+    "sector": "Information Technology",
+    "revenue": "null",
+    "net_income": "null",
+    "rnd": "R&D",
+    "fy_end": "2025"
+  },
+  "AMGN": {
+    "company": "Amgen",
+    "sector": "Health Care",
+    "revenue": "$24 billion",
+    "net_income": "$ 7,711",
+    "rnd": "$4 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "AMT": {
+    "company": "American Tower",
+    "sector": "Real Estate",
+    "revenue": "null",
+    "net_income": "null",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "AMZN": {
+    "company": "Amazon",
+    "sector": "Consumer Discretionary",
+    "revenue": "$ 2,118,061,430,046",
+    "net_income": "not specified",
+    "rnd": "not specified",
+    "fy_end": "2025"
+  },
+  "AVGO": {
+    "company": "Broadcom",
+    "sector": "Information Technology",
+    "revenue": "$27,537 million",
+    "net_income": "-$2,709 million",
+    "rnd": "10,977",
+    "fy_end": "November 2, 2025"
+  },
+  "AXP": {
+    "company": "American Express",
+    "sector": "Financials",
+    "revenue": "$1,670 billion",
+    "net_income": "$10,833 million",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "BA": {
+    "company": "Boeing",
+    "sector": "Industrials",
+    "revenue": "$89,463 million",
+    "net_income": "$2,235 million",
+    "rnd": "$3,615 million",
+    "fy_end": "December 31, 2025"
+  },
+  "BAC": {
+    "company": "Bank of America",
+    "sector": "Financials",
+    "revenue": "N/A",
+    "net_income": "N/A",
+    "rnd": "approximately 213,000 employees",
+    "fy_end": "2025-12-31"
+  },
+  "BKNG": {
+    "company": "Booking Holdings",
+    "sector": "Consumer Discretionary",
+    "revenue": "$26.9 billion",
+    "net_income": "null",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "BLK": {
+    "company": "BlackRock",
+    "sector": "Financials",
+    "revenue": "$14.0 trillion",
+    "net_income": "$ 5,553",
+    "rnd": "N/A",
+    "fy_end": "2025-12-31"
+  },
+  "BMY": {
+    "company": "Bristol Myers Squibb",
+    "sector": "Health Care",
+    "revenue": "$ 48,194",
+    "net_income": "$ 7,054",
+    "rnd": "$10.0 billion",
+    "fy_end": "12/31/2025"
+  },
+  "BNY": {
+    "company": "Bank of New York Mellon",
+    "sector": "Financials",
+    "revenue": "30% for other NEOs",
+    "net_income": "20% of total incentive for our CEO",
+    "rnd": null,
+    "fy_end": "December 31, 2025"
+  },
+  "BRK.B": {
+    "company": "Berkshire Hathaway (Class B)",
+    "sector": "Financials",
+    "revenue": "$176 billion",
+    "net_income": "$66,968",
+    "rnd": "$138 billion",
+    "fy_end": "2025"
+  },
+  "C": {
+    "company": "Citigroup",
+    "sector": "Financials",
+    "revenue": "6%",
+    "net_income": "$14.3 billion",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "CAT": {
+    "company": "Caterpillar Inc.",
+    "sector": "Industrials",
+    "revenue": "$67.589 billion",
+    "net_income": "$ 11,151",
+    "rnd": "next generation of construction machines",
+    "fy_end": "December 31, 2025"
+  },
+  "CL": {
+    "company": "Colgate-Palmolive",
+    "sector": "Consumer Staples",
+    "revenue": "44%, 17% and 16%",
+    "net_income": "$2,132",
+    "rnd": "6",
+    "fy_end": "December 31, 2025"
+  },
+  "CMCSA": {
+    "company": "Comcast",
+    "sector": "Communication Services",
+    "revenue": "$ 70,704",
+    "net_income": "$19,998 million",
+    "rnd": "product development",
+    "fy_end": "2025"
+  },
+  "COF": {
+    "company": "Capital One",
+    "sector": "Financials",
+    "revenue": "$53,434 million",
+    "net_income": "$2.5 billion",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "COP": {
+    "company": "ConocoPhillips",
+    "sector": "Energy",
+    "revenue": "$19.8 billion",
+    "net_income": "58,944",
+    "rnd": "$6.9 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "COST": {
+    "company": "Costco",
+    "sector": "Consumer Staples",
+    "revenue": "10%",
+    "net_income": "$ 8,099",
+    "rnd": "N/A",
+    "fy_end": "August 31, 2025"
+  },
+  "CRM": {
+    "company": "Salesforce",
+    "sector": "Information Technology",
+    "revenue": "$191.8 billion",
+    "net_income": "$7.80",
+    "rnd": "Revenues from term software licenses represent less than ten percent of total subscription and support revenue for fiscal 2026.",
+    "fy_end": "January 31, 2026"
+  },
+  "CSCO": {
+    "company": "Cisco",
+    "sector": "Information Technology",
+    "revenue": "Not specified",
+    "net_income": "7.3 percentage points decrease in the effective tax rate was primarily due to a $720 million tax benefit related to the U.S. Tax Court opinion issued during the first quarter of fiscal 2025 regarding the U.S. taxation of deemed foreign dividends in the transition year of the Tax Cut and Job Act (\"Tax Act\") (our fiscal 2018) and an increase in stock-based compensation windfall.",
+    "rnd": "Not specified",
+    "fy_end": "July 26, 2025"
+  },
+  "CVS": {
+    "company": "CVS Health",
+    "sector": "Health Care",
+    "revenue": "$ 402,067",
+    "net_income": "$ 1,768",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "CVX": {
+    "company": "Chevron Corporation",
+    "sector": "Energy",
+    "revenue": "$38.6 billion",
+    "net_income": "$ 12,299",
+    "rnd": "$37.7 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "DE": {
+    "company": "Deere & Company",
+    "sector": "Industrials",
+    "revenue": "$17,311",
+    "net_income": "$ 890",
+    "rnd": "not specified",
+    "fy_end": "November 2, 2025"
+  },
+  "DHR": {
+    "company": "Danaher Corporation",
+    "sector": "Health Care",
+    "revenue": "$24,568 million",
+    "net_income": "$3.6 billion",
+    "rnd": "N/A",
+    "fy_end": "2025"
+  },
+  "DIS": {
+    "company": "Walt Disney Company (The)",
+    "sector": "Communication Services",
+    "revenue": "$94,425",
+    "net_income": "$12.4 billion",
+    "rnd": "N/A",
+    "fy_end": "September 27, 2025"
+  },
+  "DUK": {
+    "company": "Duke Energy",
+    "sector": "Utilities",
+    "revenue": "$ 12,888",
+    "net_income": "increased",
+    "rnd": "11,435",
+    "fy_end": "December 31, 2025"
+  },
+  "EMR": {
+    "company": "Emerson Electric",
+    "sector": "Industrials",
+    "revenue": "$18,016",
+    "net_income": "$2,293",
+    "rnd": "$0",
+    "fy_end": "September 30, 2025"
+  },
+  "FDX": {
+    "company": "FedEx",
+    "sector": "Industrials",
+    "revenue": "3.2 %",
+    "net_income": "$ 4,092",
+    "rnd": "2,832",
+    "fy_end": "May 31, 2025"
+  },
+  "GD": {
+    "company": "General Dynamics",
+    "sector": "Industrials",
+    "revenue": "$ 13,110",
+    "net_income": "839",
+    "rnd": "N/A",
+    "fy_end": "December 31"
+  },
+  "GE": {
+    "company": "GE Aerospace",
+    "sector": "Industrials",
+    "revenue": "$ 45,855",
+    "net_income": "$ 8,601",
+    "rnd": "$ 2,989",
+    "fy_end": "December 31, 2025"
+  },
+  "GILD": {
+    "company": "Gilead Sciences",
+    "sector": "Health Care",
+    "revenue": "$103.2 billion",
+    "net_income": "$ 8,510",
+    "rnd": "$5,799",
+    "fy_end": "December 31, 2025"
+  },
+  "GM": {
+    "company": "General Motors",
+    "sector": "Consumer Discretionary",
+    "revenue": "$ 154,317",
+    "net_income": "$10.3 billion to $11.7 billion",
+    "rnd": "$8.5 billion",
+    "fy_end": "December 31"
+  },
+  "GOOGL": {
+    "company": "Alphabet Inc. (Class A)",
+    "sector": "Communication Services",
+    "revenue": "$402,836",
+    "net_income": "$132,170",
+    "rnd": "$200 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "GS": {
+    "company": "Goldman Sachs",
+    "sector": "Financials",
+    "revenue": "$58.28 billion",
+    "net_income": "$17.18 billion",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "HD": {
+    "company": "Home Depot",
+    "sector": "Consumer Discretionary",
+    "revenue": "$164.7 billion",
+    "net_income": "$14.2 billion",
+    "rnd": "N/A",
+    "fy_end": "February 1, 2026"
+  },
+  "HON": {
+    "company": "Honeywell",
+    "sector": "Industrials",
+    "revenue": "$37.4 billion",
+    "net_income": "6.1 BILLION",
+    "rnd": "$1,375",
+    "fy_end": "December 31, 2025"
+  },
+  "IBM": {
+    "company": "IBM",
+    "sector": "Information Technology",
+    "revenue": "$67.5B",
+    "net_income": "$13.2B",
+    "rnd": "N/A",
+    "fy_end": "DECEMBER 31, 2025"
+  },
+  "INTC": {
+    "company": "Intel",
+    "sector": "Information Technology",
+    "revenue": "modest portion",
+    "net_income": "$755 million",
+    "rnd": "Intel 4",
+    "fy_end": "December 27, 2025"
+  },
+  "INTU": {
+    "company": "Intuit",
+    "sector": "Information Technology",
+    "revenue": "$18.8 B",
+    "net_income": "$3,869 million",
+    "rnd": "N/A",
+    "fy_end": "July 31, 2025"
+  },
+  "ISRG": {
+    "company": "Intuitive Surgical",
+    "sector": "Health Care",
+    "revenue": "$63.0 million",
+    "net_income": "$2.95 billion",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "JNJ": {
+    "company": "Johnson & Johnson",
+    "sector": "Health Care",
+    "revenue": "$94.2 billion",
+    "net_income": "$32.6 billion",
+    "rnd": "$14.7 billion",
+    "fy_end": "December 28, 2025"
+  },
+  "JPM": {
+    "company": "JPMorgan Chase",
+    "sector": "Financials",
+    "revenue": "$ 182,447",
+    "net_income": "$ 57,048",
+    "rnd": "null",
+    "fy_end": "December 31"
+  },
+  "KO": {
+    "company": "Coca-Cola Company (The)",
+    "sector": "Consumer Staples",
+    "revenue": "61.1%",
+    "net_income": "61.6%",
+    "rnd": "$2,112 million",
+    "fy_end": "December 31, 2025"
+  },
+  "LIN": {
+    "company": "Linde plc",
+    "sector": "Materials",
+    "revenue": "$33,986 million",
+    "net_income": "null",
+    "rnd": "null",
+    "fy_end": "12/31/2025"
+  },
+  "LLY": {
+    "company": "Eli Lilly and Company",
+    "sector": "Health Care",
+    "revenue": "$ 65,179 $ 45,043 45",
+    "net_income": "$160 million",
+    "rnd": "$12,000",
+    "fy_end": "December 31, 2025"
+  },
+  "LMT": {
+    "company": "Lockheed Martin",
+    "sector": "Industrials",
+    "revenue": "$ 75,048",
+    "net_income": "$ 5,017",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "LOW": {
+    "company": "Lowe's",
+    "sector": "Consumer Discretionary",
+    "revenue": "$86,286 million",
+    "net_income": "$6,654 million",
+    "rnd": "$15 per hour",
+    "fy_end": "January 30, 2026"
+  },
+  "MA": {
+    "company": "Mastercard",
+    "sector": "Financials",
+    "revenue": "$32.8B",
+    "net_income": "$15.0B",
+    "rnd": "$2.8B",
+    "fy_end": "2025"
+  },
+  "MCD": {
+    "company": "McDonald's",
+    "sector": "Consumer Discretionary",
+    "revenue": "N/A",
+    "net_income": "N/A",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "MDLZ": {
+    "company": "Mondelez International",
+    "sector": "Consumer Staples",
+    "revenue": "$38.5 billion",
+    "net_income": "3",
+    "rnd": "N/A",
+    "fy_end": "2025"
+  },
+  "MDT": {
+    "company": "Medtronic",
+    "sector": "Health Care",
+    "revenue": "$8,656 million (Non-GAAP)",
+    "net_income": "$7,120 million (Non-GAAP)",
+    "rnd": "$3 million",
+    "fy_end": "April 24, 2026"
+  },
+  "MET": {
+    "company": "MetLife",
+    "sector": "Financials",
+    "revenue": "57,609",
+    "net_income": "3,403",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "META": {
+    "company": "Meta Platforms",
+    "sector": "Communication Services",
+    "revenue": "$200.97 billion",
+    "net_income": "$60.46 billion",
+    "rnd": "$96.29 billion",
+    "fy_end": "2025"
+  },
+  "MMM": {
+    "company": "3M",
+    "sector": "Industrials",
+    "revenue": "$ 24,948 million",
+    "net_income": "$0.73 per share",
+    "rnd": "4.7 %",
+    "fy_end": "December 31, 2025"
+  },
+  "MO": {
+    "company": "Altria",
+    "sector": "Consumer Staples",
+    "revenue": "Not explicitly stated",
+    "net_income": "$ 6,947",
+    "rnd": "N/A",
+    "fy_end": "December 31"
+  },
+  "MRK": {
+    "company": "Merck & Co.",
+    "sector": "Health Care",
+    "revenue": "$198,051,000,000",
+    "net_income": "$42 million",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "MS": {
+    "company": "Morgan Stanley",
+    "sector": "Financials",
+    "revenue": "$217,968,854,713",
+    "net_income": "$ 16,249",
+    "rnd": "N/A",
+    "fy_end": "2025"
+  },
+  "MSFT": {
+    "company": "Microsoft",
+    "sector": "Information Technology",
+    "revenue": "$60.0 billion",
+    "net_income": "$101,832",
+    "rnd": "$59,350",
+    "fy_end": "June 30, 2025"
+  },
+  "NEE": {
+    "company": "NextEra Energy",
+    "sector": "Utilities",
+    "revenue": "$945 million",
+    "net_income": "$ 5,332",
+    "rnd": "$705 million",
+    "fy_end": "2026"
+  },
+  "NFLX": {
+    "company": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "revenue": "$ 45,183,036",
+    "net_income": "$ 10,981,201",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "NKE": {
+    "company": "Nike, Inc.",
+    "sector": "Consumer Discretionary",
+    "revenue": "$ 46,398",
+    "net_income": "$ 3,108",
+    "rnd": "4,754",
+    "fy_end": "May 31, 2026"
+  },
+  "NOW": {
+    "company": "ServiceNow",
+    "sector": "Information Technology",
+    "revenue": "N/A",
+    "net_income": "N/A",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "NVDA": {
+    "company": "Nvidia",
+    "sector": "Information Technology",
+    "revenue": "$4.0 trillion",
+    "net_income": "$ 120,067",
+    "rnd": "N/A",
+    "fy_end": "January 25, 2026"
+  },
+  "ORCL": {
+    "company": "Oracle Corporation",
+    "sector": "Information Technology",
+    "revenue": "51% of our total revenues during fiscal 2026, 43% and 37% of our total revenues during fiscal 2025 and 2024, respectively",
+    "net_income": "$5,250 million",
+    "rnd": "$10.3 billion",
+    "fy_end": "May 31, 2026"
+  },
+  "PEP": {
+    "company": "PepsiCo",
+    "sector": "Consumer Staples",
+    "revenue": "14%",
+    "net_income": "$ 8,240",
+    "rnd": "1,993",
+    "fy_end": "December 27, 2025"
+  },
+  "PFE": {
+    "company": "Pfizer",
+    "sector": "Health Care",
+    "revenue": "Most of our revenues",
+    "net_income": "$7.5 billion",
+    "rnd": "critical R&D milestones",
+    "fy_end": "December 31, 2025"
+  },
+  "PG": {
+    "company": "Procter & Gamble",
+    "sector": "Consumer Staples",
+    "revenue": "$84.3 billion",
+    "net_income": "$16.1 billion",
+    "rnd": "19,846",
+    "fy_end": "June 30, 2025"
+  },
+  "PLTR": {
+    "company": "Palantir Technologies",
+    "sector": "Information Technology",
+    "revenue": "$4.5 billion",
+    "net_income": "$ 1,634,644",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "PM": {
+    "company": "Philip Morris International",
+    "sector": "Consumer Staples",
+    "revenue": "$40.6 billion",
+    "net_income": "$11.3 billion",
+    "rnd": "$1,003 million",
+    "fy_end": "December 31, 2025"
+  },
+  "PYPL": {
+    "company": "PayPal",
+    "sector": "Financials",
+    "revenue": "$1.79 trillion",
+    "net_income": "$ 5,233",
+    "rnd": "$1.5 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "QCOM": {
+    "company": "Qualcomm",
+    "sector": "Information Technology",
+    "revenue": "$44.3 billion",
+    "net_income": "$5.5 billion",
+    "rnd": "$9,042 million",
+    "fy_end": "September 28, 2025"
+  },
+  "RTX": {
+    "company": "RTX Corporation",
+    "sector": "Industrials",
+    "revenue": "$ 33,279 million",
+    "net_income": "$ 3,195",
+    "rnd": "N/A",
+    "fy_end": "2025"
+  },
+  "SBUX": {
+    "company": "Starbucks",
+    "sector": "Consumer Discretionary",
+    "revenue": "83% of total net revenues",
+    "net_income": "$2.9 billion",
+    "rnd": "null",
+    "fy_end": "September 28, 2025"
+  },
+  "SCHW": {
+    "company": "Charles Schwab Corporation",
+    "sector": "Financials",
+    "revenue": "net interest revenue, asset management and administration fees, trading revenue, and bank deposit account fees",
+    "net_income": "$ 8,852",
+    "rnd": "366.9 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "SO": {
+    "company": "Southern Company",
+    "sector": "Utilities",
+    "revenue": "$5.9 billion",
+    "net_income": "$2.9 billion",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "SPG": {
+    "company": "Simon Property Group",
+    "sector": "Real Estate",
+    "revenue": "$449.4 million",
+    "net_income": "$14.17",
+    "rnd": "$168.6 million",
+    "fy_end": "12/31/2025"
+  },
+  "T": {
+    "company": "AT&T",
+    "sector": "Communication Services",
+    "revenue": "120,896",
+    "net_income": "4,422",
+    "rnd": "$843",
+    "fy_end": "December 31, 2025"
+  },
+  "TGT": {
+    "company": "Target Corporation",
+    "sector": "Consumer Discretionary",
+    "revenue": "$104.8 billion",
+    "net_income": "$ 8.13",
+    "rnd": "null",
+    "fy_end": "January 31, 2026"
+  },
+  "TMO": {
+    "company": "Thermo Fisher Scientific",
+    "sector": "Health Care",
+    "revenue": "$ 44,556",
+    "net_income": "$ 269 million",
+    "rnd": "$2.00 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "TMUS": {
+    "company": "T-Mobile US",
+    "sector": "Communication Services",
+    "revenue": "$88,309 million",
+    "net_income": "$10,992 million",
+    "rnd": "N/A",
+    "fy_end": "December 31"
+  },
+  "TSLA": {
+    "company": "Tesla, Inc.",
+    "sector": "Consumer Discretionary",
+    "revenue": "N/A",
+    "net_income": "N/A",
+    "rnd": "N/A",
+    "fy_end": "December 31, 2025"
+  },
+  "TXN": {
+    "company": "Texas Instruments",
+    "sector": "Information Technology",
+    "revenue": "null",
+    "net_income": "$ 5,001",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "UBER": {
+    "company": "Uber",
+    "sector": "Industrials",
+    "revenue": "null",
+    "net_income": "-10.6B USD",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "UNH": {
+    "company": "UnitedHealth Group",
+    "sector": "Health Care",
+    "revenue": "not specified",
+    "net_income": "not specified",
+    "rnd": "311.97",
+    "fy_end": "December 31, 2025"
+  },
+  "UNP": {
+    "company": "Union Pacific Corporation",
+    "sector": "Industrials",
+    "revenue": "$23.2 billion",
+    "net_income": "$7.1 billion",
+    "rnd": "not specified",
+    "fy_end": "December 31, 2025"
+  },
+  "UPS": {
+    "company": "United Parcel Service",
+    "sector": "Industrials",
+    "revenue": "$88.7 billion",
+    "net_income": "net income",
+    "rnd": "37 83",
+    "fy_end": "December 31, 2025"
+  },
+  "USB": {
+    "company": "U.S. Bancorp",
+    "sector": "Financials",
+    "revenue": "1,214,190,913",
+    "net_income": "$522.2 billion",
+    "rnd": "1,553,695,799",
+    "fy_end": "2025"
+  },
+  "V": {
+    "company": "Visa Inc.",
+    "sector": "Financials",
+    "revenue": "$17 trillion",
+    "net_income": "$20,058",
+    "rnd": "N/A",
+    "fy_end": "September 30, 2025"
+  },
+  "VZ": {
+    "company": "Verizon",
+    "sector": "Communication Services",
+    "revenue": "$106.8 billion",
+    "net_income": "$ 17,608",
+    "rnd": "$331 billion",
+    "fy_end": "December 31, 2025"
+  },
+  "WFC": {
+    "company": "Wells Fargo",
+    "sector": "Financials",
+    "revenue": "$83.7B",
+    "net_income": "$21.3B",
+    "rnd": "null",
+    "fy_end": "December 31, 2025"
+  },
+  "WMT": {
+    "company": "Walmart",
+    "sector": "Consumer Staples",
+    "revenue": "$706.4 billion",
+    "net_income": "$713.2 billion",
+    "rnd": "N/A",
+    "fy_end": "January 31"
+  },
+  "XOM": {
+    "company": "ExxonMobil",
+    "sector": "Energy",
+    "revenue": "null",
+    "net_income": "36,010",
+    "rnd": "1,228",
+    "fy_end": "December 31, 2025"
+  }
+}

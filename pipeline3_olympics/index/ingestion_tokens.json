@@ -1,0 +1,1 @@
+{"prompt": 0, "output": 0, "calls": 0, "llm_tokens": 0, "cost_usd": 0.0, "method": "deterministic regex over corpus infoboxes", "model": null, "note": "No LLM is used to build this graph. Compare pipeline3_sec/index/ingestion_tokens.json, which records the SEC round's Gemini extraction cost. Reproducible bit-for-bit from corpus.jsonl."}

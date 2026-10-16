@@ -1,0 +1,233 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 8-K
+
+CURRENT REPORT
+
+Pursuant to Section 13 OR 15(d)
+
+of The Securities Exchange Act of 1934
+
+Date of Report (Date of earliest event reported): July 1, 2026
+
+Exxon Mobil Corporation
+
+(Exact name of registrant as specified in its charter)
+
+New Jersey
+
+001-02256
+
+13-5409005
+
+(State or other jurisdiction
+
+of incorporation)
+
+(Commission
+
+File Number)
+
+(IRS Employer
+
+Identification No.)
+
+22777 Springwoods Village Parkway, Spring, Texas 77389-1425
+
+(Address of principal executive offices) (Zip Code)
+
+Registrant’s telephone number, including area code: (972) 940-6000
+
+(Former name or former address, if changed since last report)
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+
+☐
+
+Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐
+
+Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐
+
+Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐
+
+Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of Each Class
+
+Trading
+
+Symbol
+
+Name of Each Exchange
+
+on Which Registered
+
+Common Stock, without par value
+
+XOM
+
+New York Stock Exchange
+
+0.524% Notes due 2028
+
+XOM28
+
+New York Stock Exchange
+
+0.835% Notes due 2032
+
+XOM32
+
+New York Stock Exchange
+
+1.408% Notes due 2039
+
+XOM39A
+
+New York Stock Exchange
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Explanatory Note
+
+On July 1, 2026, Exxon Mobil Corporation, a New Jersey corporation (“ExxonMobil”), completed its previously announced redomiciliation reorganization (the “Redomiciliation Merger”) pursuant to the Agreement and Plan of Merger, dated as of April 8, 2026 (the “Merger Agreement”), by and among ExxonMobil, ExxonMobil Holdings Corporation, a Texas corporation, and Ensign LLC, a Texas limited liability company. The Redomiciliation Merger became effective on July 1, 2026 in accordance with the terms of the Merger Agreement (the “Effective Time”).
+
+The foregoing description of the Merger Agreement is not complete and is qualified in its entirety by reference to the Merger Agreement, a copy of which was filed as Annex A to the proxy statement included in ExxonMobil’s definitive proxy statement on Schedule 14A filed with the Commission on April 8, 2026.
+
+Item 1.01
+
+Entry Into a Material Definitive Agreement.
+
+Upon the consummation of the Redomiciliation Merger and pursuant to the terms of the indenture, dated as of March 20, 2014, between ExxonMobil and Deutsche Bank Trust Company Americas, as trustee (the “Trustee”), as amended and supplemented from time to time (the “Indenture”), ExxonMobil Holdings Corporation, ExxonMobil and the Trustee entered into a second supplemental indenture (the “Second Supplemental Indenture”) pursuant to which ExxonMobil Holdings Corporation fully and unconditionally guaranteed, on a senior unsecured basis, all of ExxonMobil’s payment and performance obligations under the Indenture and the notes issued thereunder (collectively, the “Notes”).
+
+ExxonMobil remains the primary obligor under the Indenture and the Notes, and the Notes continue to be the senior unsecured obligations of ExxonMobil.
+
+The foregoing description is not complete and is qualified in its entirety by reference to the Second Supplemental Indenture, a copy of which is filed as Exhibit 4(i) hereto.
+
+Item 2.01
+
+Completion of Acquisition or Disposition of Assets.
+
+The information set forth in the Explanatory Note of this Current Report on Form 8-K is incorporated by reference into this Item 2.01.
+
+At the Effective Time, each share of common stock, without par value, of ExxonMobil (“ExxonMobil Common Stock”) issued and outstanding immediately prior to the Effective Time (other than treasury shares, which were cancelled) was automatically exchanged for one share of common stock, par value $0.001 per share, of ExxonMobil Holdings Corporation (“ExxonMobil Holdings Corporation Common Stock”), and, as a result, the former shareholders of ExxonMobil automatically became shareholders of ExxonMobil Holdings Corporation, holding the same number and percentage of shares of ExxonMobil Holdings Corporation Common Stock as they held of ExxonMobil Common Stock immediately prior to the Redomiciliation Merger. ExxonMobil Holdings Corporation replaced ExxonMobil as the publicly held corporation traded on the New York Stock Exchange (the “NYSE”). It is currently expected that, on July 2, 2026, shares of ExxonMobil Holdings Corporation Common Stock will commence trading under the current ExxonMobil ticker symbol “XOM” on the NYSE.
+
+As of the Effective Time, the rights of shareholders of ExxonMobil Holdings Corporation are governed by the Texas Business Organizations Code and by the Amended and Restated Certificate of Formation of ExxonMobil Holdings Corporation and the ExxonMobil Holdings Corporation By-Laws.
+
+In addition, at the Effective Time, each outstanding warrant, stock option, restricted stock unit, performance stock unit, equity or equity-based award and other right to acquire any, or any instrument convertible into or exchangeable for, or based on the value of, ExxonMobil Common Stock issued by ExxonMobil (each, an “ExxonMobil Equity Award”) was
+
+2
+
+automatically exchanged into a corresponding warrant, stock option, restricted stock unit, performance stock unit, equity or equity-based award, right or instrument relating to a number of shares of ExxonMobil Holdings Corporation Common Stock equal to the number of shares of ExxonMobil Common Stock subject to such ExxonMobil Equity Award immediately prior to the Effective Time. All such ExxonMobil Equity Awards continue to have the same terms and conditions (including with respect to, as applicable, exercisability, vesting and forfeiture (including performance vesting criteria), form of settlement and dividend equivalent rights) as applied immediately prior to the Effective Time, except as adjusted pursuant to the Merger Agreement.
+
+Upon completion of the Redomiciliation Merger, ExxonMobil Holdings Corporation Common Stock was deemed to be registered under Section 12 of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), pursuant to Rule 12g-3(a) promulgated thereunder. ExxonMobil Holdings Corporation is also deemed to be the successor registrant of ExxonMobil Common Stock pursuant to Rule 12g-3(a) under the Exchange Act.
+
+The directors and executive officers of ExxonMobil Holdings Corporation effective upon approval of the Redomiciliation Merger by the ExxonMobil shareholders are the same individuals who were directors and executive officers, respectively, of ExxonMobil as of immediately prior to the Redomiciliation Merger, each holding the same position at ExxonMobil Holdings Corporation that such individual held at ExxonMobil. See Item 5.02 of this Current Report on Form 8-K for additional information.
+
+The foregoing description of the Merger Agreement is not complete and is qualified in its entirety by reference to the Merger Agreement, a copy of which was filed as Annex A to the proxy statement included in ExxonMobil’s definitive proxy statement on Schedule 14A filed with the Commission on April 8, 2026.
+
+Item 3.01
+
+Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing.
+
+In connection with the Redomiciliation Merger, ExxonMobil notified the NYSE that the Redomiciliation Merger had been completed and requested that trading of the ExxonMobil Common Stock be suspended on July 1, 2026. On July 1, 2026, the NYSE is expected to suspend trading of ExxonMobil Common Stock after the close of business. It is currently expected that, on July 2, 2026, shares of ExxonMobil Holdings Corporation Common Stock will commence trading under the current ExxonMobil ticker symbol “XOM” on the NYSE.
+
+In addition, the NYSE is expected to file with the Commission an application on Form 25 to delist the ExxonMobil Common Stock from the NYSE and deregister the ExxonMobil Common Stock under Section 12(b) of the Exchange Act.
+
+Item 3.03
+
+Material Modification to Rights of Security Holders.
+
+The information set forth in the Explanatory Note and Item 2.01, each as set forth in this Current Report on Form 8-K, is incorporated by reference into this Item 3.03.
+
+Item 5.02
+
+Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers.
+
+Effective as of the Effective Time, each of Michael J. Angelakis, Angela F. Braly, Maria S. Dreyfus, Greg C. Garland, John D. Harris II, Kaisa H. Hietala, Joseph L. Hooley, Steven A. Kandarian, Alexander A. Karsner, Lawrence W. Kellner, Dina Powell McCormick, and Darren W. Woods resigned as a director of ExxonMobil.
+
+Effective as of the Effective Time, ExxonMobil Holdings Corporation, in its capacity as the sole shareholder of ExxonMobil, elected Neil A. Chapman, Neil A. Hansen, and Jack P. Williams, Jr. as directors of ExxonMobil, in each case to hold office until his or her successor has been duly elected and qualified, or until his or her earlier resignation or removal.
+
+3
+
+Effective as of the Effective Time, each of ExxonMobil’s named executive officers named in ExxonMobil’s definitive proxy statement on Schedule 14A filed with the Commission on April 8, 2026 ceased to hold the offices set forth therein and the following persons were appointed as the officers of ExxonMobil in the offices set forth opposite their respective names, in each case to hold office until the earlier of his or her resignation, removal or death:
+
+James R. Chapman, President, Treasurer
+
+Susan E. Buchanan, Vice President, Controller
+
+Item 5.03
+
+Amendments to Articles of Incorporation or By-Laws.
+
+On May 27, 2026, the Restated Certificate of Incorporation of ExxonMobil, as amended (the “ExxonMobil Charter”), and the ExxonMobil By-Laws, as amended (the “ExxonMobil By-Laws”), were amended in connection with the Redomiciliation Merger. The ExxonMobil Charter was amended to decrease the authorized number of shares of ExxonMobil Common Stock from nine billion (9,000,000,000) shares to one hundred (100) shares, among other changes. The ExxonMobil By-Laws were amended to adjust the size of the board of directors of ExxonMobil to not less than three (3) directors and not more than five (5) directors, among other things.
+
+The foregoing descriptions of the amendments to the ExxonMobil Charter and the ExxonMobil By-Laws are not complete and are qualified in their entirety by reference to their full texts, which are filed as Exhibits 3(i) and 3(ii), respectively, hereto.
+
+Item 9.01
+
+Financial Statements and Exhibits.
+
+(d) Exhibits.
+
+Exhibit
+
+Description
+
+3(i)
+
+Amended and Restated Certificate of Incorporation of ExxonMobil
+
+3(ii)
+
+By-Laws of ExxonMobil
+
+4(i)
+
+Second Supplemental Indenture, dated as of July 1, 2026, among Exxon Mobil Corporation, ExxonMobil Holdings Corporation and Deutsche Bank Trust Company Americas, as trustee
+
+104
+
+Cover Page Interactive Data File (embedded within the Inline XBRL document)
+
+4
+
+SIGNATURE
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+
+EXXON MOBIL CORPORATION
+
+Date: July 1, 2026
+
+By:
+
+/s/ Susan E. Buchanan
+
+Name:
+
+Susan E. Buchanan
+
+Title:
+
+Vice President and Chief Accounting Officer
+
+(Principal Accounting Officer)
+
+5

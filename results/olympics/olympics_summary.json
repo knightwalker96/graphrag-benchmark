@@ -1,0 +1,800 @@
+{
+ "task": "GraphRAG benchmark the Olympics corpus \u2014 Olympics / Wikipedia",
+ "config_tag": "held70",
+ "frozen_config": "GraphRAG benchmark/OLYMPICS_FROZEN_CONFIG.md",
+ "generator": "gemini-2.5-flash (temp 0, MAX_TOKENS 2048)",
+ "judge": "gpt-4o-mini (blind to pipeline, anti-parametric clause \u2014 declared deviation)",
+ "embedder": "BAAI/bge-small-en-v1.5 (384d, shared P2/P3)",
+ "bertscore": "bert-score==0.3.13, roberta-large, lang=en, rescale_with_baseline=True, idf=False",
+ "runs": 3,
+ "sets": {
+  "dev": {
+   "n": 30,
+   "file": "datasets/olympics/dev_set.jsonl",
+   "role": "all tuning; frozen before held-out"
+  },
+  "test": {
+   "n": 70,
+   "file": "datasets/olympics/test_set.jsonl",
+   "role": "held out; run once under the frozen config"
+  },
+  "hidden": {
+   "n": 50,
+   "file": "eval_hidden.jsonl",
+   "role": "router accuracy ONLY \u2014 no answers exist, never scored"
+  }
+ },
+ "heldout70": {
+  "llm_only": {
+   "strict_pass_rate": {
+    "mean": 0.4952,
+    "std": 0.0337,
+    "runs": [
+     0.4714,
+     0.4714,
+     0.5429
+    ]
+   },
+   "graded_quality_mean": {
+    "mean": 0.4952,
+    "std": 0.0337,
+    "runs": [
+     0.4714,
+     0.4714,
+     0.5429
+    ]
+   },
+   "bertscore_f1_mean": {
+    "mean": 0.7478,
+    "std": 0.0195,
+    "runs": [
+     0.7283,
+     0.7408,
+     0.7744
+    ]
+   },
+   "citation_quality_mean": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "citation_precision_mean": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "avg_total_inference_tokens": {
+    "mean": 281.5,
+    "std": 0.1414,
+    "runs": [
+     281.6,
+     281.3,
+     281.6
+    ]
+   },
+   "retrieval_recall_mean": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "retrieval_precision_mean": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "retrieval_k_docs_mean": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "n": 70,
+   "avg_latency_seconds": {
+    "mean": 4.0817,
+    "std": 0.074,
+    "runs": [
+     4.134,
+     3.977,
+     4.134
+    ]
+   },
+   "avg_cost_usd": {
+    "mean": 0.0001,
+    "std": 0.0,
+    "runs": [
+     0.0001,
+     0.0001,
+     0.0001
+    ]
+   },
+   "thinking_tokens_mean": {
+    "mean": 651.281,
+    "std": 22.0516,
+    "runs": [
+     678.2,
+     624.1857,
+     651.4571
+    ]
+   },
+   "tg_live_rate": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "basic_rag": {
+   "strict_pass_rate": {
+    "mean": 0.7857,
+    "std": 0.0,
+    "runs": [
+     0.7857,
+     0.7857,
+     0.7857
+    ]
+   },
+   "graded_quality_mean": {
+    "mean": 0.7857,
+    "std": 0.0,
+    "runs": [
+     0.7857,
+     0.7857,
+     0.7857
+    ]
+   },
+   "bertscore_f1_mean": {
+    "mean": 0.7938,
+    "std": 0.0,
+    "runs": [
+     0.7938,
+     0.7938,
+     0.7938
+    ]
+   },
+   "citation_quality_mean": {
+    "mean": 0.6852,
+    "std": 0.0017,
+    "runs": [
+     0.6829,
+     0.6871,
+     0.6857
+    ]
+   },
+   "citation_precision_mean": {
+    "mean": 1.0,
+    "std": 0.0,
+    "runs": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "avg_total_inference_tokens": {
+    "mean": 5148.4,
+    "std": 0.1633,
+    "runs": [
+     5148.6,
+     5148.4,
+     5148.2
+    ]
+   },
+   "retrieval_recall_mean": {
+    "mean": 0.8536,
+    "std": 0.0,
+    "runs": [
+     0.8536,
+     0.8536,
+     0.8536
+    ]
+   },
+   "retrieval_precision_mean": {
+    "mean": 0.2137,
+    "std": 0.0,
+    "runs": [
+     0.2137,
+     0.2137,
+     0.2137
+    ]
+   },
+   "retrieval_k_docs_mean": {
+    "mean": 19.1,
+    "std": 0.0,
+    "runs": [
+     19.1,
+     19.1,
+     19.1
+    ]
+   },
+   "n": 70,
+   "avg_latency_seconds": {
+    "mean": 7.2357,
+    "std": 0.6281,
+    "runs": [
+     6.73,
+     8.121,
+     6.856
+    ]
+   },
+   "avg_cost_usd": {
+    "mean": 0.0016,
+    "std": 0.0,
+    "runs": [
+     0.0016,
+     0.0016,
+     0.0016
+    ]
+   },
+   "thinking_tokens_mean": {
+    "mean": 607.119,
+    "std": 15.1981,
+    "runs": [
+     613.0143,
+     622.0714,
+     586.2714
+    ]
+   },
+   "tg_live_rate": {
+    "mean": 0.0,
+    "std": 0.0,
+    "runs": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "graphrag": {
+   "strict_pass_rate": {
+    "mean": 1.0,
+    "std": 0.0,
+    "runs": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "graded_quality_mean": {
+    "mean": 1.0,
+    "std": 0.0,
+    "runs": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "bertscore_f1_mean": {
+    "mean": 0.9944,
+    "std": 0.0013,
+    "runs": [
+     0.9928,
+     0.9943,
+     0.996
+    ]
+   },
+   "citation_quality_mean": {
+    "mean": 0.9857,
+    "std": 0.0,
+    "runs": [
+     0.9857,
+     0.9857,
+     0.9857
+    ]
+   },
+   "citation_precision_mean": {
+    "mean": 0.8259,
+    "std": 0.023,
+    "runs": [
+     0.8478,
+     0.7941,
+     0.8357
+    ]
+   },
+   "avg_total_inference_tokens": {
+    "mean": 508.0333,
+    "std": 0.8055,
+    "runs": [
+     508.7,
+     506.9,
+     508.5
+    ]
+   },
+   "retrieval_recall_mean": {
+    "mean": 0.6751,
+    "std": 0.0,
+    "runs": [
+     0.6751,
+     0.6751,
+     0.6751
+    ]
+   },
+   "retrieval_precision_mean": {
+    "mean": 1.0,
+    "std": 0.0,
+    "runs": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "retrieval_k_docs_mean": {
+    "mean": 2.27,
+    "std": 0.0,
+    "runs": [
+     2.27,
+     2.27,
+     2.27
+    ]
+   },
+   "n": 70,
+   "avg_latency_seconds": {
+    "mean": 3.531,
+    "std": 0.2619,
+    "runs": [
+     3.413,
+     3.286,
+     3.894
+    ]
+   },
+   "avg_cost_usd": {
+    "mean": 0.0002,
+    "std": 0.0,
+    "runs": [
+     0.0002,
+     0.0002,
+     0.0002
+    ]
+   },
+   "thinking_tokens_mean": {
+    "mean": 350.781,
+    "std": 6.4689,
+    "runs": [
+     356.3714,
+     341.7143,
+     354.2571
+    ]
+   },
+   "tg_live_rate": {
+    "mean": 1.0,
+    "std": 0.0,
+    "runs": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "token_reduction_p3_vs_p2_pct": 90.1,
+  "strict_lead_p3_over_p2": 0.2143,
+  "strict_relative_gain_p3_over_p2_pct": 27.3
+ },
+ "heldout70_by_qtype": {
+  "aggregation": {
+   "n": 15,
+   "llm_only": 0.3111,
+   "basic_rag": 0.5333,
+   "graphrag": 1.0,
+   "lead_p3_over_p2": 0.4667
+  },
+  "lookup": {
+   "n": 13,
+   "llm_only": 0.1538,
+   "basic_rag": 1.0,
+   "graphrag": 1.0,
+   "lead_p3_over_p2": 0.0
+  },
+  "multi_hop": {
+   "n": 20,
+   "llm_only": 0.5,
+   "basic_rag": 0.7,
+   "graphrag": 1.0,
+   "lead_p3_over_p2": 0.3
+  },
+  "superlative": {
+   "n": 7,
+   "llm_only": 0.4286,
+   "basic_rag": 0.8571,
+   "graphrag": 1.0,
+   "lead_p3_over_p2": 0.1429
+  },
+  "temporal": {
+   "n": 15,
+   "llm_only": 1.0,
+   "basic_rag": 0.9333,
+   "graphrag": 1.0,
+   "lead_p3_over_p2": 0.0667
+  }
+ },
+ "significance_heldout70": {
+  "test": "exact two-sided McNemar, paired per-question strict outcomes, run 1",
+  "p3_only_correct": 15,
+  "p2_only_correct": 0,
+  "discordant": 15,
+  "p_value": 6.103515625e-05,
+  "p3_only_correct_ids": [
+   "pub-001",
+   "pub-003",
+   "pub-008",
+   "pub-017",
+   "pub-020",
+   "pub-022",
+   "pub-028",
+   "pub-038",
+   "pub-045",
+   "pub-060",
+   "pub-070",
+   "pub-072",
+   "pub-082",
+   "pub-087",
+   "pub-095"
+  ],
+  "p2_only_correct_ids": []
+ },
+ "significance_dev30": {
+  "p3_only_correct": 4,
+  "p2_only_correct": 1,
+  "discordant": 5,
+  "p_value": 0.375,
+  "note": "dev could not establish the lead; test could"
+ },
+ "ablations_heldout70": {
+  "frozen_router": {
+   "strict_pass_rate": 1.0,
+   "avg_total_inference_tokens": 508.0333,
+   "branch_resolved": 70,
+   "n": 70,
+   "route_accuracy": 1.0,
+   "tg_live_rate": 1.0,
+   "confounded": false
+  },
+  "route_force_random": {
+   "strict_pass_rate": 0.7286,
+   "graded_quality_mean": 0.7286,
+   "bertscore_f1_mean": 0.7489,
+   "avg_total_inference_tokens": 5568.3,
+   "retrieval_recall_mean": 0.6884,
+   "branch_resolved": 9,
+   "n": 70,
+   "route_accuracy": 0.1286,
+   "tg_live_rate": 1.0,
+   "routes_used": {
+    "superlative": 16,
+    "aggregation": 19,
+    "temporal": 15,
+    "lookup": 11,
+    "multi_hop": 9
+   },
+   "confounded": false,
+   "delta_strict_vs_frozen": -0.2714,
+   "delta_tokens_vs_frozen": 5060.3
+  },
+  "route_force_lookup": {
+   "strict_pass_rate": 0.6143,
+   "graded_quality_mean": 0.6143,
+   "bertscore_f1_mean": 0.6866,
+   "avg_total_inference_tokens": 3446.7,
+   "retrieval_recall_mean": 0.6459,
+   "branch_resolved": 13,
+   "n": 70,
+   "route_accuracy": 0.1857,
+   "tg_live_rate": 1.0,
+   "routes_used": {
+    "lookup": 70
+   },
+   "confounded": false,
+   "delta_strict_vs_frozen": -0.3857,
+   "delta_tokens_vs_frozen": 2938.7
+  },
+  "router_off": {
+   "strict_pass_rate": 0.7143,
+   "graded_quality_mean": 0.7143,
+   "bertscore_f1_mean": 0.7437,
+   "avg_total_inference_tokens": 6655.0,
+   "retrieval_recall_mean": 0.7356,
+   "branch_resolved": 0,
+   "n": 70,
+   "route_accuracy": 0.0,
+   "tg_live_rate": 1.0,
+   "routes_used": {
+    "default": 70
+   },
+   "confounded": true,
+   "delta_strict_vs_frozen": -0.2857,
+   "delta_tokens_vs_frozen": 6147.0
+  }
+ },
+ "router": {
+  "dev": {
+   "n": 30,
+   "correct": 30,
+   "accuracy": 1.0,
+   "per_qtype": {
+    "aggregation": 1.0,
+    "lookup": 1.0,
+    "multi_hop": 1.0,
+    "superlative": 1.0,
+    "temporal": 1.0
+   }
+  },
+  "test": {
+   "n": 70,
+   "correct": 70,
+   "accuracy": 1.0,
+   "per_qtype": {
+    "aggregation": 1.0,
+    "lookup": 1.0,
+    "multi_hop": 1.0,
+    "superlative": 1.0,
+    "temporal": 1.0
+   }
+  },
+  "hidden": {
+   "n": 50,
+   "correct": 50,
+   "accuracy": 1.0,
+   "per_qtype": {
+    "aggregation": 1.0,
+    "lookup": 1.0,
+    "multi_hop": 1.0,
+    "superlative": 1.0,
+    "temporal": 1.0
+   }
+  },
+  "sec_lexicon_on_olympics_dev": {
+   "accuracy": 0.2,
+   "note": "quarantine check: the SEC lexicon fails on Olympics questions"
+  },
+  "sec_lexicon_on_olympics_test": {
+   "accuracy": 0.1857,
+   "note": "quarantine check: the SEC lexicon fails on Olympics questions"
+  },
+  "widening_ablation_dev": {
+   "n": 30,
+   "full_lexicon_correct": 30,
+   "dev_literals_only_correct": 30,
+   "widened_alternatives_inert": true,
+   "n_widened_alternatives": 5,
+   "note": "the widened alternatives are not what makes the router score 30/30"
+  },
+  "ordering_probe_dev": {
+   "patterns_matching_per_question": {
+    "1": 30
+   },
+   "mutually_exclusive": true,
+   "accuracy_by_ordering": {
+    "30": 120
+   },
+   "order_is_load_bearing": false,
+   "frozen_order": [
+    "temporal",
+    "multi_hop",
+    "superlative",
+    "aggregation",
+    "lookup"
+   ],
+   "note": "correctness comes from mutual exclusivity, not from the chain order"
+  }
+ },
+ "integrity_heldout70": {
+  "tg_live": 70,
+  "n": 70,
+  "tg_queries_total": 105,
+  "rows_with_zero_tg_queries": 0,
+  "branch_resolved": 70,
+  "rows_with_no_graph_docs": 0,
+  "optimizer_tokens_all_zero": true,
+  "hop_logs": {
+   "aggregation:events_in_group": 15,
+   "lookup:event_by_title": 13,
+   "multi_hop:event_by_venue_date+medallists_of": 20,
+   "superlative:events_in_group": 7,
+   "temporal:games_before+events_in_group": 15
+  },
+  "hop_verification": {
+   "multi_hop_route_questions": 105,
+   "issued_every_hop": 105,
+   "all_complete": true,
+   "routes": [
+    "multi_hop",
+    "temporal"
+   ],
+   "checker": "scripts/verify_branch_hops.py"
+  },
+  "truncation_audit": {
+   "llm_only": {
+    "max_tokens_rows": 0,
+    "rows_total": 210,
+    "finish_reasons": [
+     "STOP"
+    ]
+   },
+   "basic_rag": {
+    "max_tokens_rows": 3,
+    "rows_total": 210,
+    "finish_reasons": [
+     "MAX_TOKENS",
+     "STOP"
+    ]
+   },
+   "graphrag": {
+    "max_tokens_rows": 2,
+    "rows_total": 210,
+    "finish_reasons": [
+     "MAX_TOKENS",
+     "STOP"
+    ]
+   }
+  }
+ },
+ "p2_sweep_dev30": [
+  {
+   "arm": "topk_20_c30",
+   "strict": 0.8667,
+   "graded": 0.8667,
+   "bert": 0.779,
+   "tokens": 4997.0,
+   "recall": 0.8613
+  },
+  {
+   "arm": "topk_20",
+   "strict": 0.8333,
+   "graded": 0.8333,
+   "bert": 0.7786,
+   "tokens": 12099.0,
+   "recall": 0.8613
+  },
+  {
+   "arm": "topk_30",
+   "strict": 0.8333,
+   "graded": 0.8333,
+   "bert": 0.7295,
+   "tokens": 17932.0,
+   "recall": 0.8839
+  },
+  {
+   "arm": "topk_20_chunk1000",
+   "strict": 0.8333,
+   "graded": 0.8333,
+   "bert": 0.7721,
+   "tokens": 6973.0,
+   "recall": 0.8613
+  },
+  {
+   "arm": "topk_15",
+   "strict": 0.8,
+   "graded": 0.8,
+   "bert": 0.7763,
+   "tokens": 9092.0,
+   "recall": 0.8342
+  },
+  {
+   "arm": "topk_30_chunk1000",
+   "strict": 0.8,
+   "graded": 0.8,
+   "bert": 0.7602,
+   "tokens": 10342.0,
+   "recall": 0.8839
+  },
+  {
+   "arm": "adapt_wide",
+   "strict": 0.7667,
+   "graded": 0.7667,
+   "bert": 0.6516,
+   "tokens": 8074.0,
+   "recall": 0.7839
+  },
+  {
+   "arm": "base",
+   "strict": 0.6333,
+   "graded": 0.6333,
+   "bert": 0.6755,
+   "tokens": 6135.0,
+   "recall": 0.7311
+  },
+  {
+   "arm": "chunk_1000",
+   "strict": 0.6333,
+   "graded": 0.6333,
+   "bert": 0.6755,
+   "tokens": 3605.0,
+   "recall": 0.7311
+  },
+  {
+   "arm": "chunk_3000",
+   "strict": 0.6333,
+   "graded": 0.6333,
+   "bert": 0.6683,
+   "tokens": 6133.0,
+   "recall": 0.7311
+  },
+  {
+   "arm": "mmr",
+   "strict": 0.5,
+   "graded": 0.5,
+   "bert": 0.5229,
+   "tokens": 5976.0,
+   "recall": 0.595
+  },
+  {
+   "arm": "mmr_rerank",
+   "strict": 0.5,
+   "graded": 0.5,
+   "bert": 0.4672,
+   "tokens": 5922.0,
+   "recall": 0.614
+  },
+  {
+   "arm": "topk_5",
+   "strict": 0.5,
+   "graded": 0.5,
+   "bert": 0.5749,
+   "tokens": 3167.0,
+   "recall": 0.5997
+  }
+ ],
+ "cross_dataset": {
+  "sec_source": "results/sec/summary.json (tag final, 3 runs, n=150) \u2014 READ ONLY",
+  "sec": {
+   "tag": "final",
+   "n": 150,
+   "P1_strict": 0.0933,
+   "P2_strict": 0.2533,
+   "P3_strict": 0.4867,
+   "P1_tokens": 281.6,
+   "P2_tokens": 4186.9,
+   "P3_tokens": 1026.1,
+   "strict_lead_p3_over_p2": 0.2334,
+   "token_reduction_pct": 75.5,
+   "tg_live": {
+    "extra100": {
+     "total_queries": 366,
+     "final": 1.0,
+     "initial": 1.0
+    },
+    "heldout50": {
+     "total_queries": 180,
+     "final": 0.84,
+     "initial": 0.84
+    },
+    "combined150": {
+     "total_queries": 546,
+     "final": 0.947,
+     "initial": 0.947
+    }
+   }
+  },
+  "olympics": {
+   "n": 70,
+   "P1_strict": 0.4952,
+   "P2_strict": 0.7857,
+   "P3_strict": 1.0,
+   "P1_tokens": 281.5,
+   "P2_tokens": 5148.4,
+   "P3_tokens": 508.0333,
+   "strict_lead_p3_over_p2": 0.2143,
+   "token_reduction_pct": 90.1,
+   "tg_live": 1.0
+  }
+ }
+}

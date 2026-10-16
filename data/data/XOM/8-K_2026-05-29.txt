@@ -1,0 +1,190 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 8-K
+
+CURRENT REPORT
+
+Pursuant to Section 13 OR 15(d) of The Securities Exchange Act of 1934
+
+Date of Report (Date of earliest event reported): May 27, 2026
+
+Exxon Mobil Corporation
+
+(Exact name of registrant as specified in its charter)
+
+New Jersey 1-2256 13-5409005
+
+(State or other jurisdiction
+
+of incorporation) (Commission
+
+File Number) (IRS Employer
+
+Identification No.)
+
+22777 Springwoods Village Parkway, Spring, Texas 77389-1425
+
+(Address of principal executive offices) (Zip Code)
+
+Registrant’s telephone number, including area code: (972) 940-6000
+
+(Former name or former address, if changed since last report)
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+
+☐ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Name of Each Exchange
+
+Title of Each Class Trading Symbol on Which Registered
+
+Common Stock, without par value XOM New York Stock Exchange
+
+0.524% Notes due 2028 XOM28 New York Stock Exchange
+
+0.835% Notes due 2032 XOM32 New York Stock Exchange
+
+1.408% Notes due 2039 XOM39A New York Stock Exchange
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Item 5.07
+Submission of Matters to a Vote of Security Holders.
+
+(a), (b)
+
+Exxon Mobil Corporation (the “Company,” “ExxonMobil,” “we,” or “our”) held its Annual Meeting of Shareholders (“Annual Meeting”) on May 27, 2026. At the meeting, the matters set forth below were submitted for a vote of security holders.
+
+As of the close of business on April 1, 2026, which was the record date for the Annual Meeting, 4,144,455,560 shares of ExxonMobil common stock, without par value (“Common Stock”), were outstanding and entitled to vote.
+
+Set forth below are the proposals voted upon at the Annual Meeting, and the final vote tabulation that certified the voting results as received from the Inspectors of Election. Based on the results, at least 3,636,885,465 shares of Common Stock were voted in person or by proxy at the Annual Meeting, representing 87.8% percent of the shares entitled to be voted. Percentages are based on the total votes cast. Under the corporate law of New Jersey, where we are incorporated, abstentions are not counted as votes cast.
+
+The final voting results for the proposals presented at the Annual Meeting were as follows:
+
+Proposal 1 – Election of Directors
+
+The shareholders elected each of the Board’s twelve director nominees. The votes For and Against, as well as Abstentions and Broker Non-Votes, for each nominee are set forth below.
+
+Nominees Votes
+
+For %
+
+For Votes
+
+Against %
+
+Against Abstentions Broker
+
+Non-Votes
+
+Michael J. Angelakis 3,074,076,666 97.8 % 67,623,299 2.2 % 15,537,164 479,646,841
+
+Angela F. Braly 3,024,079,431 96.2 % 118,776,963 3.8 % 14,376,475 479,646,841
+
+Maria S. Dreyfus 3,071,904,445 97.8 % 70,601,471 2.2 % 14,705,973 479,646,841
+
+Gregory C. Garland 3,099,884,115 98.7 % 42,217,555 1.3 % 15,136,904 479,646,841
+
+John D. Harris II 3,072,696,510 97.8 % 68,799,913 2.2 % 15,732,103 479,646,841
+
+Kaisa H. Hietala 3,081,391,733 98.1 % 59,798,823 1.9 % 16,044,739 479,646,841
+
+Joseph L. Hooley 3,078,663,394 98.0 % 62,271,457 2.0 % 16,300,271 479,646,841
+
+Steven A. Kandarian 3,096,410,868 98.6 % 44,747,541 1.4 % 16,070,214 479,646,841
+
+Alexander A. Karsner 3,083,932,381 98.2 % 56,704,731 1.8 % 16,597,809 479,646,841
+
+Lawrence W. Kellner 3,044,415,503 96.9 % 96,951,559 3.1 % 15,871,511 479,646,841
+
+Dina Powell McCormick 3,089,312,715 98.4 % 51,042,599 1.6 % 16,869,698 479,646,841
+
+Darren W. Woods 3,023,121,683 96.2 % 119,867,001 3.8 % 14,248,470 479,646,841
+
+2
+
+The shareholders voted as set forth below on two management proposals:
+
+Proposal 2 – Ratification of Independent Auditors:
+
+Votes Cast For: 3,493,776,585 96.4 %
+
+Votes Cast Against: 130,902,587 3.6 %
+
+Abstentions: 12,204,753
+
+Broker Non-Votes: 0
+
+Proposal 3 – Advisory Vote to Approve Executive Compensation:
+
+Votes Cast For: 2,906,869,914 92.9 %
+
+Votes Cast Against: 222,967,504 7.1 %
+
+Abstentions: 27,391,137
+
+Broker Non-Votes: 479,646,841
+
+Proposal 4 – Texas Redomiciliation:
+
+Votes Cast For: 2,216,403,048 71.2 %
+
+Votes Cast Against: 896,852,562 28.8 %
+
+Abstentions: 30,111,060
+
+Broker Non-Votes: 493,518,532
+
+Proposal 5 – Independent Chair, a proposal overwhelmingly defeated on 16 separate occasions since 2000:
+
+Votes Cast For: 475,238,535 15.2 %
+
+Votes Cast Against: 2,644,936,703 84.8 %
+
+Abstentions: 37,017,564
+
+Broker Non-Votes: 479,646,841
+
+Proposal 6 – Proposal requesting Company to modify its Voluntary Retail Voting Program to provide multiple options not aligned with the Board’s recommendations:
+
+Votes Cast For: 709,666,879 23.5 %
+
+Votes Cast Against: 2,304,505,127 76.5 %
+
+Abstentions: 143,045,579
+
+Broker Non-Votes: 479,646,841
+
+3
+
+SIGNATURE
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+
+EXXON MOBIL CORPORATION
+
+Date: May 29, 2026 By: /s/ LEN M. FOX
+
+Len M. Fox
+
+Vice President, Controller and Tax
+
+(Principal Accounting Officer)
+
+4

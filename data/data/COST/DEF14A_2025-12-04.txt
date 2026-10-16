@@ -1,0 +1,1624 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+_____________________________
+
+SCHEDULE 14A
+
+Proxy Statement Pursuant to Section 14(a) of the
+
+Securities Exchange Act of 1934
+
+(Amendment No. )
+
+_____________________________
+
+Filed by the Registrant ☒ Filed by a party other than the Registrant ☐
+
+Check the appropriate box:
+
+☐ Preliminary Proxy Statement
+
+☐ Confidential, for Use of the Commission Only (as Permitted by Rule 14a-6(e)(2))
+
+☒ Definitive Proxy Statement
+
+☐ Definitive Additional Materials
+
+☐ Soliciting Material under §240.14a-12
+
+Costco Wholesale Corporation
+
+(Name of Registrant as Specified In Its Charter)
+
+(Name of Person(s) Filing Proxy Statement, if other than the Registrant)
+
+Payment of Filing Fee (Check all boxes that apply):
+
+☒ No fee required
+
+☐ Fee paid previously with preliminary materials
+
+☐ Fee computed on table in exhibit required by Item 25(b) per Exchange Act Rules 14a-6(i)(1) and 0-11
+
+999 Lake Drive
+
+Issaquah, Washington 98027
+
+NOTICE OF ANNUAL MEETING OF SHAREHOLDERS
+
+TO OUR SHAREHOLDERS:
+
+The Annual Meeting of the Shareholders of Costco Wholesale Corporation (the “Company”) will be held by live webcast, on Thursday, January 15, 2026, at 2:00 p.m. Pacific time, to:
+
+1.Elect the ten directors nominated by the Board of Directors to hold office until the 2027 Annual Meeting of Shareholders and until their successors are elected and qualified;
+
+2.Ratify the selection of KPMG LLP ("KPMG") as the Company’s independent auditors for fiscal 2026;
+
+3.Approve, on an advisory basis, the compensation of the Company’s named executive officers for fiscal 2025 as disclosed in these materials;
+
+4.Vote on the shareholder proposal described in the accompanying proxy statement, if properly presented at the meeting; and
+
+5.Transact such other business as may properly come before the meeting or any adjournments thereof.
+
+Our 2026 Annual Shareholders' Meeting will be held in a virtual format only, and shareholders can participate from any location with Internet connectivity. We believe this enhances accessibility and reduces our carbon footprint. Shareholders may view a live webcast of the Annual Meeting and submit questions digitally prior to and during the meeting at www.virtualshareholdermeeting.com/COST2026. Please refer to the "Participating in the Annual Meeting" section of the Proxy Statement for more details.
+
+Shareholders can vote their shares before the meeting online at www.proxyvote.com, by calling 1-800-690-6903, by mailing a completed proxy card, or by mobile device by scanning the QR code on the proxy card or Notice of Internet Availability of Proxy Materials. Shareholders may also vote online during the virtual meeting at www.virtualshareholdermeeting.com/COST2026.
+
+Only shareholders of record at the close of business on November 7, 2025, are entitled to notice of and to vote at the meeting. All shareholders are requested to be present virtually or by proxy. Any shareholder giving a proxy may revoke it at any time before it is voted.
+
+Important Notice Regarding the Availability of Proxy Materials for the 2026 Annual Meeting. We are mailing to many of our shareholders a Notice of Internet Availability of Proxy Materials, rather than a full paper set of the materials. The notice contains instructions on how to access our proxy materials online, as well as instructions on obtaining a paper copy by mail or electronic copy by email. All shareholders who do not receive such a notice, including shareholders who have previously requested to receive a paper copy, will receive a full set of paper proxy materials by U.S. mail or an electronic copy by email. This process reduces our carbon footprint and our costs to print and distribute materials.
+
+Voting by the Internet or telephone is fast and convenient, and your vote is immediately confirmed and tabulated. If you receive a paper copy of the proxy materials, you may also vote by completing, signing, dating and returning the accompanying proxy card in the enclosed return envelope furnished for that purpose. By using the Internet or telephone you help the Company reduce postage and proxy tabulation costs.
+
+Please do not return the enclosed paper ballot if you are
+
+voting over the Internet or by telephone.
+
+VOTE BY INTERNET VOTE BY TELEPHONE
+
+http://www.proxyvote.com
+
+24 hours a day/7 days a week
+
+(800) 690-6903 via touch-tone
+
+phone toll-free
+
+24 hours a day/7 days a week
+
+Use the Internet to transmit your voting instructions and for electronic delivery of information up until 11:59 p.m. Eastern Time on January 14, 2026. Have your proxy card in hand when you access the website, and follow the instructions to obtain your records and to create an electronic voting instruction form. Use any touch-tone telephone to transmit your voting instructions up until 11:59 p.m. Eastern Time on January 14, 2026. Have your proxy card in hand when you call, and then follow the instructions.
+
+You may also vote online during the meeting at www.virtualshareholdermeeting.com/COST2026.
+
+Your cooperation is appreciated, because a majority of the common stock must be represented, either in person or by proxy, to constitute a quorum for the conduct of business.
+
+By order of the Board of Directors,
+
+John Sullivan
+
+Executive Vice President, General Counsel and Secretary
+
+December 4, 2025
+
+Important Notice Regarding the Availability of Proxy Materials for
+
+the Meeting of Shareholders to be Held on January 15, 2026
+
+The Proxy Statement and Annual Report to Shareholders are available at
+
+https://investor.costco.com.
+
+TABLE OF CONTENTS
+
+Page
+
+Solicitation and Revocation of Proxy
+
+1
+
+Proposal 1: Election of Directors
+
+3
+
+Committees of the Board
+
+7
+
+Compensation of Directors
+
+10
+
+Shareholder Communications to the Board
+
+11
+
+Principal Shareholders
+
+11
+
+Equity Compensation Plan Information
+
+12
+
+Executive Compensation
+
+13
+
+Compensation Discussion and Analysis
+
+13
+
+Report of the Compensation Committee of The Board of Directors
+
+18
+
+Summary Compensation Table
+
+19
+
+Fiscal 2025 All Other Compensation
+
+20
+
+Fiscal 2025 Grants of Plan-Based Awards
+
+20
+
+Outstanding Equity Awards at Fiscal 2025 Year-End
+
+21
+
+Fiscal 2025 Restricted Stock Units Vested
+
+21
+
+Fiscal 2025 Non-Qualified Deferred Compensation
+
+22
+
+Potential Payments Upon Termination or Change-in-Control
+
+22
+
+CEO Pay Ratio
+
+24
+
+Pay Versus Performance
+
+25
+
+Certain Relationships and Transactions
+
+28
+
+Report of the Audit Committee
+
+29
+
+Independent Public Accountants
+
+29
+
+Proposal 2: Ratification of Selection of Independent Public Accountants
+
+30
+
+Proposal 3: Advisory Vote to Approve Named Executive Officer Compensation
+
+30
+
+Proposal 4: Shareholder Proposal Regarding Greenwashing Risk Audit
+
+31
+
+Other Matters
+
+33
+
+Shareholder Proposals for the 2027 Annual Meeting
+
+33
+
+Annual Report to Shareholders and Form 10-K
+
+34
+
+General Information
+
+34
+
+Appendix A: Non-GAAP Financial Measures
+
+35
+
+PROXY STATEMENT
+
+FOR ANNUAL MEETING OF SHAREHOLDERS TO BE HELD
+
+January 15, 2026
+
+SOLICITATION AND REVOCATION OF PROXY
+
+Proxies in the form furnished are solicited by the Board of Directors of the Company to be voted at the Annual Meeting of Shareholders to be held on January 15, 2026, or any adjournments (the “Annual Meeting”). The individuals named as proxy are Hamilton E. James and Ron M. Vachris. A Notice of Internet Availability of Proxy Materials was first sent to shareholders and the accompanying notice of meeting, this Proxy Statement and the form of proxy are first being made available to shareholders on or about December 4, 2025.
+
+All shares represented by proxies received will be voted in accordance with instructions contained in the proxies. The Board of Directors unanimously recommends a vote:
+
+1.FOR the ten nominees for director named in this Proxy Statement;
+
+2.FOR the ratification of the selection of the Company’s independent auditors;
+
+3.FOR the approval, on an advisory basis, of the compensation of the Company’s named executive officers for fiscal 2025 as disclosed in these materials; and
+
+4.AGAINST the shareholder proposal.
+
+In the absence of voting instructions to the contrary, shares represented by validly executed proxies will be voted in accordance with the foregoing recommendations. A shareholder giving a proxy has the power to revoke it any time before it is voted by providing written notice to the Secretary of the Company, by delivering a later-dated proxy, or by voting virtually at the Annual Meeting.
+
+Only shareholders of record at the close of business on November 7, 2025 (the "Record Date") will be entitled to vote at the Annual Meeting. At the close of business on the Record Date, there were 443,957,682 shares of common stock outstanding, which represent all of the voting securities of the Company. Each share of common stock is entitled to one vote. Shareholders do not have cumulative voting rights in the election of directors.
+
+A majority of the common stock entitled to vote at the Annual Meeting, present either virtually or by proxy, will constitute a quorum. Shareholders who abstain from voting on any or all proposals will be included in the number of shareholders present at the meeting for purposes of determining the presence of a quorum. Abstentions and broker non-votes will not be included in the total of votes cast and will not affect the outcome of the vote on proposals 1 through 4.
+
+With respect to proposal 1, the Company’s bylaws provide that in an uncontested election for directors, as at this meeting, a nominee will be elected if the number of votes cast for the nominee's election exceeds the number of votes cast against the nominee's election. An incumbent director nominee who fails to receive the requisite votes for election will not be elected but will continue to serve as a director until the earliest of: (i) 90 days from the date on which the voting results of the election are determined; (ii) the date on
+
+which an individual is selected by the Board to fill the position held by such director; or (iii) the date of the director's resignation. With respect to proposals 2 through 4, to approve each proposal the votes that shareholders cast “for” must exceed the votes cast “against.”
+
+If shares are held by a broker or other financial institution on your behalf (that is, in “street name”), and you do not instruct that firm as to how to vote them, Nasdaq rules allow the firm to vote your shares only on routine matters. Proposal 2, the ratification of the selection of the Company’s independent auditors for fiscal 2026, is the only matter for consideration at the meeting that Nasdaq rules deem to be routine. For all other proposals, you must submit voting instructions to the firm that holds your shares if you want your vote to count. When a firm votes a client’s shares on some but not all of the proposals, the missing votes are referred to as “broker non-votes.” Please instruct your broker or other financial institution so your vote can be counted.
+
+In addition to mailing the Notice of Internet Availability of Proxy Materials to shareholders, the Company has asked banks and brokers to forward copies of the notice, and upon request, paper copies of the proxy materials, to persons for whom they hold stock of the Company and to request authority for execution of the proxies. The Company will reimburse banks and brokers for their reasonable out-of-pocket expenses in doing so. Officers and employees of the Company may, without being additionally compensated, solicit proxies by mail, telephone, email or personal contact. All proxy-soliciting expenses will be paid by the Company in connection with the solicitation of votes for the Annual Meeting. Alliance Advisors may solicit proxies at a cost we anticipate will not exceed $15,000.
+
+Participating in the Annual Meeting
+
+We are conducting a virtual Annual Meeting. Shareholders can participate from any location with Internet connectivity.
+
+•To participate in the Annual Meeting, including to vote and to view the list of registered shareholders as of the record date during the meeting, you must access the meeting website at www.virtualshareholdermeeting.com/COST2026 and enter the 16-digit control number found on the Notice of Internet Availability of Proxy Materials or on the proxy card or voting instruction form provided to you with this Proxy Statement.
+
+•Whether or not you plan to participate in the Annual Meeting, it is important that your shares be represented and voted. We encourage you to access www.proxyvote.com or call 1-800-690-6903 and vote in advance of the Annual Meeting.
+
+•Shareholders are able to submit questions for the Annual Meeting’s question and answer session before and during the meeting through www.virtualshareholdermeeting.com/COST2026. When submitting questions shareholders must identify themselves and provide contact information. We will respond as practical to appropriate questions during the meeting. A recording of the event and responses to unanswered questions (consolidating repetitive questions) will be posted and available after the meeting at https://investor.costco.com. Additional information regarding the rules and procedures for participating in the Annual Meeting will be set forth in our meeting rules of conduct, which shareholders can view during the meeting at the meeting website and during the ten days prior to the meeting at www.proxyvote.com.
+
+•We encourage you to access the Annual Meeting before it begins. Online check-in will be available approximately 15 minutes before the meeting starts. If you have difficulty accessing the meeting, please call 844-986-0822 (toll free) or 303-562-9302 (international).
+
+•Closed captioning will be available for the meeting. For assistance with accommodations please email us at investor@costco.com by January 14, 2026.
+
+Note about Forward-Looking Statements
+
+Certain statements in this Proxy Statement, other than purely historical information, including estimates, projections, statements relating to our business plans, objectives and expected operating results, statements regarding our environmental and other sustainability plans and goals, and the assumptions upon
+
+2
+
+which those statements are based, are “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of 1995. Forward-looking statements may appear throughout this Proxy Statement. They generally are identified by the words “anticipate,” “believe,” “continue,” “could,” “estimate,” “expect,” “intend,” "likely," “may,” “might,” “plan,” “potential,” “predict,” “project,” “seek,” “should,” “target,” “will,” “would,” or similar expressions and the negatives of those terms. Such forward-looking statements involve risks and uncertainties that may cause actual events, results or performance to differ materially from those indicated by such statements. These risks and uncertainties include, but are not limited to, domestic and international economic conditions, including exchange rates, inflation or deflation, the effects of competition and regulation, uncertainties in the financial markets, consumer and small business spending patterns and debt levels, breaches of security or privacy of member or business information, conditions affecting the acquisition, development, ownership or use of real estate, capital spending, actions of vendors, rising costs associated with employees (generally including health-care costs and wages), workforce interruptions, energy and certain commodities, geopolitical conditions (including tariffs), the ability to maintain effective internal control over financial reporting, regulatory and other impacts related to environmental and social matters, public-health related factors, and other risks identified from time to time in the Company’s public statements and reports filed with the Securities and Exchange Commission ("SEC"). A detailed discussion of risks and uncertainties that could cause actual results and events to differ materially from such forward-looking statements is included in the section titled “Risk Factors” in our Form 10-K and 10-Q. Forward-looking statements speak only as of the date they are made, and we do not undertake to update these statements, except as required by law.
+
+PROPOSAL 1: ELECTION OF DIRECTORS
+
+Directors are elected annually for terms expiring at the next annual meeting of shareholders. The Board has not nominated individuals to fill two vacancies on the Board created by the recent retirements of two of our directors (Richard Galanti and Craig Jelinek) at last year's Shareholders meeting. Vacancies on the Board, including these vacancies and any vacancies created by an increase in the number of directors, may be filled by the Board for a term continuing until the next election of directors by the shareholders following a recommendation to the Board from the Nominating and Governance Committee in accordance with the procedures outlined under the “Committees of the Board — Nominating and Governance Committee.” Each of Susan L. Decker, Kenneth D. Denman, Helena B. Foulkes, Hamilton E. James, Sally Jewell, Jeffrey S. Raikes, Gina M. Raimondo, John W. Stanton, Ron M. Vachris, and Mary Agnes (Maggie) Wilderotter is nominated to serve for a one-year term until the annual meeting of shareholders in 2027 and until a successor is elected and qualified. All nominees other than Ms. Raimondo are current directors.
+
+Each nominee has indicated a willingness and ability to serve as a director. If any nominee becomes unable or unwilling to serve, the accompanying proxy may be voted for the election of such other person as will be designated by the Board. The proxies being solicited will be voted for no more than ten nominees at the Annual Meeting. Each director will be elected by a majority of the votes cast, virtually or by proxy, at the Annual Meeting, assuming a quorum is present.
+
+The candidates for election have been nominated by the Board based on the recommendation of the Nominating and Governance Committee. In addition to the information presented below regarding each nominee’s specific experience, qualifications, attributes and skills that led the Board to conclude that he or she should serve as a director, the Board believes that each nominee has demonstrated: outstanding achievement in his or her professional career; relevant experience; personal and professional integrity; the ability to make independent, analytical inquiries; experience with and understanding of the business environment; and willingness and ability to devote adequate time to Board duties. We also believe that our directors collectively have the skills and experience that make them well-suited to oversee the Company. They are or have been established leaders in important areas of business, government, and non-profit service. In addition, members of our Board have a great diversity of experiences and bring a wide variety of views that strengthen their ability to guide our Company.
+
+The Board of Directors unanimously recommends that you vote FOR Proposal 1.
+
+3
+
+DIRECTORS
+
+The following tables set forth information regarding the ten nominees for election as a director, each to hold office until the 2027 annual meeting of shareholders and until their successors have been duly elected and qualified.
+
+Name Current Position with the Company Age
+
+Hamilton E. James Chairman of the Board of Directors 74
+
+Susan L. Decker Director 63
+
+Kenneth D. Denman Director 67
+
+Helena B. Foulkes Director 61
+
+Sally Jewell Director 69
+
+Jeffrey S. Raikes Director 67
+
+Gina M. Raimondo Director Candidate 54
+
+John W. Stanton Director 70
+
+Ron M. Vachris Chief Executive Officer, President and Director 60
+
+Mary Agnes (Maggie) Wilderotter Director 70
+
+BOARD NOMINEES DIVERSITY MATRIX (As of 12/04/2025)
+
+Female Male
+
+Part I: Gender Identity
+
+Director Nominees 5 5
+
+Part II: Demographic Background
+
+African American or Black — 1
+
+White 5 4
+
+INDIVIDUAL BOARD SKILLS MATRIX
+
+Qualifications, Skills, and Experience Hamilton E. James Susan L. Decker Kenneth D. Denman Helena B. Foulkes Sally
+
+Jewell Jeffrey S. Raikes Gina M. Raimondo John W. Stanton Ron M.
+
+Vachris Maggie Wilderotter
+
+Senior Leadership: Service in senior leadership positions, in government and/or business, including past CEO experience, with expertise in governance, strategy, development, human capital management, and workforce development
+• • • • • • • • • •
+
+Financial Expertise: Understanding of financial markets, accounting, and/or financial reporting processes
+• • • • • • • •
+
+Retail Industry Experience: Understanding of operational, financial, and strategic issues facing large retail companies
+• • • • •
+
+Technology or E-commerce: Leadership and expertise in technology, e-commerce and digital platforms
+• • • • •
+
+Risk Management: Governmental public policy, legal and risk management experience and expertise, including data security and/or experience managing cybersecurity and information security risks
+• • • • • • • • • •
+
+Global Operations: Experience at multinational companies or in international markets
+• • • • • • • • •
+
+Marketing and Brand Management: Experience in consumer marketing, sales or brand management
+• • • • • • •
+
+4
+
+DIRECTOR BIOGRAPHIES
+
+Set forth below is information with respect to each director of the Company.
+
+Hamilton E. James has been a director of the Company since August 1988. He was the Lead Independent Director from 2005 until becoming the non-executive Chairman of the Board in August 2017. He is chairman of Jefferson River Capital, his family investment firm. He was Executive Vice Chairman of The Blackstone Group, a global alternative asset manager and provider of financial advisory services, until January 31, 2022, and served as its President and Chief Operating Officer from 2002 until 2018. He was also a member of the board of directors of its general partner, Blackstone Group Management L.L.C., until January 31, 2022. Mr. James’s qualifications to serve on the Board include the knowledge and experience he has gained, and contributions he has made, during his tenure as a director of our Company and his broad-ranging experiences in the financial services industry, including senior leadership positions.
+
+Susan L. Decker has been a director of the Company since October 2004. She is Chief Executive Officer and founder of Raftr, Inc., a community experience platform for campuses, founded in 2018. From 2000 to 2009, Ms. Decker served in various executive management roles at Yahoo! Inc., including President from 2007 to 2009 and Executive Vice President and Chief Financial Officer from 2000 to 2007. She is a director of Berkshire Hathaway Inc., Vail Resorts, Inc., and Chime Financial, Inc., and of private corporations Vox Media, Inc., and Automattic, Inc. She was previously a director of Intel Corporation, Pixar and Momentive Global Inc. Ms. Decker’s qualifications to serve on the Board include the knowledge and experience she has gained, and contributions she has made, during her tenure as a director of our Company, her service on the boards of other public companies, and her broad-ranging experiences, including senior leadership positions, in the areas of finance, technology and marketing.
+
+Kenneth D. Denman has been a director of the Company since March 2017. He has been a General Partner at Sway Ventures, a venture capital firm, since March 2017. He was President and Chief Executive Officer of Emotient, Inc., a developer of software technology to analyze facial expressions, until the company was acquired by Apple in January 2016. Previously, Mr. Denman was the Chief Executive Officer of Openwave Systems, Inc., chairman and CEO of iPass, Inc., and a Senior Vice President and COO for MediaOne. He is a member of the board of directors of Motorola Solutions, Inc., where he is the lead independent director and chair of the Nominating and Governance Committee. Previously he was a director at
+
+5
+
+VMware Inc., Mitek Systems Inc., LendingClub Inc., ShoreTel, Inc., and United Online, Inc. Mr. Denman sits on the advisory board of the University of Washington's Foster School of Business, is the immediate past chairperson of the University of Washington Foundation Board, and is a member of the Seattle Children's Hospital Board of Trustees. Mr. Denman’s qualifications to serve on the Board include knowledge and experience from service on the boards of other public companies, and his broad-ranging experiences, including chief executive and other leadership positions, in the areas of technology and international business.
+
+Helena B. Foulkes has been a director of the Company since August 2023. She was CEO and a member of the board of directors of Hudson's Bay Company from February 2018 to March 2020. Prior to that, she spent 25 years at CVS Health Corporation, including as President of CVS Pharmacy from January 2014 to January 2018, and Executive Vice President and Chief Health Care Strategy and Marketing Officer from 2011 to 2013. Ms. Foulkes is also a member of the boards of directors of Skillsoft Corp. and private companies Follett Higher Education Group, where she serves as Executive Chair, PM Pediatrics Care, and Harry's Inc. She was previously a director of The Home Depot, Inc. Ms. Foulkes served as President of Harvard University's Board of Overseers for the 2021-2022 academic year. Ms. Foulkes' qualifications to serve on the Board include her substantial experience in retail and as a board member of prominent companies.
+
+Sally Jewell has been a director since January 2020. From June 2019 until May 2020, she served as the interim Chief Executive Officer of The Nature Conservancy, a global environmental non-profit organization, where she continues to serve as a global board member. She served as U.S. Secretary of the Interior under President Barack Obama from 2013 to 2017. Prior to her government service, she was CEO of Recreational Equipment Inc., a retailer of outdoor recreation equipment and services, from 2005 to 2013, COO from 2000 to 2005 and a board member from 1996 to 2013. Previously, she worked in commercial banking for 19 years, including in various executive capacities. She serves as chair of the board of Symetra Financial Corporation, a wholly-owned subsidiary of Sumitomo Life Insurance Company. Mrs. Jewell’s qualifications to serve on the Board include her extensive board service at other public and private corporations and non-profit organizations, and her diverse experience, including serving in leadership positions in government, academia, retail and environmental sustainability.
+
+Jeffrey S. Raikes has been a director of the Company since December 2008. He is a co-founder of the Raikes Foundation, which invests in youth-serving institutions and systems to make them more effective in supporting young people, especially those that have been most marginalized. Mr. Raikes served as a trustee of Stanford University from 2012 to May 2022, including as board chair from 2017 to 2021. He was the Chief Executive Officer of the Bill & Melinda Gates Foundation from 2008 to 2014. Mr. Raikes held several positions with Microsoft Corporation from 1981 to 2008, including President of the Business Division from 2005 to 2008. Mr. Raikes' qualifications to serve on the Board are broad-ranging experiences, including senior leadership positions, in the areas of technology, agriculture, marketing, academia, and at one of the world's largest foundations.
+
+Gina M. Raimondo has been nominated to stand for election at the 2026 annual meeting. She is a distinguished fellow at the Council on Foreign Relations. Secretary Raimondo served as Secretary of Commerce from 2021 to 2025, as Governor of Rhode Island from 2015 to 2021, and as General Treasurer of Rhode Island from 2011 to 2015. Prior to her government service Secretary Raimondo was a co-founder of Rhode Island's first venture-capital firm. Her qualifications to serve on the Board include her extensive government service, involving international, national and state level issues, and her experience in finance.
+
+John W. Stanton has been a director of the Company since October 2015. He is the Chairman of Trilogy Equity Partners, which invests in wireless-related companies, and Chairman of First Avenue Entertainment LLLP, which is the owner of the Seattle Mariners. Mr. Stanton founded and served as Chairman and Chief Executive Officer of Western Wireless Corporation, a wireless telecommunications company, from 1992 until shortly after its acquisition by Alltel Corporation in 2005. He was Chairman and a director of T-Mobile USA, formerly VoiceStream Wireless Corporation, a mobile telecommunications company, from 1994 to 2004, and was Chief Executive Officer from 1998 to 2003. Mr. Stanton was a director of Clearwire Corp. from 2008 to 2013, Chairman between 2011 and 2013, and interim Chief Executive Officer during 2011. He is
+
+6
+
+currently a director of Microsoft Corporation and was previously a director of Trilogy International Partners and Columbia Sportswear Company. Mr. Stanton's qualifications to serve on the Board are his broad-ranging experiences, including senior leadership positions, in the areas of telecommunications and technology, and service on the boards of other companies.
+
+Ron M. Vachris has been a director of the Company since February 2022, and Chief Executive Officer and President since January 2024. Mr. Vachris previously served as President and Chief Operating Officer from February 2022 to January 2024. He served as Executive Vice President of Merchandising from June 2016 to January 2022, as Senior Vice President of Real Estate Development from August 2015 to June 2016, and Senior Vice President, General Manager of the Northwest Region, from 2010 to July 2015. He spent the previous 28 years in various management positions in warehouse operations. Mr. Vachris’s qualifications to serve on the Board include his extensive knowledge of the Company’s business developed over the course of his long career, particularly in the areas of operations and merchandising.
+
+Mary Agnes (Maggie) Wilderotter has been a director of the Company since October 2015. She served as Chief Executive Officer and Chair of the Grand Reserve Inn from December 2016 to June 2023. Mrs. Wilderotter was the Interim CEO of DocuSign, Inc. from June through October 2022. Currently, she is providing senior advisor work for several private equity and venture firms. Mrs. Wilderotter was the Executive Chairman of Frontier Communications, a public telecommunications company, from April 2015 until April 2016 and served as Frontier's Chief Executive Officer from 2004 to 2015 and Chair of the Board from December 2005. Prior to joining Frontier, she was a Senior Vice President of Microsoft Corporation from 2002 to 2004. From 1997 to 2002, she was President and Chief Executive Officer of Wink Communications, an interactive telecommunications and media company. Mrs. Wilderotter was previously a director of Sana Biotechnology, Inc., Fortinet, Inc., Xerox Corporation, DreamWorks Animation SKG, Cadence Design Systems, Hewlett Packard Enterprise, The Procter & Gamble Company and Lyft, Inc. She is currently Chairman of the Board at DocuSign, Inc. and serves on the board of private companies Sonoma Biotherapeutics, Inc. and Tanium, Inc. Her qualifications to serve on the Board include the knowledge and experience she has gained, and contributions she has made, during her service on the boards of over thirty public companies in her career, and her broad-ranging corporate experiences, including senior leadership positions, in the areas of telecommunications, retail, media, healthcare, and technology.
+
+No family relationship exists among any of the directors or executive officers. No arrangement or understanding exists between any director or executive officer and any other person pursuant to which any director was selected as a director or executive officer of the Company.
+
+COMMITTEES OF THE BOARD
+
+The Board has determined that each member of the Audit, Compensation and Nominating and Governance Committees meets Nasdaq listing standards regarding independence, including committee independence requirements. Each committee has a written charter, which may be viewed at https://investor.costco.com. Directors currently serving on the Board who are deemed independent are Mmes. Decker, Foulkes, Jewell and Wilderotter and Messrs. Denman, James, Raikes and Stanton, who constitute a majority of the Board. The non-executive directors of the Company met in executive session presided over by the non-executive Chairman at four meetings in fiscal 2025. In addition, the Board has determined that Ms. Raimondo, a nominee not currently on the Board, meets Nasdaq listing standards regarding "independence," including applicable committee independence requirements. The Board will consider committee appointment for Ms. Raimondo if she is elected to the Board.
+
+7
+
+Audit Committee. The functions of the Audit Committee include (among others):
+
+•Providing direct communication between the Board and the Company’s internal and external auditors;
+
+•Monitoring the design and maintenance of the Company’s system of internal accounting controls;
+
+•Selecting, evaluating and, if necessary, replacing the external auditors;
+
+•Reviewing the results of internal and external audits as to the reliability and integrity of financial and operating information;
+
+•Maintaining procedures for receipt, retention and treatment of any complaints received by the Company about its accounting, internal accounting controls or auditing matters and for the confidential and anonymous submission by employees of concerns regarding questionable accounting or auditing matters;
+
+•Reviewing the relationships between the Company and the external auditors to ascertain the independence of the external auditors; and
+
+•Approving compensation of the external auditors.
+
+The members of the committee are Mr. Denman (chair) and Mmes. Decker, Foulkes, and Jewell. The Board has determined that all members of the committee are “audit committee financial experts” as defined by the rules of the SEC. To ensure continuing auditor independence, the Audit Committee periodically considers whether there should be a regular rotation of the external auditors. In conjunction with the mandated rotation of the external auditor's lead engagement partner, the Audit Committee and its chairperson are directly involved in the selection of the new lead engagement partner. The Board and the Audit Committee periodically review with members of management of the Company issues and developments relating to information security, fraud, data security and cybersecurity risk, including controls to monitor and mitigate the related risks. The Audit Committee met eight times during fiscal 2025. A report of the Audit Committee is set forth below.
+
+Compensation Committee. The Compensation Committee reviews the salaries, bonuses and stock-based compensation provided to executive officers of the Company and oversees the overall administration of the Company’s compensation and stock-based compensation programs. The committee has authority to administer the Company's policies with respect to the recovery or "clawback" of compensation granted, awarded or paid to the CEO, senior executives or other employees of the Company. Except with respect to setting the compensation of the Chief Executive Officer, the committee may delegate its authority to a subcommittee of the committee (consisting either of a subset of members of the committee or any members of the Board who would be eligible to serve on the committee). In addition, to the extent permitted by applicable law, the committee may delegate to one or more executive officers of the Company the authority to grant stock awards to employees who are not executive officers or members of the Board. The committee has delegated certain authority to the Chief Executive Officer with respect to such awards not involving executive officers. See Compensation Discussion and Analysis below for a further description of the role of the committee. The members of the committee, which met five times during fiscal 2025, are Mr. Stanton (chair) and Mmes. Jewell and Wilderotter. A report of the Compensation Committee is set forth below.
+
+Nominating and Governance Committee. The functions of the Nominating and Governance Committee are to identify and approve individuals qualified to serve as members of the Board, select director nominees for the annual meeting of shareholders, evaluate the Board’s performance, develop and recommend to the Board corporate governance guidelines, and provide oversight with respect to corporate governance, ethical conduct and environmental and sustainability policies and initiatives. The committee is authorized by its charter to engage its own advisors. The Board is responsible for nominating members for election to the Board and for filling vacancies on the Board that may occur between annual meetings of shareholders. The committee is responsible for identifying, screening and recommending to the Board candidates for Board membership. The committee approved the nomination of the candidates reflected in proposal 1. The committee has been engaged in a review of potential candidates as part of an ongoing refreshment process. Ms. Raimondo, a nominee not currently on the Board, came to the committee's attention through Hamilton James, and is well known by other current directors, Mmes. Foulkes and Wilderotter. When formulating its recommendations, the committee will also consider advice and recommendations from others as it deems appropriate. The members of the committee, which met six times in fiscal 2025, are Mr. Raikes (chair) and Mmes. Foulkes and Wilderotter.
+
+8
+
+The committee will consider shareholder recommendations for candidates to serve on the Board. In accordance with section 2.1 of our bylaws, which may be viewed at https://investor.costco.com, the name of any recommended candidate, together with pertinent biographical information, a document indicating the candidate’s willingness to serve if elected, and evidence of the nominating shareholder’s ownership of Company stock should be sent to the Secretary of the Company. The Company may require additional information, as described in our bylaws. Our Corporate Governance Guidelines provide that nominees for director will be selected on the basis of, among other things, knowledge, experience, skills, expertise, integrity, diversity, ability to make independent analytical inquiries, and understanding of the Company’s business environment, all in the context of an assessment of the perceived needs of the Board at the time. Nominees must also be willing to devote adequate time and effort to Board responsibilities. The Nominating and Governance Committee does not set specific, minimum qualifications that nominees must meet in order for the committee to recommend them to the Board, but rather believes that each nominee should be evaluated based on individual merit, taking into account the needs of the Company and the composition of the Board.
+
+We believe that the Company benefits from having directors with a diversity of viewpoints, backgrounds, and experiences. Currently, of the ten directors on the Board and Board nominee, five are women and one is African American. In addition, as discussed above, our directors bring a diversity of viewpoints and experiences as established leaders in important areas of business, government and non-profit service that we believe strengthens the Board’s ability to guide our Company. The Nominating and Governance Committee oversees a self-assessment of the Board’s or its committees performance every year. The assessment seeks to identify specific areas, if any, in need of improvement or strengthening, including with respect to the diversity of our Board in terms of viewpoints, backgrounds and experiences. Since 2014, the Board, led by the Nominating and Governance Committee, has been engaged in a process to refresh its membership; five new independent directors have been added and, as of the 2026 Annual Meeting, ten members have ceased to serve. The refreshment process has also resulted in the nomination of Ms. Raimondo for election to the Board.
+
+Our bylaws provide for proxy access shareholder nominations for director candidates by eligible shareholders. Shareholder nominations require compliance with section 2.1 of the bylaws. A shareholder who wishes to formally nominate a candidate, whether or not for inclusion in the Company's proxy statement, must follow the procedures described in our bylaws (which includes information required under SEC Rule 14a-19). There is otherwise no formal process prescribed for identifying and evaluating nominees, except as described in the Corporate Governance Guidelines, which may be viewed at https://investor.costco.com.
+
+Board Structure. The Corporate Governance Guidelines provide that the Board does not require the separation of the offices of the Chairman of the Board and the Chief Executive Officer and shall be free to choose its Chairman in any way that it deems best for the Company at any given point in time. Currently the positions of Chairman and Chief Executive Officer are filled separately. Our Chief Executive Officer has primary responsibility for the operational leadership and strategic direction of the Company, while our non-executive Chairman facilitates our Board’s independent oversight of management, promotes communication between management and the Board, and leads the Board’s consideration of key governance matters. The Board believes that this leadership structure is appropriate for the Company at this time.
+
+The Role of the Board in Risk Oversight. The Board seeks to ensure that management has processes for dealing appropriately with risk. It is the responsibility of the Company’s senior management to develop and implement the Company’s short- and long-term objectives and to identify, evaluate, manage and mitigate the risks inherent in seeking to achieve those objectives. Management is responsible for identifying risk and risk controls related to significant business activities and Company objectives, and developing programs to determine the sufficiency of risk identification, the balance of potential risk to potential reward, the appropriate manner in which to control risk, and the support of the risk-controlling behavior and the risk to Company strategy.
+
+The Board implements its risk oversight responsibilities primarily through the Audit Committee, which receives management reports on the potentially significant risks, including (without limitation) cybersecurity matters, that the Company faces and how the Company is seeking to control risk where appropriate. The
+
+9
+
+committee also oversees internal control over financial reporting. The Audit Committee reports to the full board on its risk-management tasks, including the enterprise risk management review. In more limited cases, such as with risks of significant new business concepts and substantial entry into new markets, risk oversight is addressed as part of the full Board’s engagement with the Chief Executive Officer and management. Board members also often discuss risk as a part of their review of the ongoing business, financial, and other activities of the Company. The Board also has oversight responsibility for executive-officer succession planning. The Nominating and Governance Committee also exercises oversight regarding risks associated with corporate governance matters and certain issues relating to the Company’s ethics, environmental, social and governance (ESG), and compliance programs.
+
+COMPENSATION OF DIRECTORS
+
+For fiscal 2025, each non-employee director earned $37,000 for serving on the Board. Each non-employee director also received a grant of restricted stock units (“RSUs”), with a target value of $270,000. Based on the closing share price at the time of grant, October 22, 2024, each director received 303 RSUs. RSUs vest one-third annually, generally beginning on the first anniversary of the date of grant and are subject to accelerated vesting upon the director’s retirement: 50% and 100% with five and ten years of service, respectively. Stock ownership requirements mandate that within five years of joining the Board a non-executive board member shall own and retain shares of Company common stock worth at least $1 million based on the value at the time of acquisition. All non-executive board members are in compliance. Board members receive a free Costco executive membership and are reimbursed for travel expenses incurred in connection with their duties.
+
+FISCAL 2025 DIRECTOR COMPENSATION
+
+The following table summarizes compensation for the non-employee directors of the Company for fiscal 2025.
+
+Name Fees Earned or
+
+Paid in Cash ($)
+Stock
+
+Awards ($)1
+Total ($)
+
+Hamilton E. James 37,000 267,664 304,664
+
+Susan L. Decker 37,000 267,664 304,664
+
+Kenneth D. Denman 37,000 267,664 304,664
+
+Helena B. Foulkes 37,000 267,664 304,664
+
+W. Craig Jelinek2
+18,500 267,664 286,164
+
+Sally Jewell 37,000 267,664 304,664
+
+Jeffrey S. Raikes 37,000 267,664 304,664
+
+John W. Stanton 37,000 267,664 304,664
+
+Mary Agnes (Maggie) Wilderotter 37,000 267,664 304,664
+
+_______________________
+
+(1) Represents the grant-date fair value of the RSUs granted in October 2024. The value is calculated as the market value of the common stock on the grant date less the present value of the expected dividends forgone during the vesting period. These amounts thus do not reflect the amount of compensation actually received during the fiscal year. For a description of the assumptions used in calculating the fair value of equity awards, see Note 1 of our financial statements in our Form 10-K for the year ended August 31, 2025.
+
+(2) Craig Jelinek retired from the Board of Directors in January 2025. For fiscal 2025, Mr. Jelinek's account balance in the Company's non-qualified deferred-compensation plan representing amounts deferred when he was serving as an employee of the Company was credited with $332,189. No amounts were credited to Mr. Jelinek's account relating to his service as a director. For additional information, see footnote 5 of the Summary Compensation Table.
+
+10
+
+At the end of fiscal 2025, non-employee directors held the following outstanding equity awards and shares:
+
+Name Restricted Stock Units Shares Owned Total
+
+Hamilton E. James 826 55,577 56,403
+
+Susan L. Decker 826 10,705 11,531
+
+Kenneth D. Denman 826 4,877 5,703
+
+Helena B. Foulkes 635 205 840
+
+Sally Jewell 826 2,501 3,327
+
+Jeffrey S. Raikes 826 19,416 20,242
+
+John W. Stanton 826 23,400 24,226
+
+Mary Agnes (Maggie) Wilderotter 826 11,845 12,671
+
+SHAREHOLDER COMMUNICATIONS TO THE BOARD
+
+Shareholders may contact an individual director, the Board as a group, or a specified Board committee or group, including the non-employee directors as a group, at the following address: Corporate Secretary, Costco Wholesale Corporation, 999 Lake Drive, Issaquah, WA 98027 Attn: Board of Directors. The Company will receive and process communications before forwarding them to the addressee. Directors generally will not be forwarded shareholder communications that are primarily commercial in nature, relate to improper or irrelevant topics, or request general information about the Company.
+
+MEETING ATTENDANCE
+
+During the Company’s last fiscal year, the Board met four times. Each member of the Board attended all of the Board meetings. Each member of the Board attended all meetings of the committees on which he or she served. As set forth in our Corporate Governance Guidelines, directors are encouraged to attend meetings of shareholders. All directors attended the meeting in 2025.
+
+PRINCIPAL SHAREHOLDERS
+
+The following table sets forth information regarding ownership of the common stock by each person or group known to the Company to own more than 5% of the outstanding shares of the common stock on November 7, 2025.
+
+Name and Address of Beneficial Owner Shares
+Percent1
+
+Vanguard Group, Inc.
+43,455,368(2)
+9.79%
+
+100 Vanguard Blvd.,
+
+Malvern, PA 19355
+
+BlackRock, Inc.
+34,781,929(3)
+7.83%
+
+50 Hudson Yards
+
+New York, NY 10001
+
+_______________________
+
+(1) Based on 443,957,682 shares of common stock outstanding. In accordance with SEC rules, percent of class as of this date is calculated for each person and group by dividing the number of shares beneficially owned by the sum of the total shares outstanding plus the number of shares subject to securities exercisable by that person or group within 60 days.
+
+(2) Information based on Form 13F-HR filed with the SEC by Vanguard Group, Inc. on November 7, 2025.
+
+(3) Information based on Form 13F-HR filed with the SEC by BlackRock, Inc. on November 12, 2025.
+
+11
+
+The following table sets forth the shares of the common stock owned on November 7, 2025 by each director, each nominee for election as a director, the executive officers named in the Summary Compensation Table, and all directors and executive officers as a group.
+
+Name of Beneficial Owner
+Shares Beneficially Owned1
+
+Percent of Class2
+
+Ron M. Vachris 52,258 *
+
+Susan L. Decker 11,817 *
+
+Kenneth D. Denman 5,989 *
+
+Helena B. Foulkes
+1,126(3)
+*
+
+Richard A. Galanti
+36,676(4)
+*
+
+Hamilton E. James
+56,689(5)
+*
+
+Sally Jewell 3,613 *
+
+Russ D. Miller
+9,741(6)
+*
+
+Gary Millerchip 16,619 *
+
+Javier Polit 12,797 *
+
+Jeffrey S. Raikes 20,528 *
+
+Gina M. Raimondo — *
+
+Pierre Riel 11,256 *
+
+John W. Stanton
+24,512(7)
+*
+
+Mary Agnes (Maggie) Wilderotter
+12,957(8)
+*
+
+All directors and executive officers as a group (23 persons)
+460,270 *
+
+_______________________
+
+*Less than 1%.
+
+(1) Includes RSUs outstanding.
+
+(2) Based on 443,957,682 shares of common stock outstanding, and 2,035,787 RSUs outstanding. In accordance with SEC rules, percent of class as of this date is calculated for each person and group by dividing the number of shares beneficially owned by the sum of the total shares outstanding plus the number of shares subject to securities that will vest within 60 days.
+
+(3) Includes 39 shares held by trusts of which Ms. Foulkes or her spouse is a trustee.
+
+(4) Includes 7,000 shares owned by a limited liability company, of which Mr. Galanti is the manager. Mr. Galanti disclaims ownership of these shares. Also includes 726 shares owned by Mr. Galanti's spouse.
+
+(5) Includes 1,151 shares held by trusts of which Mr. James is a trustee.
+
+(6) Includes 9,740 shares held by a trust of which Mr. Miller is a trustee.
+
+(7) Includes 211 shares held by a trust of which Mr. Stanton is a trustee, and 211 shares held by Mr. Stanton's son. Mr. Stanton disclaims beneficial ownership of these shares.
+
+(8) Includes 9,752 shares held by a grantor annuity trust of which Ms. Wilderotter is the sole grantor, trustee, and annuity beneficiary.
+
+EQUITY COMPENSATION PLAN INFORMATION
+
+(at Fiscal Year-End)
+
+Plan category1
+
+Number of securities
+
+to be issued upon
+
+exercise of
+
+outstanding options,
+
+warrants and rights2
+
+Weighted-average
+
+exercise price of
+
+outstanding
+
+options, warrants
+
+and rights ($)3
+
+Number of securities
+
+remaining available for
+
+future issuance under
+
+equity compensation
+
+plans (excluding securities
+
+reflected in column (1))4
+
+Total equity compensation plans approved by security holders
+2,308,121 — 6,275,211
+
+_______________________
+
+(1) There are no plans besides those approved by security holders.
+
+(2) Shares of common stock issuable upon vesting and release of outstanding RSUs granted under the 2019 Incentive Plan.
+
+(3) There were no options, warrants, or rights outstanding at August 31, 2025.
+
+(4) Available for issuance under the 2019 Incentive Plan, assuming issuance as RSUs. Includes the effect of adjustments made for special dividends.
+
+12
+
+EXECUTIVE COMPENSATION
+
+COMPENSATION DISCUSSION AND ANALYSIS
+
+Following is a discussion and analysis of our compensation programs as they apply to our Chief Executive Officer, Chief Financial Officer, the three other most highly compensated individuals who served as executive officers in fiscal 2025, and one former executive officer who would have been one of our three other most highly compensated executive officers if he had still been serving as an officer at the end of fiscal 2025. These individuals are referred to as the “Named Executive Officers" and include: Ron M. Vachris, Chief Executive Officer; Gary Millerchip, Executive Vice President, Chief Financial Officer; Russ D. Miller, Senior Executive Vice President, Chief Operating Officer - Warehouse Operations, U.S. and Mexico; Pierre Riel, Executive Vice President, Chief Operating Officer - International Division; Javier Polit, Executive Vice President, Chief Information and Digital Officer; and Richard Galanti, former Executive Vice President.
+
+Compensation Philosophy and Objectives
+
+Our compensation programs are designed to motivate our executives and employees and enable them to participate in the growth of our business. The Company believes it has been very successful in attracting and retaining quality employees and achieving low turnover in our executive, staff and warehouse management ranks. In addition, in the judgment of the Compensation Committee, the programs have contributed to the financial and competitive success of the Company. Accordingly, the Committee believes it is desirable to continue these programs.
+
+At the 2025 Annual Meeting, the advisory shareholder vote on executive compensation was 94.70% in favor. The Committee did not determine to make any changes to the compensation programs as a result of the vote. Compensation levels approved by the Committee for the Named Executive Officers for fiscal 2025 did not materially change from those approved for the prior year. Discussions by certain directors and management with a number of shareholders since the 2025 Annual Meeting have not revealed significant concerns about the structure or operation of the Company's compensation programs.
+
+Role of the Compensation Committee
+
+The Committee determines the amounts and elements of compensation for our Chief Executive Officer. For other executive officers, it reviews the recommendations of the Chief Executive Officer, with which it generally agrees. The Committee’s function is more fully described under “Committees of the Board — Compensation Committee.”
+
+During fiscal 2025, the Committee consisted of Mr. Stanton (chair), and Mmes. Jewell and Wilderotter. The Committee has authority under its charter to engage compensation consultants but did not use any. The Committee’s primary activity occurs in the fall, following the close of the fiscal year, when the Committee: (i) approves grants of RSUs, including performance targets for RSUs granted to executive officers for the current fiscal year; (ii) determines whether performance targets have been satisfied for RSUs granted during the prior fiscal year; (iii) approves total compensation levels for executive officers for the fiscal year just concluded, including any salary increases and cash bonuses; and (iv) approves the executive officer cash-bonus program for the current fiscal year. The bonuses concerning environmental and social progress are overseen jointly with the Nominating and Governance Committee.
+
+Elements of Compensation
+
+The components of our executive compensation programs are equity compensation (consisting generally of performance-based RSUs), base salary, cash bonuses, and other benefits (primarily consisting of health plans, a 401(k) plan and a deferred compensation plan). The Committee believes that these components are appropriate and are consistent with the Company’s long-standing approach to executive compensation, which has made equity awards the most significant form of compensation. The Committee did not reevaluate for fiscal year 2025 whether there is an optimal mix of equity, salary, bonus and other compensation components for each executive officer. Rather, it relied upon the fact that the current structure has been utilized successfully in years past and gave more particular attention to the incremental changes in the components of the mix and the value of the total compensation packages.
+
+13
+
+RSUs. RSU grants represent the largest component of compensation, based on their fair value at the time of grant. The Committee believes that emphasizing this form of compensation helps align the interests of employee-grantees with those of shareholders, both in the shorter term (with one-year performance conditions) and in the longer term (with share ownership requirements and time-based vesting of up to five years, subject to earlier vesting for long service, as described below). All named executive officers received performance-based RSU grants for fiscal 2025.
+
+Base salary. Base salary is the second largest compensation component. It is consistent with the need for executive officers to have predictable cash compensation, which has been subject generally to modest annual increases.
+
+Cash bonus. Cash bonuses are based on a variety of metrics. They address short-term incentives and are linked to performance during the fiscal year. Historically, at least some portion of the cash bonuses has been paid each year. For fiscal 2025, the Committee believes that maintaining cash bonuses at or near the current proportion is consistent with preferring long-term equity incentives as being in the greater interest of the Company and its shareholders. Approximately 8,000 employees were eligible for cash bonuses for fiscal 2025. To be eligible for the annual bonus, the individual must be employed by the Company at the time the bonuses are paid (historically in November).
+
+Other elements. Consistent with its position as a low-overhead operator, the Company has modest “other compensation.” Significant components of this compensation include health care and helping executives fund their retirement needs (through the 401(k) and the deferred compensation plans); the Company provides no pensions.
+
+These components of compensation mix incentives that are intended to reward shorter-term (twelve months) and longer-term performance (five years and beyond). Shorter-term incentives come primarily from the initial award of RSUs being subject to achievement of a one-year performance metric and, to a significantly lesser extent, cash bonuses that are subject to one-year performance metrics. Longer-term incentives come primarily from the RSU award vesting of up to five years, and, to a lesser extent, share ownership requirements for executive officers and vesting elements in certain benefit plans (such as the deferred compensation and 401(k) plan matches).
+
+The Committee believes that these elements do not promote unreasonable risk-taking behavior. The value of shorter-term incentives (including cash bonus awards and performance conditions for awards of RSUs) is substantially exceeded by longer-term incentives (including equity awards that vest over up to five years) and share ownership requirements, which the Committee believes reward sustained performance that is aligned with shareholder interests. In addition, the Company’s Corporate Governance Guidelines and Rule 10D-1 Policy on Recovery of Incentive Compensation (described more fully below) require or enable the Committee to seek the return of incentive compensation improperly earned, depending on the circumstances.
+
+Peer Companies
+
+For fiscal 2025, the Committee primarily considered executive compensation data obtained from proxy statements for the following peer companies: Walmart Inc., The Home Depot, Inc., Lowe’s Companies, Inc., The TJX Companies, Inc., Target Corporation, The Kroger Company, Best Buy Inc., BJ's Wholesale Club Holdings, Inc., CVS Health Corporation, Ross Stores Inc., and Wesfarmers Ltd. The peer companies were selected because they are recognized as successful retailers and two of them operate membership warehouse clubs. The Committee took into account that the current market capitalization of one of the companies is substantially larger than the Company. The Committee did not use the comparable company data to set mid-points or other specific quantitative comparisons of executive compensation; it used them only for general reference.
+
+Equity Compensation
+
+If fully earned based upon the achievement of performance targets and fully vested, equity compensation is the largest component of compensation for executive officers. RSU grants to executive officers are generally performance-based, with performance-vesting over a one-year period, time-vesting over
+
+14
+
+up to five years, and vesting for long service. Following satisfaction of performance targets, RSUs become time-vested RSUs that, subject to accelerated vesting for long service (described below) vest 20% upon the first anniversary of the grant date (following the determination by the Committee that the performance criteria have been satisfied) and 20% vest over each of the ensuing four years. (Vesting of RSUs awarded to non-executive officers and employees is not performance-based.) To the extent accelerated or time-vesting requirements are met, RSUs are settled and paid in shares of common stock (net of shares withheld for taxes). Recipients are not entitled to vote or receive dividends on unvested and undelivered RSUs.
+
+Except as noted below, all officers and employees who received RSU grants in fiscal 2025 and prior years were eligible to receive accelerated vesting once they have achieved long service with the Company (33% vesting credited on the first anniversary of the date of grant after 25 years of service, 66% vesting after 30 years of service, and 100% vesting after 35 years of service, with any remainder vesting ratably over the remaining vesting period). This accelerated vesting, following satisfaction of the performance conditions as to executive officers, entitles individuals to receive shares within ten business days of the anniversary of the grant date or of the initial grant date if the years of service requirement has been met prior to the grant date.
+
+Mr. Vachris's fiscal 2025 award is not subject to accelerated vesting prior to termination for long service and instead vests under the five-year vesting schedule. The performance-based awards granted to Messrs. Millerchip and Polit in fiscal 2025 vested one-fifth on October 22, 2025, and will vest one-fifth on October 22, in each of the ensuing four years. For awards vested on October 22, 2025, all other Named Executive Officers received 100% long-service vesting.
+
+In May 2025, the Compensation Committee approved changes to the vesting schedule applicable only to future RSU grants to ensure continued quality and competitiveness of our compensation program. The changed vesting schedule will apply only to grants beginning in October 2025 and does not affect previously granted awards or the compensation of the named executive officers disclosed in this proxy statement. Executive officers, along with all other grantees, had the option to make a one-time election to remain under the five-year vesting schedule with acceleration for long service or to change to a three-year vesting schedule with no such acceleration. All executive officers elected to remain under the five-year vesting schedule with acceleration, except for Messrs. Millerchip and Polit, who elected to change to a three-year vesting schedule.
+
+The criteria for the fiscal 2025 performance-based grants were (versus fiscal 2024) a 3% increase in net sales or a 2% increase in pre-tax income (both adjusted for changes in foreign currencies). The Committee determined that both goals were exceeded. Accordingly, the executive officers who received performance-based grants earned all of the RSUs granted, subject to time-based and long-service vesting. All recipients, other than Messrs. Vachris, Millerchip and Polit received accelerated vesting for long service for these RSUs.
+
+The Board adopted in July 2008 a fixed date of October 22 for RSU grants, with exceptions as approved in advance by the Committee. For fiscal 2025, RSU grants were made on October 22, 2024, and the performance criteria for the grants were established in November 2024. All grants in fiscal 2025 were made under the Company’s 2019 Incentive Plan, approved by the shareholders in January 2019.
+
+Other Compensation
+
+The Company provides the Named Executive Officers with benefits of a type offered to all other U.S. employees in most respects. The value of these benefits constitutes a small percentage of each executive’s total compensation. Key benefits include paid vacation, premiums for long-term disability insurance, a matching contribution and a discretionary 401(k) plan contribution, and basic life insurance. In addition, the Company maintains a non-qualified deferred-compensation plan for the benefit of over 1,000 employees, including the Named Executive Officers. The plan provides that the first $10,000 of an employee’s contributions may be matched 50% by the Company, subject to certain limitations. This match vests over time. The Company does not maintain a pension plan or post-retirement medical plan for any employee. There are Company matching contributions, which are capped, for charitable contributions by many employees, including the Named Executive Officers. The Committee believes the benefits are modest and consistent with its overall objective of attracting and retaining highly-qualified executive officers.
+
+15
+
+2025 Compensation of the Chief Executive Officer
+
+In addition to considering the Company’s compensation policies generally, the Committee reviews executive compensation and concentrates on the compensation packages for the Chief Executive Officer. Near the end of calendar 2024, the Committee approved a written employment contract with Mr. Vachris, related to service during calendar 2025, providing for a salary of $1,200,000, an increase of 4% over the previous fiscal year. Separately, the Committee approved the RSU award and target cash bonus described below.
+
+For fiscal 2025, the Committee granted Mr. Vachris 13,834 performance-based RSUs, which represented an increase of 19% over the prior year, based on the closing share price at the time of grant. The Committee determined after the end of the fiscal year that the performance criteria were exceeded, and all of the performance-based RSUs granted to Mr. Vachris were earned. The Committee determined the increase to be warranted based on Mr. Vachris' performance and the level of CEO compensation at peer companies.
+
+For fiscal 2025, the bonus was determined by the Committee in November 2024: (i) $250,000 of bonus eligibility was determined by the Company's attainment of its pre-tax income goal, which was exceeded in fiscal 2025 (the goal was $10.73 billion, on a generally accepted accounting principles basis; actual pre-tax income, adjusted for changes in foreign currencies based on budgeted rates, as provided for in the plan, was $10.87 billion); (ii) $250,000 of bonus eligibility was determined based on net sales (the goal was $271.02 billion; actual net sales, adjusted for changes in foreign currencies based on budgeted rates, as provided for in the plan, were $271.78 billion); and (iii) $100,000 of bonus eligibility was determined by environmental and social objectives for achievement of quantitative performance metrics, including environmental and human capital metrics. The potential payment attributable to the first two performance measures was from zero to up to 120%, based on the level of achievement. The potential payment attributable to the third performance measure was all or nothing, depending on whether a majority of the quantitative metrics was achieved. For fiscal 2025, the pre-tax income component of the bonus earned was $250,000, based on the Company's achieving 101.3% of the pre-tax profit target. The sales component of the bonus was $250,000, based on the Company's achieving 100.3% of the sales target. The quantitative environmental and social targets were met, entitling Mr. Vachris to $100,000.
+
+Apart from the change-in-control provision in the Company’s equity plan applicable to all grantees and in the deferred compensation plan applicable to all participants (described below under “Potential Payments Upon Termination or Change-in-Control”), none of Mr. Vachris or any other employee has or had any change-in-control arrangement with the Company.
+
+2025 Compensation of Other Named Executive Officers
+
+The most significant component of compensation in fiscal 2025 was performance-based RSUs. Performance-based RSU amounts awarded to Messrs. Millerchip, Galanti, Miller, Riel, and Polit were 6,268, 5,937, 4,654, 4,654, and 4,219. Performance-based RSU levels increased 3% for Messrs. Galanti, Miller, Riel, and Polit, based on the closing share price at the time of the grant. Mr. Millerchip received an award in the previous year for five months of service with the Company and he received a full award this year. While this represents a 100% increase, if he received a full award last year, the increase would have been 3%, consistent with all others. The amounts awarded were based on the recommendations of Mr. Vachris and approved by the Committee before the grants. The performance criteria were, as noted above, exceeded, and the Named Executive Officers earned all of the RSUs granted, with accelerated-vesting for long service and further time-based vesting.
+
+Salaries for other Named Executive Officers were based upon the recommendation of Mr. Vachris, who focused on the amount of increase deserved over the prior year’s salary level. Base salary levels for these officers increased between 2% and 5% over the previous fiscal year.
+
+Other Named Executive Officers received cash bonuses of $200,000. The potential bonus amount was $232,000, which did not change from last year. This amount included $80,000 based on the achievement of targets relating to net sales and $80,000 based on the achievement of targets relating to pre-tax income. The potential payment attributable to each of these performance goals was from zero up to 120% of the
+
+16
+
+award target amount, based on the level of achievement. Up to $40,000 in potential related to environmental and social objectives: $24,000 relating to achievement of quantitative performance metrics, including environmental and human capital metrics, on an all or nothing basis depending upon whether a majority of the quantitative metrics were satisfied; and up to $16,000 based on discretionary assessment by the Chief Executive Officer of the officer's environmental and social achievements (including, without limitation, progress in controlling emissions). For fiscal 2025, the pre-tax income component of the bonus earned was $80,000, based on the Company's achieving 101.3% of the pre-tax profit target. The net sales component of the bonus earned was $80,000, based on the Company's achieving 100.3% of the net sales target. The environmental and social objective bonus was fully earned, which included the achievement of quantitative performance metrics and 100% of the discretionary amount, as recommended by Mr. Vachris.
+
+Mr. Polit also received a signing bonus of $3 million, earned on October 22, 2024, with remaining amounts of $2.2 million, $1.5 million, and $740,000 payable on October 22 in three subsequent years, contingent on his continued employment.
+
+Clawback Policy
+
+The Compensation Committee adopted a Rule 10D-1 Policy on Recovery of Incentive Compensation, effective October 2, 2023, in accordance with Rule 10D-1 of the Securities Exchange Act of 1934 and Nasdaq listing standards. The Rule 10D-1 Policy applies to current and former executive officers of the Company as defined in Rule 10D-1, including the Named Executive Officers, and will be administered by the Compensation Committee. In the event the Company is required to prepare an accounting restatement to correct material noncompliance with any financial reporting requirement under U.S. federal securities laws, including restatements that correct an error in previously issued financial statements that is material to the previously issued financial statements or that would result in a material misstatement if the error were corrected in the current period or left uncorrected in the current period, it is the Company's policy to recover erroneously awarded incentive-based compensation received by its executive officers. The recovery of such compensation applies regardless of whether an executive officer engaged in misconduct or otherwise cause or contributed to the requirement for a restatement.
+
+In addition, under the clawback policy in the Corporate Governance Guidelines, which applies to the extent not superseded by the Rule 10D-1 Policy, the Company will seek to recover, at the direction of the Committee after it has considered the costs and benefits, incentive compensation (including, without limitation, any bonus, incentive payment, and equity award) awarded or paid to an officer for a fiscal period if the result of a performance measure upon which the award was based or paid is subsequently restated or otherwise adjusted in a manner that would reduce the size of the award or payment. Where the incentive compensation is not awarded or paid on a formulaic basis, the Committee may determine in its discretion the amount, if any, by which the payment or award should be reduced. In addition, if an officer engaged in intentional misconduct (as determined by the Committee in its sole discretion) that contributed to the award or payment of incentive compensation to the officer that is greater than would have been paid or awarded in the absence of the misconduct, the Company may take other remedial and recovery action, as determined by the Committee.
+
+Stock Ownership Requirements
+
+Executive officers are required by the end of each calendar year to own and retain shares of Company common stock representing in value at least three times (seven times for the Chief Executive Officer) the base salary of the officer in effect at the beginning of the fiscal year. Newly-promoted officers have twenty-four months to achieve compliance. The Nominating and Governance Committee may authorize an extension should the timing present an undue burden. All executive officers were in compliance at the end of calendar 2024.
+
+Hedging and Pledging Policies
+
+The Corporate Governance Guidelines prohibit transactions involving hedging of the Company's equity securities by directors, officers, and employees and prohibit pledging of the Company's equity securities by directors and executive officers. The prohibition on transactions involving hedging includes any
+
+17
+
+instrument or transaction, including put options and forward-sale contracts, through which an individual offsets or reduces exposure to the risk of price fluctuations in a corresponding equity security. Equity securities include common stock, voting preferred stock and options and other securities exercisable for, or convertible into, settled in, or measured by reference to, any other equity security determined on an as-exercised and as-converted basis. The equity securities attributable to a director or executive officer for these purposes are those attributable under either Section 13 or Section 16 of the Securities Exchange Act of 1934. All directors and executive officers are in compliance with this policy.
+
+Insider Trading Policies and Procedures
+
+The Company has an Insider Trading Policy governing the purchase, sale and other dispositions of our securities by directors, officers and employees that is reasonably designed to promote compliance with insider trading laws, rules and regulations, and listing standards. A copy of the policy is filed as Exhibit 19.1 to our Annual Report on Form 10-K.
+
+Conclusion
+
+The Committee believes that each element of compensation and the total compensation provided to each of the Named Executive Officers is reasonable and appropriate. The compensation of the Named Executive Officers is significantly tied to the Company’s performance and the return to shareholders. The Committee believes that its compensation programs will allow the Company to continue to attract and retain a top-performing management team.
+
+REPORT OF THE COMPENSATION COMMITTEE OF THE BOARD OF DIRECTORS
+
+The Compensation Committee of the Company’s Board of Directors has submitted the following report for inclusion in this Proxy Statement:
+
+The Committee has reviewed and discussed with management the Compensation Discussion and Analysis contained in this Proxy Statement. Based on the review and discussions with management, the Committee recommended to the Board of Directors that the Compensation Discussion and Analysis be included in this Proxy Statement and incorporated by reference in the Company’s Annual Report on Form 10-K for the fiscal year ended August 31, 2025, for filing with the SEC.
+
+John W. Stanton, Chair
+
+Sally Jewell
+
+Mary Agnes (Maggie) Wilderotter
+
+18
+
+SUMMARY COMPENSATION TABLE
+
+The following table sets forth information regarding compensation for the Named Executive Officers for fiscal 2025, 2024, and 2023.
+
+Name and Principal Position
+
+Year
+
+Salary
+
+($)1
+
+Bonus
+
+($)2
+
+Stock
+
+Awards
+
+($)3
+
+Non-Equity Incentive Plan Compensation ($)4
+
+Change in Pension
+
+Value and
+
+Nonqualified
+
+Deferred
+
+Compensation
+
+Earnings ($)5
+
+All Other
+
+Compensation
+
+($)6
+
+Total ($)
+
+Ron M. Vachris 2025 1,183,270 — 12,036,800 600,000 53,896 58,631 13,932,597
+
+Chief Executive Officer, President and Director 2024 1,078,077 — 10,592,029 434,333 69,138 56,164 12,229,741
+
+2023 937,500 — 7,151,883 248,000 62,801 52,658 8,452,842
+
+Gary Millerchip 2025 915,115 16,000 5,453,713 184,000 — 201,685 6,770,513
+
+Executive Vice President, Chief Financial Officer 2024 456,923 4,008,615 9,651,671 79,693 — 82,542 14,279,444
+
+Russ D. Miller 2025 765,192 16,000 4,123,770 184,000 27,861 64,855 5,181,678
+
+Senior Executive Vice President, COO - U.S. and Mexico Operations 2024 743,231 16,000 4,212,982 148,000 32,763 61,862 5,214,838
+
+2023 728,135 16,000 4,004,156 108,000 32,752 59,403 4,948,446
+
+Pierre Riel7
+2025 713,654 16,000 4,123,770 184,000 361 249,232 5,287,017
+
+Executive Vice President, COO - International Division 2024 680,250 16,000 4,212,982 148,000 — 331,811 5,389,043
+
+2023 679,258 16,000 3,629,438 108,000 — 616,169 5,048,865
+
+Javier Polit 2025 541,116 3,016,000 3,670,902 184,000 — 96,191 7,508,209
+
+Executive Vice President, Chief Information and Digital Officer 2024 370,000 3,112,308 6,140,740 113,846 — 75,965 9,812,859
+
+Richard A. Galanti8
+2025 502,079 — 5,260,598 — 594,005 148,054 6,504,736
+
+Former Executive Vice President 2024 916,615 16,000 5,374,408 148,000 703,348 55,334 7,213,705
+
+2023 919,231 16,000 5,108,767 108,000 612,858 51,543 6,816,399
+
+_______________________
+
+(1) Salaries in 2023 reflect the additional week in that year with certain salaries restated to reflect retroactive pay when earned rather than received. Mr. Galanti's salary includes a vacation payout when he retired.
+
+(2) Awarded under the Company’s cash bonus program based on a discretionary assessment by the Chief Executive Officer of the executive officer's environmental and social accomplishments. Mr. Polit's bonus in 2025 also includes a sign-on bonus of $3M earned after approximately one year of service. Messrs. Millerchip and Polit bonus in 2024 also includes a sign-on bonus of $4M and $3.1M, respectively, when they joined the Company in consideration of compensation earned from their previous employers but forfeited as a result of their resigning their former positions.
+
+(3) The award value represents the grant-date fair value of performance-based and time-based RSUs granted to the Named Executive Officers during fiscal 2025, 2024 and 2023. Performance-based RSUs were earned upon attainment of performance criteria and subject to additional time-based vesting. The performance criteria for fiscal 2025 are described under “Compensation Discussion and Analysis – Equity Compensation.” The value of both type of awards are calculated as the market value of the common stock on the measurement date less the present value of the expected dividends forgone during the vesting period. For a description of the assumptions used in calculating the fair value of RSUs, see Note 1 of our financial statements in our Form 10-K for the year ended August 31, 2025. The measurement date for performance-based RSUs are the date that the Compensation Committee establishes the performance conditions, near the end of the first fiscal quarter. The measurement date for time-based RSUs is the date that the CEO approves the grants. These amounts thus do not reflect the amount of compensation actually received by the Named Executive Officer during the fiscal year.
+
+(4) Awarded under the Company's cash bonus program for fiscal 2025, 2024, and 2023.
+
+(5) Each Named Executive Officer (among certain other employees) is eligible to participate in the Company’s non-qualified deferred-compensation plan, which allows the employee to defer up to 80% of salary and 90% of bonus and to receive a Company match of 50% of the deferred amount, up to a maximum annual match of $5,000. The minimum deferral period is five years, unless a participant elects to receive distributions upon separation from service. The matching contribution vests ratably over five years, unless the participant has attained a sum of age and years of service totaling 65 and a minimum of five years of service, in which case the Company match vests immediately when credited to the executive's account. Interest accrues on deferred amounts at the Bank of America prime rate. An additional 1% interest is credited upon the participant’s attaining a sum of age and years of service totaling 65 and a minimum of five years of service. The amounts reported in this column represent the interest on the officer’s balance to the extent that it is “above market” – greater than 120% of the applicable federal long-term rate.
+
+(6) Detail is provided below in the All Other Compensation table.
+
+(7) Mr. Riel's compensation earned in Canada was converted to USD using the average exchange rate for fiscal periods 2024 and 2023 equaling $1.360 CAD and $1.346 CAD.
+
+(8) Mr. Galanti served as Chief Financial Officer until March 2024 and as Executive Vice President until January 2025.
+
+19
+
+FISCAL 2025 ALL OTHER COMPENSATION
+
+Deferred
+
+Compensation
+
+Match ($)
+401(k)
+
+Matching
+
+Contribution
+
+($)1
+
+401(k)
+
+Discretionary
+
+Contribution
+
+($)1
+Executive
+
+Life
+
+Insurance
+
+($)
+Long-Term
+
+Disability
+
+Premiums
+
+($)2
+
+Tax
+
+Gross-Up
+
+($)3
+
+Other ($)4
+
+Total All Other
+
+Compensation
+
+($)5
+
+Ron M. Vachris 5,000 500 31,050 3,993 10,844 7,114 130 58,631
+
+Gary Millerchip — 500 — 6,700 10,614 74,332 109,539 201,685
+
+Russ D. Miller 5,000 500 31,050 6,872 12,807 8,496 130 64,855
+
+Pierre Riel 5,000 500 31,050 4,022 10,274 78,256 120,130 249,232
+
+Javier Polit — 500 — 13,020 9,274 32,937 40,460 96,191
+
+Richard A. Galanti 5,000 500 31,050 3,033 2,627 5,714 100,130 148,054
+
+_______________________
+
+(1) The Company has a 401(k) retirement plan that is available to all U.S. employees who have completed 90 days of employment. For all U.S. employees, with the exception of employees covered by union contracts, the plan allows for both pre-tax and/or after-tax (Roth) deferral, for which the Company matches 50% of the first $1,000 of employee contributions. In addition, the Company provides each eligible participant an annual discretionary contribution based on salary and years of service. The matching and discretionary contributions vest ratably until fully vested, after five years of service.
+
+(2) Long-term disability insurance is extended to all employees who are either at the level of senior vice-president and above or who are eligible to participate in the deferred compensation plan and who have 20 or more years of service.
+
+(3) Executives are compensated for their additional tax costs associated with the Company’s payments on their behalf for long-term disability insurance and relocation costs.
+
+(4) Executives receive a free executive membership card. Other compensation for Messrs. Millerchip and Polit includes relocation expenses paid by the Company, Mr. Galanti's includes a one-time payment of $100,000 upon his retirement, and Mr. Riel's includes housing reimbursement.
+
+(5) Executives, their families, and invited guests occasionally fly on the corporate aircraft as additional passengers on existing business flights. Any incremental cost to the Company is de minimis, and no amount is reflected in the table.
+
+FISCAL 2025 GRANTS OF PLAN-BASED AWARDS
+
+The following table provides information regarding grants of awards under any plan during fiscal 2025.
+
+Name Type of Award Grant Date
+Estimated Future Payouts Under Non-Equity Incentive Plan Awards1
+
+Estimated Future Payouts Under Equity Incentive Plan Awards (Units)2
+
+Grant-Date Fair Value
+
+of Awards ($)3
+
+Target ($) Maximum ($)
+
+Ron M. Vachris Annual Incentive 10/14/2025 600,000 700,000 — —
+
+Performance RSUs 10/22/2024 — — 13,834 12,036,800
+
+Gary Millerchip Annual Incentive 10/14/2025 184,000 216,000 — —
+
+Performance RSUs 10/22/2024 — — 6,268 5,453,713
+
+Russ D. Miller Annual Incentive 10/14/2025 184,000 216,000 — —
+
+Performance RSUs 10/22/2024 — — 4,654 4,123,770
+
+Pierre Riel Annual Incentive 10/14/2025 184,000 216,000 — —
+
+Performance RSUs 10/22/2024 — — 4,654 4,123,770
+
+Javier Polit Annual Incentive 10/14/2025 184,000 216,000 — —
+
+Performance RSUs 10/22/2024 — — 4,219 3,670,902
+
+Richard A. Galanti Annual Incentive 10/14/2025 184,000 216,000 — —
+
+Performance RSUs 10/22/2024 — — 5,937 5,260,598
+
+_______________________
+
+(1) The amounts shown represent the target and maximum amounts of annual cash bonus compensation that, depending on Company and individual performance, might have been paid for fiscal 2025 performance. The actual amount paid for fiscal 2025 is included in the "Non-Equity Incentive Plan Compensation" column and corresponding footnote of the Summary Compensation Table on page 19. See description under "Compensation Discussion and Analysis - 2025 Compensation of the Chief Executive Officer" and "2025 Compensation of Other Named Executive Officers."
+
+(2) The number of performance-based RSUs granted during fiscal 2025, subject to attainment of the performance criteria described under “Compensation Discussion and Analysis – Equity Compensation.” After the end of fiscal 2025, the Compensation Committee determined that the performance criteria had been exceeded and the awards were earned. The earned awards vested 20% on October 22, 2025, and will vest 20% on October 22 for the following four years, with acceleration of vesting for long service.
+
+(3) The grant-date fair value of RSU awards granted, computed as described in footnote 3 to the Summary Compensation Table.
+
+20
+
+OUTSTANDING EQUITY AWARDS AT FISCAL 2025 YEAR-END
+
+The following table sets forth information regarding unvested stock awards held at August 31, 2025.
+
+Name Type of Award Stock Award Grant
+
+Date
+Number of Shares or
+
+Units of Stock Unvested
+
+at Fiscal Year-End1,2
+
+Market Value of Shares or
+
+Units of Stock Unvested
+
+at Fiscal Year-End ($)3
+
+Ron M. Vachris Performance RSUs 10/22/2024 13,834 13,049,889
+
+Performance RSUs 10/22/2023 15,319 14,450,719
+
+Gary Millerchip Performance RSUs 10/22/2024 6,268 5,912,730
+
+Performance RSUs 3/11/2024 3,138 2,960,138
+
+Time-based RSUs 3/11/2024 6,536 6,165,540
+
+Russ D. Miller Performance RSUs 10/22/2024 4,654 4,390,211
+
+Pierre Riel Performance RSUs 10/22/2024 4,654 4,390,211
+
+Javier Polit Performance RSUs 10/22/2024 4,219 3,979,867
+
+Performance RSUs 12/18/2023 5,390 5,084,495
+
+Time-Based RSUs 12/18/2023 2,947 2,779,964
+
+Richard A. Galanti Performance RSUs 10/22/2024 5,937 5,600,491
+
+_______________________
+
+(1) Reflects adjustments for special dividends.
+
+(2) Performance RSUs are subject to satisfaction of one-year performance conditions. RSUs are also subject to accelerated vesting prior to termination for long service (other than grants to the Chief Executive Officer). RSUs with the following grant dates vest as follows:
+
+Grant Date Type of Award Vesting
+
+10/22/2023, 12/18/2023, and 3/11/2024 Performance RSUs Vest 20% on October 22, 2025, and will vest 20% on October 22 for the following three years.
+
+3/11/2024 Time-based RSUs Vest 33% annually on each subsequent March 11, over the next two years.
+
+12/18/2023 Time-based RSUs Vest 20% annually on each subsequent October 22, over the next four years.
+
+10/22/2024 Performance RSUs After the end of fiscal 2025, the Compensation Committee certified that the performance criteria had been exceeded and that the awards were earned. The earned awards vested 20% on October 22, 2025, and will vest 20% on October 22 for the following four years. All grants are made annually on October 22. The shares above do not reflect accelerated vesting for long service as the awards were not yet released.
+
+(3) Based on the closing market price of $943.32 on August 29, 2025.
+
+FISCAL 2025 RESTRICTED STOCK UNITS VESTED
+
+The following table provides information regarding restricted stock units that vested during fiscal 2025.
+
+Name
+Number of Shares
+
+Acquired on Vesting1
+Value Realized on
+
+Vesting ($)
+
+Ron M. Vachris 3,829 3,420,903
+
+Gary Millerchip 4,051 3,740,407
+
+Russ D. Miller 7,433 6,748,594
+
+Pierre Riel 7,433 6,748,594
+
+Javier Polit 2,083 1,860,986
+
+Richard A. Galanti 9,483 8,609,032
+
+_______________________
+
+(1) Includes shares withheld for payment of taxes associated with the vesting.
+
+21
+
+FISCAL 2025 NON-QUALIFIED DEFERRED COMPENSATION
+
+The following table provides information relating to the non-qualified deferred compensation plan. See footnote 5 to the Summary Compensation Table for additional information about the plan.
+
+Name
+Executive
+
+Contributions
+
+in Last Fiscal
+
+Year ($)1
+
+Registrant
+
+Contributions
+
+in Last Fiscal Year ($)2
+
+Aggregate
+
+Earnings
+
+in Last Fiscal Year ($)3
+Aggregate
+
+Withdrawals/
+
+Distributions ($)
+Aggregate
+
+Balance at
+
+Last Fiscal Year-End ($)4
+
+Ron M. Vachris 104,508 5,000 144,162 (290,176) 1,688,366
+
+Gary Millerchip — — — — —
+
+Russ D. Miller 437,989 5,000 74,008 (214,201) 1,102,864
+
+Pierre Riel 10,000 5,000 998 — 15,998
+
+Javier Polit — — — — —
+
+Richard A. Galanti 177,058 5,000 1,574,114 (724,573) 18,777,522
+
+_______________________
+
+(1) Amounts were included in “Salary,” “Bonus,” or "Non-Equity Incentive Plan Compensation" in the Summary Compensation Table.
+
+(2) Amounts were included in "All Other Compensation" in the Summary Compensation Table.
+
+(3) Amounts representing interest on the Named Executive Officer's balance that is "above market" (greater than 120% of the applicable federal long-term rate) are included in "Change in Pension Value and Nonqualified Deferred Compensation Earnings" in the Summary Compensation Table.
+
+(4) Of these amounts, the following amounts have also been reported in the Summary Compensation Table:
+
+Name
+Reported for Fiscal 2025 ($)
+
+Previously Reported for Fiscal 2024 ($)
+
+Previously Reported for Fiscal 2023 ($)
+
+Ron M. Vachris 167,035 194,925 209,340
+
+Gary Millerchip — — —
+
+Russ D. Miller 472,790 94,788 76,566
+
+Pierre Riel 15,396 — —
+
+Javier Polit — — —
+
+Richard A. Galanti 817,276 1,248,871 1,085,358
+
+POTENTIAL PAYMENTS UPON TERMINATION OR CHANGE-IN-CONTROL
+
+The Company does not have any individual change-in-control agreements with any executive officer, director, or employee. Plans under which RSUs have been granted provide for accelerated vesting under certain circumstances in the event of a change in control. The amounts shown in the following table reflect the potential value to the Named Executive Officers as of the end of fiscal 2025 of full acceleration of all unvested RSUs under certain circumstances in connection with a change in control of the Company and acceleration of unvested RSUs upon certain terminations of employment.
+
+The amounts shown assume that a change in control or termination was effective as of the last business day of fiscal 2025 and that the price of Costco common stock on which the calculations were based was the closing price on August 29, 2025 ($943.32). They are estimates of the incremental amounts that would be received upon a change in control or termination of employment; the actual amount could be determined only at the time of any actual change in control or termination of employment. In the event of a termination other than for cause: (i) proportional vesting (measured on a quarterly basis) occurs for the time period between termination and the grant date or grant date anniversary; and (ii) accelerated vesting for long service occurs based on years of service. For purposes of the foregoing, the vesting formula for long service is: 33% for 25 or more years of service; 66% for 30 or more years of service; and 100% for 35 or more years of service. RSUs also provide for accelerated vesting for long service prior to termination. There is no accelerated vesting in the event of a termination for cause.
+
+22
+
+The following table provides information regarding the estimated potential incremental payments upon termination or change in control for the Named Executive Officers who were officers at fiscal year-end.
+
+Change in Control
+
+Name
+Total Value of
+
+RSUs Vested
+
+Upon Termination
+
+Without Cause or for Good Reason ($)1
+
+Total Value of
+
+RSUs That May
+
+Vest ($)1, 2
+
+Total Value of
+
+RSUs Vested
+
+Upon Termination Without Cause or for Good Reason ($)1, 2, 3
+
+Ron M. Vachris 27,500,608 27,500,608 27,500,608
+
+Gary Millerchip — 15,038,407 15,038,407
+
+Russ D. Miller — 4,390,211 4,390,211
+
+Pierre Riel — 4,390,211 4,390,211
+
+Javier Polit — 11,844,326 11,844,326
+
+_______________________
+
+(1) Total value calculated assuming a termination or change-in-control date of August 31, 2025, and utilizing the closing market price on August 29, 2025.
+
+(2) Maximum value of RSUs that in the event of a change in control of the Company are not assumed or substituted under the 2019 Plan.
+
+(3) Maximum value of RSUs that in the event of termination without cause or for good reason after a change in control are not assumed or substituted under the 2019 Plan.
+
+Deferred Compensation Plan. In the event that a Named Executive Officer’s employment with the Company is terminated, either voluntarily or involuntarily, the officer will receive the balance of the deferred compensation account no sooner than six months following termination of employment or death. The balance of each Named Executive Officer’s deferred compensation account as of the end of fiscal 2025 is set forth in the table titled “Fiscal 2025 Non-qualified Deferred Compensation.” In the event of a threatened change in control of the Company, the Compensation Committee may act to protect the participants, including accelerating vesting or terminating the plan and paying benefits to participants.
+
+Potential Payments Under Mr. Vachris’s Employment Agreement. In December 2024, the Company and Mr. Vachris renewed his employment agreement effective January 1, 2025, with a one-year term. If Mr. Vachris’s employment is terminated by the Company without cause or by Mr. Vachris with good reason, Mr. Vachris will receive a lump-sum cash payment equal to 1.5 times his annual base salary and target bonus and full acceleration of unvested RSUs. The estimated amount Mr. Vachris would have received as cash severance in the event of such termination as of August 31, 2025, is $2.7 million. The actual amount could be determined only at the time of any actual termination. Upon termination due to disability, Mr. Vachris would be eligible for continued medical coverage and receive full acceleration of unvested RSUs as described above.
+
+“Good reason” is defined in the agreement as a material diminution in Mr. Vachris's salary or target bonus, in authority, duties or responsibilities, or in the budget over which he retains authority, causing him to report to anyone other than the Board, a material change in geographic location at which he must perform services, or any breach by the Company of the employment agreement.
+
+“Cause” is defined in the agreement as an intentional tort causing substantial loss, damage or injury to the Company, any serious crime or intentional, material act of fraud or dishonesty against the Company, the commission of a felony that results in other than immaterial harm to the Company’s business or to the reputation of the Company or Mr. Vachris; habitual neglect of reasonable duties, disregard of written, material policies of the Company that causes other than immaterial loss, damage or injury to the property or reputation of the Company, or any material breach of Mr. Vachris's obligation to not disclose confidential information or to assign intellectual property developed during employment.
+
+Under the terms of Mr. Vachris’s fiscal employment agreement, in the event of termination of his employment for any reason other than cause, if the Compensation Committee of the Board determines that the performance goals established for the outstanding performance RSU award have been met, Mr. Vachris will receive the award, subject to the long service and quarterly vesting provisions generally applied for terminations in connection with RSU awards as described above. The table above shows the estimated
+
+23
+
+incremental amounts Mr. Vachris would receive in respect of his fiscal 2025 award in connection with a hypothetical termination of employment at August 31, 2025.
+
+Potential Payments under Mr. Millerchip's Offer Letter. Under Mr. Millerchip’s offer letter entered into in January 2024, if at the time of a termination other than for cause he has achieved ten years of service he will vest in 25% of his unvested RSUs, subject to the achievement of any outstanding performance conditions. This is in addition to the long service and quarterly vesting provisions generally applied for terminations in connection with RSU awards as described above.
+
+Equity Compensation Plans. Under the Company’s 2019 Incentive Plan, in the event of a “fundamental transaction” or “change in control”: (i) with respect to stock awards that are assumed, substituted or continued, if the Company terminates the participant’s employment without “cause” or the participant terminates with “good reason” upon or during the 12-month period following the fundamental transaction or change in control, the stock award will become fully vested and any performance conditions imposed with respect to the award will be deemed to be achieved at the greater of the actual levels of achievement as of the date of such termination and the target performance levels; and (ii) if the stock award is not assumed, substituted or continued, the Board will fully accelerate time-based awards and provide for pro-rata acceleration of performance-based stock awards at the greater of actual levels of achievement or target, or cancel the awards in exchange for cash payments to the participant. The plan has detailed definitions of “good reason”, “cause,” “change in control” and “fundamental transaction.” Generally speaking, “good reason,” except as otherwise defined in an employment agreement, is defined as a material diminution in the participant’s authority, duties or responsibilities or a material change in geographic location at which the participant must perform services. “Cause” is defined as dishonesty, fraud, misconduct, disclosure or misuse of confidential information, conviction of, or a plea of guilty or no contest to, a felony or similar offense, habitual absence from work for reasons other than illness, intentional conduct that could cause significant injury to the Company or an affiliate, or habitual abuse of alcohol or a controlled substance. “Change in control” is defined as the occurrence of any of the following events: (i) a majority of the Board is replaced in any two-year period other than by directors approved by existing directors; or (ii) any person or group acquires shares having 30% or more of the voting power of all outstanding shares; or (iii) a merger or in which outstanding shares are converted into shares of another company or other securities (of either the Company or another company) or cash or other property. “Fundamental transaction” is defined as the merger of the Company with another entity in a transaction in which the Company is not the surviving entity or if, as a result of any other transaction or event, other securities are substituted for Company shares or shares may no longer be issued.
+
+Compensation Committee Interlocks and Insider Participation
+
+No member of the Compensation Committee is an executive officer or former officer of the Company. No executive officer of the Company served on the board of directors of any entity whose executive officers included a director of the Company.
+
+CEO PAY RATIO
+
+As required by SEC rules, we are reporting the ratio of the annual total compensation of our CEO to the annual total compensation of our “median employee.” The latter is an estimate calculated consistent with SEC rules, based on our payroll and employment records and the methodology described below. SEC rules allow a variety of methodologies and exclusions and permit reasonable estimates and assumptions.
+
+Identification of the Median Employee
+
+The year to date period ended June 30, 2025, was utilized to determine the median employee. At that date, we had approximately 336,700 employees worldwide, of which approximately 222,000 were located in the United States and its territories. As permitted by SEC rules, we excluded as de minimis employees of the following when identifying the median employee: Spain, France, Iceland, Sweden, China, New Zealand and Taiwan. As a result, the “considered population” for identifying the median employee was approximately 323,800. The pool included full-time, part-time, seasonal, and temporary employees. For determining the median employee, we used a combination of salary, bonus, equity compensation, and other measurable
+
+24
+
+benefits considered in determining that employee's identity. Non-U.S. employees’ compensation was converted to U.S. dollars using an average exchange-rate for the year to date period. The median employee in the considered population had a total compensation of $49,186.
+
+Ratio
+
+The CEO's total compensation as shown in the Summary Compensation Table was $13,932,597. Based upon the estimates, assumptions, and methodology described above, the pay ratio is 283:1. This ratio may not be comparable to that reported by other companies due to differences in industries, scope of international operations, business models and scale, as well as the differences in estimates, assumptions, and methodologies.
+
+Supplemental Ratio
+
+Approximately 37% of the “considered population” were part-time, seasonal or temporary workers, which significantly impacts the ratio shown above. We believe it is appropriate to present a supplemental calculation using the same methodology as above except that it includes only workers who are full-time. Using this methodology, the median employee has a total compensation of $66,262, resulting in a pay ratio of 210:1.
+
+PAY VERSUS PERFORMANCE
+
+As required by Item 402(v) of Regulation S-K, this section describes the relationship between compensation actually paid and certain financial performance measures of the Company. For information about the philosophy, objectives and criteria of executive pay as they pertain to the Company's performance, refer to the Compensation Discussion and Analysis section.
+
+Year
+Summary Compensation Table Total for PEO($)1
+
+Summary Compensation Table Total for Former PEO($)1
+
+Compensation Actually Paid to PEO($)1,2
+
+Compensation Actually Paid to Former PEO($)1,2
+
+Average Summary Compensation Table Total for Non-PEO NEOs($)1
+
+Average Compensation Actually Paid to Non-PEO NEOs($)1,2
+Value of Initial Fixed $100 Investment Based On:
+Net Income($)5
+
+(in millions)
+
+Net Sales Adjusted for Changes in Foreign Currencies($)6
+
+(in millions)
+
+TSR($)3
+
+Peer Group TSR($)4
+
+2025 13,932,597 — 15,633,675 — 6,250,431 6,854,360 293.59 173.48 8,099 271,855
+
+2024 12,229,741 16,049,870 18,702,319 29,445,370 8,381,978 11,133,897 276.32 154.78 7,367 250,099
+
+2023 — 16,870,623 — 18,733,773 6,304,715 6,926,922 163.78 129.00 6,292 241,194
+
+2022 — 9,905,070 — 11,868,875 5,806,023 6,353,825 158.84 128.26 5,844 224,492
+
+2021 — 8,804,752 — 10,342,108 4,724,776 5,794,960 133.65 184.84 5,007 189,293
+
+_______________________
+
+(1) The principal executive officer(s) (PEOs), Former PEO and Non-PEO named executive officers (Non-PEO NEOs) for each year were as follows:
+
+Year PEO Former PEO Non-PEO NEOs
+
+2025 Ron M. Vachris Gary Millerchip, Richard A. Galanti, Russ D. Miller, Pierre Riel, Javier Polit
+
+2024 Ron M. Vachris W. Craig Jelinek Gary Millerchip, Richard A. Galanti, Russ D. Miller, Pierre Riel, Javier Polit
+
+2023 W. Craig Jelinek Ron M. Vachris, Richard A. Galanti, Russ D. Miller, Pierre Riel
+
+2022 W. Craig Jelinek Ron M. Vachris, Richard A. Galanti, Russ D. Miller, James P. Murphy
+
+2021 W. Craig Jelinek Ron M. Vachris, Richard A. Galanti, James P. Murphy, Joseph P. Portera
+
+(2) The dollar amounts represent the amount of "compensation actually paid" or "CAP" as computed in accordance with Item 402(v) of Regulation S-K. The dollar amounts do not reflect the actual amount of compensation earned or paid to the PEO or Non-PEO NEOs during the applicable year. The following table represents the adjustments made to the Summary Compensation Table (SCT) total compensation for fiscal 2025 to calculate the compensation actually paid. The valuation assumptions used to calculate fair values did not materially differ from those disclosed at the time of the grant.
+
+25
+
+PEO($) Average for Non-PEO NEOs($)
+
+SCT Total 13,932,597 6,250,431
+
+Deduct, amounts reported under "stock awards" column in the SCT Table (12,036,800) (4,526,551)
+
+Add, fair value at fiscal year end of outstanding and unvested stock awards granted in the current fiscal year 12,885,866 4,829,832
+
+Add, change in fair value of outstanding and unvested stock awards granted in prior fiscal years 847,762 193,693
+
+Add, change in fair value as of vesting date (from the end of the prior fiscal year) for stock awards granted in any prior fiscal year for which vesting conditions were satisfied during the fiscal year 4,250 106,955
+
+Compensation Actually Paid 15,633,675 6,854,360
+
+(3) The Total Shareholder Return (TSR) represents the cumulative total return on an initial fixed investment of $100 invested in the Company's common stock from the last day of trading in fiscal 2020 to the last day of trading in each of the applicable fiscal years. The return assumes reinvestment of dividends.
+
+(4) The Peer Group TSR represents the S&P Retail Select Index, the index we use in the stock performance graph required by Item 201(e) of Regulation S-K, included in our fiscal year 2025 Form 10-K, filed with the SEC on October 7, 2025.
+
+(5) Represents net income reflected in the Company's audited financial statements.
+
+(6) Represents net sales adjusted for changes in foreign currencies. This selected measure is used as a performance condition for certain annual performance-based awards for both the PEO and Non-PEO NEOs. Please refer to Appendix A: Non-GAAP Financial Measures for a reconciliation of net sales adjusted for changes in foreign currencies, which is a non-GAAP measure, to net sales under GAAP.
+
+Relationship among Compensation Actually Paid and Performance Measures
+
+The charts below reflect the relationship among compensation actually paid compared to the Company's TSR and peer group TSR, net income, and net sales adjusted for changes in foreign currencies over the past four fiscal years. Compensation actually paid reflects the value of outstanding performance-based grants at specified fiscal year ends and does not have a direct comparison to performance trends.
+
+The following chart shows the relationship among compensation actually paid to our PEO, Former PEO, the average compensation actually paid to our Non-PEO NEOs, and TSR for the applicable fiscal years. Our peer group TSR is also included. Refer to footnotes 3 and 4 in the table above for TSR methodology for Costco and the peer group.
+
+26
+
+The following chart shows the relationship among compensation actually paid to our PEO, Former PEO, the average compensation actually paid to our Non-PEO NEOs, and net income for the applicable fiscal years.
+
+The following chart shows the relationship among compensation actually paid to our PEO, Former PEO, the average compensation actually paid to our Non-PEO NEOs, and net sales adjusted for changes in foreign currencies for the applicable fiscal years. Refer to Appendix A for a reconciliation of this non-GAAP measure to net sales under GAAP.
+
+27
+
+Financial Performance Measures
+
+The following list represents the most important metrics used to link Company performance to compensation actually paid for the most recently completed fiscal year. Only two measures are identified because they are the only measures used by the Company to link executive compensation to Company performance.
+
+•Net Sales Adjusted for Changes in Foreign Currencies
+
+•Income Before Income Taxes Adjusted for Changes in Foreign Currencies
+
+CERTAIN RELATIONSHIPS AND TRANSACTIONS
+
+Jim Klauer, Executive Vice President, Chief Operating Officer, Northern Division, has a daughter-in-law who was employed by the Company during fiscal 2025, with annual compensation of $199,259.
+
+Teresa Jones, Executive Vice President, Global Depots and Traffic, has three brothers who were employed by the Company during fiscal 2025: one with annual compensation of $251,480 and a grant of 555 RSUs; one with annual compensation of $156,662 and a grant of 139 RSUs; and one with annual compensation of $141,399 and a grant of 139 RSUs.
+
+W. Richard Wilcox, Executive Vice President, Chief Operating Officer, Southwest Division, has a son who was employed by the Company during fiscal 2025, with annual compensation of $113,038 and a grant of 20 RSUs.
+
+Richard Galanti, former Chief Financial Officer and former director, has a son employed by a vendor of the Company from which the Company purchased approximately $8.6 million of product during fiscal 2025. Mr. Galanti’s son received approximately $204,282 in related commissions from the vendor.
+
+All related persons employed by the Company listed above participated in benefit plans generally available to employees in comparable positions under similar terms and conditions.
+
+These relationships and related transactions were approved by the Audit Committee. The charter of the Audit Committee requires the Committee to review and approve all related-person transactions that are required to be disclosed under Item 404(a) of Regulation S-K. There were no transactions required to be reported in this Proxy Statement since the beginning of fiscal 2025 where this policy did not require review, approval or ratification or where this policy was not followed.
+
+No family members of executive officers or directors are executive officers of the Company.
+
+28
+
+REPORT OF THE AUDIT COMMITTEE
+
+October 27, 2025
+
+To the Board of Directors:
+
+We reviewed and discussed with management the Company’s audited consolidated financial statements as of and for the fiscal year ended August 31, 2025. We discussed with the independent auditors the matters required to be discussed by the applicable requirements of the Public Company Accounting Oversight Board (PCAOB) and the Securities and Exchange Commission and the matters required to be reported to the Audit Committee by the independent registered public accounting firm pursuant to SEC Regulation S-X, Rule 2.07.
+
+We received the written disclosures and the letter from the independent auditors required by the PCAOB regarding the independent auditors’ communications with this Committee concerning independence and have discussed with the auditors their independence. Based on the reviews and discussions referred to above, we recommended to the Board that the audited consolidated financial statements referred to above be included in the Company’s Annual Report on Form 10-K for the fiscal year ended August 31, 2025.
+
+Kenneth D. Denman, Chair
+
+Susan L. Decker
+
+Helena B. Foulkes
+
+Sally Jewell
+
+CODE OF ETHICS FOR SENIOR FINANCIAL OFFICERS
+
+The Board has adopted a Code of Ethics for Senior Financial Officers. A copy may be obtained at no charge by sending a written request to the Corporate Secretary, 999 Lake Drive, Issaquah, Washington 98027. If the Company makes any amendments to this code (other than technical, administrative, or non-substantive amendments) or grants any waivers, including implicit waivers, from this code to the chief executive officer, chief financial officer, or controller, we will disclose (on our website at https://investor.costco.com or in a Form 8-K report filed with the SEC) the nature of the amendment or waiver, its effective date, and to whom it applies.
+
+INDEPENDENT PUBLIC ACCOUNTANTS
+
+Information Regarding Our Independent Auditors
+
+KPMG has served as our independent auditors since May 13, 2002. Upon recommendation of the Audit Committee, the Board has appointed KPMG as our independent auditors for fiscal 2026.
+
+Services and Fees of KPMG
+
+The following table presents fees for services rendered by KPMG for fiscal 2025 and fiscal 2024:
+
+2025 2024
+
+Audit fees $ 12,292,000 $ 10,748,000
+
+Audit-related fees 311,000 384,000
+
+Tax fees 154,000 900,000
+
+Total $ 12,757,000 $ 12,032,000
+
+29
+
+KPMG was paid fees for the following types of services during fiscal 2025:
+
+•Audit Fees consist of fees paid for the audit of the Company’s annual consolidated financial statements included in the Annual Report on Form 10-K and review of interim condensed consolidated financial statements included in the quarterly reports on Form 10-Q and for the audit of the Company’s internal control over financial reporting. Audit fees also include fees for any services associated with statutory audits of subsidiaries and affiliates of the Company, and with registration statements, reports and documents filed with the SEC, including out of pocket expenses associated with the audits, and certain acquisitions and accounting consultations about the application of generally accepted accounting principles to proposed and executed transactions.
+
+•Audit-Related Fees consist of fees for audits of financial statements and attest services not required by statute or regulations, and certain regulatory certifications.
+
+•Tax Fees consist of fees for the review or preparation of international income, franchise, value-added tax or other tax returns, including consultations on such matters, assistance with studies supporting amounts presented in tax returns, and consultations on various tax compliance matters.
+
+Audit Committee Preapproval Policy
+
+All services to be performed for the Company by KPMG must be pre-approved by the Audit Committee or a designated member of the Audit Committee, as provided in the committee’s written policies. All services provided by KPMG in fiscal 2025 were properly pre-approved.
+
+Annual Independence Determination
+
+The Audit Committee has determined that the provision by KPMG of non-audit services to the Company in fiscal 2025 is compatible with KPMG’s maintaining its independence.
+
+PROPOSAL 2: RATIFICATION OF SELECTION OF INDEPENDENT PUBLIC ACCOUNTANTS
+
+Subject to ratification by the shareholders at the Annual Meeting, the Board, upon recommendation of the Audit Committee, has selected KPMG to audit the consolidated financial statements of the Company and its subsidiaries for the fiscal year ending August 30, 2026. KPMG has issued its reports, included in the Company’s Form 10-K, on the audited consolidated financial statements of the Company and internal control over financial reporting for the fiscal year ended August 31, 2025. Representatives of KPMG are expected to be present at the Annual Meeting, will have the opportunity to make a statement, if they desire to do so, and will be available to respond to appropriate questions.
+
+Vote Required
+
+The affirmative vote of a majority of the votes cast on this proposal will constitute ratification of the appointment of KPMG.
+
+The Audit Committee and Board of Directors unanimously recommend that you vote FOR Proposal 2.
+
+PROPOSAL 3: ADVISORY VOTE TO APPROVE NAMED EXECUTIVE OFFICER COMPENSATION
+
+As required by Section 14A of the Securities Exchange Act of 1934, we request your advisory (non-binding) vote on the following resolution (“say on pay”): “Resolved, that the shareholders approve, on an advisory basis, the compensation of the Company’s Named Executive Officers as disclosed in the Compensation Discussion and Analysis, the accompanying compensation tables, and the related narrative disclosure in this Proxy Statement.”
+
+In 2023, following an advisory vote of the shareholders on frequency, the Board determined to continue to include say on pay votes in the Company's proxy materials annually until the next required shareholder vote on frequency.
+
+The Board and the Compensation Committee, which is composed of independent directors, expect to take into account the outcome of the say on pay vote when considering future executive compensation decisions to the extent they can determine the cause or causes of any significant negative voting results.
+
+30
+
+As described in detail under “Compensation Discussion and Analysis,” our compensation programs are designed to motivate our executives to continue the success of the Company. If fully earned through achievement of performance targets, equity compensation in the form of restricted stock units (which are subject to further time-based vesting) is the largest component of executive compensation. We believe that our compensation program rewards sustained performance that is aligned with long-term shareholder interests. Shareholders are encouraged to read the Compensation Discussion and Analysis, the accompanying compensation tables, and the related narrative disclosure.
+
+The Board of Directors unanimously recommends that you vote FOR the approval, on an advisory basis, of the compensation of our Named Executive Officers as disclosed in the Compensation Discussion and Analysis, the accompanying compensation tables, and the related narrative disclosure.
+
+PROPOSAL 4: SHAREHOLDER PROPOSAL REGARDING GREENWASHING RISK AUDIT
+
+The following shareholder proposal has been submitted to the Company for action at the Annual Meeting by the National Center for Public Policy Research, 2005 Massachusetts Avenue NW, Washington DC 20036. We will provide information regarding share ownership by the proponent upon receipt of a request to the Corporate Secretary for such information. The proposal will be voted on at the Annual Meeting only if properly presented by or on behalf of the proponent.
+
+PROPONENT’S STATEMENT IN SUPPORT OF SHAREHOLDER PROPOSAL
+
+Resolved: Shareholders request that the Board of Directors of Costco conduct an evaluation and issue a report within the next year, at a reasonable cost and excluding confidential information, assessing financial risks and costs associated with the Company's climate commitments.
+
+Supporting Statement: Costco has made material commitments to engage in reduction of its greenhouse gas emissions through its Climate Action Plan (CAP).1 Targets include a 39% reduction in emissions by 2030, and 100% clean energy by 2035.2 However, not enough has been done to assure investors that such a drastic realignment of Costco towards renewable energy sources is in the best financial interest of shareholders.
+
+McKinsey Sustainability estimates that a global transition to net zero emissions (NZE) would require $9.2 trillion dollars annually in global spending until 2050.3 This raises serious questions about the costs of achieving Costco's related goals, but Costco has apparently not disclosed how much money it is spending on its green transition, much less how its investments in NZE are providing a positive return on investment for shareholders. Instead, Costco apparently merely provides metrics on locations now running on renewables and estimated reductions in greenhouse gas emissions.4 Even investors committed to "sustainable" investing likely need accurate related cost information for proper share price valuation.
+
+Seeing as the CAP is apparently a material investment presented by Costco without soluble financial metrics to judge it by, the CAP program may be a compelling target for anti-greenwashing action by the SEC or another interested body.5
+
+The SEC has historically targeted companies engaging in forms of greenwashing with considerable financial penalties. For example, Goldman Sachs Asset Management was fined for $4 million for policy and procedure failures related to ESG investments,6 and DWS Investment Management Americas Inc. was charged $25 million in part for misstatements regarding its ESG investment processes.7 Should Costco be implicated in greenwashing, the impact on shareholders could be considerable, as company valuation and investor confidence plummets.
+
+1 https://mobilecontent.costco.com/staging/resource/img/25w03130/5a_ClimateActionPlan_FY24.pdf
+
+2 Id.
+
+3 https://www.mckinsey.com/capabilities/sustainability/our-insights/the-net-zero-transition-what-it-would-cost-what-it-could-bring#/
+
+4 https://mobilecontent.costco.com/staging/resource/img/25w03130/5a_ClimateActionPlan_FY24.pdf
+
+5 https://clsbluesky.law.columbia.edu/2024/10/18/disclosure-greenwashing-and-the-future-of-esg-litigation/
+
+6 https://www.sec.gov/news/press-release/2022-209
+
+7 https://www.sec.gov/news/press-release/2023-194
+
+31
+
+The concerns are only magnified by the extent and extremes of relevant opinions on climate change and net-zero commitments. While some organizations' projections are almost apocalyptic in scale,8 others indicate that climate change will be a slower process lacking an identifiable date by which it should be considered an emergency.9 Additionally, the U.S. Secretary of Energy recently argued that net zero policies "raise energy costs .., threaten the reliability of our energy system, and undermine our ... security" while having achieved "little in reducing global greenhouse gas emissions."10 The EPA also recently proposed rescinding the 2009 Endangerment Finding that greenhouse gases are pollutants,11 which "Could Be a Dagger in the Heart of Net Zero."12
+
+While it is possible that Costco is managing this transition at neutral cost to shareholders, or even at a profit, shareholders lack material data upon which to make that assessment. The requested report would provide the much-needed transparency that shareholders need to make informed decisions about their assets.
+
+BOARD OF DIRECTORS' RESPONSE
+
+The Board of Directors unanimously recommends a vote AGAINST this proposal.
+
+The proposal asks us to issue a report assessing the financial risks and costs associated with the Company's climate commitments. As detailed in our Sustainability Commitment, we have made progress in reducing our emissions and believe that our plans balance this progress with practicality at a modest overall cost. They also provide the Company with other benefits. Our management and the Board have already disclosed multiple factors that relate to the Company's Climate Action Plan. Therefore, the separate report sought by this proposal is unnecessary and not a productive use of resources.
+
+Our Climate Action Plan is important for the Company and support for the Plan has been demonstrated through discussions with the Company's largest shareholders. In addition, our efforts are material to protecting the resiliency of many of our supply chains. We believe our climate Plan also enhances our brand and builds customer loyalty.
+
+Being an exemplary citizen in the communities in which we operate is core to our values. Our principles dictate that for “Costco to thrive, the world needs to thrive. We are committed to doing our part to help.” While we are proud of the progress we have made on climate action, our Plan has not placed undue financial burdens on the Company. As we have publicly stated, in connection with the Plan, “[the Company's] incremental spending in this area has been immaterial to our financial results.” We have continued to experience strong growth in the Company's business and robust financial results while the Climate Action Plan is being implemented.
+
+The proponent refers multiple times to “net zero emissions” and “net zero commitments” and other "net zero" elements to bolster its claim of "apocalyptic" consequences. The Plan, however, is not now and never has been a net zero commitment for all emissions. The Plan is deliberately more measured. The Company also makes clear in its risk assessment disclosure that the Company relies upon and partners with its suppliers to meet certain reduction targets around Scope 3 emissions. These costs are incurred by suppliers and are generally not investments required by the Company itself (as opposed to impacting the cost of goods). Scope 3 emissions, as the Company has noted, represent over 90% of its total emissions. Finally, in certain jurisdictions the Company has been required to invest substantial sums in on-site power generation because local power resources are insufficient. Similarly, increasingly government regulation is mandating or prohibiting certain conduct with the effect of reducing emissions. Combined, these and other developments mean that business and legal imperatives require us to have climate initiatives in a number of areas that are not voluntary.
+
+Two years ago our shareholders overwhelmingly rejected what we believe is the essence of the current proposal from this same proponent. The prior proposal requested a Board report “evaluating the material factors” regarding the appropriateness of “2050 net-zero carbon goal, or other similar decarbonization
+
+8 https://news.un.org/en/story/2023/03/1134942
+
+9 https://thebreakthrough.org/journal/climate-change-banned-words/climate-tipping-point-real
+
+10 https://www.energy.gov/articles/secretary-wright-acts-unleash-golden-era-american-energy-dominance
+
+11 https://www.epa.gov/newsreleases/epa-releases-proposal-rescind-obama-era-endangerment-finding-regulations-paved-way
+
+12 https://www.heritage.org/government-regulation/commentary/americas-trillion-dollar-deregulation-could-be-dagger-the-heart
+
+32
+
+targets,” focusing on, among other things, “economic consequences of adoption.” In opposing the proposal, the Board discussed in detail the elements of the Climate Action Plan, noting we do not have a 2050 net-zero plan. We further stated: "Reducing energy usage and enhancing refrigeration efficiency, for example, enhance the Company's profitability. The Board and the Company are fully cognizant, however, that reducing emissions will not occur without costs; continuing implementation of the Plan will occur with monitoring and evaluation of these costs, with the objective of achieving a just transition." Ultimately, the prior proposal received the support of only 1.94% of the votes cast on it.
+
+Thus, we believe that the report requested by this proposal is unnecessary and not an appropriate use of the Company's resources.
+
+The Board of Directors recommends a vote AGAINST Proposal 4.
+
+OTHER MATTERS
+
+Neither the Board nor management intends to bring before the Annual Meeting any business other than the matters referred to in the Notice of Meeting and this Proxy Statement. If any other business should properly come before the Annual Meeting, or any adjournment thereof, the persons named in the proxy will vote on such matters according to their judgment.
+
+SHAREHOLDER PROPOSALS FOR THE 2027 ANNUAL MEETING
+
+For a shareholder proposal to be included in the proxy statement for the 2027 annual meeting, it must comply with SEC Rule 14a-8 and be received by the Secretary of the Company at the address below no later than August 6, 2026.
+
+To be properly brought before the 2027 annual meeting of shareholders, a notice of a proxy access nomination under section 2.12 of our bylaws must be received by the Secretary of the Company at the address below no earlier than July 7, 2026, and no later than the close of business (5:30 p.m. Pacific Time) on August 6, 2026. Any such notice must meet the other requirements set forth in our bylaws.
+
+A shareholder who intends to present a proposal at the Company’s 2027 annual meeting other than pursuant to Rule 14a-8 or a proxy access director nomination must comply with our bylaws, which provide that the notice of such intentions must be received by the Secretary of the Company at the address set forth below no earlier than September 17, 2026, and no later than October 17, 2026, and such proposal must be a proper matter for shareholder action under Washington law, or management of the Company will have discretionary voting authority at the 2027 annual meeting with respect to any such proposal without discussion of the matter in the Company’s proxy statement.
+
+Shareholders who intend to solicit proxies in reliance on the SEC's universal proxy rule for director nominees submitted under the advance notice requirements of our bylaws must comply with the additional requirements of Rule 14a-19(b).
+
+Notices of intention to present proposals or nominate directors at the 2027 annual meeting, and all supporting materials required by our bylaws, must be submitted by mail to Secretary, Costco Wholesale Corporation, 999 Lake Drive, Issaquah, Washington 98027.
+
+The Company reserves the right to reject, rule out of order, or take other appropriate action with respect to any proposal or nomination that does not comply with these and other applicable requirements. The submission of a shareholder proposal or proxy access or other director nomination does not guarantee that it will be included in our proxy statement.
+
+33
+
+ANNUAL REPORT TO SHAREHOLDERS AND FORM 10-K
+
+The fiscal 2025 Annual Report to Shareholders (which is not a part of our proxy soliciting materials) is being mailed with this Proxy Statement to shareholders that were mailed proxy materials. For shareholders that received the Notice of Internet Availability of Proxy Materials, this Proxy Statement and our fiscal 2025 Annual Report to Shareholders are available at https://investor.costco.com. Additionally, and in accordance with SEC rules, you may access our Proxy Statement at www.proxyvote.com, a “cookie-free” website that does not identify visitors to the site. A copy of the Company’s Annual Report on Form 10-K filed with the SEC will be provided to shareholders without charge upon written request directed to Investor Relations. The Company makes available on or through our website free of charge our Annual Report on Form 10-K, quarterly reports on Form 10-Q, current reports on Form 8-K and all amendments to such reports filed pursuant to Section 13(a) or 15(d) of the Securities Exchange Act of 1934 as soon as reasonably practicable after filing.
+
+GENERAL INFORMATION
+
+List of Shareholders of Record. A list of shareholders of record entitled to vote at the Annual Meeting will be available at the Annual Meeting as described above. It will also be available for ten business days prior to the Annual Meeting between 9:00 a.m. and 4:00 p.m., Pacific time, at the office of the Secretary, Costco Wholesale Corporation, 999 Lake Drive, Issaquah, Washington 98027. A shareholder may examine the list for a legally valid purpose related to the Annual Meeting. This list will also be available during the entire time of the Annual Meeting on the meeting website.
+
+Electronic Delivery. The Company is incorporated under Washington law, which specifically permits electronically transmitted proxies, provided that the transmission set forth or be submitted with information from which it can reasonably be determined that the transmission was authorized by the shareholder. The electronic voting procedures provided for the Annual Meeting are designed to authenticate each shareholder by use of a control number to allow shareholders to vote their shares and to confirm that their instructions have been properly recorded.
+
+Householding Information. As permitted by SEC rules, the Company will deliver one Annual Report or Proxy Statement to multiple shareholders sharing the same address unless the Company has received contrary instructions. The Company will, upon written or oral request, deliver a separate copy of the Annual Report or Proxy Statement to a shareholder at a shared address to which a single copy of the Annual Report or Proxy Statement was delivered and will include instructions as to how the shareholder can notify the Company that the shareholder wishes to receive a separate copy of the Annual Report or Proxy Statement in the future. Registered shareholders wishing to receive a separate Annual Report or Proxy Statement in the future or registered shareholders sharing an address wishing to receive a single copy of the Annual Report or Proxy Statement in the future may contact the Company’s Transfer Agent: Computershare, Inc., P.O. Box 43006, Providence, RI 02940; (800) 249-8982.
+
+By order of the Board of Directors,
+
+John Sullivan
+
+Executive Vice President, General Counsel and Secretary
+
+34
+
+APPENDIX A: NON-GAAP FINANCIAL MEASURES
+
+The Compensation Committee uses net sales adjusted for changes in foreign currencies, which is a non-GAAP financial measure, as a performance target for RSUs and for a portion of the bonuses granted to executive officers. The Company also uses the non-GAAP measure as its selected financial measure under "Pay Versus Performance." Management believes that this provides a fairer measure (as compared to U.S. dollars) of performance subject to the Company's control. Non-GAAP financial measures are not intended to be used as an alternative to direct comparable measures in accordance with GAAP and may not be comparable to similar measures reported by other companies.
+
+In the discussion of net sales adjusted for changes in foreign currencies, we refer to the impact of changes in foreign currencies relative to the U.S. dollar, which are differences between the foreign-exchange rates we use to convert the financial results of our international operations from local currencies into U.S. dollars. This impact of foreign-exchange rate changes is calculated based on the difference between the current and prior fiscal year currency exchange rates.
+
+The following table reflects the calculation of net sales adjusted for changes in foreign currencies (in millions):
+
+2025 2024 2023 2022 2021
+
+Net sales $ 269,912 $ 249,625 $ 237,710 $ 222,730 $ 192,052
+
+Changes in foreign currencies 1,943 474 3,484 1,762 (2,759)
+
+Net sales adjusted for changes in foreign currencies $ 271,855 $ 250,099 $ 241,194 $ 224,492 $ 189,293
+
+35

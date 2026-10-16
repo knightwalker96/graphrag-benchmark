@@ -1,0 +1,92 @@
+[
+  {
+    "arm": "mmr_lambda_0.7",
+    "strict": 0.36,
+    "graded": 0.4654,
+    "bert": 0.1323,
+    "tokens": 4666.0,
+    "latency": 6.452,
+    "cost": 0.00147
+  },
+  {
+    "arm": "similarity_cosine",
+    "strict": 0.34,
+    "graded": 0.472,
+    "bert": 0.1868,
+    "tokens": 4739.6,
+    "latency": 3.314,
+    "cost": 0.001492
+  },
+  {
+    "arm": "chunk_3000",
+    "strict": 0.34,
+    "graded": 0.4454,
+    "bert": 0.1538,
+    "tokens": 4576.2,
+    "latency": 3.597,
+    "cost": 0.001443
+  },
+  {
+    "arm": "mmr_lambda_0.3",
+    "strict": 0.32,
+    "graded": 0.4388,
+    "bert": 0.142,
+    "tokens": 4506.2,
+    "latency": 3.795,
+    "cost": 0.001425
+  },
+  {
+    "arm": "baseline (mmr+rerank, k10, 2000ch, filter)",
+    "strict": 0.32,
+    "graded": 0.432,
+    "bert": 0.1589,
+    "tokens": 4577.5,
+    "latency": 3.667,
+    "cost": 0.001446
+  },
+  {
+    "arm": "mmr_no_rerank",
+    "strict": 0.32,
+    "graded": 0.4318,
+    "bert": 0.2064,
+    "tokens": 4763.5,
+    "latency": 3.639,
+    "cost": 0.001502
+  },
+  {
+    "arm": "topk_15",
+    "strict": 0.32,
+    "graded": 0.4186,
+    "bert": 0.1672,
+    "tokens": 6738.2,
+    "latency": 7.984,
+    "cost": 0.002094
+  },
+  {
+    "arm": "chunk_1000",
+    "strict": 0.3,
+    "graded": 0.4122,
+    "bert": 0.1581,
+    "tokens": 3060.1,
+    "latency": 3.646,
+    "cost": 0.000986
+  },
+  {
+    "arm": "topk_5",
+    "strict": 0.3,
+    "graded": 0.3726,
+    "bert": 0.1035,
+    "tokens": 2433.8,
+    "latency": 3.453,
+    "cost": 0.000798
+  },
+  {
+    "arm": "no_ticker_filter",
+    "strict": 0.26,
+    "graded": 0.4116,
+    "bert": 0.1602,
+    "tokens": 4561.3,
+    "latency": 7.452,
+    "cost": 0.001432
+  }
+]

@@ -1,0 +1,1728 @@
+{
+  "meta": {
+    "split": "olympics_dev",
+    "run": 1,
+    "runs": 1,
+    "tag": "p3dev",
+    "generator": "gemini:gemini-2.5-flash",
+    "dataset": "olympics",
+    "p3_module": "pipeline3_olympics/pipeline.py",
+    "max_tokens": 256,
+    "embedder": "BAAI/bge-small-en-v1.5",
+    "timestamp": "2026-10-05T20:24:39"
+  },
+  "pipelines": {
+    "graphrag": [
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the women's 57 kg judo event at the Summer Olympics held immediately before 2020?",
+        "answer": "Rafaela Silva\nCitations: Q26217865#c0",
+        "prompt_tokens": 422,
+        "completion_tokens": 20,
+        "total_tokens": 442,
+        "latency_seconds": 2.911,
+        "cost_usd": 0.00017659999999999998,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 25,
+        "context_tokens": 122,
+        "optimizer_tokens": 0,
+        "output_tokens": 20,
+        "total_inference_tokens": 442,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q26217865#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q26217865#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q26217865#c0"
+        ],
+        "id": "pub-006",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Rafaela Silva",
+        "source_docs": "Q26217865, Q65235550",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q26217865",
+          "Q65235550"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, how many cycling events at the 2000 Summer Olympics had more than 30 competitors?",
+        "answer": "4\nCitations: Q300",
+        "prompt_tokens": 463,
+        "completion_tokens": 9,
+        "total_tokens": 472,
+        "latency_seconds": 2.218,
+        "cost_usd": 0.0001614,
+        "retrieved_chunks": 4,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 24,
+        "context_tokens": 139,
+        "optimizer_tokens": 0,
+        "output_tokens": 9,
+        "total_inference_tokens": 472,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q300"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q3001459#c0",
+          "Q2133123#c0",
+          "Q1856784#c0",
+          "Q2526348#c0"
+        ],
+        "graph_entity_count": 4,
+        "route": "aggregation",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q3001459#c0",
+          "Q2133123#c0",
+          "Q1856784#c0",
+          "Q2526348#c0"
+        ],
+        "id": "pub-010",
+        "tier": "H",
+        "hop": "10",
+        "correct_answer": "4",
+        "source_docs": "Q1856784, Q2133123, Q2426715, Q2526348, Q2774005, Q3001409, Q3001459, Q5198388, Q5198390, Q5198393",
+        "route_gold": "aggregation",
+        "shape": "aggregation",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1856784",
+          "Q2133123",
+          "Q2426715",
+          "Q2526348",
+          "Q2774005",
+          "Q3001409",
+          "Q3001459",
+          "Q5198388",
+          "Q5198390",
+          "Q5198393"
+        ],
+        "qtype": "aggregation"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Riocentro \u2013 Pavilion 4 on 11\u201319 August at the 2016 Summer Olympics?",
+        "answer": "Carolina Mar\u00edn\nCitations: Q253014",
+        "prompt_tokens": 424,
+        "completion_tokens": 14,
+        "total_tokens": 438,
+        "latency_seconds": 3.961,
+        "cost_usd": 0.00016219999999999999,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 31,
+        "context_tokens": 124,
+        "optimizer_tokens": 0,
+        "output_tokens": 14,
+        "total_inference_tokens": 438,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q253014"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q25301483#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q25301483#c0"
+        ],
+        "id": "pub-014",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Carolina Mar\u00edn",
+        "source_docs": "Q25301483",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q25301483"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at London Velopark on 3 to 4 August at the 2012 Summer Olympics?",
+        "answer": "Dani KingLaura TrottJoanna Rowsell\nCitations: Q2297633#c",
+        "prompt_tokens": 437,
+        "completion_tokens": 23,
+        "total_tokens": 460,
+        "latency_seconds": 3.0,
+        "cost_usd": 0.00018859999999999998,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 29,
+        "context_tokens": 146,
+        "optimizer_tokens": 0,
+        "output_tokens": 23,
+        "total_inference_tokens": 460,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q2297633#c"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2297633#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2297633#c0"
+        ],
+        "id": "pub-015",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Dani KingLaura TrottJoanna Rowsell",
+        "source_docs": "Q2297633",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q2297633"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, how many biathlon events at the 2002 Winter Olympics had more than 74 competitors?",
+        "answer": "3\nCitations:",
+        "prompt_tokens": 420,
+        "completion_tokens": 5,
+        "total_tokens": 425,
+        "latency_seconds": 2.431,
+        "cost_usd": 0.00013849999999999998,
+        "retrieved_chunks": 3,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 25,
+        "context_tokens": 109,
+        "optimizer_tokens": 0,
+        "output_tokens": 5,
+        "total_inference_tokens": 425,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q256759#c0",
+          "Q1004918#c0",
+          "Q1005108#c0"
+        ],
+        "graph_entity_count": 3,
+        "route": "aggregation",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q256759#c0",
+          "Q1004918#c0",
+          "Q1005108#c0"
+        ],
+        "id": "pub-024",
+        "tier": "H",
+        "hop": "8",
+        "correct_answer": "3",
+        "source_docs": "Q1004918, Q1005108, Q1221867, Q1221922, Q1222092, Q1222176, Q256759, Q280553",
+        "route_gold": "aggregation",
+        "shape": "aggregation",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1004918",
+          "Q1005108",
+          "Q1221867",
+          "Q1221922",
+          "Q1222092",
+          "Q1222176",
+          "Q256759",
+          "Q280553"
+        ],
+        "qtype": "aggregation"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "How many nations competed in Judo at the 2016 Summer Olympics \u2013 Women's 57 kg?",
+        "answer": "23\nCitations: Q26217865#c0",
+        "prompt_tokens": 393,
+        "completion_tokens": 18,
+        "total_tokens": 411,
+        "latency_seconds": 2.418,
+        "cost_usd": 0.0001629,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 20,
+        "context_tokens": 102,
+        "optimizer_tokens": 0,
+        "output_tokens": 18,
+        "total_inference_tokens": 411,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q26217865#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q26217865#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "lookup",
+        "hop_log": [
+          "event_by_title"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q26217865#c0"
+        ],
+        "id": "pub-025",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "23",
+        "source_docs": "Q26217865",
+        "route_gold": "lookup",
+        "shape": "lookup",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q26217865"
+        ],
+        "qtype": "lookup"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the men's cross-country cycling event at the Summer Olympics held immediately before 2016?",
+        "answer": "Jaroslav Kulhav\u00fd\nCitations: Q2036655#c0",
+        "prompt_tokens": 416,
+        "completion_tokens": 20,
+        "total_tokens": 436,
+        "latency_seconds": 2.418,
+        "cost_usd": 0.00017479999999999997,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 23,
+        "context_tokens": 119,
+        "optimizer_tokens": 0,
+        "output_tokens": 20,
+        "total_inference_tokens": 436,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q2036655#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2036655#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2036655#c0"
+        ],
+        "id": "pub-026",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Jaroslav Kulhav\u00fd",
+        "source_docs": "Q2036655, Q25476845",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q2036655",
+          "Q25476845"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, how many fencing events at the 2008 Summer Olympics had more than 32 competitors?",
+        "answer": "4\nCitations: Graph traversal of the",
+        "prompt_tokens": 468,
+        "completion_tokens": 9,
+        "total_tokens": 477,
+        "latency_seconds": 2.513,
+        "cost_usd": 0.0001629,
+        "retrieved_chunks": 4,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 24,
+        "context_tokens": 142,
+        "optimizer_tokens": 0,
+        "output_tokens": 9,
+        "total_inference_tokens": 477,
+        "num_llm_calls": 1,
+        "citations": [
+          "Graph traversal of the"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2570052#c0",
+          "Q2726746#c0",
+          "Q2570149#c0",
+          "Q2570068#c0"
+        ],
+        "graph_entity_count": 4,
+        "route": "aggregation",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2570052#c0",
+          "Q2726746#c0",
+          "Q2570149#c0",
+          "Q2570068#c0"
+        ],
+        "id": "pub-027",
+        "tier": "H",
+        "hop": "10",
+        "correct_answer": "4",
+        "source_docs": "Q1051974, Q2570052, Q2570068, Q2570149, Q2570158, Q2726746, Q2726750, Q2726788, Q2726820, Q658704",
+        "route_gold": "aggregation",
+        "shape": "aggregation",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1051974",
+          "Q2570052",
+          "Q2570068",
+          "Q2570149",
+          "Q2570158",
+          "Q2726746",
+          "Q2726750",
+          "Q2726788",
+          "Q2726820",
+          "Q658704"
+        ],
+        "qtype": "aggregation"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "How many nations competed in Shooting at the 1996 Summer Olympics \u2013 Men's 50 metre rifle three positions?",
+        "answer": "30\nCitations: Q7500793#c0",
+        "prompt_tokens": 401,
+        "completion_tokens": 17,
+        "total_tokens": 418,
+        "latency_seconds": 2.076,
+        "cost_usd": 0.0001628,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 22,
+        "context_tokens": 107,
+        "optimizer_tokens": 0,
+        "output_tokens": 17,
+        "total_inference_tokens": 418,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q7500793#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q7500793#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "lookup",
+        "hop_log": [
+          "event_by_title"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q7500793#c0"
+        ],
+        "id": "pub-035",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "30",
+        "source_docs": "Q7500793",
+        "route_gold": "lookup",
+        "shape": "lookup",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q7500793"
+        ],
+        "qtype": "lookup"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, which shooting event at the 2008 Summer Olympics had the highest number of competitors?",
+        "answer": "Shooting at the 2008 Summer Olympics",
+        "prompt_tokens": 678,
+        "completion_tokens": 11,
+        "total_tokens": 689,
+        "latency_seconds": 2.836,
+        "cost_usd": 0.00023089999999999997,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 23,
+        "context_tokens": 314,
+        "optimizer_tokens": 0,
+        "output_tokens": 11,
+        "total_inference_tokens": 689,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q1005722#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "superlative",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q1005722#c0"
+        ],
+        "id": "pub-037",
+        "tier": "H",
+        "hop": "14",
+        "correct_answer": "Shooting at the 2008 Summer Olympics \u2013 Men's 50 metre rifle prone",
+        "source_docs": "Q1005423, Q1005606, Q1005719, Q1005722, Q1204722, Q1205250, Q1346374, Q1360834, Q1360895, Q736527, Q763031, Q775967, Q940196, Q962842",
+        "route_gold": "superlative",
+        "shape": "superlative",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1005423",
+          "Q1005606",
+          "Q1005719",
+          "Q1005722",
+          "Q1204722",
+          "Q1205250",
+          "Q1346374",
+          "Q1360834",
+          "Q1360895",
+          "Q736527",
+          "Q763031",
+          "Q775967",
+          "Q940196",
+          "Q962842"
+        ],
+        "qtype": "superlative"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, which fencing event at the 2008 Summer Olympics had the highest number of competitors?",
+        "answer": "Fencing at the 2008 Summer Olympics",
+        "prompt_tokens": 577,
+        "completion_tokens": 11,
+        "total_tokens": 588,
+        "latency_seconds": 2.338,
+        "cost_usd": 0.00020059999999999997,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 23,
+        "context_tokens": 234,
+        "optimizer_tokens": 0,
+        "output_tokens": 11,
+        "total_inference_tokens": 588,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2570052#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "superlative",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2570052#c0"
+        ],
+        "id": "pub-044",
+        "tier": "H",
+        "hop": "10",
+        "correct_answer": "Fencing at the 2008 Summer Olympics \u2013 Men's \u00e9p\u00e9e",
+        "source_docs": "Q1051974, Q2570052, Q2570068, Q2570149, Q2570158, Q2726746, Q2726750, Q2726788, Q2726820, Q658704",
+        "route_gold": "superlative",
+        "shape": "superlative",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1051974",
+          "Q2570052",
+          "Q2570068",
+          "Q2570149",
+          "Q2570158",
+          "Q2726746",
+          "Q2726750",
+          "Q2726788",
+          "Q2726820",
+          "Q658704"
+        ],
+        "qtype": "superlative"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "How many nations competed in Athletics at the 1992 Summer Olympics \u2013 Men's 3000 metres steeplechase?",
+        "answer": "24\nCitations: Q1409048#c0",
+        "prompt_tokens": 433,
+        "completion_tokens": 17,
+        "total_tokens": 450,
+        "latency_seconds": 2.484,
+        "cost_usd": 0.0001724,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 25,
+        "context_tokens": 130,
+        "optimizer_tokens": 0,
+        "output_tokens": 17,
+        "total_inference_tokens": 450,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q1409048#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q1409048#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "lookup",
+        "hop_log": [
+          "event_by_title"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q1409048#c0"
+        ],
+        "id": "pub-047",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "24",
+        "source_docs": "Q1409048",
+        "route_gold": "lookup",
+        "shape": "lookup",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1409048"
+        ],
+        "qtype": "lookup"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the men's 68 kg taekwondo event at the Summer Olympics held immediately before 2016?",
+        "answer": "Servet Tazeg\u00fcl\nCitations: Q2142977#c0",
+        "prompt_tokens": 421,
+        "completion_tokens": 20,
+        "total_tokens": 441,
+        "latency_seconds": 2.707,
+        "cost_usd": 0.00017629999999999998,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 26,
+        "context_tokens": 126,
+        "optimizer_tokens": 0,
+        "output_tokens": 20,
+        "total_inference_tokens": 441,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q2142977#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2142977#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2142977#c0"
+        ],
+        "id": "pub-048",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Servet Tazeg\u00fcl",
+        "source_docs": "Q2142977, Q26219849",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q2142977",
+          "Q26219849"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, how many canoeing events at the 2012 Summer Olympics had more than 25 competitors?",
+        "answer": "6\nCitations: Q10",
+        "prompt_tokens": 571,
+        "completion_tokens": 8,
+        "total_tokens": 579,
+        "latency_seconds": 2.394,
+        "cost_usd": 0.00019129999999999996,
+        "retrieved_chunks": 6,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 25,
+        "context_tokens": 218,
+        "optimizer_tokens": 0,
+        "output_tokens": 8,
+        "total_inference_tokens": 579,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q10"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q1042705#c0",
+          "Q539696#c0",
+          "Q919261#c0",
+          "Q919242#c0",
+          "Q2352927#c0",
+          "Q2936542#c0"
+        ],
+        "graph_entity_count": 6,
+        "route": "aggregation",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q1042705#c0",
+          "Q539696#c0",
+          "Q919261#c0",
+          "Q919242#c0",
+          "Q2352927#c0",
+          "Q2936542#c0"
+        ],
+        "id": "pub-051",
+        "tier": "H",
+        "hop": "16",
+        "correct_answer": "6",
+        "source_docs": "Q1005434, Q1042705, Q2071238, Q2352412, Q2352927, Q2353351, Q2390636, Q2494175, Q2648878, Q2936542, Q303623, Q526367, Q539696, Q919242, Q919261, Q919388",
+        "route_gold": "aggregation",
+        "shape": "aggregation",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1005434",
+          "Q1042705",
+          "Q2071238",
+          "Q2352412",
+          "Q2352927",
+          "Q2353351",
+          "Q2390636",
+          "Q2494175",
+          "Q2648878",
+          "Q2936542",
+          "Q303623",
+          "Q526367",
+          "Q539696",
+          "Q919242",
+          "Q919261",
+          "Q919388"
+        ],
+        "qtype": "aggregation"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "How many nations competed in Biathlon at the 2022 Winter Olympics \u2013 Women's relay?",
+        "answer": "20\nCitations: Biathlon at the 2022 Winter Olympics \u2013 Women's relay",
+        "prompt_tokens": 427,
+        "completion_tokens": 22,
+        "total_tokens": 449,
+        "latency_seconds": 2.157,
+        "cost_usd": 0.0001831,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 18,
+        "context_tokens": 141,
+        "optimizer_tokens": 0,
+        "output_tokens": 22,
+        "total_inference_tokens": 449,
+        "num_llm_calls": 1,
+        "citations": [
+          "Biathlon at the 2022 Winter Olympics \u2013 Women's relay"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q107861706#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "lookup",
+        "hop_log": [
+          "event_by_title"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q107861706#c0"
+        ],
+        "id": "pub-052",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "20",
+        "source_docs": "Q107861706",
+        "route_gold": "lookup",
+        "shape": "lookup",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q107861706"
+        ],
+        "qtype": "lookup"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the men's 80 kg taekwondo event at the Summer Olympics held immediately before 2016?",
+        "answer": "Sebasti\u00e1n Crismanich\nCitations:",
+        "prompt_tokens": 417,
+        "completion_tokens": 10,
+        "total_tokens": 427,
+        "latency_seconds": 3.143,
+        "cost_usd": 0.0001501,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 26,
+        "context_tokens": 117,
+        "optimizer_tokens": 0,
+        "output_tokens": 10,
+        "total_inference_tokens": 427,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q934172#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q934172#c0"
+        ],
+        "id": "pub-055",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Sebasti\u00e1n Crismanich",
+        "source_docs": "Q26219850, Q934172",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q26219850",
+          "Q934172"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the men's 30 kilometre pursuit cross-country skiing event at the Winter Olympics held immediately before 2010?",
+        "answer": "Yevgeny Dementyev (RUS)\nCitations: Q824803#c0",
+        "prompt_tokens": 439,
+        "completion_tokens": 24,
+        "total_tokens": 463,
+        "latency_seconds": 2.67,
+        "cost_usd": 0.00019169999999999997,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 28,
+        "context_tokens": 131,
+        "optimizer_tokens": 0,
+        "output_tokens": 24,
+        "total_inference_tokens": 463,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q824803#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q824803#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q824803#c0"
+        ],
+        "id": "pub-056",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Yevgeny Dementyev",
+        "source_docs": "Q824803, Q848689",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q824803",
+          "Q848689"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the women's sprint biathlon event at the Winter Olympics held immediately before 2022?",
+        "answer": "Laura Dahlmeier\nCitations: [Q4",
+        "prompt_tokens": 424,
+        "completion_tokens": 10,
+        "total_tokens": 434,
+        "latency_seconds": 2.848,
+        "cost_usd": 0.00015219999999999999,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 23,
+        "context_tokens": 130,
+        "optimizer_tokens": 0,
+        "output_tokens": 10,
+        "total_inference_tokens": 434,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q4"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q47091419#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q47091419#c0"
+        ],
+        "id": "pub-059",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Laura Dahlmeier",
+        "source_docs": "Q107861710, Q47091419",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q107861710",
+          "Q47091419"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the women's 10,000 metres athletics event at the Summer Olympics held immediately before 2016?",
+        "answer": "Tirunesh Dibaba\nCitations: Q1799275#",
+        "prompt_tokens": 428,
+        "completion_tokens": 19,
+        "total_tokens": 447,
+        "latency_seconds": 3.029,
+        "cost_usd": 0.0001759,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 26,
+        "context_tokens": 120,
+        "optimizer_tokens": 0,
+        "output_tokens": 19,
+        "total_inference_tokens": 447,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q1799275#"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q1799275#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "temporal",
+        "hop_log": [
+          "games_before",
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q1799275#c0"
+        ],
+        "id": "pub-062",
+        "tier": "P",
+        "hop": "2",
+        "correct_answer": "Tirunesh Dibaba",
+        "source_docs": "Q1799275, Q26233297",
+        "route_gold": "temporal",
+        "shape": "temporal",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1799275",
+          "Q26233297"
+        ],
+        "qtype": "temporal"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, which weightlifting event at the 1992 Summer Olympics had the highest number of competitors?",
+        "answer": "Weightlifting at the 1992 Summer",
+        "prompt_tokens": 594,
+        "completion_tokens": 10,
+        "total_tokens": 604,
+        "latency_seconds": 2.299,
+        "cost_usd": 0.00020319999999999998,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 24,
+        "context_tokens": 244,
+        "optimizer_tokens": 0,
+        "output_tokens": 10,
+        "total_inference_tokens": 604,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q7979975#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "superlative",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q7979975#c0"
+        ],
+        "id": "pub-066",
+        "tier": "H",
+        "hop": "10",
+        "correct_answer": "Weightlifting at the 1992 Summer Olympics \u2013 Men's 75 kg",
+        "source_docs": "Q7979967, Q7979968, Q7979969, Q7979971, Q7979972, Q7979973, Q7979974, Q7979975, Q7979977, Q7979978",
+        "route_gold": "superlative",
+        "shape": "superlative",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q7979967",
+          "Q7979968",
+          "Q7979969",
+          "Q7979971",
+          "Q7979972",
+          "Q7979973",
+          "Q7979974",
+          "Q7979975",
+          "Q7979977",
+          "Q7979978"
+        ],
+        "qtype": "superlative"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "How many nations competed in Cycling at the 2012 Summer Olympics \u2013 Women's cross-country?",
+        "answer": "24\nCitations: Q2269155#c0",
+        "prompt_tokens": 383,
+        "completion_tokens": 17,
+        "total_tokens": 400,
+        "latency_seconds": 2.295,
+        "cost_usd": 0.00015739999999999998,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 18,
+        "context_tokens": 93,
+        "optimizer_tokens": 0,
+        "output_tokens": 17,
+        "total_inference_tokens": 400,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q2269155#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2269155#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "lookup",
+        "hop_log": [
+          "event_by_title"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2269155#c0"
+        ],
+        "id": "pub-068",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "24",
+        "source_docs": "Q2269155",
+        "route_gold": "lookup",
+        "shape": "lookup",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q2269155"
+        ],
+        "qtype": "lookup"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Sydney International Shooting Centre on 21 September 2000 (slow)22 September 2000 (fast)?",
+        "answer": "Yang Ling\nCitations: Q7500",
+        "prompt_tokens": 454,
+        "completion_tokens": 11,
+        "total_tokens": 465,
+        "latency_seconds": 2.917,
+        "cost_usd": 0.0001637,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 32,
+        "context_tokens": 144,
+        "optimizer_tokens": 0,
+        "output_tokens": 11,
+        "total_inference_tokens": 465,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q7500"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q7500807#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q7500807#c0"
+        ],
+        "id": "pub-073",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Yang Ling",
+        "source_docs": "Q7500807",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q7500807"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "How many nations competed in Cross-country skiing at the 2006 Winter Olympics \u2013 Women's 4 \u00d7 5 kilometre relay?",
+        "answer": "17\nCitations: Q827175#c0",
+        "prompt_tokens": 458,
+        "completion_tokens": 16,
+        "total_tokens": 474,
+        "latency_seconds": 2.405,
+        "cost_usd": 0.0001774,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 26,
+        "context_tokens": 167,
+        "optimizer_tokens": 0,
+        "output_tokens": 16,
+        "total_inference_tokens": 474,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q827175#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q827175#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "lookup",
+        "hop_log": [
+          "event_by_title"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q827175#c0"
+        ],
+        "id": "pub-074",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "17",
+        "source_docs": "Q827175",
+        "route_gold": "lookup",
+        "shape": "lookup",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q827175"
+        ],
+        "qtype": "lookup"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, how many athletics events at the 1996 Summer Olympics had more than 49 competitors?",
+        "answer": "7\nCitations: Q268",
+        "prompt_tokens": 589,
+        "completion_tokens": 9,
+        "total_tokens": 598,
+        "latency_seconds": 2.728,
+        "cost_usd": 0.0001992,
+        "retrieved_chunks": 7,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 24,
+        "context_tokens": 224,
+        "optimizer_tokens": 0,
+        "output_tokens": 9,
+        "total_inference_tokens": 598,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q268"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q26860#c0",
+          "Q3628792#c0",
+          "Q2308435#c0",
+          "Q1426854#c0",
+          "Q1426735#c0",
+          "Q776944#c0",
+          "Q1423968#c0"
+        ],
+        "graph_entity_count": 7,
+        "route": "aggregation",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q26860#c0",
+          "Q3628792#c0",
+          "Q2308435#c0",
+          "Q1426854#c0",
+          "Q1426735#c0",
+          "Q776944#c0",
+          "Q1423968#c0"
+        ],
+        "id": "pub-078",
+        "tier": "H",
+        "hop": "16",
+        "correct_answer": "7",
+        "source_docs": "Q1422103, Q1422131, Q1423968, Q1424018, Q1426670, Q1426735, Q1426854, Q1438466, Q2308435, Q2311876, Q26860, Q3628791, Q3628792, Q637365, Q776944, Q942846",
+        "route_gold": "aggregation",
+        "shape": "aggregation",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q1422103",
+          "Q1422131",
+          "Q1423968",
+          "Q1424018",
+          "Q1426670",
+          "Q1426735",
+          "Q1426854",
+          "Q1438466",
+          "Q2308435",
+          "Q2311876",
+          "Q26860",
+          "Q3628791",
+          "Q3628792",
+          "Q637365",
+          "Q776944",
+          "Q942846"
+        ],
+        "qtype": "aggregation"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Centennial Parklands, Sydney on 26 September at the 2000 Summer Olympics?",
+        "answer": "Leontien Zijlaard\nCitations: Q2133123#c0",
+        "prompt_tokens": 418,
+        "completion_tokens": 21,
+        "total_tokens": 439,
+        "latency_seconds": 3.428,
+        "cost_usd": 0.0001779,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 27,
+        "context_tokens": 125,
+        "optimizer_tokens": 0,
+        "output_tokens": 21,
+        "total_inference_tokens": 439,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q2133123#c0"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q2133123#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q2133123#c0"
+        ],
+        "id": "pub-079",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Leontien Zijlaard",
+        "source_docs": "Q2133123",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q2133123"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Beijing Shooting Range Hall on August 10, 2008?",
+        "answer": "Guo Wenjun\nCitations: Q7",
+        "prompt_tokens": 421,
+        "completion_tokens": 10,
+        "total_tokens": 431,
+        "latency_seconds": 3.12,
+        "cost_usd": 0.0001513,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 23,
+        "context_tokens": 130,
+        "optimizer_tokens": 0,
+        "output_tokens": 10,
+        "total_inference_tokens": 431,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q7"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q736527#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q736527#c0"
+        ],
+        "id": "pub-081",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Guo Wenjun",
+        "source_docs": "Q736527",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q736527"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "According to the provided corpus, how many shooting events at the 1992 Summer Olympics had more than 44 competitors?",
+        "answer": "4\nCitations: Q75007",
+        "prompt_tokens": 545,
+        "completion_tokens": 11,
+        "total_tokens": 556,
+        "latency_seconds": 2.255,
+        "cost_usd": 0.00019099999999999998,
+        "retrieved_chunks": 6,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 24,
+        "context_tokens": 202,
+        "optimizer_tokens": 0,
+        "output_tokens": 11,
+        "total_inference_tokens": 556,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q75007"
+        ],
+        "tg_live": true,
+        "tg_queries": 1,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q7500771#c0",
+          "Q7500772#c0",
+          "Q7500768#c0",
+          "Q7500774#c0",
+          "Q7500756#c0",
+          "Q7500777#c0"
+        ],
+        "graph_entity_count": 6,
+        "route": "aggregation",
+        "hop_log": [
+          "events_in_group"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q7500771#c0",
+          "Q7500772#c0",
+          "Q7500768#c0",
+          "Q7500774#c0",
+          "Q7500756#c0",
+          "Q7500777#c0"
+        ],
+        "id": "pub-092",
+        "tier": "H",
+        "hop": "13",
+        "correct_answer": "6",
+        "source_docs": "Q17088224, Q7500756, Q7500758, Q7500761, Q7500762, Q7500764, Q7500768, Q7500771, Q7500772, Q7500774, Q7500776, Q7500777, Q7500779",
+        "route_gold": "aggregation",
+        "shape": "aggregation",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q17088224",
+          "Q7500756",
+          "Q7500758",
+          "Q7500761",
+          "Q7500762",
+          "Q7500764",
+          "Q7500768",
+          "Q7500771",
+          "Q7500772",
+          "Q7500774",
+          "Q7500776",
+          "Q7500777",
+          "Q7500779"
+        ],
+        "qtype": "aggregation"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Riocentro \u2013 Pavilion 6 on 10\u201321 August 2016?",
+        "answer": "Fazliddin Gaibnazarov",
+        "prompt_tokens": 447,
+        "completion_tokens": 9,
+        "total_tokens": 456,
+        "latency_seconds": 2.658,
+        "cost_usd": 0.00015659999999999998,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 27,
+        "context_tokens": 148,
+        "optimizer_tokens": 0,
+        "output_tokens": 9,
+        "total_inference_tokens": 456,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q26212151#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q26212151#c0"
+        ],
+        "id": "pub-096",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Fazliddin Gaibnazarov",
+        "source_docs": "Q26212151",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q26212151"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 18 September to 1 October 2000?",
+        "answer": "Bekzat Sattarkhanov\nCitations: Q49518",
+        "prompt_tokens": 426,
+        "completion_tokens": 16,
+        "total_tokens": 442,
+        "latency_seconds": 2.608,
+        "cost_usd": 0.00016779999999999999,
+        "retrieved_chunks": 1,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 27,
+        "context_tokens": 133,
+        "optimizer_tokens": 0,
+        "output_tokens": 16,
+        "total_inference_tokens": 442,
+        "num_llm_calls": 1,
+        "citations": [
+          "Q49518"
+        ],
+        "tg_live": true,
+        "tg_queries": 2,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q4951838#c0"
+        ],
+        "graph_entity_count": 1,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q4951838#c0"
+        ],
+        "id": "pub-098",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Bekzat Sattarkhanov",
+        "source_docs": "Q4951838",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q4951838"
+        ],
+        "qtype": "multi_hop"
+      },
+      {
+        "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+        "question": "Who won the gold medal in the event held at Laura Biathlon & Ski Complex on 22 February 2014?",
+        "answer": "Marit Bj\u00f8rgen\nErik LesserDaniel B\u00f6",
+        "prompt_tokens": 637,
+        "completion_tokens": 10,
+        "total_tokens": 647,
+        "latency_seconds": 2.924,
+        "cost_usd": 0.0002161,
+        "retrieved_chunks": 2,
+        "token_source": "actual",
+        "system_tokens": 222,
+        "question_tokens": 24,
+        "context_tokens": 315,
+        "optimizer_tokens": 0,
+        "output_tokens": 10,
+        "total_inference_tokens": 647,
+        "num_llm_calls": 1,
+        "citations": [],
+        "tg_live": true,
+        "tg_queries": 3,
+        "tg_host": "https://tg-543c24a3-f81c-4fca-8a17-8652fffd65a1.tg-2635877100.i.tgcloud.io",
+        "graph_doc_ids": [
+          "Q15055028#c0",
+          "Q15052014#c0"
+        ],
+        "graph_entity_count": 2,
+        "route": "multi_hop",
+        "hop_log": [
+          "event_by_venue_date",
+          "medallists_of",
+          "medallists_of"
+        ],
+        "branch_resolved": true,
+        "retrieved_ids": [
+          "Q15055028#c0",
+          "Q15052014#c0"
+        ],
+        "id": "pub-099",
+        "tier": "S",
+        "hop": "1",
+        "correct_answer": "Erik LesserDaniel B\u00f6hmArnd PeifferSimon Schempp",
+        "source_docs": "Q15052014",
+        "route_gold": "multi_hop",
+        "shape": "multi_hop",
+        "gold_members": [],
+        "answer_from": "wikipedia infobox",
+        "set_name": "olympics_public",
+        "gold_doc_ids": [
+          "Q15052014"
+        ],
+        "qtype": "multi_hop"
+      }
+    ]
+  },
+  "aggregates": {
+    "graphrag": {
+      "pipeline": "Pipeline 3: GraphRAG (Olympics)",
+      "num_queries": 30,
+      "avg_prompt_tokens": 467.7,
+      "avg_completion_tokens": 14.2,
+      "avg_total_tokens": 481.9,
+      "avg_context_tokens": 156.5,
+      "avg_optimizer_tokens": 0.0,
+      "avg_output_tokens": 14.2,
+      "avg_total_inference_tokens": 481.9,
+      "total_inference_tokens": 14458,
+      "avg_num_llm_calls": 1.0,
+      "token_source": "actual",
+      "avg_latency_seconds": 2.673,
+      "avg_cost_usd": 0.000176,
+      "total_cost_usd": 0.0053,
+      "avg_retrieved_chunks": 1.8,
+      "avg_citations": 0.8,
+      "tg_live_rate": 1.0,
+      "avg_graph_docs": 1.8
+    }
+  }
+}

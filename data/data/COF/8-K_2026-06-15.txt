@@ -1,0 +1,123 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+____________________________________
+
+FORM 8-K
+
+____________________________________
+
+CURRENT REPORT
+
+Pursuant to Section 13 or 15(d) of
+
+The Securities Exchange Act of 1934
+
+June 12, 2026
+
+Date of Report (Date of earliest event reported)
+
+____________________________________
+
+CAPITAL ONE FINANCIAL CORPORATION
+
+(Exact name of registrant as specified in its charter)
+
+____________________________________
+
+Delaware 001-13300 54-1719854
+
+(State or other jurisdiction of incorporation) (Commission File Number) (IRS Employer Identification No.)
+
+1680 Capital One Drive,
+
+McLean, Virginia 22102
+
+(Address of principal executive offices) (Zip Code)
+
+Registrant’s telephone number, including area code: (703) 720-1000
+
+(Not applicable)
+
+(Former name or former address, if changed since last report)
+
+____________________________________
+
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below):
+
+☐ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+
+☐ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+
+☐ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of Each Class
+Trading Symbol(s) Name of Each Exchange on Which Registered
+
+Common Stock (par value $.01 per share) COF
+New York Stock Exchange
+
+Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Series I COF PRI
+New York Stock Exchange
+
+Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Series J COF PRJ
+New York Stock Exchange
+
+Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Series K COF PRK
+New York Stock Exchange
+
+Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Series L COF PRL
+New York Stock Exchange
+
+Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Series N COF PRN
+New York Stock Exchange
+
+1.650% Senior Notes Due 2029 COF29
+New York Stock Exchange
+
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+
+Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Item 7.01 Regulation FD Disclosure.
+
+Capital One Financial Corporation (the “Company”) hereby furnishes the information in Exhibit 99.1 hereto, Monthly Charge-Off and Delinquency Metrics - As of and for the month ended May 31, 2026.
+
+Note: Information in this report (including the exhibit) furnished pursuant to Item 7.01 shall not be deemed to be “filed” for the purposes of Section 18 of the Securities Exchange Act of 1934 or otherwise subject to the liabilities of that Section. This report will not be deemed an admission as to the materiality of any information in the report that is required to be disclosed solely by Regulation FD. Furthermore, the information provided in Exhibit 99.1 shall not be deemed incorporated by reference into any filing under the Securities Act of 1933 or the Securities Exchange Act of 1934.
+
+Item 9.01 Financial Statements and Exhibits.
+
+(d) Exhibits
+
+Exhibit No. Description
+
+99.1
+Monthly Charge-Off and Delinquency Metrics - As of and for the month ended May 31, 2026
+
+104 The cover page from this Current Report on Form 8-K, formatted in Inline XBRL
+
+1
+
+SIGNATURE
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the Company has duly caused this Current Report on Form 8-K to be signed on its behalf by the undersigned hereunto duly authorized.
+
+CAPITAL ONE FINANCIAL CORPORATION
+
+Date: June 12, 2026
+By: /s/ TIMOTHY P. GOLDEN
+
+Timothy P. Golden
+
+Chief Accounting Officer
+
+2
